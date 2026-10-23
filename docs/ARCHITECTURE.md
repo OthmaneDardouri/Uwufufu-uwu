@@ -176,6 +176,8 @@ Aggiungi una voce a `COLLECTIONS` in `server/app.mjs` con la sua funzione `clean
 3. Metti `TUNNEL_TOKEN` in `.env` e lancia `docker compose --profile tunnel up -d`.
 Il router resta chiuso: è il PC ad aprire la connessione verso Cloudflare. Il sito è raggiungibile solo quando il PC è acceso. Per averlo sempre online va bene anche un mini-PC o un VPS da pochi euro al mese.
 
+**Senza dominio (gratis)**: `docker compose --profile quick up -d` crea un indirizzo `https://….trycloudflare.com` (lo leggi con `docker compose logs quicktunnel`); cambia a ogni riavvio. Per un indirizzo gratuito e fisso: Tailscale Funnel (`tailscale funnel 8787`) dà `https://<pc>.<rete>.ts.net`.
+
 **Solo per i tuoi dispositivi**: in alternativa al tunnel, con Tailscale il server è raggiungibile solo dai dispositivi della tua rete privata.
 
 **GitHub Pages**: attivalo una volta in Settings → Pages → Source "GitHub Actions". Da lì ogni push su `main` pubblica la copia statica.

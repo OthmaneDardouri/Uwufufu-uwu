@@ -1,5 +1,6 @@
 # docker compose up -d                      -> site on http://localhost:8787 (change HOST_PORT in .env if it is taken)
 # docker compose --profile tunnel up -d     -> also public via Cloudflare Tunnel (needs TUNNEL_TOKEN in .env)
+# docker compose --profile quick up -d      -> free temporary public URL, no domain/account (see: docker compose logs quicktunnel)
 services:
   app:
     build: .
@@ -17,6 +18,16 @@ services:
     command: tunnel --no-autoupdate run
     environment:
       TUNNEL_TOKEN: ${TUNNEL_TOKEN}
+    depends_on:
+      - app
+
+  # Free "quick tunnel": a random https://….trycloudflare.com address, no account or domain.
+  # The address changes every time this container restarts, so it is for testing and sharing quickly.
+  quicktunnel:
+    image: cloudflare/cloudflared:latest
+    profiles: ["quick"]
+    restart: unless-stopped
+    command: tunnel --no-autoupdate --url http://app:8080
     depends_on:
       - app
 
