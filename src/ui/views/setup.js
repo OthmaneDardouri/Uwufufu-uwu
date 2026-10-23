@@ -23,7 +23,7 @@ export default async function setup(root, { catalog, navigate }, [id]) {
 
   root.innerHTML = html`
     <section class="setup panel">
-      ${picture(category.cover ?? items[0], "setup-cover")}
+      ${picture({ ...(category.cover ?? items[0]), name: localized(category.name, lang) }, "setup-cover")}
       <div class="setup-body">
         <a class="back" href="#/">← ${t("back")}</a>
         <h1>${localized(category.name, lang)}</h1>

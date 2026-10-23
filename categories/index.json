@@ -1,15 +1,53 @@
 {
   "groups": [
-    { "id": "pokemon-gen", "name": { "it": "Pokémon · generazioni", "en": "Pokémon · generations" } },
-    { "id": "pokemon-special", "name": { "it": "Pokémon · speciali", "en": "Pokémon · special" } },
-    { "id": "pokemon-forms", "name": { "it": "Pokémon · forme", "en": "Pokémon · forms" } },
-    { "id": "pokemon-types", "name": { "it": "Pokémon · per tipo", "en": "Pokémon · by type" } },
-    { "id": "games", "name": { "it": "Videogiochi", "en": "Video games" } }
+    {
+      "id": "pokemon-gen",
+      "name": {
+        "it": "Pokémon · generazioni",
+        "en": "Pokémon · generations"
+      }
+    },
+    {
+      "id": "pokemon-special",
+      "name": {
+        "it": "Pokémon · speciali",
+        "en": "Pokémon · special"
+      }
+    },
+    {
+      "id": "pokemon-forms",
+      "name": {
+        "it": "Pokémon · forme",
+        "en": "Pokémon · forms"
+      }
+    },
+    {
+      "id": "pokemon-types",
+      "name": {
+        "it": "Pokémon · per tipo",
+        "en": "Pokémon · by type"
+      }
+    },
+    {
+      "id": "games",
+      "name": {
+        "it": "Videogiochi",
+        "en": "Video games"
+      }
+    },
+    {
+      "id": "anime",
+      "name": {
+        "it": "Anime",
+        "en": "Anime"
+      }
+    }
   ],
   "files": [
     "pokemon.json",
     "pokemon-types.json",
     "games-pokemon.json",
-    "games-other.json"
+    "games-other.json",
+    "anime.json"
   ]
 }

@@ -67,3 +67,18 @@ test("built-in themes are valid and the default exists", () => {
   assert.ok(themes.some((t) => t.id === def));
   for (const t of themes) assert.deepEqual(sanitizeTheme(t).errors, [], t.id);
 });
+
+test("anime categories: every item has a picture source and names are unique", () => {
+  for (const c of categories.filter((x) => x.group === "anime")) {
+    assert.ok(c.items.every((i) => i.wiki), `${c.id}: item without wiki title`);
+    assert.equal(new Set(c.items.map((i) => i.name)).size, c.items.length, `${c.id}: duplicate names`);
+  }
+});
+
+test("wikipedia list pages and section redirects never become pictures", async () => {
+  const { isGenericPage } = await import("../src/services/images.js");
+  assert.equal(isGenericPage("List of One Piece characters", false), true);
+  assert.equal(isGenericPage("Kaido", true), true);
+  assert.equal(isGenericPage("Mercury (disambiguation)", false), true);
+  assert.equal(isGenericPage("Monkey D. Luffy", false), false);
+});

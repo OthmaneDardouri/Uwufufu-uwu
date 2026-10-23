@@ -1,0 +1,1445 @@
+[
+ {
+  "id": "anime-best",
+  "group": "anime",
+  "name": {
+   "it": "Anime più amati",
+   "en": "Most loved anime"
+  },
+  "description": {
+   "it": "Le serie e i film che hanno fatto la storia.",
+   "en": "The series and films that made history."
+  },
+  "cover": {
+   "wiki": "Fullmetal Alchemist: Brotherhood"
+  },
+  "items": [
+   {
+    "name": "Fullmetal Alchemist: Brotherhood",
+    "sub": "2009 · Bones",
+    "wiki": "Fullmetal Alchemist: Brotherhood"
+   },
+   {
+    "name": "L'attacco dei giganti",
+    "sub": "2013 · Wit / MAPPA",
+    "wiki": "Attack on Titan"
+   },
+   {
+    "name": "Death Note",
+    "sub": "2006 · Madhouse",
+    "wiki": "Death Note"
+   },
+   {
+    "name": "One Piece",
+    "sub": "1999 · Toei Animation",
+    "wiki": "One Piece"
+   },
+   {
+    "name": "Naruto",
+    "sub": "2002 · Pierrot",
+    "wiki": "Naruto"
+   },
+   {
+    "name": "Dragon Ball Z",
+    "sub": "1989 · Toei Animation",
+    "wiki": "Dragon Ball Z"
+   },
+   {
+    "name": "Hunter × Hunter",
+    "sub": "2011 · Madhouse",
+    "wiki": "Hunter × Hunter"
+   },
+   {
+    "name": "Steins;Gate",
+    "sub": "2011 · White Fox",
+    "wiki": "Steins;Gate (TV series)"
+   },
+   {
+    "name": "Cowboy Bebop",
+    "sub": "1998 · Sunrise",
+    "wiki": "Cowboy Bebop"
+   },
+   {
+    "name": "Neon Genesis Evangelion",
+    "sub": "1995 · Gainax",
+    "wiki": "Neon Genesis Evangelion"
+   },
+   {
+    "name": "Code Geass",
+    "sub": "2006 · Sunrise",
+    "wiki": "Code Geass"
+   },
+   {
+    "name": "Demon Slayer",
+    "sub": "2019 · ufotable",
+    "wiki": "Demon Slayer: Kimetsu no Yaiba"
+   },
+   {
+    "name": "Jujutsu Kaisen",
+    "sub": "2020 · MAPPA",
+    "wiki": "Jujutsu Kaisen"
+   },
+   {
+    "name": "My Hero Academia",
+    "sub": "2016 · Bones",
+    "wiki": "My Hero Academia"
+   },
+   {
+    "name": "Bleach",
+    "sub": "2004 · Pierrot",
+    "wiki": "Bleach (manga)"
+   },
+   {
+    "name": "Le bizzarre avventure di JoJo",
+    "sub": "2012 · David Production",
+    "wiki": "JoJo's Bizarre Adventure"
+   },
+   {
+    "name": "One-Punch Man",
+    "sub": "2015 · Madhouse",
+    "wiki": "One-Punch Man"
+   },
+   {
+    "name": "Mob Psycho 100",
+    "sub": "2016 · Bones",
+    "wiki": "Mob Psycho 100"
+   },
+   {
+    "name": "Spy × Family",
+    "sub": "2022 · Wit / CloverWorks",
+    "wiki": "Spy × Family"
+   },
+   {
+    "name": "Chainsaw Man",
+    "sub": "2022 · MAPPA",
+    "wiki": "Chainsaw Man"
+   },
+   {
+    "name": "Vinland Saga",
+    "sub": "2019 · Wit / MAPPA",
+    "wiki": "Vinland Saga"
+   },
+   {
+    "name": "Frieren",
+    "sub": "2023 · Madhouse",
+    "wiki": "Frieren"
+   },
+   {
+    "name": "Haikyu!!",
+    "sub": "2014 · Production I.G",
+    "wiki": "Haikyu!!"
+   },
+   {
+    "name": "Your Lie in April",
+    "sub": "2014 · A-1 Pictures",
+    "wiki": "Your Lie in April"
+   },
+   {
+    "name": "Tokyo Ghoul",
+    "sub": "2014 · Pierrot",
+    "wiki": "Tokyo Ghoul"
+   },
+   {
+    "name": "Sword Art Online",
+    "sub": "2012 · A-1 Pictures",
+    "wiki": "Sword Art Online"
+   },
+   {
+    "name": "Re:Zero",
+    "sub": "2016 · White Fox",
+    "wiki": "Re:Zero"
+   },
+   {
+    "name": "Gintama",
+    "sub": "2006 · Sunrise",
+    "wiki": "Gintama"
+   },
+   {
+    "name": "Monster",
+    "sub": "2004 · Madhouse",
+    "wiki": "Monster (manga)"
+   },
+   {
+    "name": "Berserk",
+    "sub": "1997 · OLM",
+    "wiki": "Berserk (manga)"
+   },
+   {
+    "name": "Cyberpunk: Edgerunners",
+    "sub": "2022 · Trigger",
+    "wiki": "Cyberpunk: Edgerunners"
+   },
+   {
+    "name": "Kaguya-sama: Love Is War",
+    "sub": "2019 · A-1 Pictures",
+    "wiki": "Kaguya-sama: Love Is War"
+   },
+   {
+    "name": "Violet Evergarden",
+    "sub": "2018 · Kyoto Animation",
+    "wiki": "Violet Evergarden"
+   },
+   {
+    "name": "Made in Abyss",
+    "sub": "2017 · Kinema Citrus",
+    "wiki": "Made in Abyss"
+   },
+   {
+    "name": "The Promised Neverland",
+    "sub": "2019 · CloverWorks",
+    "wiki": "The Promised Neverland"
+   },
+   {
+    "name": "Dr. Stone",
+    "sub": "2019 · TMS Entertainment",
+    "wiki": "Dr. Stone"
+   },
+   {
+    "name": "Blue Lock",
+    "sub": "2022 · Eight Bit",
+    "wiki": "Blue Lock"
+   },
+   {
+    "name": "Solo Leveling",
+    "sub": "2024 · A-1 Pictures",
+    "wiki": "Solo Leveling"
+   },
+   {
+    "name": "Sailor Moon",
+    "sub": "1992 · Toei Animation",
+    "wiki": "Sailor Moon"
+   },
+   {
+    "name": "Fairy Tail",
+    "sub": "2009 · A-1 Pictures",
+    "wiki": "Fairy Tail"
+   },
+   {
+    "name": "Black Clover",
+    "sub": "2017 · Pierrot",
+    "wiki": "Black Clover"
+   },
+   {
+    "name": "Oshi no Ko",
+    "sub": "2023 · Doga Kobo",
+    "wiki": "Oshi no Ko"
+   },
+   {
+    "name": "Dandadan",
+    "sub": "2024 · Science Saru",
+    "wiki": "Dandadan"
+   },
+   {
+    "name": "Bocchi the Rock!",
+    "sub": "2022 · CloverWorks",
+    "wiki": "Bocchi the Rock!"
+   },
+   {
+    "name": "Slam Dunk",
+    "sub": "1993 · Toei Animation",
+    "wiki": "Slam Dunk (manga)"
+   },
+   {
+    "name": "Yu Yu Hakusho",
+    "sub": "1992 · Pierrot",
+    "wiki": "YuYu Hakusho"
+   },
+   {
+    "name": "Inuyasha",
+    "sub": "2000 · Sunrise",
+    "wiki": "Inuyasha"
+   },
+   {
+    "name": "Akira",
+    "sub": "1988 · film",
+    "wiki": "Akira (1988 film)"
+   }
+  ]
+ },
+ {
+  "id": "anime-one-piece",
+  "group": "anime",
+  "name": {
+   "it": "One Piece · personaggi",
+   "en": "One Piece · characters"
+  },
+  "description": {
+   "it": "Ciurma di Cappello di Paglia, Imperatori, Marina e altri.",
+   "en": "Straw Hats, Emperors, Marines and more."
+  },
+  "cover": {
+   "wiki": "Monkey D. Luffy"
+  },
+  "items": [
+   {
+    "name": "Monkey D. Luffy",
+    "sub": "Capitano · Cappello di Paglia",
+    "wiki": "Monkey D. Luffy"
+   },
+   {
+    "name": "Roronoa Zoro",
+    "sub": "Spadaccino · Cappello di Paglia",
+    "wiki": "Roronoa Zoro"
+   },
+   {
+    "name": "Nami",
+    "sub": "Navigatrice · Cappello di Paglia",
+    "wiki": "Nami (One Piece)"
+   },
+   {
+    "name": "Usopp",
+    "sub": "Cecchino · Cappello di Paglia",
+    "wiki": "Usopp"
+   },
+   {
+    "name": "Sanji",
+    "sub": "Cuoco · Cappello di Paglia",
+    "wiki": "Sanji (One Piece)"
+   },
+   {
+    "name": "Tony Tony Chopper",
+    "sub": "Medico · Cappello di Paglia",
+    "wiki": "Tony Tony Chopper"
+   },
+   {
+    "name": "Nico Robin",
+    "sub": "Archeologa · Cappello di Paglia",
+    "wiki": "Nico Robin"
+   },
+   {
+    "name": "Franky",
+    "sub": "Carpentiere · Cappello di Paglia",
+    "wiki": "Franky (One Piece)"
+   },
+   {
+    "name": "Brook",
+    "sub": "Musicista · Cappello di Paglia",
+    "wiki": "Brook (One Piece)"
+   },
+   {
+    "name": "Jinbe",
+    "sub": "Timoniere · Cappello di Paglia",
+    "wiki": "Jinbe"
+   },
+   {
+    "name": "Shanks",
+    "sub": "Imperatore · il Rosso",
+    "wiki": "Shanks"
+   },
+   {
+    "name": "Portgas D. Ace",
+    "sub": "Pugno di fuoco",
+    "wiki": "Portgas D. Ace"
+   },
+   {
+    "name": "Sabo",
+    "sub": "Armata Rivoluzionaria",
+    "wiki": "Sabo (One Piece)"
+   },
+   {
+    "name": "Trafalgar Law",
+    "sub": "Supernova · Pirati Heart",
+    "wiki": "Trafalgar Law"
+   },
+   {
+    "name": "Boa Hancock",
+    "sub": "Imperatrice pirata",
+    "wiki": "Boa Hancock"
+   },
+   {
+    "name": "Barbanera",
+    "sub": "Marshall D. Teach · Imperatore",
+    "wiki": "Marshall D. Teach"
+   },
+   {
+    "name": "Kaido",
+    "sub": "Imperatore · le Cento Bestie",
+    "wiki": "Kaido (One Piece)"
+   },
+   {
+    "name": "Big Mom",
+    "sub": "Charlotte Linlin · Imperatrice",
+    "wiki": "Charlotte Linlin"
+   },
+   {
+    "name": "Barbabianca",
+    "sub": "Edward Newgate · Imperatore",
+    "wiki": "Edward Newgate"
+   },
+   {
+    "name": "Gol D. Roger",
+    "sub": "Re dei pirati",
+    "wiki": "Gol D. Roger"
+   },
+   {
+    "name": "Dracule Mihawk",
+    "sub": "Occhi di Falco",
+    "wiki": "Dracule Mihawk"
+   },
+   {
+    "name": "Donquixote Doflamingo",
+    "sub": "Joker · Flotta dei 7",
+    "wiki": "Donquixote Doflamingo"
+   },
+   {
+    "name": "Crocodile",
+    "sub": "Flotta dei 7 · Baroque Works",
+    "wiki": "Crocodile (One Piece)"
+   },
+   {
+    "name": "Buggy",
+    "sub": "il Clown",
+    "wiki": "Buggy (One Piece)"
+   },
+   {
+    "name": "Smoker",
+    "sub": "Marina · il Cacciatore Bianco",
+    "wiki": "Smoker (One Piece)"
+   },
+   {
+    "name": "Monkey D. Garp",
+    "sub": "Marina · l'Eroe",
+    "wiki": "Monkey D. Garp"
+   },
+   {
+    "name": "Silvers Rayleigh",
+    "sub": "Re Oscuro",
+    "wiki": "Silvers Rayleigh"
+   },
+   {
+    "name": "Yamato",
+    "sub": "figlio di Kaido",
+    "wiki": "Yamato (One Piece)"
+   },
+   {
+    "name": "Nefertari Vivi",
+    "sub": "Principessa di Alabasta",
+    "wiki": "Nefertari Vivi"
+   },
+   {
+    "name": "Bartholomew Kuma",
+    "sub": "Flotta dei 7 · il Tiranno",
+    "wiki": "Bartholomew Kuma"
+   },
+   {
+    "name": "Eustass Kid",
+    "sub": "Supernova · Pirati di Kid",
+    "wiki": "Eustass Kid"
+   },
+   {
+    "name": "Enel",
+    "sub": "il Dio di Skypiea",
+    "wiki": "Enel (One Piece)"
+   }
+  ]
+ },
+ {
+  "id": "anime-naruto",
+  "group": "anime",
+  "name": {
+   "it": "Naruto · personaggi",
+   "en": "Naruto · characters"
+  },
+  "description": {
+   "it": "Team 7, Akatsuki, Hokage e Sannin.",
+   "en": "Team 7, Akatsuki, Hokage and Sannin."
+  },
+  "cover": {
+   "wiki": "Naruto Uzumaki"
+  },
+  "items": [
+   {
+    "name": "Naruto Uzumaki",
+    "sub": "Settimo Hokage",
+    "wiki": "Naruto Uzumaki"
+   },
+   {
+    "name": "Sasuke Uchiha",
+    "sub": "Clan Uchiha",
+    "wiki": "Sasuke Uchiha"
+   },
+   {
+    "name": "Sakura Haruno",
+    "sub": "Team 7",
+    "wiki": "Sakura Haruno"
+   },
+   {
+    "name": "Kakashi Hatake",
+    "sub": "Sesto Hokage · Team 7",
+    "wiki": "Kakashi Hatake"
+   },
+   {
+    "name": "Itachi Uchiha",
+    "sub": "Akatsuki",
+    "wiki": "Itachi Uchiha"
+   },
+   {
+    "name": "Madara Uchiha",
+    "sub": "fondatore della Foglia",
+    "wiki": "Madara Uchiha"
+   },
+   {
+    "name": "Obito Uchiha",
+    "sub": "Akatsuki · Tobi",
+    "wiki": "Obito Uchiha"
+   },
+   {
+    "name": "Gaara",
+    "sub": "Kazekage della Sabbia",
+    "wiki": "Gaara"
+   },
+   {
+    "name": "Hinata Hyuga",
+    "sub": "Team 8",
+    "wiki": "Hinata Hyuga"
+   },
+   {
+    "name": "Rock Lee",
+    "sub": "Team Guy",
+    "wiki": "Rock Lee"
+   },
+   {
+    "name": "Might Guy",
+    "sub": "Team Guy",
+    "wiki": "Might Guy"
+   },
+   {
+    "name": "Neji Hyuga",
+    "sub": "Team Guy",
+    "wiki": "Neji Hyuga"
+   },
+   {
+    "name": "Shikamaru Nara",
+    "sub": "Team 10",
+    "wiki": "Shikamaru Nara"
+   },
+   {
+    "name": "Jiraiya",
+    "sub": "Sannin leggendario",
+    "wiki": "Jiraiya (Naruto)"
+   },
+   {
+    "name": "Tsunade",
+    "sub": "Quinto Hokage · Sannin",
+    "wiki": "Tsunade (Naruto)"
+   },
+   {
+    "name": "Orochimaru",
+    "sub": "Sannin leggendario",
+    "wiki": "Orochimaru (Naruto)"
+   },
+   {
+    "name": "Minato Namikaze",
+    "sub": "Quarto Hokage",
+    "wiki": "Minato Namikaze"
+   },
+   {
+    "name": "Hashirama Senju",
+    "sub": "Primo Hokage",
+    "wiki": "Hashirama Senju"
+   },
+   {
+    "name": "Tobirama Senju",
+    "sub": "Secondo Hokage",
+    "wiki": "Tobirama Senju"
+   },
+   {
+    "name": "Pain",
+    "sub": "capo dell'Akatsuki",
+    "wiki": "Pain (Naruto)"
+   },
+   {
+    "name": "Konan",
+    "sub": "Akatsuki",
+    "wiki": "Konan (Naruto)"
+   },
+   {
+    "name": "Kisame Hoshigaki",
+    "sub": "Akatsuki",
+    "wiki": "Kisame Hoshigaki"
+   },
+   {
+    "name": "Deidara",
+    "sub": "Akatsuki",
+    "wiki": "Deidara"
+   },
+   {
+    "name": "Sasori",
+    "sub": "Akatsuki",
+    "wiki": "Sasori (Naruto)"
+   },
+   {
+    "name": "Hidan",
+    "sub": "Akatsuki",
+    "wiki": "Hidan (Naruto)"
+   },
+   {
+    "name": "Kurama",
+    "sub": "Volpe a nove code",
+    "wiki": "Kurama (Naruto)"
+   },
+   {
+    "name": "Killer Bee",
+    "sub": "Jinchūriki dell'Ottacoda",
+    "wiki": "Killer Bee"
+   },
+   {
+    "name": "Kabuto Yakushi",
+    "sub": "allievo di Orochimaru",
+    "wiki": "Kabuto Yakushi"
+   },
+   {
+    "name": "Zabuza Momochi",
+    "sub": "Spadaccino della Nebbia",
+    "wiki": "Zabuza Momochi"
+   },
+   {
+    "name": "Haku",
+    "sub": "Villaggio della Nebbia",
+    "wiki": "Haku (Naruto)"
+   },
+   {
+    "name": "Kaguya Ōtsutsuki",
+    "sub": "la Dea Coniglio",
+    "wiki": "Kaguya Ōtsutsuki"
+   },
+   {
+    "name": "Boruto Uzumaki",
+    "sub": "figlio di Naruto",
+    "wiki": "Boruto Uzumaki"
+   }
+  ]
+ },
+ {
+  "id": "anime-dragon-ball",
+  "group": "anime",
+  "name": {
+   "it": "Dragon Ball · personaggi",
+   "en": "Dragon Ball · characters"
+  },
+  "description": {
+   "it": "Saiyan, androidi, divinità e fusioni.",
+   "en": "Saiyans, androids, gods and fusions."
+  },
+  "cover": {
+   "wiki": "Goku"
+  },
+  "items": [
+   {
+    "name": "Goku",
+    "sub": "Saiyan · protagonista",
+    "wiki": "Goku"
+   },
+   {
+    "name": "Vegeta",
+    "sub": "Principe dei Saiyan",
+    "wiki": "Vegeta"
+   },
+   {
+    "name": "Gohan",
+    "sub": "figlio di Goku",
+    "wiki": "Gohan"
+   },
+   {
+    "name": "Piccolo",
+    "sub": "Namecciano",
+    "wiki": "Piccolo (Dragon Ball)"
+   },
+   {
+    "name": "Freezer",
+    "sub": "Imperatore galattico",
+    "wiki": "Frieza"
+   },
+   {
+    "name": "Cell",
+    "sub": "Androide bio-ingegnerizzato",
+    "wiki": "Cell (Dragon Ball)"
+   },
+   {
+    "name": "Majin Bu",
+    "sub": "il demone rosa",
+    "wiki": "Majin Buu"
+   },
+   {
+    "name": "Trunks",
+    "sub": "dal futuro",
+    "wiki": "Trunks (Dragon Ball)"
+   },
+   {
+    "name": "Goten",
+    "sub": "figlio di Goku",
+    "wiki": "Goten"
+   },
+   {
+    "name": "Crilin",
+    "sub": "miglior amico di Goku",
+    "wiki": "Krillin"
+   },
+   {
+    "name": "Bulma",
+    "sub": "Capsule Corporation",
+    "wiki": "Bulma"
+   },
+   {
+    "name": "Muten Roshi",
+    "sub": "il Genio delle Tartarughe",
+    "wiki": "Master Roshi"
+   },
+   {
+    "name": "Tenshinhan",
+    "sub": "il terzo occhio",
+    "wiki": "Tien Shinhan"
+   },
+   {
+    "name": "Yamcha",
+    "sub": "il lupo del deserto",
+    "wiki": "Yamcha"
+   },
+   {
+    "name": "C-18",
+    "sub": "Androide",
+    "wiki": "Android 18"
+   },
+   {
+    "name": "C-17",
+    "sub": "Androide",
+    "wiki": "Android 17"
+   },
+   {
+    "name": "Broly",
+    "sub": "il Super Saiyan leggendario",
+    "wiki": "Broly"
+   },
+   {
+    "name": "Bardack",
+    "sub": "padre di Goku",
+    "wiki": "Bardock"
+   },
+   {
+    "name": "Radish",
+    "sub": "fratello di Goku",
+    "wiki": "Raditz"
+   },
+   {
+    "name": "Nappa",
+    "sub": "Saiyan d'élite",
+    "wiki": "Nappa (Dragon Ball)"
+   },
+   {
+    "name": "Beerus",
+    "sub": "Dio della Distruzione",
+    "wiki": "Beerus"
+   },
+   {
+    "name": "Whis",
+    "sub": "angelo",
+    "wiki": "Whis"
+   },
+   {
+    "name": "Jiren",
+    "sub": "Pride Troopers",
+    "wiki": "Jiren"
+   },
+   {
+    "name": "Zamasu",
+    "sub": "Goku Black",
+    "wiki": "Zamasu"
+   },
+   {
+    "name": "Gogeta",
+    "sub": "fusione",
+    "wiki": "Gogeta"
+   },
+   {
+    "name": "Vegeth",
+    "sub": "fusione Potara",
+    "wiki": "Vegito"
+   },
+   {
+    "name": "Mr. Satan",
+    "sub": "campione del mondo",
+    "wiki": "Mr. Satan"
+   },
+   {
+    "name": "Chichi",
+    "sub": "moglie di Goku",
+    "wiki": "Chi-Chi"
+   },
+   {
+    "name": "Shenron",
+    "sub": "il drago",
+    "wiki": "Shenron"
+   },
+   {
+    "name": "Hit",
+    "sub": "l'assassino",
+    "wiki": "Hit (Dragon Ball)"
+   },
+   {
+    "name": "Cooler",
+    "sub": "fratello di Freezer",
+    "wiki": "Cooler (Dragon Ball)"
+   },
+   {
+    "name": "C-16",
+    "sub": "Androide",
+    "wiki": "Android 16"
+   }
+  ]
+ },
+ {
+  "id": "anime-demon-slayer",
+  "group": "anime",
+  "name": {
+   "it": "Demon Slayer · personaggi",
+   "en": "Demon Slayer · characters"
+  },
+  "description": {
+   "it": "Ammazzademoni, Pilastri e Lune Demoniache.",
+   "en": "Demon slayers, Hashira and Twelve Kizuki."
+  },
+  "cover": {
+   "wiki": "Tanjiro Kamado"
+  },
+  "items": [
+   {
+    "name": "Tanjiro Kamado",
+    "sub": "Ammazzademoni · protagonista",
+    "wiki": "Tanjiro Kamado"
+   },
+   {
+    "name": "Nezuko Kamado",
+    "sub": "sorella di Tanjiro",
+    "wiki": "Nezuko Kamado"
+   },
+   {
+    "name": "Zenitsu Agatsuma",
+    "sub": "Respirazione del Tuono",
+    "wiki": "Zenitsu Agatsuma"
+   },
+   {
+    "name": "Inosuke Hashibira",
+    "sub": "Respirazione della Bestia",
+    "wiki": "Inosuke Hashibira"
+   },
+   {
+    "name": "Giyu Tomioka",
+    "sub": "Pilastro dell'Acqua",
+    "wiki": "Giyu Tomioka"
+   },
+   {
+    "name": "Kyojuro Rengoku",
+    "sub": "Pilastro della Fiamma",
+    "wiki": "Kyojuro Rengoku"
+   },
+   {
+    "name": "Shinobu Kocho",
+    "sub": "Pilastro dell'Insetto",
+    "wiki": "Shinobu Kocho"
+   },
+   {
+    "name": "Tengen Uzui",
+    "sub": "Pilastro del Suono",
+    "wiki": "Tengen Uzui"
+   },
+   {
+    "name": "Mitsuri Kanroji",
+    "sub": "Pilastro dell'Amore",
+    "wiki": "Mitsuri Kanroji"
+   },
+   {
+    "name": "Muichiro Tokito",
+    "sub": "Pilastro della Nebbia",
+    "wiki": "Muichiro Tokito"
+   },
+   {
+    "name": "Gyomei Himejima",
+    "sub": "Pilastro della Roccia",
+    "wiki": "Gyomei Himejima"
+   },
+   {
+    "name": "Sanemi Shinazugawa",
+    "sub": "Pilastro del Vento",
+    "wiki": "Sanemi Shinazugawa"
+   },
+   {
+    "name": "Obanai Iguro",
+    "sub": "Pilastro del Serpente",
+    "wiki": "Obanai Iguro"
+   },
+   {
+    "name": "Kanao Tsuyuri",
+    "sub": "Ammazzademoni",
+    "wiki": "Kanao Tsuyuri"
+   },
+   {
+    "name": "Genya Shinazugawa",
+    "sub": "Ammazzademoni",
+    "wiki": "Genya Shinazugawa"
+   },
+   {
+    "name": "Yoriichi Tsugikuni",
+    "sub": "Respirazione del Sole",
+    "wiki": "Yoriichi Tsugikuni"
+   },
+   {
+    "name": "Sakonji Urokodaki",
+    "sub": "maestro di Tanjiro",
+    "wiki": "Sakonji Urokodaki"
+   },
+   {
+    "name": "Muzan Kibutsuji",
+    "sub": "il primo demone",
+    "wiki": "Muzan Kibutsuji"
+   },
+   {
+    "name": "Akaza",
+    "sub": "Luna Superiore 3",
+    "wiki": "Akaza (Demon Slayer)"
+   },
+   {
+    "name": "Doma",
+    "sub": "Luna Superiore 2",
+    "wiki": "Doma (Demon Slayer)"
+   },
+   {
+    "name": "Kokushibo",
+    "sub": "Luna Superiore 1",
+    "wiki": "Kokushibo"
+   },
+   {
+    "name": "Gyutaro e Daki",
+    "sub": "Luna Superiore 6",
+    "wiki": "Daki and Gyutaro"
+   },
+   {
+    "name": "Rui",
+    "sub": "Luna Inferiore 5",
+    "wiki": "Rui (Demon Slayer)"
+   },
+   {
+    "name": "Kagaya Ubuyashiki",
+    "sub": "capo dei Cacciatori",
+    "wiki": "Kagaya Ubuyashiki"
+   }
+  ]
+ },
+ {
+  "id": "anime-jujutsu-kaisen",
+  "group": "anime",
+  "name": {
+   "it": "Jujutsu Kaisen · personaggi",
+   "en": "Jujutsu Kaisen · characters"
+  },
+  "description": {
+   "it": "Stregoni e maledizioni.",
+   "en": "Sorcerers and curses."
+  },
+  "cover": {
+   "wiki": "Satoru Gojo"
+  },
+  "items": [
+   {
+    "name": "Yuji Itadori",
+    "sub": "protagonista",
+    "wiki": "Yuji Itadori"
+   },
+   {
+    "name": "Megumi Fushiguro",
+    "sub": "Tecnica delle Dieci Ombre",
+    "wiki": "Megumi Fushiguro"
+   },
+   {
+    "name": "Nobara Kugisaki",
+    "sub": "studentessa del primo anno",
+    "wiki": "Nobara Kugisaki"
+   },
+   {
+    "name": "Satoru Gojo",
+    "sub": "lo stregone più forte",
+    "wiki": "Satoru Gojo"
+   },
+   {
+    "name": "Ryomen Sukuna",
+    "sub": "Re delle Maledizioni",
+    "wiki": "Ryomen Sukuna"
+   },
+   {
+    "name": "Suguru Geto",
+    "sub": "stregone maledetto",
+    "wiki": "Suguru Geto"
+   },
+   {
+    "name": "Kento Nanami",
+    "sub": "stregone di grado 1",
+    "wiki": "Kento Nanami"
+   },
+   {
+    "name": "Maki Zen'in",
+    "sub": "studentessa del secondo anno",
+    "wiki": "Maki Zen'in"
+   },
+   {
+    "name": "Toge Inumaki",
+    "sub": "Parole Maledette",
+    "wiki": "Toge Inumaki"
+   },
+   {
+    "name": "Panda",
+    "sub": "Cadavere maledetto",
+    "wiki": "Panda (Jujutsu Kaisen)"
+   },
+   {
+    "name": "Yuta Okkotsu",
+    "sub": "stregone di grado speciale",
+    "wiki": "Yuta Okkotsu"
+   },
+   {
+    "name": "Aoi Todo",
+    "sub": "Kyoto · Boogie Woogie",
+    "wiki": "Aoi Todo"
+   },
+   {
+    "name": "Toji Fushiguro",
+    "sub": "l'assassino di stregoni",
+    "wiki": "Toji Fushiguro"
+   },
+   {
+    "name": "Mahito",
+    "sub": "Maledizione speciale",
+    "wiki": "Mahito (Jujutsu Kaisen)"
+   },
+   {
+    "name": "Jogo",
+    "sub": "Maledizione speciale",
+    "wiki": "Jogo (Jujutsu Kaisen)"
+   },
+   {
+    "name": "Choso",
+    "sub": "Feto della morte",
+    "wiki": "Choso (Jujutsu Kaisen)"
+   },
+   {
+    "name": "Kinji Hakari",
+    "sub": "studente del terzo anno",
+    "wiki": "Kinji Hakari"
+   },
+   {
+    "name": "Yuki Tsukumo",
+    "sub": "stregone di grado speciale",
+    "wiki": "Yuki Tsukumo"
+   },
+   {
+    "name": "Kenjaku",
+    "sub": "l'antico stregone",
+    "wiki": "Kenjaku"
+   },
+   {
+    "name": "Hiromi Higuruma",
+    "sub": "Il giudice",
+    "wiki": "Hiromi Higuruma"
+   }
+  ]
+ },
+ {
+  "id": "anime-villains",
+  "group": "anime",
+  "name": {
+   "it": "Cattivi degli anime",
+   "en": "Anime villains"
+  },
+  "description": {
+   "it": "I nemici più iconici, da Freezer a Sukuna.",
+   "en": "The most iconic foes, from Frieza to Sukuna."
+  },
+  "cover": {
+   "wiki": "Dio Brando"
+  },
+  "items": [
+   {
+    "name": "Freezer",
+    "sub": "Dragon Ball",
+    "wiki": "Frieza"
+   },
+   {
+    "name": "Madara Uchiha",
+    "sub": "Naruto",
+    "wiki": "Madara Uchiha"
+   },
+   {
+    "name": "Pain",
+    "sub": "Naruto",
+    "wiki": "Pain (Naruto)"
+   },
+   {
+    "name": "Orochimaru",
+    "sub": "Naruto",
+    "wiki": "Orochimaru (Naruto)"
+   },
+   {
+    "name": "Dio Brando",
+    "sub": "Le bizzarre avventure di JoJo",
+    "wiki": "Dio Brando"
+   },
+   {
+    "name": "Ryomen Sukuna",
+    "sub": "Jujutsu Kaisen",
+    "wiki": "Ryomen Sukuna"
+   },
+   {
+    "name": "Mahito",
+    "sub": "Jujutsu Kaisen",
+    "wiki": "Mahito (Jujutsu Kaisen)"
+   },
+   {
+    "name": "Muzan Kibutsuji",
+    "sub": "Demon Slayer",
+    "wiki": "Muzan Kibutsuji"
+   },
+   {
+    "name": "Akaza",
+    "sub": "Demon Slayer",
+    "wiki": "Akaza (Demon Slayer)"
+   },
+   {
+    "name": "Sosuke Aizen",
+    "sub": "Bleach",
+    "wiki": "Sōsuke Aizen"
+   },
+   {
+    "name": "Meruem",
+    "sub": "Hunter × Hunter",
+    "wiki": "Meruem"
+   },
+   {
+    "name": "Hisoka",
+    "sub": "Hunter × Hunter",
+    "wiki": "Hisoka (Hunter × Hunter)"
+   },
+   {
+    "name": "Johan Liebert",
+    "sub": "Monster",
+    "wiki": "Johan Liebert"
+   },
+   {
+    "name": "Griffith",
+    "sub": "Berserk",
+    "wiki": "Griffith (Berserk)"
+   },
+   {
+    "name": "Light Yagami",
+    "sub": "Death Note",
+    "wiki": "Light Yagami"
+   },
+   {
+    "name": "Makima",
+    "sub": "Chainsaw Man",
+    "wiki": "Makima (Chainsaw Man)"
+   },
+   {
+    "name": "Tomura Shigaraki",
+    "sub": "My Hero Academia",
+    "wiki": "Tomura Shigaraki"
+   },
+   {
+    "name": "All for One",
+    "sub": "My Hero Academia",
+    "wiki": "All for One (My Hero Academia)"
+   },
+   {
+    "name": "Padre",
+    "sub": "Fullmetal Alchemist",
+    "wiki": "Father (Fullmetal Alchemist)"
+   },
+   {
+    "name": "Cell",
+    "sub": "Dragon Ball",
+    "wiki": "Cell (Dragon Ball)"
+   },
+   {
+    "name": "Majin Bu",
+    "sub": "Dragon Ball",
+    "wiki": "Majin Buu"
+   },
+   {
+    "name": "Zamasu",
+    "sub": "Dragon Ball Super",
+    "wiki": "Zamasu"
+   },
+   {
+    "name": "Barbanera",
+    "sub": "One Piece",
+    "wiki": "Marshall D. Teach"
+   },
+   {
+    "name": "Donquixote Doflamingo",
+    "sub": "One Piece",
+    "wiki": "Donquixote Doflamingo"
+   }
+  ]
+ },
+ {
+  "id": "anime-protagonists",
+  "group": "anime",
+  "name": {
+   "it": "Protagonisti shōnen",
+   "en": "Shōnen protagonists"
+  },
+  "description": {
+   "it": "Gli eroi delle serie d'azione più famose.",
+   "en": "The heroes of the biggest action series."
+  },
+  "cover": {
+   "wiki": "Goku"
+  },
+  "items": [
+   {
+    "name": "Monkey D. Luffy",
+    "sub": "One Piece",
+    "wiki": "Monkey D. Luffy"
+   },
+   {
+    "name": "Naruto Uzumaki",
+    "sub": "Naruto",
+    "wiki": "Naruto Uzumaki"
+   },
+   {
+    "name": "Goku",
+    "sub": "Dragon Ball",
+    "wiki": "Goku"
+   },
+   {
+    "name": "Ichigo Kurosaki",
+    "sub": "Bleach",
+    "wiki": "Ichigo Kurosaki"
+   },
+   {
+    "name": "Gon Freecss",
+    "sub": "Hunter × Hunter",
+    "wiki": "Gon Freecss"
+   },
+   {
+    "name": "Tanjiro Kamado",
+    "sub": "Demon Slayer",
+    "wiki": "Tanjiro Kamado"
+   },
+   {
+    "name": "Yuji Itadori",
+    "sub": "Jujutsu Kaisen",
+    "wiki": "Yuji Itadori"
+   },
+   {
+    "name": "Izuku Midoriya",
+    "sub": "My Hero Academia",
+    "wiki": "Izuku Midoriya"
+   },
+   {
+    "name": "Eren Jaeger",
+    "sub": "L'attacco dei giganti",
+    "wiki": "Eren Yeager"
+   },
+   {
+    "name": "Edward Elric",
+    "sub": "Fullmetal Alchemist",
+    "wiki": "Edward Elric"
+   },
+   {
+    "name": "Saitama",
+    "sub": "One-Punch Man",
+    "wiki": "Saitama (One-Punch Man)"
+   },
+   {
+    "name": "Denji",
+    "sub": "Chainsaw Man",
+    "wiki": "Denji (Chainsaw Man)"
+   },
+   {
+    "name": "Asta",
+    "sub": "Black Clover",
+    "wiki": "Asta (Black Clover)"
+   },
+   {
+    "name": "Natsu Dragneel",
+    "sub": "Fairy Tail",
+    "wiki": "Natsu Dragneel"
+   },
+   {
+    "name": "Jotaro Kujo",
+    "sub": "Le bizzarre avventure di JoJo",
+    "wiki": "Jotaro Kujo"
+   },
+   {
+    "name": "Yusuke Urameshi",
+    "sub": "Yu Yu Hakusho",
+    "wiki": "Yusuke Urameshi"
+   },
+   {
+    "name": "Senku Ishigami",
+    "sub": "Dr. Stone",
+    "wiki": "Senku Ishigami"
+   },
+   {
+    "name": "Gintoki Sakata",
+    "sub": "Gintama",
+    "wiki": "Gintoki Sakata"
+   },
+   {
+    "name": "Thorfinn",
+    "sub": "Vinland Saga",
+    "wiki": "Thorfinn (Vinland Saga)"
+   },
+   {
+    "name": "Shigeo Kageyama",
+    "sub": "Mob Psycho 100",
+    "wiki": "Shigeo Kageyama"
+   },
+   {
+    "name": "Kenshiro",
+    "sub": "Ken il guerriero",
+    "wiki": "Kenshiro"
+   },
+   {
+    "name": "Inuyasha",
+    "sub": "Inuyasha",
+    "wiki": "Inuyasha (character)"
+   },
+   {
+    "name": "Killua Zoldyck",
+    "sub": "Hunter × Hunter",
+    "wiki": "Killua Zoldyck"
+   },
+   {
+    "name": "Sung Jinwoo",
+    "sub": "Solo Leveling",
+    "wiki": "Sung Jinwoo"
+   }
+  ]
+ },
+ {
+  "id": "anime-ghibli",
+  "group": "anime",
+  "name": {
+   "it": "Film dello Studio Ghibli",
+   "en": "Studio Ghibli films"
+  },
+  "description": {
+   "it": "Miyazaki, Takahata e gli altri.",
+   "en": "Miyazaki, Takahata and friends."
+  },
+  "cover": {
+   "wiki": "Spirited Away"
+  },
+  "items": [
+   {
+    "name": "La città incantata",
+    "sub": "2001 · Miyazaki",
+    "wiki": "Spirited Away"
+   },
+   {
+    "name": "Il mio vicino Totoro",
+    "sub": "1988 · Miyazaki",
+    "wiki": "My Neighbor Totoro"
+   },
+   {
+    "name": "Principessa Mononoke",
+    "sub": "1997 · Miyazaki",
+    "wiki": "Princess Mononoke"
+   },
+   {
+    "name": "Il castello errante di Howl",
+    "sub": "2004 · Miyazaki",
+    "wiki": "Howl's Moving Castle (film)"
+   },
+   {
+    "name": "Kiki – Consegne a domicilio",
+    "sub": "1989 · Miyazaki",
+    "wiki": "Kiki's Delivery Service"
+   },
+   {
+    "name": "Laputa – Castello nel cielo",
+    "sub": "1986 · Miyazaki",
+    "wiki": "Castle in the Sky"
+   },
+   {
+    "name": "Nausicaä della Valle del vento",
+    "sub": "1984 · Miyazaki",
+    "wiki": "Nausicaä of the Valley of the Wind (film)"
+   },
+   {
+    "name": "Porco Rosso",
+    "sub": "1992 · Miyazaki",
+    "wiki": "Porco Rosso"
+   },
+   {
+    "name": "Una tomba per le lucciole",
+    "sub": "1988 · Takahata",
+    "wiki": "Grave of the Fireflies"
+   },
+   {
+    "name": "Ponyo sulla scogliera",
+    "sub": "2008 · Miyazaki",
+    "wiki": "Ponyo"
+   },
+   {
+    "name": "Si alza il vento",
+    "sub": "2013 · Miyazaki",
+    "wiki": "The Wind Rises"
+   },
+   {
+    "name": "I sospiri del mio cuore",
+    "sub": "1995 · Kondō",
+    "wiki": "Whisper of the Heart"
+   },
+   {
+    "name": "La ricompensa del gatto",
+    "sub": "2002 · Morita",
+    "wiki": "The Cat Returns"
+   },
+   {
+    "name": "Arrietty",
+    "sub": "2010 · Yonebayashi",
+    "wiki": "Arrietty"
+   },
+   {
+    "name": "La collina dei papaveri",
+    "sub": "2011 · G. Miyazaki",
+    "wiki": "From Up on Poppy Hill"
+   },
+   {
+    "name": "La storia della principessa splendente",
+    "sub": "2013 · Takahata",
+    "wiki": "The Tale of the Princess Kaguya (film)"
+   },
+   {
+    "name": "Quando c'era Marnie",
+    "sub": "2014 · Yonebayashi",
+    "wiki": "When Marnie Was There"
+   },
+   {
+    "name": "Il ragazzo e l'airone",
+    "sub": "2023 · Miyazaki",
+    "wiki": "The Boy and the Heron"
+   },
+   {
+    "name": "Pioggia di ricordi",
+    "sub": "1991 · Takahata",
+    "wiki": "Only Yesterday (1991 film)"
+   },
+   {
+    "name": "Pom Poko",
+    "sub": "1994 · Takahata",
+    "wiki": "Pom Poko"
+   },
+   {
+    "name": "I miei vicini Yamada",
+    "sub": "1999 · Takahata",
+    "wiki": "My Neighbors the Yamadas"
+   },
+   {
+    "name": "I racconti di Terramare",
+    "sub": "2006 · G. Miyazaki",
+    "wiki": "Tales from Earthsea (film)"
+   }
+  ]
+ }
+]

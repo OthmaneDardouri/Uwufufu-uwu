@@ -6,7 +6,7 @@
 
 const ARTWORK = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/";
 const WIKI_API = "https://en.wikipedia.org/w/api.php";
-const CACHE_KEY = "nb.wikiImages.v1";
+const CACHE_KEY = "nb.wikiImages.v2"; // bump when the lookup rules change
 const BATCH = 50; // API limit for titles per request
 
 let cache = {};
@@ -32,6 +32,14 @@ async function flush() {
   saveCache();
 }
 
+/**
+ * A minor character often has no article of its own: Wikipedia redirects to a section of
+ * "List of … characters", whose picture is the same for everyone. Better a monogram than a wrong picture.
+ */
+export function isGenericPage(title, viaSectionRedirect) {
+  return viaSectionRedirect || /^List of /i.test(title) || /\(disambiguation\)$/i.test(title);
+}
+
 async function lookup(titles) {
   const params = new URLSearchParams({
     action: "query", format: "json", origin: "*", redirects: "1",
@@ -42,13 +50,18 @@ async function lookup(titles) {
   if (!res.ok) throw new Error(`wikipedia ${res.status}`);
   const { query = {} } = await res.json();
   // follow the title through normalisation and redirects to the page that was returned
-  const hop = new Map([...(query.normalized ?? []), ...(query.redirects ?? [])].map((r) => [r.from, r.to]));
+  const hop = new Map([...(query.normalized ?? []), ...(query.redirects ?? [])].map((r) => [r.from, r]));
   const byTitle = new Map(Object.values(query.pages ?? {}).map((p) => [p.title, p.thumbnail?.source ?? null]));
   const out = {};
   for (const t of titles) {
     let cur = t;
-    for (let i = 0; i < 3 && hop.has(cur); i++) cur = hop.get(cur);
-    out[t] = byTitle.get(cur) ?? null;
+    let section = false;
+    for (let i = 0; i < 3 && hop.has(cur); i++) {
+      const r = hop.get(cur);
+      section ||= !!r.tofragment;
+      cur = r.to;
+    }
+    out[t] = isGenericPage(cur, section) ? null : byTitle.get(cur) ?? null;
   }
   return out;
 }
