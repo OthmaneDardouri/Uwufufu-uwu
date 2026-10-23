@@ -3,7 +3,7 @@
 // Public:  GET  /api/health, /api/categories, /api/themes
 // Admin:   POST /api/admin/check
 //          POST /api/admin/generate              (Claude: idea -> category draft)
-//          POST /api/admin/theme-from-image      (Claude: image -> theme draft)
+//          POST /api/admin/generate-themes       (Claude: image / description / base theme -> theme variants)
 //          PUT|DELETE /api/admin/categories/:id
 //          PUT|DELETE /api/admin/themes/:id
 // Admin routes need "Authorization: Bearer <ADMIN_TOKEN>".
@@ -152,16 +152,22 @@ export function createApp({ stores, config, ai = claude }) {
       return reply(200, { category });
     }
 
-    if (route === "POST /api/admin/theme-from-image") {
+    if (route === "POST /api/admin/generate-themes") {
       requireAi();
-      const { image, hint } = await readJson(req, MAX_IMAGE_BODY);
-      const parsed = claude.parseImage(image);
-      if (!parsed) throw new HttpError(400, "image must be a base64 data URL (png, jpeg, webp or gif)");
-      const draft = await ai.themeFromImage({
-        apiKey: config.anthropicKey, model: config.model, image: parsed, hint: typeof hint === "string" ? hint.slice(0, 300) : "",
+      const body = await readJson(req, MAX_IMAGE_BODY);
+      const image = body.image ? claude.parseImage(body.image) : null;
+      if (body.image && !image) throw new HttpError(400, "image must be a base64 data URL (png, jpeg, webp or gif)");
+      const prompt = typeof body.prompt === "string" ? body.prompt.trim().slice(0, 500) : "";
+      const base = body.base ? sanitizeTheme(body.base).theme : null;
+      if (!image && !prompt && !base) throw new HttpError(400, "give an image, a description or a base theme");
+      const count = Math.min(Math.max(parseInt(body.count, 10) || 3, 1), 4);
+      const drafts = await ai.generateThemes({ apiKey: config.anthropicKey, model: config.model, image, prompt, base, count });
+      // the AI's answers get the same checks as anything else
+      const themes = drafts.map((d) => {
+        const { theme, errors } = sanitizeTheme(d);
+        return { ...theme, idea: d.idea, warnings: errors };
       });
-      const { theme, errors } = sanitizeTheme(draft); // the AI's answer gets the same checks as anything else
-      return reply(200, { theme, warnings: errors });
+      return reply(200, { themes });
     }
 
     const item = url.pathname.match(/^\/api\/admin\/(categories|themes)\/([a-z0-9-]+)$/);

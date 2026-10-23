@@ -307,7 +307,13 @@ label { display: block; color: var(--muted); font-size: .9em; margin-bottom: 12p
 .admin-list li { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
 .swatches { display: inline-flex; vertical-align: middle; }
 .swatches i { width: 16px; height: 16px; border: 1px solid rgb(255 255 255 / .2); }
-.drop input { padding: 18px; border-style: dashed; }
+.drop { padding: 14px; border-style: dashed; }
+.variants { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin-bottom: 12px; }
+.variant { display: grid; gap: 6px; padding: 12px; border: 1px solid color-mix(in srgb, var(--line) 40%, transparent); border-radius: min(var(--radius), 10px); }
+.variant .swatches i { width: 22px; height: 22px; }
+.theme-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 0 14px; }
+.theme-grid .color input { height: 40px; padding: 2px; cursor: pointer; }
+h3.label { margin: 14px 0 8px; }
 
 /* ---------- streamer mode ---------- */
 .streamer { border: 1px dashed color-mix(in srgb, var(--line) 45%, transparent); padding: 10px 14px; border-radius: min(var(--radius), 10px); }

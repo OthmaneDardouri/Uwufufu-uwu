@@ -7,7 +7,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createApp } from "../server/app.mjs";
 import { createStore } from "../server/store.mjs";
-import { toCategory, toTheme, categoryRequestText, parseImage } from "../server/claude.mjs";
+import { toCategory, toTheme, categoryRequestText, parseImage, themeRequestContent } from "../server/claude.mjs";
 import { readFileSync } from "node:fs";
 
 const TOKEN = "test-token-1234567890";
@@ -27,7 +27,8 @@ before(async () => {
       id: "Test Cat", name_it: prompt, name_en: prompt,
       items: Array.from({ length: count }, (_, i) => ({ name: `X${i}`, wiki: `X${i}` })),
     }),
-    themeFromImage: async () => toTheme({ ...builtIn, id: "From Image", name_it: "Da immagine", name_en: "From image" }),
+    generateThemes: async ({ count }) => Array.from({ length: count }, (_, i) =>
+      toTheme({ ...builtIn, id: `From Image ${i}`, name_it: "Da immagine", name_en: "From image", idea: `variante ${i}` })),
   };
   server = http.createServer(createApp({ stores, config, ai }));
   await new Promise((r) => server.listen(0, "127.0.0.1", r));
@@ -94,11 +95,13 @@ test("CORS only for allowed origins", async () => {
 
 test("style transfer: image -> theme draft -> publish -> public list", async () => {
   const png = "data:image/png;base64,iVBORw0KGgo=";
-  const res = await fetch(`${base}/api/admin/theme-from-image`, { method: "POST", headers: auth(), body: JSON.stringify({ image: png }) });
-  const { theme, warnings } = await res.json();
+  const res = await fetch(`${base}/api/admin/generate-themes`, { method: "POST", headers: auth(), body: JSON.stringify({ image: png, count: 3 }) });
+  const { themes } = await res.json();
   assert.equal(res.status, 200);
-  assert.deepEqual(warnings, []);
-  assert.equal(theme.id, "ai-from-image");
+  assert.equal(themes.length, 3);
+  assert.deepEqual(themes[0].warnings, []);
+  assert.equal(themes[0].idea, "variante 0");
+  const theme = { ...themes[0], id: "ai-from-image" };
   const put = await fetch(`${base}/api/admin/themes/${theme.id}`, { method: "PUT", headers: auth(), body: JSON.stringify({ theme }) });
   assert.equal(put.status, 200);
   assert.equal((await (await fetch(`${base}/api/themes`)).json()).themes[0].id, "ai-from-image");
@@ -108,12 +111,22 @@ test("themes with injected CSS or bad values are rejected", async () => {
   const evil = { ...builtIn, id: "evil", colors: { ...builtIn.colors, bg: "red;} body{display:none" } };
   const res = await fetch(`${base}/api/admin/themes/evil`, { method: "PUT", headers: auth(), body: JSON.stringify({ theme: evil }) });
   assert.equal(res.status, 422);
-  const noImage = await fetch(`${base}/api/admin/theme-from-image`, { method: "POST", headers: auth(), body: JSON.stringify({ image: "http://x" }) });
-  assert.equal(noImage.status, 400);
+  const badImage = await fetch(`${base}/api/admin/generate-themes`, { method: "POST", headers: auth(), body: JSON.stringify({ image: "http://x" }) });
+  assert.equal(badImage.status, 400);
+  const nothing = await fetch(`${base}/api/admin/generate-themes`, { method: "POST", headers: auth(), body: JSON.stringify({}) });
+  assert.equal(nothing.status, 400);
+  // text-only and base-theme-only requests are fine
+  const textOnly = await fetch(`${base}/api/admin/generate-themes`, { method: "POST", headers: auth(), body: JSON.stringify({ prompt: "Tokyo di notte", count: 2 }) });
+  assert.equal((await textOnly.json()).themes.length, 2);
+  const baseOnly = await fetch(`${base}/api/admin/generate-themes`, { method: "POST", headers: auth(), body: JSON.stringify({ base: builtIn }) });
+  assert.equal(baseOnly.status, 200);
 });
 
 test("helpers", () => {
   assert.match(categoryRequestText("x", 16), /16/);
   assert.deepEqual(parseImage("data:image/jpeg;base64,AAAA"), { media_type: "image/jpeg", data: "AAAA" });
+  const content = themeRequestContent({ image: { media_type: "image/png", data: "AA" }, prompt: "neon", base: { id: "x" }, count: 3 });
+  assert.equal(content[0].type, "image");
+  assert.match(content[1].text, /3 distinct theme variants[\s\S]*neon[\s\S]*"id":"x"/);
   assert.equal(parseImage("data:text/html;base64,AAAA"), null);
 });

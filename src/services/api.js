@@ -58,9 +58,9 @@ export const saveCategory = (category) =>
   request(`/api/admin/categories/${category.id}`, { method: "PUT", admin: true, body: { category } }).then((r) => r.category);
 export const deleteCategory = (id) => request(`/api/admin/categories/${id}`, { method: "DELETE", admin: true });
 
-/** Style transfer: `image` is a data URL (jpeg/png/webp), `hint` an optional note. */
-export const generateTheme = (image, hint) =>
-  request("/api/admin/theme-from-image", { method: "POST", admin: true, body: { image, hint }, timeout: 180_000 }).then((r) => r.theme);
+/** Style transfer: any of image (data URL), prompt, base theme → `count` theme variants. */
+export const generateThemes = ({ image, prompt, base, count }) =>
+  request("/api/admin/generate-themes", { method: "POST", admin: true, body: { image, prompt, base, count }, timeout: 180_000 }).then((r) => r.themes);
 export const saveTheme = (theme) =>
   request(`/api/admin/themes/${theme.id}`, { method: "PUT", admin: true, body: { theme } }).then((r) => r.theme);
 export const deleteTheme = (id) => request(`/api/admin/themes/${id}`, { method: "DELETE", admin: true });

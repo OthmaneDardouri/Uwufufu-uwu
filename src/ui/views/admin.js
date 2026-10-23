@@ -3,9 +3,9 @@
 import { html, picture, hydratePictures, toast, $ } from "../dom.js";
 import { t, lang } from "../../i18n.js";
 import { localized, validateCategory } from "../../core/catalog.js";
-import { sanitizeTheme, COLOR_KEYS } from "../../core/theme.js";
+import { sanitizeTheme, COLOR_KEYS, FONTS, EFFECTS } from "../../core/theme.js";
 import * as api from "../../services/api.js";
-import { applyTheme, restoreTheme, listThemes } from "../../services/themes.js";
+import { applyTheme, restoreTheme, listThemes, currentThemeId } from "../../services/themes.js";
 
 const MAX_IMAGE_SIDE = 1024;
 
@@ -36,7 +36,7 @@ function download(obj, filename) {
 }
 
 export default function admin(root, ctx) {
-  const state = { draft: null, themeDraft: null, busy: "" };
+  const state = { draft: null, variants: [], edit: null, busy: "" };
 
   async function render() {
     if (!ctx.server?.admin) {
@@ -71,16 +71,29 @@ export default function admin(root, ctx) {
           <form class="panel" data-theme-form>
             <h2 class="label">${t("styleTransfer")}</h2>
             <p class="muted small">${t("styleTransferHelp")}</p>
-            <label class="drop">
-              <input type="file" name="image" accept="image/*" required ${ctx.server.ai ? "" : "disabled"}>
-            </label>
-            <label>${t("styleHint")}<input name="hint" maxlength="300" placeholder="${t("styleHintPh")}"></label>
-            <button class="btn btn-primary" ${ctx.server.ai && !state.busy ? "" : "disabled"}>${state.busy === "theme" ? t("generating") : t("generateTheme")}</button>
+            <label>${t("themeImage")}<input type="file" name="image" accept="image/*" class="drop"></label>
+            <label>${t("themeDesc")}<textarea name="prompt" rows="2" maxlength="500" placeholder="${t("themeDescPh")}"></textarea></label>
+            <div class="row wrap">
+              <label>${t("baseTheme")}
+                <select name="base"><option value="">${t("noneOpt")}</option>
+                  ${listThemes().map((th) => html`<option value="${th.id}">${localized(th.name, lang)}</option>`)}
+                </select>
+              </label>
+              <label>${t("variants")}
+                <select name="count">${[1, 2, 3, 4].map((n) => html`<option ${n === 3 ? "selected" : ""}>${n}</option>`)}</select>
+              </label>
+            </div>
+            <div class="row wrap">
+              <button class="btn btn-primary" ${ctx.server.ai && !state.busy ? "" : "disabled"}>${state.busy === "theme" ? t("generating") : t("createVariants")}</button>
+              <button type="button" class="btn btn-ghost" data-edit-base>${t("editByHand")}</button>
+              <label class="btn btn-ghost file">${t("importJson")}<input type="file" accept="application/json,.json" data-import-theme hidden></label>
+            </div>
           </form>
         </div>
 
         ${state.draft && draftEditor(state.draft)}
-        ${state.themeDraft && themeEditor(state.themeDraft)}
+        ${state.variants.length ? variantsPanel() : ""}
+        ${state.edit && themeEditor(state.edit)}
 
         <div class="admin-grid">
           <div class="panel">
@@ -129,20 +142,91 @@ export default function admin(root, ctx) {
       </form>`;
   }
 
-  function themeEditor({ theme, warnings }) {
+  function variantsPanel() {
     return html`
-      <div class="panel draft">
-        <h2 class="label">${t("themePreview")}: ${localized(theme.name, lang)}</h2>
-        <p class="muted small">${t("themePreviewHelp")}</p>
-        ${swatches(theme)}
-        <p class="small">${theme.fonts.display} / ${theme.fonts.body} · ${Object.values(theme.effects).join(" · ")}</p>
-        ${warnings?.length ? html`<p class="notice">${warnings.join(" · ")}</p>` : ""}
-        <div class="row">
-          <button class="btn btn-primary" data-publish-theme>${t("publish")}</button>
-          <button class="btn btn-ghost" data-cancel-theme>${t("cancel")}</button>
+      <div class="panel">
+        <h2 class="label">${t("chooseVariant")}</h2>
+        <div class="variants">
+          ${state.variants.map((v, i) => html`
+            <div class="variant">
+              ${swatches(v)}
+              <b>${localized(v.name, lang)}</b>
+              ${v.idea && html`<small class="muted">${v.idea}</small>`}
+              <small>${v.fonts.display} / ${v.fonts.body} · ${v.effects.background} · ${v.effects.title}</small>
+              ${v.warnings?.length ? html`<small class="notice">${v.warnings.join(" · ")}</small>` : ""}
+              <div class="row wrap">
+                <button class="btn btn-small" data-preview="${i}">${t("preview")}</button>
+                <button class="btn btn-small btn-primary" data-choose="${i}">${t("chooseEdit")}</button>
+              </div>
+            </div>`)}
         </div>
+        <button class="btn btn-ghost btn-small" data-discard-variants>${t("cancel")}</button>
       </div>`;
   }
+
+  const sel = (name, options, value) => html`<select name="${name}">${options.map((o) => html`<option ${o === value ? "selected" : ""}>${o}</option>`)}</select>`;
+
+  function themeEditor(th) {
+    return html`
+      <form class="panel draft" data-theme-editor>
+        <h2 class="label">${t("themeEditor")}</h2>
+        <p class="muted small">${t("themePreviewHelp")}</p>
+        <div class="row wrap">
+          <label>id<input name="id" value="${th.id}" pattern="[a-z0-9][a-z0-9-]{1,63}" required></label>
+          <label>${t("nameIt")}<input name="name_it" value="${localized(th.name, "it")}" required></label>
+          <label>${t("nameEn")}<input name="name_en" value="${localized(th.name, "en")}" required></label>
+        </div>
+        <h3 class="label">${t("colorsLabel")}</h3>
+        <div class="theme-grid">
+          ${COLOR_KEYS.map((k) => html`<label class="color">${t(`color_${k}`)}<input type="color" name="c-${k}" value="${th.colors[k]}"></label>`)}
+        </div>
+        <h3 class="label">${t("fontsLabel")}</h3>
+        <div class="theme-grid">
+          <label>${t("fontDisplay")}${sel("font-display", FONTS, th.fonts.display)}</label>
+          <label>${t("fontBody")}${sel("font-body", FONTS, th.fonts.body)}</label>
+          <label>${t("tracking")}<input type="number" name="tracking" min="-0.05" max="0.4" step="0.01" value="${th.effects.tracking}"></label>
+          <label>${t("caseLabel")}${sel("case", EFFECTS.case, th.effects.case)}</label>
+        </div>
+        <h3 class="label">${t("shapeLabel")}</h3>
+        <div class="theme-grid">
+          <label>${t("cornersLabel")}${sel("corners", EFFECTS.corners, th.shape.corners)}</label>
+          <label>${t("radiusLabel")}<input type="number" name="radius" min="0" max="32" value="${th.shape.radius}"></label>
+          <label>${t("borderLabel")}${sel("border", EFFECTS.border, th.shape.border)}</label>
+          <label>${t("borderWidth")}<input type="number" name="borderWidth" min="0" max="6" value="${th.shape.borderWidth}"></label>
+        </div>
+        <h3 class="label">${t("effectsLabel")}</h3>
+        <div class="theme-grid">
+          <label>${t("bgLabel")}${sel("background", EFFECTS.background, th.effects.background)}</label>
+          <label>${t("titleLabel")}${sel("title", EFFECTS.title, th.effects.title)}</label>
+          <label>${t("shadowLabel")}${sel("shadow", EFFECTS.shadow, th.effects.shadow)}</label>
+        </div>
+        <div class="row wrap">
+          <button class="btn btn-primary">${t("publish")}</button>
+          <button type="button" class="btn btn-ghost" data-export-theme>${t("exportJson")}</button>
+          <button type="button" class="btn btn-ghost" data-cancel-theme>${t("cancel")}</button>
+        </div>
+      </form>`;
+  }
+
+  /** Read the editor form back into a theme object. */
+  function themeFromForm(form) {
+    const f = new FormData(form);
+    const num = (k) => Number(f.get(k));
+    return sanitizeTheme({
+      id: f.get("id"),
+      name: { it: f.get("name_it"), en: f.get("name_en") },
+      colors: Object.fromEntries(COLOR_KEYS.map((k) => [k, f.get(`c-${k}`)])),
+      fonts: { display: f.get("font-display"), body: f.get("font-body") },
+      shape: { corners: f.get("corners"), radius: num("radius"), border: f.get("border"), borderWidth: num("borderWidth") },
+      effects: { background: f.get("background"), title: f.get("title"), shadow: f.get("shadow"), case: f.get("case"), tracking: num("tracking") },
+    });
+  }
+
+  const copyTheme = (th, suffix) => ({
+    ...structuredClone({ colors: th.colors, fonts: th.fonts, shape: th.shape, effects: th.effects }),
+    id: th.id.startsWith("ai-") || th.remote ? th.id : `${th.id}-${suffix}`.slice(0, 64),
+    name: typeof th.name === "string" ? { it: th.name, en: th.name } : { ...th.name },
+  });
 
   function renderLogin() {
     root.innerHTML = html`
@@ -184,13 +268,28 @@ export default function admin(root, ctx) {
     }
     if (form.matches("[data-theme-form]")) {
       const file = data.get("image");
-      if (!file?.size) return;
+      const prompt = String(data.get("prompt") ?? "").trim();
+      const base = listThemes().find((th) => th.id === data.get("base"));
+      if (!file?.size && !prompt && !base) return toast(t("themeNeedsInput"), "error");
       run("theme", async () => {
-        const res = await api.generateTheme(await imageToDataUrl(file), data.get("hint"));
-        const { theme, errors } = sanitizeTheme(res);
-        state.themeDraft = { theme, warnings: errors };
-        applyTheme(theme); // live preview on the whole site
+        const image = file?.size ? await imageToDataUrl(file) : undefined;
+        const strip = base && { id: base.id, name: base.name, colors: base.colors, fonts: base.fonts, shape: base.shape, effects: base.effects };
+        state.variants = await api.generateThemes({ image, prompt, base: strip, count: Number(data.get("count")) });
+        state.edit = null;
+        if (state.variants[0]) applyTheme(state.variants[0]); // preview the first one right away
       });
+    }
+    if (form.matches("[data-theme-editor]")) {
+      const { theme, errors } = themeFromForm(form);
+      if (errors.length) return fail(Object.assign(new Error("Invalid theme"), { details: errors }));
+      try {
+        await api.saveTheme(theme);
+        state.edit = null;
+        state.variants = [];
+        await ctx.reloadThemes();
+        toast(t("published"));
+        await render();
+      } catch (err) { fail(err); }
     }
     if (form.matches("[data-draft]")) {
       const d = { ...state.draft, id: data.get("id"), name: { it: data.get("name_it"), en: data.get("name_en") } };
@@ -223,16 +322,27 @@ export default function admin(root, ctx) {
       if (!confirm(t("confirmDelete", { name: localized(c.name, lang) }))) return;
       try { await api.deleteCategory(c.id); await ctx.reloadCatalog(); await render(); } catch (err) { fail(err); }
     }
-    if (el.matches("[data-publish-theme]")) {
-      try {
-        await api.saveTheme(state.themeDraft.theme);
-        state.themeDraft = null;
-        await ctx.reloadThemes();
-        toast(t("published"));
-        await render();
-      } catch (err) { fail(err); }
+    if (el.matches("[data-preview]")) return applyTheme(state.variants[Number(el.dataset.preview)]);
+    if (el.matches("[data-choose]")) {
+      state.edit = copyTheme(state.variants[Number(el.dataset.choose)], "v");
+      applyTheme(state.edit);
+      await render();
+      return root.querySelector("[data-theme-editor]")?.scrollIntoView({ behavior: "smooth" });
     }
-    if (el.matches("[data-cancel-theme]")) { state.themeDraft = null; restoreTheme(); return render(); }
+    if (el.matches("[data-discard-variants]")) { state.variants = []; restoreTheme(); return render(); }
+    if (el.matches("[data-edit-base]")) {
+      const form = root.querySelector("[data-theme-form]");
+      const id = form.querySelector("[name=base]").value || currentThemeId();
+      state.edit = copyTheme(listThemes().find((th) => th.id === id), "custom");
+      applyTheme(state.edit);
+      await render();
+      return root.querySelector("[data-theme-editor]")?.scrollIntoView({ behavior: "smooth" });
+    }
+    if (el.matches("[data-export-theme]")) {
+      const { theme } = themeFromForm(root.querySelector("[data-theme-editor]"));
+      return download(theme, `${theme.id}.json`);
+    }
+    if (el.matches("[data-cancel-theme]")) { state.edit = null; restoreTheme(); return render(); }
     if (el.matches("[data-delete-theme]")) {
       const th = listThemes().find((x) => x.id === el.dataset.deleteTheme);
       if (!confirm(t("confirmDelete", { name: localized(th.name, lang) }))) return;
@@ -240,7 +350,26 @@ export default function admin(root, ctx) {
     }
   });
 
+  // live preview: every change in the theme editor repaints the whole site
+  root.addEventListener("input", (e) => {
+    const form = e.target.closest("[data-theme-editor]");
+    if (!form) return;
+    const { theme } = themeFromForm(form);
+    state.edit = theme;
+    applyTheme(theme);
+  });
+
   root.addEventListener("change", async (e) => {
+    if (e.target.matches("[data-import-theme]")) {
+      try {
+        const { theme, errors } = sanitizeTheme(JSON.parse(await e.target.files[0].text()));
+        if (errors.length) throw Object.assign(new Error("Invalid theme"), { details: errors });
+        state.edit = theme;
+        applyTheme(theme);
+        await render();
+      } catch (err) { fail(err); }
+      return;
+    }
     if (!e.target.matches("[data-import]")) return;
     try {
       const parsed = JSON.parse(await e.target.files[0].text());
@@ -253,5 +382,5 @@ export default function admin(root, ctx) {
   });
 
   render();
-  return () => { if (state.themeDraft) restoreTheme(); };
+  return () => { if (state.edit || state.variants.length) restoreTheme(); };
 }

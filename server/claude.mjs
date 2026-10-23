@@ -1,6 +1,6 @@
 // Claude integrations, used only by the admin endpoints:
 //   - generateCategory: a one-line idea -> a category draft
-//   - themeFromImage:   a reference picture -> a theme draft ("style transfer")
+//   - generateThemes:   image and/or description and/or base theme -> theme variants ("style transfer")
 // Both force a tool call, so Claude's answer is structured JSON that we validate afterwards.
 import { FONTS, EFFECTS, COLOR_KEYS } from "../src/core/theme.js";
 
@@ -100,57 +100,68 @@ export async function generateCategory({ apiKey, model, prompt, count, fetchImpl
 // --- themes (style transfer) -----------------------------------------------
 
 const hex = { type: "string", pattern: "^#[0-9a-fA-F]{6}$" };
-const THEME_TOOL = {
-  name: "publish_theme",
-  description: "Publish a visual theme for the bracket game website, derived from a reference image.",
+const THEME_SCHEMA = {
+  type: "object",
+  properties: {
+    id: { type: "string", description: "kebab-case id, lowercase ascii" },
+    name_it: { type: "string" },
+    name_en: { type: "string" },
+    idea: { type: "string", description: "One short Italian sentence: what makes this variant different from the others" },
+    colors: {
+      type: "object",
+      description: "bg: page background (dark enough for light text unless the brief is clearly light). bg2: secondary background tone for gradients. surface: card background. text: main text, high contrast on surface. muted: secondary text. accent: main highlight. accent2: second highlight. line: borders.",
+      properties: Object.fromEntries(COLOR_KEYS.map((k) => [k, hex])),
+      required: COLOR_KEYS,
+    },
+    fonts: {
+      type: "object",
+      properties: { display: { type: "string", enum: FONTS }, body: { type: "string", enum: FONTS } },
+      required: ["display", "body"],
+    },
+    shape: {
+      type: "object",
+      properties: {
+        corners: { type: "string", enum: EFFECTS.corners },
+        radius: { type: "integer", minimum: 0, maximum: 32 },
+        border: { type: "string", enum: EFFECTS.border },
+        borderWidth: { type: "integer", minimum: 0, maximum: 6 },
+      },
+      required: ["corners", "radius", "border", "borderWidth"],
+    },
+    effects: {
+      type: "object",
+      properties: {
+        background: { type: "string", enum: EFFECTS.background },
+        title: { type: "string", enum: EFFECTS.title },
+        shadow: { type: "string", enum: EFFECTS.shadow },
+        case: { type: "string", enum: EFFECTS.case },
+        tracking: { type: "number", minimum: -0.05, maximum: 0.4, description: "letter spacing of titles in em" },
+      },
+      required: ["background", "title", "shadow", "case", "tracking"],
+    },
+  },
+  required: ["id", "name_it", "name_en", "idea", "colors", "fonts", "shape", "effects"],
+};
+
+const THEMES_TOOL = {
+  name: "publish_themes",
+  description: "Propose visual themes for the bracket game website. Each one is a distinct option the owner can choose from.",
   input_schema: {
     type: "object",
-    properties: {
-      id: { type: "string", description: "kebab-case id, lowercase ascii" },
-      name_it: { type: "string" },
-      name_en: { type: "string" },
-      colors: {
-        type: "object",
-        description: "bg: page background (dark enough for light text unless the image is clearly light). bg2: secondary background tone for gradients. surface: card background. text: main text, high contrast on surface. muted: secondary text. accent: main highlight. accent2: second highlight. line: borders.",
-        properties: Object.fromEntries(COLOR_KEYS.map((k) => [k, hex])),
-        required: COLOR_KEYS,
-      },
-      fonts: {
-        type: "object",
-        properties: { display: { type: "string", enum: FONTS }, body: { type: "string", enum: FONTS } },
-        required: ["display", "body"],
-      },
-      shape: {
-        type: "object",
-        properties: {
-          corners: { type: "string", enum: EFFECTS.corners },
-          radius: { type: "integer", minimum: 0, maximum: 32 },
-          border: { type: "string", enum: EFFECTS.border },
-          borderWidth: { type: "integer", minimum: 0, maximum: 6 },
-        },
-        required: ["corners", "radius", "border", "borderWidth"],
-      },
-      effects: {
-        type: "object",
-        properties: {
-          background: { type: "string", enum: EFFECTS.background },
-          title: { type: "string", enum: EFFECTS.title },
-          shadow: { type: "string", enum: EFFECTS.shadow },
-          case: { type: "string", enum: EFFECTS.case },
-          tracking: { type: "number", minimum: -0.05, maximum: 0.4, description: "letter spacing of titles in em" },
-        },
-        required: ["background", "title", "shadow", "case", "tracking"],
-      },
-    },
-    required: ["id", "name_it", "name_en", "colors", "fonts", "shape", "effects"],
+    properties: { themes: { type: "array", items: THEME_SCHEMA, minItems: 1, maxItems: 4 } },
+    required: ["themes"],
   },
 };
 
-const THEME_SYSTEM = `You are a UI designer. Translate the mood, palette and era of the reference image into a theme for a game website, using only the options the publish_theme tool allows.
-- Sample real colours from the image; keep text readable (aim for WCAG AA contrast between text and surface).
-- Choose fonts and effects that match the image's style (e.g. pixel art -> Press Start 2P + pixel title; Victorian/brass -> Cinzel + gears).
-- Give it a short evocative name.
-Always answer by calling the publish_theme tool.`;
+const THEME_SYSTEM = `You are a UI designer creating themes for a game website, using only the options the publish_themes tool allows.
+The brief can be a reference image, a text description, an existing theme to start from, or a mix.
+- With an image: sample real colours from it and match its mood, era and style.
+- With a base theme: keep its spirit and change what the brief asks for; without other instructions, vary it.
+- Make the variants genuinely different from each other (e.g. faithful, darker or neon, calmer or minimal), not small tweaks; say how in "idea".
+- Keep text readable (aim for WCAG AA contrast between text and surface).
+- Choose fonts and effects that fit (e.g. pixel art -> Press Start 2P + pixel title; Victorian brass -> Cinzel + gears).
+- Give each a short evocative name.
+Always answer by calling the publish_themes tool.`;
 
 const DATA_URL = /^data:(image\/(?:png|jpeg|webp|gif));base64,([A-Za-z0-9+/=]+)$/;
 
@@ -160,14 +171,22 @@ export function parseImage(dataUrl) {
 }
 
 export function toTheme(input) {
-  const { name_it, name_en, id, ...rest } = input;
-  return { ...rest, id: `ai-${slugify(id, "theme")}`, name: { it: name_it, en: name_en } };
+  const { name_it, name_en, id, idea, ...rest } = input;
+  return { ...rest, id: `ai-${slugify(id, "theme")}`, name: { it: name_it, en: name_en }, ...(idea && { idea: String(idea).slice(0, 200) }) };
 }
 
-export async function themeFromImage({ apiKey, model, image, hint, fetchImpl }) {
-  const content = [
-    { type: "image", source: { type: "base64", ...image } },
-    { type: "text", text: `Create a theme from this image.${hint ? ` Notes from the owner: ${hint}` : ""}` },
-  ];
-  return toTheme(await callTool({ apiKey, model, fetchImpl, system: THEME_SYSTEM, tool: THEME_TOOL, content }));
+/** Build the user message for theme generation (exported for tests). */
+export function themeRequestContent({ image, prompt, base, count }) {
+  const lines = [`Propose ${count} distinct theme variant${count > 1 ? "s" : ""}.`];
+  if (image) lines.push("Use the attached image as the main reference.");
+  if (prompt) lines.push(`Owner's description: ${prompt}`);
+  if (base) lines.push(`Start from this existing theme (JSON): ${JSON.stringify(base)}`);
+  return [...(image ? [{ type: "image", source: { type: "base64", ...image } }] : []), { type: "text", text: lines.join("\n") }];
+}
+
+/** image: {media_type, data} | null, prompt: string, base: theme | null, count: 1-4 → theme drafts */
+export async function generateThemes({ apiKey, model, image, prompt, base, count = 3, fetchImpl }) {
+  const content = themeRequestContent({ image, prompt, base, count });
+  const input = await callTool({ apiKey, model, fetchImpl, system: THEME_SYSTEM, tool: THEMES_TOOL, content });
+  return (input.themes ?? []).slice(0, 4).map(toTheme);
 }
