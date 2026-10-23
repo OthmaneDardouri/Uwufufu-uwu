@@ -4,6 +4,9 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  workflow_run: # pushes made by the Pictures workflow do not trigger this one by themselves
+    workflows: [Pictures]
+    types: [completed]
   workflow_dispatch:
 permissions:
   contents: read

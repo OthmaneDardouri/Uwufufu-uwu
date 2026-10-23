@@ -81,20 +81,27 @@ export async function createImageResolver({ dir, fetchImpl = fetch, now = () => 
     return null;
   }
 
-  /**
-   * Fandom: the page's lead image when the wiki reports one; otherwise the first big picture
-   * used on the page (skipping icons, logos and flags).
-   */
-  async function fandomImage(wiki, titles) {
-    const base = `https://${wiki}.fandom.com/api.php`;
-    const lead = await mediawikiImage(base, titles);
-    if (lead) return lead;
+  // Fandom wikis, three ways, best first: the page's lead image (PageImages), Fandom's own
+  // "main image" service (ImageServing), then the first big picture used on the page.
+  const fandomApi = (wiki) => `https://${wiki}.fandom.com/api.php`;
+
+  async function fandomServing(wiki, titles) {
+    for (const title of titles) {
+      const params = new URLSearchParams({ action: "imageserving", format: "json", wisTitle: title });
+      const data = await getJson(`${fandomApi(wiki)}?${params}`);
+      const url = data?.image?.imageserving;
+      if (url && !/logo|icon|wiki-wordmark|site-logo/i.test(url)) return url;
+    }
+    return null;
+  }
+
+  async function fandomGallery(wiki, titles) {
     for (const title of titles) {
       const params = new URLSearchParams({
-        action: "query", format: "json", redirects: "1", titles: title, generator: "images", gimlimit: "20",
+        action: "query", format: "json", redirects: "1", titles: title, generator: "images", gimlimit: "30",
         prop: "imageinfo", iiprop: "url|size", iiurlwidth: "480",
       });
-      const { query = {} } = await getJson(`${base}?${params}`);
+      const { query = {} } = await getJson(`${fandomApi(wiki)}?${params}`);
       const files = Object.values(query.pages ?? {})
         .map((p) => ({ name: p.title ?? "", info: p.imageinfo?.[0] }))
         .filter((f) => f.info && f.info.width >= 150 && !/\.svg$|icon|logo|flag|symbol|signature|jolly roger/i.test(f.name));
@@ -116,10 +123,12 @@ export async function createImageResolver({ dir, fetchImpl = fetch, now = () => 
     };
     if (q.fandom) {
       const titles = [...new Set([q.title, q.name, q.char].filter(Boolean))];
-      const url = await attempt(`fandom:${q.fandom}`, () => fandomImage(q.fandom, titles));
-      if (url) return { url, source: "fandom" };
+      for (const [step, fn] of [["lead", mediawikiImage], ["imageserving", fandomServing], ["gallery", fandomGallery]]) {
+        const url = await attempt(`fandom:${q.fandom}:${step}`, () => (step === "lead" ? fn(fandomApi(q.fandom), titles) : fn(q.fandom, titles)));
+        if (url) return { url, source: "fandom" };
+      }
     }
-    const who = q.char || q.name;
+    const who = q.char; // only anime characters: a film or game title would match some random character
     if (who) {
       const url = await attempt("myanimelist", async () => {
         const { data = [] } = await jikan(`https://api.jikan.moe/v4/characters?${new URLSearchParams({ q: who, order_by: "favorites", sort: "desc", limit: "10" })}`);

@@ -56,6 +56,8 @@ export async function serverImage(query) {
 }
 
 export const hasImageServer = () => !!serverInfo?.images;
+/** The same picture fetched through our server, for sites that refuse to be linked from other pages. */
+export const viaProxy = (url) => (serverInfo?.images && /^https:\/\//.test(url) ? `${base}/api/img?${new URLSearchParams({ u: url })}` : null);
 /** Full answer of the server's picture lookup; `debug` forces a fresh search and lists every source tried. */
 export const imageLookup = (query, debug = false) =>
   request(`/api/image?${new URLSearchParams({ ...Object.fromEntries(Object.entries(query).filter(([, v]) => v)), ...(debug && { debug: "1" }) })}`, { timeout: 60_000 });

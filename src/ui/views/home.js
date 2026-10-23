@@ -51,7 +51,7 @@ export default function home(root, { catalog }) {
     grid.innerHTML = visible.length
       ? html`${visible.map((c) => html`
           <a class="cat-card ${c.accent ? `type-${c.accent}` : ""}" href="#/play/${c.id}">
-            ${picture({ ...(c.cover ?? c.items?.[0]), name: localized(c.name, lang) }, "cat-cover")}
+            ${picture(c.coverItem, "cat-cover")}
             <div class="cat-body">
               <span class="cat-group">${groupName.get(c.group) ?? ""}</span>
               <h3>${localized(c.name, lang)}</h3>

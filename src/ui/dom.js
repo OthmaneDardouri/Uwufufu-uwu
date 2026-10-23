@@ -2,6 +2,7 @@
 // every interpolated value unless it was produced by `html` itself (or wrapped in `raw`).
 import { imageFor } from "../services/images.js";
 import { generatedArt } from "../core/art.js";
+import { viaProxy } from "../services/api.js";
 
 class Safe { constructor(s) { this.s = s; } toString() { return this.s; } }
 export const raw = (s) => new Safe(String(s));
@@ -43,11 +44,21 @@ export function hydratePictures(root) {
     img.src = placeholder;
     img.onload = () => el.classList.add("pic-ready");
     el.append(img);
+    img.referrerPolicy = "no-referrer"; // some wikis refuse pictures shown on other sites
     imageFor(item).then((url) => {
       if (!url || url === placeholder) return;
-      const real = new Image();
-      real.onload = () => { img.src = url; el.classList.add("pic-real"); };
-      real.src = url; // broken remote picture: we simply keep the generated one
+      // try the picture directly, then through our server; if both fail the generated one stays
+      const tries = [url, viaProxy(url)].filter(Boolean);
+      const next = () => {
+        const src = tries.shift();
+        if (!src) return;
+        const real = new Image();
+        real.referrerPolicy = "no-referrer";
+        real.onload = () => { img.src = src; el.classList.add("pic-real"); };
+        real.onerror = next;
+        real.src = src;
+      };
+      next();
     });
   }
 }

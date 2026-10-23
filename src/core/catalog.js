@@ -77,6 +77,18 @@ export function resolveItems(category, pokemon = []) {
   });
 }
 
+/**
+ * The item pictured on a category's card: its explicit cover, else its first item.
+ * A cover names a character or a title; it is looked up like any item of the category.
+ */
+export function coverItem(category, items) {
+  const c = category.cover;
+  if (!c) return items[0] ?? { key: "cover", name: "?" };
+  const who = c.mal?.char ?? c.wiki ?? "?";
+  const fandom = category.fandom && (c.wiki || c.mal) ? { wiki: category.fandom, title: c.wiki ?? c.mal.char } : undefined;
+  return { key: "cover", name: who, image: c.image, pokemon: c.pokemon, wiki: c.wiki, mal: c.mal, fandom };
+}
+
 /** Pick the right language from a string or { it, en } object. */
 export function localized(value, lang, fallback = "en") {
   if (value == null) return "";

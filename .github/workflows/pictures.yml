@@ -1,0 +1,39 @@
+# Finds pictures for anime/film items and commits them to data/pictures.json.
+# Runs when categories change, every Monday (to retry what was missing), or by hand.
+name: Pictures
+on:
+  push:
+    branches: [main]
+    paths: [categories/**, scripts/resolve_pictures.mjs, server/images.mjs, src/core/pictures.js]
+  schedule:
+    - cron: "17 4 * * 1"
+  workflow_dispatch:
+    inputs:
+      all:
+        description: Search every picture again
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: pictures
+  cancel-in-progress: false
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/resolve_pictures.mjs ${{ inputs.all && '--all' || '' }}
+      - name: Commit the pictures
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add data/pictures.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Update pictures"
+          git pull --rebase
+          git push

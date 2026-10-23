@@ -1,6 +1,8 @@
 // Resolves the picture for an item, trying sources in order until one answers:
 //   { image }   -> used as is
 //   { pokemon } -> official artwork from the PokeAPI sprites repo
+//   data/pictures.json -> pictures found ahead of time by scripts/resolve_pictures.mjs (GitHub Action)
+//   our server  -> searches Fandom, MyAnimeList and Wikipedia (server/images.mjs)
 //   { mal }     -> MyAnimeList character art (services/mal.js), for anime characters
 //   { wiki }    -> lead image of the English Wikipedia article, looked up in batches
 //   otherwise   -> a generated picture (core/art.js), so a card is never empty
@@ -8,6 +10,9 @@
 import { generatedArt } from "../core/art.js";
 import { malImage } from "./mal.js";
 import { serverImage } from "./api.js";
+import { imageQuery, pictureKey } from "../core/pictures.js";
+
+export { imageQuery };
 
 const ARTWORK = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/";
 const WIKI_API = "https://en.wikipedia.org/w/api.php";
@@ -80,16 +85,20 @@ function wikiImage(title) {
   });
 }
 
-/** What the server needs to look a picture up (also used by the admin's picture tool). */
-export const imageQuery = (item) => ({
-  name: item.name, char: item.mal?.char, title: item.fandom?.title, fandom: item.fandom?.wiki, wiki: item.wiki,
-});
+let found = null;
+/** Pictures found ahead of time, loaded once: { key: url }. */
+const precomputed = () => (found ??= fetch("data/pictures.json")
+  .then((r) => (r.ok ? r.json() : {}))
+  .then((d) => d.pictures ?? {})
+  .catch(() => ({})));
 
 /** Promise of an image URL. Always resolves to something: the last resort is a generated picture. */
 export async function imageFor(item) {
   if (!item) return null;
   if (item.image) return item.image;
   if (item.pokemon) return `${ARTWORK}${item.pokemon}.png`;
+  const known = (await precomputed())[pictureKey(imageQuery(item))];
+  if (known) return known;
   // With our own server: it searches Fandom, MyAnimeList and Wikipedia, caches, and serves the picture.
   if (item.fandom || item.mal || item.wiki) {
     const url = await serverImage(imageQuery(item));

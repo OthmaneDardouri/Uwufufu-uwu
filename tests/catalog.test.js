@@ -91,3 +91,15 @@ test("fan-level anime categories explain every item", () => {
     assert.ok(resolveItems(c).every((i) => i.info), `${c.id}: info lost in resolveItems`);
   }
 });
+
+test("covers are searched like items: character, wiki and the category's Fandom wiki", async () => {
+  const { coverItem } = await import("../src/core/catalog.js");
+  const { imageQuery, pictureKey, needsSearch } = await import("../src/core/pictures.js");
+  const category = { id: "x", fandom: "naruto", cover: { wiki: "Naruto Uzumaki", mal: { anime: [20], char: "Naruto Uzumaki" } }, items: [] };
+  const cover = coverItem(category, []);
+  assert.ok(needsSearch(cover));
+  assert.equal(pictureKey(imageQuery(cover)), "naruto|Naruto Uzumaki|Naruto Uzumaki|Naruto Uzumaki|Naruto Uzumaki");
+  assert.equal(coverItem({ cover: { pokemon: 25 } }, []).pokemon, 25);
+  assert.equal(coverItem({ items: [] }, [{ name: "A" }]).name, "A", "no cover: the first item");
+  assert.equal(needsSearch({ name: "Pikachu", pokemon: 25 }), false);
+});

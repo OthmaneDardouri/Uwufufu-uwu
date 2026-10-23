@@ -1,6 +1,6 @@
 // Loads every category: the JSON files shipped in /categories plus the ones the admin
 // created on the server. Adding a category to the repo = drop a JSON file + list it in index.json.
-import { resolveItems, validateCategory } from "../core/catalog.js";
+import { resolveItems, validateCategory, coverItem } from "../core/catalog.js";
 import { serverCategories } from "./api.js";
 
 const CUSTOM_GROUP = { id: "custom", name: { it: "Novità dall'admin", en: "New from the admin" } };
@@ -23,7 +23,8 @@ export async function loadCatalog() {
     if (errors.length) { console.warn(`Skipping category ${c?.id}:`, errors); continue; }
     if (seen.has(c.id)) continue;
     seen.add(c.id);
-    categories.push({ ...c, size: resolveItems(c, dex).length });
+    const items = resolveItems(c, dex);
+    categories.push({ ...c, size: items.length, coverItem: coverItem(c, items) });
   }
   const groups = [...(remote.length ? [CUSTOM_GROUP] : []), ...index.groups];
   return { groups, categories, byId: new Map(categories.map((c) => [c.id, c])) };
