@@ -1,0 +1,3593 @@
+{
+ "updated": "2026-10-23T15:13:46.558Z",
+ "found": 343,
+ "missing": 357,
+ "pictures": {
+  "||Griffith|Griffith|Griffith (Berserk)": "https://upload.wikimedia.org/wikipedia/en/7/7a/GriffithBerserk.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "||Light Yagami|Light Yagami|Light Yagami": "https://upload.wikimedia.org/wikipedia/en/0/0c/Light_from_Death_Note.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "||Muzan Kibutsuji|Muzan Kibutsuji|Muzan Kibutsuji": "https://upload.wikimedia.org/wikipedia/en/e/ee/MuzanKibutsujiinVolume2.webp?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "||Pokémon Cristallo||Pokémon Crystal": "https://upload.wikimedia.org/wikipedia/en/8/84/Pok%C3%A9mon_Crystal_box_art.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "||Pokémon Diamante e Perla||Pokémon Diamond and Pearl": "https://upload.wikimedia.org/wikipedia/en/2/2e/PokemonDiamondPearlBoxArt.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "||Pokémon Oro e Argento||Pokémon Gold and Silver": "https://upload.wikimedia.org/wikipedia/en/4/4c/Pok%C3%A9mon_box_art_-_Gold_Version.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "||Pokémon Oro HeartGold e Argento SoulSilver||Pokémon HeartGold and SoulSilver": "https://upload.wikimedia.org/wikipedia/en/c/cb/PokemonHGSSBox.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "||Pokémon Platino||Pokémon Platinum": "https://upload.wikimedia.org/wikipedia/en/c/ca/Pokemon_Platinum.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "||Pokémon Rosso e Blu||Pokémon Red and Blue": "https://thumb.wikimedia.org/wikipedia/en/thumb/a/af/Pok%C3%A9mon_Red_and_Blue_cover_art.webp/500px-Pok%C3%A9mon_Red_and_Blue_cover_art.webp?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "||Pokémon Rosso Fuoco e Verde Foglia||Pokémon FireRed and LeafGreen": "https://upload.wikimedia.org/wikipedia/en/a/a7/Pokemon_LeafGreen_box.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "||Pokémon Rubino e Zaffiro||Pokémon Ruby and Sapphire": "https://upload.wikimedia.org/wikipedia/en/b/be/PokemonRubySapphireBox.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "||Pokémon Smeraldo||Pokémon Emerald": "https://upload.wikimedia.org/wikipedia/en/f/f7/PokemonEmeraldBox.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "||Ryomen Sukuna|Ryomen Sukuna|Ryomen Sukuna": "https://upload.wikimedia.org/wikipedia/en/9/90/Sukuna_%28chapter_117%29.webp?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "||Sosuke Aizen|Sousuke Aizen|Sōsuke Aizen": "https://upload.wikimedia.org/wikipedia/en/8/85/AizenAnimeEp60.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "dragonball||Beerus|Beerus|Beerus": "https://static.wikia.nocookie.net/dragonball/images/7/7d/BeerusWikia_%283%29.jpg/revision/latest/scale-to-width-down/269?cb=20240224003806",
+  "dragonball||Broly|Broly|Broly": "https://static.wikia.nocookie.net/dragonball/images/c/cd/Broly_Infobox_image.png/revision/latest/scale-to-width-down/357?cb=20170525181624",
+  "dragonball||Bulma|Bulma|Bulma": "https://static.wikia.nocookie.net/dragonball/images/a/a6/Bulma_anime_profile.png/revision/latest/scale-to-width-down/164?cb=20250617190824",
+  "dragonball||Cell|Cell|Cell (Dragon Ball)": "https://static.wikia.nocookie.net/dragonball/images/2/27/Cell_%28DBZ_ep_177%29.png/revision/latest/scale-to-width-down/274?cb=20260801130819",
+  "dragonball||Cooler|Cooler|Cooler (Dragon Ball)": "https://static.wikia.nocookie.net/dragonball/images/4/4e/Cooler%27s_Revenge_-_Cooler_prepares_to_transform.png/revision/latest/scale-to-width-down/473?cb=20250111151725",
+  "dragonball||Gogeta|Gogeta|Gogeta": "https://static.wikia.nocookie.net/dragonball/images/7/7b/Gogeta_Base_Full.jpg/revision/latest/scale-to-width-down/310?cb=20191027075547",
+  "dragonball||Gohan|Gohan|Gohan": "https://static.wikia.nocookie.net/dragonball/images/3/3b/Gohan_anime_profile_3.png/revision/latest/scale-to-width-down/225?cb=20250617191059",
+  "dragonball||Goku|Goku|Goku": "https://static.wikia.nocookie.net/dragonball/images/b/ba/Goku_anime_profile.png/revision/latest/scale-to-width-down/242?cb=20250723190513",
+  "dragonball||Goten|Goten|Goten": "https://static.wikia.nocookie.net/dragonball/images/c/c9/Super_Hero_-_Goten_artwork.jpg/revision/latest/scale-to-width-down/222?cb=20220920183551",
+  "dragonball||Hit|Hit|Hit (Dragon Ball)": "https://static.wikia.nocookie.net/dragonball/images/e/ec/Hit_Profile.jpg/revision/latest/scale-to-width-down/192?cb=20160404221157",
+  "dragonball||Jiren|Jiren|Jiren": "https://static.wikia.nocookie.net/dragonball/images/3/33/Jiren1.png/revision/latest/scale-to-width-down/480?cb=20170723224647",
+  "dragonball||Nappa|Nappa|Nappa (Dragon Ball)": "https://static.wikia.nocookie.net/dragonball/images/1/11/Nappa_DBZ_Episode_24.png/revision/latest/scale-to-width-down/346?cb=20211026042623",
+  "dragonball||Piccolo|Piccolo|Piccolo (Dragon Ball)": "https://static.wikia.nocookie.net/dragonball/images/b/b7/Super_Hero_-_Piccolo_artwork_3.png/revision/latest/scale-to-width-down/330?cb=20250923210449",
+  "dragonball||Shenron|Shenron|Shenron": "https://static.wikia.nocookie.net/dragonball/images/2/26/Shenron_DBZ_Episode_240.png/revision/latest/scale-to-width-down/312?cb=20210429121425",
+  "dragonball||Vegeta|Vegeta|Vegeta": "https://static.wikia.nocookie.net/dragonball/images/9/94/Vegeta_anime_profile.png/revision/latest/scale-to-width-down/296?cb=20250723190507",
+  "dragonball||Whis|Whis|Whis": "https://static.wikia.nocookie.net/dragonball/images/b/bd/Whis_%28DBS_ep67%29.png/revision/latest/scale-to-width-down/284?cb=20170629161500",
+  "dragonball||Yamcha|Yamcha|Yamcha": "https://static.wikia.nocookie.net/dragonball/images/5/59/Yamcha_DB_Episode_138.png/revision/latest/scale-to-width-down/205?cb=20250201193345",
+  "dragonball||Zamasu|Zamasu|Zamasu": "https://static.wikia.nocookie.net/dragonball/images/5/59/Zamasu_DBS_Ep_53_006.png/revision/latest/scale-to-width-down/426?cb=20180820041712",
+  "dragonball|Android 16|C-16|Android 16|Android 16": "https://static.wikia.nocookie.net/dragonball/images/b/b2/Android_16.png/revision/latest/scale-to-width-down/174?cb=20210331024540",
+  "dragonball|Android 17|C-17|Android 17|Android 17": "https://static.wikia.nocookie.net/dragonball/images/2/27/Android_17_%28DBZ_ep.148%29.jpg/revision/latest/scale-to-width-down/196?cb=20250410044432",
+  "dragonball|Android 18|C-18|Android 18|Android 18": "https://static.wikia.nocookie.net/dragonball/images/e/e6/Android_18_anime_profile.png/revision/latest/scale-to-width-down/192?cb=20250617190842",
+  "dragonball|Bardock|Bardack|Bardock|Bardock": "https://static.wikia.nocookie.net/dragonball/images/d/d5/Bardock_-_The_Father_of_Goku_-_Bardock_after_landing_on_Planet_Meat.png/revision/latest/scale-to-width-down/337?cb=20250121192318",
+  "dragonball|Beast|Gohan Beast|Gohan|Gohan": "https://static.wikia.nocookie.net/dragonball/images/d/d9/FinalBeastGohan.jpg/revision/latest/scale-to-width-down/480?cb=20240712180127",
+  "dragonball|Big Bang Attack|Big Bang Attack|Vegeta|Vegeta": "https://static.wikia.nocookie.net/dragonball/images/2/2b/Big_Bang_Attack_2.png/revision/latest/scale-to-width-down/480?cb=20250401190204",
+  "dragonball|Black Frieza|Black Freezer|Frieza|Frieza": "https://static.wikia.nocookie.net/dragonball/images/6/6e/Black_Frieza_%28Digital_Colored_Manga%29.png/revision/latest/scale-to-width-down/305?cb=20231222114430",
+  "dragonball|Chi-Chi|Chichi|Chi-Chi|Chi-Chi": "https://static.wikia.nocookie.net/dragonball/images/e/e2/Chi-Chi_DBZ_Ep_04_001.png/revision/latest/scale-to-width-down/382?cb=20201226004235",
+  "dragonball|Death Ball|Death Ball|Frieza|Frieza": "https://static.wikia.nocookie.net/dragonball/images/7/7d/Death_Ball.png/revision/latest/scale-to-width-down/480?cb=20180419061054",
+  "dragonball|Destructo Disc|Kienzan|Krillin|Krillin": "https://static.wikia.nocookie.net/dragonball/images/1/1a/Destructo_Disc_2.png/revision/latest/scale-to-width-down/480?cb=20260515044717",
+  "dragonball|Final Flash|Final Flash|Vegeta|Vegeta": "https://static.wikia.nocookie.net/dragonball/images/8/8c/SSJ_Vegeta_fires_Final_Flash_at_Cell_Jr.png/revision/latest/scale-to-width-down/480?cb=20260524224021",
+  "dragonball|Frieza|Freezer|Frieza|Frieza": "https://static.wikia.nocookie.net/dragonball/images/e/ee/DBS_Broly_Frieza_Render.png/revision/latest/scale-to-width-down/401?cb=20221019232854",
+  "dragonball|Fusion Dance|Danza della fusione|Gotenks|Trunks (Dragon Ball)": "https://static.wikia.nocookie.net/dragonball/images/7/71/Bio-Broly_textless_poster_3_by_Tadayoshi_Yamamuro.png/revision/latest/scale-to-width-down/330?cb=20250219040928",
+  "dragonball|Future Trunks|Trunks|Trunks|Trunks (Dragon Ball)": "https://static.wikia.nocookie.net/dragonball/images/4/4f/Future_Trunks_DBZ_Episode_131.png/revision/latest/scale-to-width-down/295?cb=20241206021927",
+  "dragonball|Galick Gun|Galick Ho|Vegeta|Vegeta": "https://static.wikia.nocookie.net/dragonball/images/7/78/Galick_Gun.png/revision/latest/scale-to-width-down/480?cb=20260809153346",
+  "dragonball|Goku|Goku|Goku|Goku": "https://static.wikia.nocookie.net/dragonball/images/b/ba/Goku_anime_profile.png/revision/latest/scale-to-width-down/242?cb=20250723190513",
+  "dragonball|Golden Frieza|Golden Freezer|Frieza|Frieza": "https://static.wikia.nocookie.net/dragonball/images/1/1b/Golden_Frieza_full.png/revision/latest/scale-to-width-down/311?cb=20170403224005",
+  "dragonball|Great Ape|Oozaru|Vegeta|Vegeta": "https://static.wikia.nocookie.net/dragonball/images/c/cb/The_Tree_of_Might_-_Goku_confronts_Great_Ape_Gohan.jpg/revision/latest/scale-to-width-down/480?cb=20111124230446",
+  "dragonball|Hakai|Hakai|Beerus|Beerus": "https://static.wikia.nocookie.net/dragonball/images/6/67/Hakai_1.jpg/revision/latest/scale-to-width-down/480?cb=20210120134639",
+  "dragonball|Instant Transmission|Teletrasporto|Goku|Goku": "https://static.wikia.nocookie.net/dragonball/images/5/5e/Instant_Transmission.png/revision/latest/scale-to-width-down/480?cb=20250324034300",
+  "dragonball|Kaio-ken|Kaiohken|Goku|Goku": "https://static.wikia.nocookie.net/dragonball/images/3/3a/Kaioken_high_quality.PNG/revision/latest/scale-to-width-down/480?cb=20261001213044",
+  "dragonball|Kamehameha|Kamehameha|Kame-Sennin|Master Roshi": "https://static.wikia.nocookie.net/dragonball/images/e/e7/Goku_DBZ_Ep_31_008.png/revision/latest/scale-to-width-down/394?cb=20170828193815",
+  "dragonball|Krillin|Crilin|Krillin|Krillin": "https://static.wikia.nocookie.net/dragonball/images/5/54/Krillin_DB_Episode_134.png/revision/latest/scale-to-width-down/324?cb=20241210001054",
+  "dragonball|Legendary Super Saiyan|Super Saiyan leggendario|Broly|Broly": "https://static.wikia.nocookie.net/dragonball/images/c/c7/Broly_-_The_Legendary_Super_Saiyan_-_LSSJ_Broly.jpg/revision/latest/scale-to-width-down/383?cb=20250624205027",
+  "dragonball|Majin Buu|Majin Bu|Majin Buu|Majin Buu": "https://static.wikia.nocookie.net/dragonball/images/4/4a/All_Majin_Buu_forms_%28Daiz4%29.jpg/revision/latest/scale-to-width-down/334?cb=20130605020823",
+  "dragonball|Masenko|Masenko|Gohan|Gohan": "https://static.wikia.nocookie.net/dragonball/images/c/c6/GohanMasenkoGJ.png/revision/latest/scale-to-width-down/480?cb=20180423193809",
+  "dragonball|Master Roshi|Muten Roshi|Kame-Sennin|Master Roshi": "https://static.wikia.nocookie.net/dragonball/images/5/5f/Master_roshi_enhanced.jpg/revision/latest?cb=20210310020858",
+  "dragonball|Mr. Satan|Mr. Satan|Mr. Satan|Mr. Satan": "https://static.wikia.nocookie.net/dragonball/images/e/ef/Mr_Satan_at_the_Cell_Games.png/revision/latest/scale-to-width-down/322?cb=20260315145605",
+  "dragonball|Orange Piccolo|Piccolo Arancione|Piccolo|Piccolo (Dragon Ball)": "https://static.wikia.nocookie.net/dragonball/images/e/e0/Orange_Piccolo_Fullbody.png/revision/latest/scale-to-width-down/319?cb=20240712181107",
+  "dragonball|Potara|Fusione Potara|Vegetto|Vegito": "https://static.wikia.nocookie.net/dragonball/images/e/ea/Daima_-_Potara.PNG/revision/latest/scale-to-width-down/480?cb=20241012154404",
+  "dragonball|Raditz|Radish|Raditz|Raditz": "https://static.wikia.nocookie.net/dragonball/images/8/86/Raditz_arrives_at_Kame_House.png/revision/latest/scale-to-width-down/236?cb=20260822192657",
+  "dragonball|Solar Flare|Taiyoken|Tenshinhan|Tien Shinhan": "https://static.wikia.nocookie.net/dragonball/images/e/eb/The_Tree_of_Might_-_Solar_Flare.png/revision/latest/scale-to-width-down/480?cb=20250116004050",
+  "dragonball|Special Beam Cannon|Makankosappo|Piccolo|Piccolo (Dragon Ball)": "https://static.wikia.nocookie.net/dragonball/images/8/85/PiccoloSpecialBeamCannonK.png/revision/latest/scale-to-width-down/480?cb=20250327065301",
+  "dragonball|Spirit Bomb|Genki Dama|Goku|Goku": "https://static.wikia.nocookie.net/dragonball/images/5/53/Goku_DBZ_Ep_93_007.png/revision/latest/scale-to-width-down/226?cb=20171021004959",
+  "dragonball|Super Saiyan 2|Super Saiyan 2|Gohan|Gohan": "https://static.wikia.nocookie.net/dragonball/images/5/5e/GohanSuperSaiyanIINV.png/revision/latest/scale-to-width-down/268?cb=20251228190524",
+  "dragonball|Super Saiyan 3|Super Saiyan 3|Goku|Goku": "https://static.wikia.nocookie.net/dragonball/images/1/1a/SSJ3_Goku.png/revision/latest/scale-to-width-down/480?cb=20251227012927",
+  "dragonball|Super Saiyan 4|Super Saiyan 4|Goku|Goku": "https://static.wikia.nocookie.net/dragonball/images/5/54/Super_Saiyan_4_Goku_%28Daima%29_stacked.png/revision/latest/scale-to-width-down/283?cb=20250419015937",
+  "dragonball|Super Saiyan Blue|Super Saiyan Blue|Vegeta|Vegeta": "https://static.wikia.nocookie.net/dragonball/images/7/7b/SSGSS_Goku_DBZ-_Resurrection_F.png/revision/latest/scale-to-width-down/270?cb=20160312024740",
+  "dragonball|Super Saiyan God|Super Saiyan God|Goku|Goku": "https://static.wikia.nocookie.net/dragonball/images/6/68/SSG_profile1.png/revision/latest/scale-to-width-down/480?cb=20240712193623",
+  "dragonball|Super Saiyan Rosé|Super Saiyan Rosé|Zamasu|Zamasu": "https://static.wikia.nocookie.net/dragonball/images/b/b8/Super_Saiyan_Rose.png/revision/latest/scale-to-width-down/480?cb=20190211104411",
+  "dragonball|Super Saiyan|Super Saiyan|Goku|Goku": "https://static.wikia.nocookie.net/dragonball/images/c/c1/Super_Saiyan_Goku.png/revision/latest/scale-to-width-down/186?cb=20251228192049",
+  "dragonball|Tien Shinhan|Tenshinhan|Tenshinhan|Tien Shinhan": "https://static.wikia.nocookie.net/dragonball/images/2/2a/Tien_Shinhan.png/revision/latest/scale-to-width-down/268?cb=20250318211443",
+  "dragonball|Tri-Beam|Kikoho|Tenshinhan|Tien Shinhan": "https://static.wikia.nocookie.net/dragonball/images/5/5d/Tri-Beam_5.jpg/revision/latest/scale-to-width-down/480?cb=20241212060212",
+  "dragonball|Ultimate|Gohan Ultimate|Gohan|Gohan": "https://static.wikia.nocookie.net/dragonball/images/6/6a/Ultimate_Gohan_SH.PNG/revision/latest/scale-to-width-down/421?cb=20240712174819",
+  "dragonball|Ultra Ego|Ultra Ego|Vegeta|Vegeta": "https://static.wikia.nocookie.net/dragonball/images/7/7f/Ultra_Ego_Vegeta_%28Digital_Colored_Manga%29.png/revision/latest/scale-to-width-down/235?cb=20260205042243",
+  "dragonball|Ultra Instinct|Ultra Istinto|Goku|Goku": "https://static.wikia.nocookie.net/dragonball/images/0/0f/Whis_Trains_Saiyans.png/revision/latest/scale-to-width-down/480?cb=20190831040747",
+  "dragonball|Vegeta|Vegeta|Vegeta|Vegeta": "https://static.wikia.nocookie.net/dragonball/images/9/94/Vegeta_anime_profile.png/revision/latest/scale-to-width-down/296?cb=20250723190507",
+  "dragonball|Vegito|Vegeth|Vegetto|Vegito": "https://static.wikia.nocookie.net/dragonball/images/5/53/Vegito.jpg/revision/latest/scale-to-width-down/307?cb=20250317214139",
+  "jujutsu-kaisen||Aoi Todo|Aoi Todo|Aoi Todo": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/7/79/Aoi_Todo_%28Anime%29.png/revision/latest/scale-to-width-down/210?cb=20240621022047",
+  "jujutsu-kaisen||Authentic Mutual Love|Yuuta Okkotsu|Yuta Okkotsu": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/7/7a/Authentic_Mutual_Love.png/revision/latest/scale-to-width-down/480?cb=20240204164013",
+  "jujutsu-kaisen||Ceremonial Sea of Light|Hanami|": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/7/76/Hanami_%28Anime%29.png/revision/latest/scale-to-width-down/348?cb=20210318193331",
+  "jujutsu-kaisen||Chimera Shadow Garden|Megumi Fushiguro|Megumi Fushiguro": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/d/db/Fushiguro%27s_Chimera_Shadow_Garden_%28Anime%29.gif/revision/latest?cb=20210319211832",
+  "jujutsu-kaisen||Choso|Choso|Choso (Jujutsu Kaisen)": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/c/c6/Choso_%28Anime_3%29.png/revision/latest/scale-to-width-down/190?cb=20251230164541",
+  "jujutsu-kaisen||Coffin of the Iron Mountain|Jougo|Jogo (Jujutsu Kaisen)": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/4/46/Jogo%27s_Coffin_of_the_Iron_Mountain.gif/revision/latest?cb=20250726010156",
+  "jujutsu-kaisen||Deadly Sentencing|Hiromi Higuruma|Hiromi Higuruma": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/5/52/Higuruma%27s_Deadly_Sentencing_%28Anime%29.gif/revision/latest?cb=20260226192655",
+  "jujutsu-kaisen||Hiromi Higuruma|Hiromi Higuruma|Hiromi Higuruma": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/6/62/Hiromi_Higuruma_%28Anime%29.png/revision/latest/scale-to-width-down/172?cb=20251230190230",
+  "jujutsu-kaisen||Horizon of the Captivating Skandha|Dagon|": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/6/60/Dagon%27s_Horizon_of_the_Captivating_Skandha.gif/revision/latest?cb=20201115145131",
+  "jujutsu-kaisen||Idle Death Gamble|Kinji Hakari|Kinji Hakari": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/4/43/Idle_Death_Gamble_Rules.png/revision/latest/scale-to-width-down/480?cb=20230315212852",
+  "jujutsu-kaisen||Jogo|Jogo|Jogo (Jujutsu Kaisen)": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/2/29/Jogo_%28Anime%29.png/revision/latest/scale-to-width-down/346?cb=20210109005534",
+  "jujutsu-kaisen||Kenjaku|Kenjaku|Kenjaku": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/2/2b/Kenjaku_%28Anime%29.png/revision/latest/scale-to-width-down/183?cb=20250726010244",
+  "jujutsu-kaisen||Kento Nanami|Kento Nanami|Kento Nanami": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/b/b0/Kento_Nanami_%28Anime%29.png/revision/latest/scale-to-width-down/173?cb=20240618014214",
+  "jujutsu-kaisen||Kinji Hakari|Kinji Hakari|Kinji Hakari": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/c/cf/Kinji_Hakari_%28Anime%29.png/revision/latest/scale-to-width-down/214?cb=20251230185947",
+  "jujutsu-kaisen||Mahito|Mahito|Mahito (Jujutsu Kaisen)": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/4/4e/Mahito_%28Anime%29.png/revision/latest/scale-to-width-down/200?cb=20240618013419",
+  "jujutsu-kaisen||Megumi Fushiguro|Megumi Fushiguro|Megumi Fushiguro": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/6/6e/Megumi_Fushiguro_%28Anime_4%29.png/revision/latest/scale-to-width-down/207?cb=20251230155327",
+  "jujutsu-kaisen||Nobara Kugisaki|Nobara Kugisaki|Nobara Kugisaki": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/d/dd/Nobara_Kugisaki_%28Anime_2%29.png/revision/latest/scale-to-width-down/240?cb=20240621133809",
+  "jujutsu-kaisen||Panda|Panda|Panda (Jujutsu Kaisen)": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/4/4f/Panda_%28Anime_3%29.png/revision/latest/scale-to-width-down/296?cb=20231124130718",
+  "jujutsu-kaisen||Ryomen Sukuna|Ryomen Sukuna|Ryomen Sukuna": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/7/74/Sukuna_%28Volume_29%29.png/revision/latest/scale-to-width-down/313?cb=20250726003512",
+  "jujutsu-kaisen||Satoru Gojo|Satoru Gojo|Satoru Gojo": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/e/ef/Satoru_Gojo_%28Anime_2%29.png/revision/latest/scale-to-width-down/146?cb=20250726003655",
+  "jujutsu-kaisen||Self-Embodiment of Perfection|Mahito|Mahito (Jujutsu Kaisen)": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/4/47/Mahito%27s_Self-Embodiment_of_Perfection.gif/revision/latest?cb=20210314214024",
+  "jujutsu-kaisen||Suguru Geto|Suguru Geto|Suguru Geto": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/c/c2/Suguru_Geto_%28Prequel_Anime%29.png/revision/latest/scale-to-width-down/330?cb=20250726004422",
+  "jujutsu-kaisen||Time Cell Moon Palace|Naoya Zen'in|": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/2/2e/Daido_and_Miyo_hit_with_film.png/revision/latest/scale-to-width-down/480?cb=20230430001842",
+  "jujutsu-kaisen||Toge Inumaki|Toge Inumaki|Toge Inumaki": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/c/cb/Toge_Inumaki_%28Anime_2%29.png/revision/latest/scale-to-width-down/124?cb=20240622024715",
+  "jujutsu-kaisen||Toji Fushiguro|Toji Fushiguro|Toji Fushiguro": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/d/db/Toji_Fushiguro_%28Anime%29.png/revision/latest/scale-to-width-down/336?cb=20250726005401",
+  "jujutsu-kaisen||Womb Profusion|Kenjaku|Kenjaku": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/4/4f/Kenjaku%27s_Womb_Profusion.png/revision/latest/scale-to-width-down/480?cb=20230718080240",
+  "jujutsu-kaisen||Yuji Itadori|Yuji Itadori|Yuji Itadori": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/3/35/Yuji_Itadori_%28Anime_4%29.png/revision/latest/scale-to-width-down/175?cb=20251230155050",
+  "jujutsu-kaisen||Yuki Tsukumo|Yuki Tsukumo|Yuki Tsukumo": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/2/22/Yuki_Tsukumo_%28Anime_3%29.png/revision/latest/scale-to-width-down/198?cb=20251230190559",
+  "jujutsu-kaisen||Yuta Okkotsu|Yuta Okkotsu|Yuta Okkotsu": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/e/e6/Yuta_Okkotsu_%28Anime_2%29.png/revision/latest/scale-to-width-down/156?cb=20251230155621",
+  "jujutsu-kaisen|Malevolent Shrine|Santuario Malevolo|Ryoumen Sukuna|Ryomen Sukuna": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/c/c5/Malevolent_Shrine.gif/revision/latest?cb=20201025025147",
+  "jujutsu-kaisen|Satoru Gojo|Satoru Gojou|Satoru Gojou|Satoru Gojo": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/e/ef/Satoru_Gojo_%28Anime_2%29.png/revision/latest/scale-to-width-down/146?cb=20250726003655",
+  "jujutsu-kaisen|Unlimited Void|Vuoto Infinito|Satoru Gojou|Satoru Gojo": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/4/46/Unlimited_Void.gif/revision/latest?cb=20201114063332",
+  "kimetsu-no-yaiba||Akaza|Akaza|Akaza (Demon Slayer)": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/0a/Akaza_HIROMA.png/revision/latest/scale-to-width-down/468?cb=20261019034825",
+  "kimetsu-no-yaiba||Genya Shinazugawa|Genya Shinazugawa|Genya Shinazugawa": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/c/cb/Genya_Shinazugawa_Full_Body_%28Anime%29.png/revision/latest/scale-to-width-down/339?cb=20230618125148",
+  "kimetsu-no-yaiba||Giyu Tomioka|Giyu Tomioka|Giyu Tomioka": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/43/Giyu_anime_design.png/revision/latest/scale-to-width-down/336?cb=20190831073602",
+  "kimetsu-no-yaiba||Gyomei Himejima|Gyomei Himejima|Gyomei Himejima": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/85/Gyomei_anime.png/revision/latest/scale-to-width-down/336?cb=20200317170337",
+  "kimetsu-no-yaiba||Inosuke Hashibira|Inosuke Hashibira|Inosuke Hashibira": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/d/d4/Inosuke_anime.png/revision/latest/scale-to-width-down/336?cb=20181128204238",
+  "kimetsu-no-yaiba||Kagaya Ubuyashiki|Kagaya Ubuyashiki|Kagaya Ubuyashiki": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/a/aa/Kagaya_anime.png/revision/latest/scale-to-width-down/235?cb=20240621054938",
+  "kimetsu-no-yaiba||Kanao Tsuyuri|Kanao Tsuyuri|Kanao Tsuyuri": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/02/Kanao_anime_right_face.png/revision/latest/scale-to-width-down/286?cb=20241227050721",
+  "kimetsu-no-yaiba||Kokushibo|Kokushibo|Kokushibo": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/5/5f/Kokushibo_back_facing.png/revision/latest/scale-to-width-down/437?cb=20260812005024",
+  "kimetsu-no-yaiba||Kyojuro Rengoku|Kyojuro Rengoku|Kyojuro Rengoku": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/d/de/Kyojuro_anime_right_face.png/revision/latest/scale-to-width-down/385?cb=20241228001647",
+  "kimetsu-no-yaiba||Mitsuri Kanroji|Mitsuri Kanroji|Mitsuri Kanroji": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/7/74/Mitsuri_anime.png/revision/latest/scale-to-width-down/336?cb=20230614072150",
+  "kimetsu-no-yaiba||Muichiro Tokito|Muichiro Tokito|Muichiro Tokito": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/4c/Muichiro_Tokito_Full_Body_%28Anime%29.png/revision/latest/scale-to-width-down/336?cb=20241010231022",
+  "kimetsu-no-yaiba||Muzan Kibutsuji|Muzan Kibutsuji|Muzan Kibutsuji": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/0e/Muzan_Kibutsuji_Full_Body_%28Anime%29.png/revision/latest/scale-to-width-down/453?cb=20210731042132",
+  "kimetsu-no-yaiba||Nezuko Kamado|Nezuko Kamado|Nezuko Kamado": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/0e/Nezuko_anime_right_face.png/revision/latest/scale-to-width-down/286?cb=20241228000758",
+  "kimetsu-no-yaiba||Obanai Iguro|Obanai Iguro|Obanai Iguro": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/7/70/Obanai_anime_right_face.png/revision/latest/scale-to-width-down/273?cb=20241228001105",
+  "kimetsu-no-yaiba||Rui|Rui|Rui (Demon Slayer)": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/9/95/Rui_anime_2.png/revision/latest/scale-to-width-down/429?cb=20250827173523",
+  "kimetsu-no-yaiba||Sakonji Urokodaki|Sakonji Urokodaki|Sakonji Urokodaki": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/e/e1/Sakonji_visual_Hinokami_Chronicles.png/revision/latest/scale-to-width-down/438?cb=20250110025426",
+  "kimetsu-no-yaiba||Sanemi Shinazugawa|Sanemi Shinazugawa|Sanemi Shinazugawa": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/3f/Sanemi_Shinazugawa_Full_Body_%28Anime%29.png/revision/latest/scale-to-width-down/336?cb=20190831171507",
+  "kimetsu-no-yaiba||Shinobu Kocho|Shinobu Kocho|Shinobu Kocho": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/e/e5/Shinobu_anime.png/revision/latest/scale-to-width-down/336?cb=20241010231126",
+  "kimetsu-no-yaiba||Tanjiro Kamado|Tanjiro Kamado|Tanjiro Kamado": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/05/Tanjiro_anime_right_face.png/revision/latest/scale-to-width-down/275?cb=20241228000706",
+  "kimetsu-no-yaiba||Tengen Uzui|Tengen Uzui|Tengen Uzui": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/07/Tengen_anime.png/revision/latest/scale-to-width-down/336?cb=20191024210335",
+  "kimetsu-no-yaiba||Yoriichi Tsugikuni|Yoriichi Tsugikuni|Yoriichi Tsugikuni": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/08/Yoriichi_Tsugikuni_%28Anime%29.png/revision/latest/scale-to-width-down/480?cb=20230411022113",
+  "kimetsu-no-yaiba||Zenitsu Agatsuma|Zenitsu Agatsuma|Zenitsu Agatsuma": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/4f/Zenitsu_anime_right_face.png/revision/latest/scale-to-width-down/286?cb=20241228000445",
+  "kimetsu-no-yaiba|Beast Breathing|Respirazione della Bestia|Inosuke Hashibira|Inosuke Hashibira": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/48/Beast_Breathing_%28Zenshuchuten%29.png/revision/latest/scale-to-width-down/339?cb=20240529101743",
+  "kimetsu-no-yaiba|Daki|Gyutaro e Daki|Daki|Daki and Gyutaro": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/e/e7/Daki_Anime_%28Awakened%29.png/revision/latest/scale-to-width-down/361?cb=20240704040250",
+  "kimetsu-no-yaiba|Doma|Doma|Douma|Doma (Demon Slayer)": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/2/24/Anime_Doma%27s_cult_wear.png/revision/latest/scale-to-width-down/480?cb=20260812005249",
+  "kimetsu-no-yaiba|Flame Breathing|Respirazione della Fiamma|Kyoujurou Rengoku|Kyojuro Rengoku": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/0f/Flame_Breathing_%28Zenshuchuten%29.png/revision/latest/scale-to-width-down/339?cb=20220304074903",
+  "kimetsu-no-yaiba|Flower Breathing|Respirazione del Fiore|Kanao Tsuyuri|Kanao Tsuyuri": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/2/2d/Volume_20_Bonus_Postcard_Kanao.png/revision/latest/scale-to-width-down/306?cb=20210405110507",
+  "kimetsu-no-yaiba|Insect Breathing|Respirazione dell'Insetto|Shinobu Kochou|Shinobu Kocho": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/b/b8/Insect_Breathing_%28Zenshuchuten%29.png/revision/latest/scale-to-width-down/339?cb=20240529102712",
+  "kimetsu-no-yaiba|Kyojuro Rengoku|Kyoujurou Rengoku|Kyoujurou Rengoku|Kyojuro Rengoku": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/d/de/Kyojuro_anime_right_face.png/revision/latest/scale-to-width-down/385?cb=20241228001647",
+  "kimetsu-no-yaiba|Love Breathing|Respirazione dell'Amore|Mitsuri Kanroji|Mitsuri Kanroji": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/36/Love_Breathing_%28Zenshuchuten%29.png/revision/latest/scale-to-width-down/339?cb=20240529102926",
+  "kimetsu-no-yaiba|Mist Breathing|Respirazione della Nebbia|Muichirou Tokitou|Muichiro Tokito": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/d/d8/Mist_Breathing_%28Zenshuchuten%29.png/revision/latest/scale-to-width-down/339?cb=20240529105246",
+  "kimetsu-no-yaiba|Moon Breathing|Respirazione della Luna|Kokushibou|Kokushibo": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/81/Kimetsu_no_Yaiba_CH168.png/revision/latest/scale-to-width-down/328?cb=20190729162819",
+  "kimetsu-no-yaiba|Serpent Breathing|Respirazione del Serpente|Obanai Iguro|Obanai Iguro": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/b/ba/Serpent_Breathing_%28Zenshuchuten%29.png/revision/latest/scale-to-width-down/359?cb=20240525054226",
+  "kimetsu-no-yaiba|Sound Breathing|Respirazione del Suono|Tengen Uzui|Tengen Uzui": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/87/Sound_Breathing_%28Zenshuchuten%29.png/revision/latest/scale-to-width-down/339?cb=20240529105342",
+  "kimetsu-no-yaiba|Stone Breathing|Respirazione della Pietra|Gyoumei Himejima|Gyomei Himejima": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/4b/Stone_Breathing_%28Zenshuchuten%29.png/revision/latest/scale-to-width-down/338?cb=20240730125923",
+  "kimetsu-no-yaiba|Sun Breathing|Respirazione del Sole|Yoriichi Tsugikuni|Yoriichi Tsugikuni": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/9/92/Hinokami_Kagura_%28Zenshuchuten%29.png/revision/latest/scale-to-width-down/348?cb=20240529102619",
+  "kimetsu-no-yaiba|Tanjiro Kamado|Tanjirou Kamado|Tanjirou Kamado|Tanjiro Kamado": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/05/Tanjiro_anime_right_face.png/revision/latest/scale-to-width-down/275?cb=20241228000706",
+  "kimetsu-no-yaiba|Thunder Breathing|Respirazione del Tuono|Zenitsu Agatsuma|Zenitsu Agatsuma": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/00/Thunder_Breathing_%28Zenshuchuten%29.png/revision/latest/scale-to-width-down/339?cb=20240529105731",
+  "kimetsu-no-yaiba|Water Breathing|Respirazione dell'Acqua|Giyuu Tomioka|Giyu Tomioka": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/32/Water_Breathing_%28Zenshuchuten%29.png/revision/latest/scale-to-width-down/339?cb=20240529110051",
+  "kimetsu-no-yaiba|Wind Breathing|Respirazione del Vento|Sanemi Shinazugawa|Sanemi Shinazugawa": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/d/d4/Wind_Breathing_%28Zenshuchuten%29.png/revision/latest/scale-to-width-down/359?cb=20240525054020",
+  "naruto||Boruto Uzumaki|Boruto Uzumaki|Boruto Uzumaki": "https://static.wikia.nocookie.net/naruto/images/d/de/Boruto_Infobox.png/revision/latest/scale-to-width-down/480?cb=20220130144217",
+  "naruto||Deidara|Deidara|Deidara": "https://static.wikia.nocookie.net/naruto/images/f/f5/NUNSRDeidara.png/revision/latest/scale-to-width-down/188?cb=20160623115341",
+  "naruto||Fu|Fu|": "https://static.wikia.nocookie.net/naruto/images/f/f6/Fu.png/revision/latest/scale-to-width-down/480?cb=20220205122040",
+  "naruto||Gaara|Gaara|Gaara": "https://static.wikia.nocookie.net/naruto/images/2/20/Gaara_in_Part_I.png/revision/latest/scale-to-width-down/480?cb=20221010023824",
+  "naruto||Hagoromo Otsutsuki|Hagoromo Otsutsuki|": "https://static.wikia.nocookie.net/naruto/images/8/83/Kid_Hagoromo.png/revision/latest/scale-to-width-down/360?cb=20160528091016",
+  "naruto||Haku|Haku|Haku (Naruto)": "https://static.wikia.nocookie.net/naruto/images/3/35/Haku%27s_shinobi_attire.png/revision/latest/scale-to-width-down/251?cb=20160610212143",
+  "naruto||Han|Han|": "https://static.wikia.nocookie.net/naruto/images/3/3c/Han.png/revision/latest/scale-to-width-down/480?cb=20220205121445",
+  "naruto||Hashirama Senju|Hashirama Senju|Hashirama Senju": "https://static.wikia.nocookie.net/naruto/images/2/2e/Kid_Hashirama.png/revision/latest/scale-to-width-down/480?cb=20230322145136",
+  "naruto||Hidan|Hidan|Hidan (Naruto)": "https://static.wikia.nocookie.net/naruto/images/f/ff/NSUNRHidan.png/revision/latest/scale-to-width-down/324?cb=20160623115835",
+  "naruto||Hinata Hyuga|Hinata Hyuga|Hinata Hyuga": "https://static.wikia.nocookie.net/naruto/images/9/97/Hinata.png/revision/latest/scale-to-width-down/480?cb=20141010104729",
+  "naruto||Itachi Uchiha|Itachi Uchiha|Itachi Uchiha": "https://static.wikia.nocookie.net/naruto/images/e/e9/Itachi_Child_OL.png/revision/latest?cb=20210415223303",
+  "naruto||Jiraiya|Jiraiya|Jiraiya (Naruto)": "https://static.wikia.nocookie.net/naruto/images/1/1f/Jiraiya_Young.png/revision/latest/scale-to-width-down/381?cb=20260220182003",
+  "naruto||Kabuto Yakushi|Kabuto Yakushi|Kabuto Yakushi": "https://static.wikia.nocookie.net/naruto/images/c/c9/Kabuto_Part_1.png/revision/latest/scale-to-width-down/480?cb=20170906101523",
+  "naruto||Kaguya Ōtsutsuki|Kaguya Ōtsutsuki|Kaguya Ōtsutsuki": "https://static.wikia.nocookie.net/naruto/images/6/6c/Kaguya_%C5%8Ctsutsuki.png/revision/latest/scale-to-width-down/480?cb=20180824113908",
+  "naruto||Kakashi Hatake|Kakashi Hatake|Kakashi Hatake": "https://static.wikia.nocookie.net/naruto/images/2/27/Kakashi_Hatake.png/revision/latest/scale-to-width-down/480?cb=20251019002845",
+  "naruto||Killer Bee|Killer Bee|Killer Bee": "https://static.wikia.nocookie.net/naruto/images/6/63/Killer_B.png/revision/latest/scale-to-width-down/480?cb=20180425141557",
+  "naruto||Kisame Hoshigaki|Kisame Hoshigaki|Kisame Hoshigaki": "https://static.wikia.nocookie.net/naruto/images/f/f7/Kisame_Hoshigaki_full.png/revision/latest/scale-to-width-down/236?cb=20160304061903",
+  "naruto||Konan|Konan|Konan (Naruto)": "https://static.wikia.nocookie.net/naruto/images/3/36/Young_Konan_OL.png/revision/latest?cb=20210414203307",
+  "naruto||Kurama|Kurama|Kurama (Naruto)": "https://static.wikia.nocookie.net/naruto/images/7/7b/Kurama2.png/revision/latest/scale-to-width-down/480?cb=20140818171718",
+  "naruto||Kushina Uzumaki|Kushina Uzumaki|": "https://static.wikia.nocookie.net/naruto/images/6/6c/Kid_Kushina.png/revision/latest/scale-to-width-down/415?cb=20260130205650",
+  "naruto||Madara Uchiha|Madara Uchiha|Madara Uchiha": "https://static.wikia.nocookie.net/naruto/images/0/06/Kid_Madara.png/revision/latest/scale-to-width-down/377?cb=20230320174531",
+  "naruto||Might Guy|Might Guy|Might Guy": "https://static.wikia.nocookie.net/naruto/images/3/31/Might_Guy.png/revision/latest/scale-to-width-down/480?cb=20150401084456",
+  "naruto||Minato Namikaze|Minato Namikaze|Minato Namikaze": "https://static.wikia.nocookie.net/naruto/images/e/eb/Minato_Jonin.png/revision/latest/scale-to-width-down/185?cb=20261015192030",
+  "naruto||Mito Uzumaki|Mito Uzumaki|": "https://static.wikia.nocookie.net/naruto/images/6/69/Mito.png/revision/latest/scale-to-width-down/480?cb=20220205120451",
+  "naruto||Naruto Uzumaki|Naruto Uzumaki|Naruto Uzumaki": "https://static.wikia.nocookie.net/naruto/images/d/d6/Naruto_Part_I.png/revision/latest/scale-to-width-down/480?cb=20251228135525",
+  "naruto||Neji Hyuga|Neji Hyuga|Neji Hyuga": "https://static.wikia.nocookie.net/naruto/images/7/7e/Neji_Part_I.png/revision/latest/scale-to-width-down/480?cb=20160118081119",
+  "naruto||Obito Uchiha|Obito Uchiha|Obito Uchiha": "https://static.wikia.nocookie.net/naruto/images/4/4a/Obito_Uchiha.png/revision/latest/scale-to-width-down/480?cb=20220223045744",
+  "naruto||Orochimaru|Orochimaru|Orochimaru (Naruto)": "https://static.wikia.nocookie.net/naruto/images/1/14/Orochimaru_Infobox.png/revision/latest/scale-to-width-down/480?cb=20150925223113",
+  "naruto||Pain|Pain|Pain (Naruto)": "https://static.wikia.nocookie.net/naruto/images/0/06/Nagato_Early_Akatsuki.png/revision/latest/scale-to-width-down/301?cb=20210226002003",
+  "naruto||Rin Nohara|Rin Nohara|": "https://static.wikia.nocookie.net/naruto/images/d/de/Rin%27s_Legacy.png/revision/latest/scale-to-width-down/480?cb=20160822001444",
+  "naruto||Rock Lee|Rock Lee|Rock Lee": "https://static.wikia.nocookie.net/naruto/images/9/97/Rock_Lee_Part_I.png/revision/latest/scale-to-width-down/480?cb=20181229065526",
+  "naruto||Roshi|Roshi|": "https://static.wikia.nocookie.net/naruto/images/3/37/Roshi_OL.png/revision/latest/scale-to-width-down/172?cb=20210323164638",
+  "naruto||Sakura Haruno|Sakura Haruno|Sakura Haruno": "https://static.wikia.nocookie.net/naruto/images/6/64/Sakura_Part_1.png/revision/latest/scale-to-width-down/480?cb=20170726101444",
+  "naruto||Sasori|Sasori|Sasori (Naruto)": "https://static.wikia.nocookie.net/naruto/images/1/12/Sasori_UNSR.png/revision/latest/scale-to-width-down/186?cb=20160426003634",
+  "naruto||Sasuke Uchiha|Sasuke Uchiha|Sasuke Uchiha": "https://static.wikia.nocookie.net/naruto/images/2/21/Sasuke_Part_1.png/revision/latest/scale-to-width-down/480?cb=20170716092103",
+  "naruto||Shikamaru Nara|Shikamaru Nara|Shikamaru Nara": "https://static.wikia.nocookie.net/naruto/images/4/44/Shikamaru_Part_I.png/revision/latest/scale-to-width-down/480?cb=20170419112314",
+  "naruto||Tobirama Senju|Tobirama Senju|Tobirama Senju": "https://static.wikia.nocookie.net/naruto/images/7/70/Kid_Tobirama.png/revision/latest/scale-to-width-down/480?cb=20230322145433",
+  "naruto||Tsunade|Tsunade|Tsunade (Naruto)": "https://static.wikia.nocookie.net/naruto/images/6/62/Kid_Tsunade.png/revision/latest/scale-to-width-down/289?cb=20230407050656",
+  "naruto||Utakata|Utakata|": "https://static.wikia.nocookie.net/naruto/images/2/27/Utakata.png/revision/latest/scale-to-width-down/480?cb=20160223174142",
+  "naruto||Yagura|Yagura|": "https://static.wikia.nocookie.net/naruto/images/e/e0/Yagura.png/revision/latest/scale-to-width-down/480?cb=20220206065510",
+  "naruto||Yugito Nii|Yugito Nii|": "https://static.wikia.nocookie.net/naruto/images/2/2f/Yugito.png/revision/latest/scale-to-width-down/480?cb=20220205121239",
+  "naruto||Zabuza Momochi|Zabuza Momochi|Zabuza Momochi": "https://static.wikia.nocookie.net/naruto/images/a/a6/Zabuza_OL.png/revision/latest/scale-to-width-down/182?cb=20210426223426",
+  "naruto|Almighty Push|Shinra Tensei|Pain|Pain (Naruto)": "https://static.wikia.nocookie.net/naruto/images/0/0d/ShinraTensei.png/revision/latest/scale-to-width-down/480?cb=20140131144706",
+  "naruto|Amaterasu|Amaterasu|Itachi Uchiha|Itachi Uchiha": "https://static.wikia.nocookie.net/naruto/images/e/e0/Amaterasu.png/revision/latest/scale-to-width-down/480?cb=20151203010730",
+  "naruto|Byakugan|Byakugan|Neji Hyuuga|Neji Hyuga": "https://static.wikia.nocookie.net/naruto/images/5/5c/Byakugan_Momoshiki.svg/revision/latest?cb=20171226164335",
+  "naruto|Chidori|Chidori|Sasuke Uchiha|Sasuke Uchiha": "https://static.wikia.nocookie.net/naruto/images/5/50/Sasuke%27s_chidori.png/revision/latest/scale-to-width-down/480?cb=20220118071928",
+  "naruto|Eight Gates|Otto Porte Interne|Might Guy|Might Guy": "https://static.wikia.nocookie.net/naruto/images/e/e3/Eight_Gates-Rock_Lee.png/revision/latest/scale-to-width-down/480?cb=20210219185416",
+  "naruto|Eternal Mangekyō Sharingan|Mangekyo Sharingan Eterno|Madara Uchiha|Madara Uchiha": "https://static.wikia.nocookie.net/naruto/images/2/22/Mangeky%C5%8D_Sharingan_Madara.svg/revision/latest?cb=20110803161535",
+  "naruto|Flying Thunder God Technique|Dio del tuono volante|Minato Namikaze|Minato Namikaze": "https://static.wikia.nocookie.net/naruto/images/3/36/A_attacks_Minato.png/revision/latest/scale-to-width-down/480?cb=20150212215443",
+  "naruto|Infinite Tsukuyomi|Tsukuyomi Infinito|Madara Uchiha|Madara Uchiha": "https://static.wikia.nocookie.net/naruto/images/a/a9/Infinite_Tsukuyomi_Shining.png/revision/latest/scale-to-width-down/480?cb=20150927040819",
+  "naruto|Itachi Uchiha|Itachi Uchiha|Itachi Uchiha|Itachi Uchiha": "https://static.wikia.nocookie.net/naruto/images/e/e9/Itachi_Child_OL.png/revision/latest?cb=20210415223303",
+  "naruto|Izanagi|Izanagi|Danzou Shimura|": "https://static.wikia.nocookie.net/naruto/images/9/93/Izanagi_1.png/revision/latest/scale-to-width-down/480?cb=20151004045309",
+  "naruto|Izanami|Izanami|Itachi Uchiha|Itachi Uchiha": "https://static.wikia.nocookie.net/naruto/images/5/52/Izanami_1.png/revision/latest/scale-to-width-down/480?cb=20131107155109",
+  "naruto|Jōgan|Jogan|Boruto Uzumaki|Boruto Uzumaki": "https://static.wikia.nocookie.net/naruto/images/5/51/J%C5%8Dgan.svg/revision/latest?cb=20170910155536",
+  "naruto|Kamui|Kamui|Obito Uchiha|Obito Uchiha": "https://static.wikia.nocookie.net/naruto/images/6/6a/Obito%27s_kamui.png/revision/latest/scale-to-width-down/480?cb=20160819164838",
+  "naruto|Killer Bee|Killer Bee|Killer Bee|Killer Bee": "https://static.wikia.nocookie.net/naruto/images/6/63/Killer_B.png/revision/latest/scale-to-width-down/480?cb=20180425141557",
+  "naruto|Kirin|Kirin|Sasuke Uchiha|Sasuke Uchiha": "https://static.wikia.nocookie.net/naruto/images/e/ee/Kirin.png/revision/latest/scale-to-width-down/480?cb=20150202192059",
+  "naruto|Kotoamatsukami|Kotoamatsukami|Shisui Uchiha|": "https://static.wikia.nocookie.net/naruto/images/4/46/Kotoamatsukami_Activated.png/revision/latest/scale-to-width-down/480?cb=20150615204859",
+  "naruto|Lightning Cutter|Raikiri|Kakashi Hatake|Kakashi Hatake": "https://static.wikia.nocookie.net/naruto/images/9/91/Lightning_cutter.png/revision/latest/scale-to-width-down/480?cb=20220118070235",
+  "naruto|Mangekyō Sharingan|Mangekyo Sharingan|Itachi Uchiha|Itachi Uchiha": "https://static.wikia.nocookie.net/naruto/images/2/22/Mangeky%C5%8D_Sharingan_Madara.svg/revision/latest?cb=20110803161535",
+  "naruto|Naruto Uzumaki|Naruto Uzumaki|Naruto Uzumaki|Naruto Uzumaki": "https://static.wikia.nocookie.net/naruto/images/d/d6/Naruto_Part_I.png/revision/latest/scale-to-width-down/480?cb=20251228135525",
+  "naruto|Planetary Devastation|Chibaku Tensei|Nagato|Pain (Naruto)": "https://static.wikia.nocookie.net/naruto/images/9/96/Chibaku_Tensei_orb.png/revision/latest/scale-to-width-down/480?cb=20150309054038",
+  "naruto|Rasengan|Rasengan|Minato Namikaze|Naruto Uzumaki": "https://static.wikia.nocookie.net/naruto/images/2/28/Rasengan.png/revision/latest/scale-to-width-down/480?cb=20250401003710",
+  "naruto|Rinne Sharingan|Rinne Sharingan|Kaguya Ootsutsuki|Kaguya Ōtsutsuki": "https://static.wikia.nocookie.net/naruto/images/b/bc/Rinne_Sharingan_Awakens.png/revision/latest/scale-to-width-down/480?cb=20160513111731",
+  "naruto|Rinnegan|Rinnegan|Nagato|Pain (Naruto)": "https://static.wikia.nocookie.net/naruto/images/f/f9/Rinnegan_Momoshiki.svg/revision/latest?cb=20171226164214",
+  "naruto|Sage Mode|Modalità Eremitica|Jiraiya|Jiraiya (Naruto)": "https://static.wikia.nocookie.net/naruto/images/5/50/Sage_mode.png/revision/latest/scale-to-width-down/480?cb=20150125202353",
+  "naruto|Sand Waterfall Funeral|Funerale nella sabbia|Gaara|Gaara": "https://static.wikia.nocookie.net/naruto/images/e/ee/Sand_Waterfall_Funeral.png/revision/latest/scale-to-width-down/480?cb=20240901220441",
+  "naruto|Sexy Technique|Sexy Jutsu|Naruto Uzumaki|Naruto Uzumaki": "https://static.wikia.nocookie.net/naruto/images/7/7d/Sexy_Technique.png/revision/latest/scale-to-width-down/473?cb=20150717133633",
+  "naruto|Shadow Clone Technique|Moltiplicazione del corpo|Naruto Uzumaki|Naruto Uzumaki": "https://static.wikia.nocookie.net/naruto/images/0/07/Tobirama_creating_Shadow_Clones.png/revision/latest/scale-to-width-down/480?cb=20140904190251",
+  "naruto|Shadow Imitation Technique|Possessione dell'ombra|Shikamaru Nara|Shikamaru Nara": "https://static.wikia.nocookie.net/naruto/images/0/02/Shadow_Imitation_Technique.png/revision/latest/scale-to-width-down/480?cb=20150222031550",
+  "naruto|Sharingan|Sharingan|Sasuke Uchiha|Sasuke Uchiha": "https://static.wikia.nocookie.net/naruto/images/9/93/Sharingan_Stages.png/revision/latest/scale-to-width-down/480?cb=20170809154134",
+  "naruto|Summoning: Impure World Reincarnation|Edo Tensei|Tobirama Senju|Kabuto Yakushi": "https://static.wikia.nocookie.net/naruto/images/0/03/Hokage_reincarnated.png/revision/latest/scale-to-width-down/480?cb=20140612141309",
+  "naruto|Susanoo|Susanoo|Madara Uchiha|Madara Uchiha": "https://static.wikia.nocookie.net/naruto/images/2/2b/Susanoo.png/revision/latest/scale-to-width-down/480?cb=20150207103348",
+  "naruto|Tsukuyomi|Tsukuyomi|Itachi Uchiha|Itachi Uchiha": "https://static.wikia.nocookie.net/naruto/images/1/14/Tsukuyomi.png/revision/latest/scale-to-width-down/480?cb=20260701122915",
+  "naruto|Wind Release: Rasenshuriken|Rasenshuriken|Naruto Uzumaki|Naruto Uzumaki": "https://static.wikia.nocookie.net/naruto/images/5/52/F%C5%ABton_Rasenshuriken.png/revision/latest/scale-to-width-down/480?cb=20220118210921",
+  "naruto|Wood Release|Arte del Legno|Hashirama Senju|Hashirama Senju": "https://static.wikia.nocookie.net/naruto/images/5/5e/Mokuton_no_Tenzo.png/revision/latest/scale-to-width-down/480?cb=20170120065930",
+  "onepiece||Bartholomew Kuma|Bartholomew Kuma|Bartholomew Kuma": "https://static.wikia.nocookie.net/onepiece/images/8/8d/Bartholomew_Kuma_Anime_Infobox.png/revision/latest/scale-to-width-down/285?cb=20221012030835",
+  "onepiece||Boa Hancock|Boa Hancock|Boa Hancock": "https://static.wikia.nocookie.net/onepiece/images/f/f0/Boa_Hancock_Anime_Infobox.png/revision/latest/scale-to-width-down/233?cb=20230126022456",
+  "onepiece||Brook|Brook|Brook (One Piece)": "https://static.wikia.nocookie.net/onepiece/images/4/41/Brook_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/205?cb=20261011171752",
+  "onepiece||Buggy|Buggy|Buggy (One Piece)": "https://static.wikia.nocookie.net/onepiece/images/f/f7/Buggy_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/480?cb=20240813025900",
+  "onepiece||Crocodile|Crocodile|Crocodile (One Piece)": "https://static.wikia.nocookie.net/onepiece/images/f/fd/Crocodile_Anime_Infobox.png/revision/latest/scale-to-width-down/382?cb=20230125235528",
+  "onepiece||Donquixote Doflamingo|Donquixote Doflamingo|Donquixote Doflamingo": "https://static.wikia.nocookie.net/onepiece/images/7/7e/Donquixote_Doflamingo_Anime_Infobox.png/revision/latest/scale-to-width-down/413?cb=20231017082245",
+  "onepiece||Dracule Mihawk|Dracule Mihawk|Dracule Mihawk": "https://static.wikia.nocookie.net/onepiece/images/b/bf/Dracule_Mihawk_Anime_Infobox.png/revision/latest/scale-to-width-down/309?cb=20151222105910",
+  "onepiece||Enel|Enel|Enel (One Piece)": "https://static.wikia.nocookie.net/onepiece/images/a/ad/Enel_Anime_Infobox.png/revision/latest/scale-to-width-down/480?cb=20230520213625",
+  "onepiece||Eustass Kid|Eustass Kid|Eustass Kid": "https://static.wikia.nocookie.net/onepiece/images/4/47/Eustass_Kid_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/403?cb=20240505021859",
+  "onepiece||Franky|Franky|Franky (One Piece)": "https://static.wikia.nocookie.net/onepiece/images/8/8c/Franky_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/480?cb=20241110020715",
+  "onepiece||Gol D. Roger|Gol D. Roger|Gol D. Roger": "https://static.wikia.nocookie.net/onepiece/images/2/24/Gol_D._Roger_Anime_Infobox.png/revision/latest/scale-to-width-down/480?cb=20230612100153",
+  "onepiece||Jinbe|Jinbe|Jinbe": "https://static.wikia.nocookie.net/onepiece/images/8/81/Jinbe_Anime_Infobox.png/revision/latest/scale-to-width-down/376?cb=20170521201349",
+  "onepiece||Monkey D. Garp|Monkey D. Garp|Monkey D. Garp": "https://static.wikia.nocookie.net/onepiece/images/e/e1/Monkey_D._Garp_Anime_Infobox.png/revision/latest/scale-to-width-down/480?cb=20230207160645",
+  "onepiece||Monkey D. Luffy|Monkey D. Luffy|Monkey D. Luffy": "https://static.wikia.nocookie.net/onepiece/images/6/6d/Monkey_D._Luffy_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/229?cb=20260611004637",
+  "onepiece||Nami|Nami|Nami (One Piece)": "https://static.wikia.nocookie.net/onepiece/images/6/68/Nami_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/286?cb=20260315214841",
+  "onepiece||Nefertari Vivi|Nefertari Vivi|Nefertari Vivi": "https://static.wikia.nocookie.net/onepiece/images/0/09/Nefertari_Vivi_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/175?cb=20190505023647",
+  "onepiece||Nico Robin|Nico Robin|Nico Robin": "https://static.wikia.nocookie.net/onepiece/images/b/bc/Nico_Robin_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/267?cb=20260913163501",
+  "onepiece||Portgas D. Ace|Portgas D. Ace|Portgas D. Ace": "https://static.wikia.nocookie.net/onepiece/images/4/4f/Portgas_D._Ace_Anime_Infobox.png/revision/latest/scale-to-width-down/287?cb=20240629132600",
+  "onepiece||Roronoa Zoro|Roronoa Zoro|Roronoa Zoro": "https://static.wikia.nocookie.net/onepiece/images/5/52/Roronoa_Zoro_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/180?cb=20241029161719",
+  "onepiece||Sabo|Sabo|Sabo (One Piece)": "https://static.wikia.nocookie.net/onepiece/images/c/c2/Sabo_Anime_Infobox.png/revision/latest/scale-to-width-down/317?cb=20230804035141",
+  "onepiece||Sanji|Sanji|Sanji (One Piece)": "https://static.wikia.nocookie.net/onepiece/images/b/b6/Sanji_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/160?cb=20240122012744",
+  "onepiece||Shanks|Shanks|Shanks": "https://static.wikia.nocookie.net/onepiece/images/6/66/Shanks_Anime_Infobox.png/revision/latest/scale-to-width-down/334?cb=20240829145447",
+  "onepiece||Silvers Rayleigh|Silvers Rayleigh|Silvers Rayleigh": "https://static.wikia.nocookie.net/onepiece/images/b/b1/Silvers_Rayleigh_Anime_Infobox.png/revision/latest/scale-to-width-down/251?cb=20230601221758",
+  "onepiece||Smoker|Smoker|Smoker (One Piece)": "https://static.wikia.nocookie.net/onepiece/images/c/c4/Smoker_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/367?cb=20221101011905",
+  "onepiece||Tony Tony Chopper|Tony Tony Chopper|Tony Tony Chopper": "https://static.wikia.nocookie.net/onepiece/images/a/af/Tony_Tony_Chopper_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/375?cb=20240720150824",
+  "onepiece||Trafalgar Law|Trafalgar Law|Trafalgar Law": "https://static.wikia.nocookie.net/onepiece/images/4/4d/Trafalgar_D._Water_Law_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/213?cb=20230124163510",
+  "onepiece||Usopp|Usopp|Usopp": "https://static.wikia.nocookie.net/onepiece/images/3/35/Usopp_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/258?cb=20221127233827",
+  "onepiece||Yamato|Yamato|Yamato (One Piece)": "https://static.wikia.nocookie.net/onepiece/images/b/bd/Yamato_Anime_Infobox.png/revision/latest/scale-to-width-down/323?cb=20260126165014",
+  "onepiece|Arabasta Arc|Alabasta|Nefertari Vivi|Nefertari Vivi": "https://static.wikia.nocookie.net/onepiece/images/0/0b/Arabasta_Arc.png/revision/latest/scale-to-width-down/480?cb=20240206111117",
+  "onepiece|Arlong Park Arc|Arlong Park|Arlong|Nami (One Piece)": "https://static.wikia.nocookie.net/onepiece/images/1/19/Arlong_Park_Arc.png/revision/latest/scale-to-width-down/430?cb=20240418031111",
+  "onepiece|Awa Awa no Mi|Awa Awa no Mi|Kalifa|": "https://static.wikia.nocookie.net/onepiece/images/5/51/Awa_Awa_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20240612220456",
+  "onepiece|Baku Baku no Mi|Baku Baku no Mi|Wapol|": "https://static.wikia.nocookie.net/onepiece/images/c/c6/Baku_Baku_no_Mi_Infobox.png/revision/latest/scale-to-width-down/362?cb=20250826143858",
+  "onepiece|Bane Bane no Mi|Bane Bane no Mi|Bellamy|": "https://static.wikia.nocookie.net/onepiece/images/1/1d/Bane_Bane_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20160913222919",
+  "onepiece|Bara Bara no Mi|Bara Bara no Mi|Buggy|Buggy (One Piece)": "https://static.wikia.nocookie.net/onepiece/images/9/9c/Bara_Bara_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20240421082610",
+  "onepiece|Bari Bari no Mi|Bari Bari no Mi|Bartolomeo|": "https://static.wikia.nocookie.net/onepiece/images/d/de/Bari_Bari_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20160212174221",
+  "onepiece|Bisu Bisu no Mi|Bisu Bisu no Mi|Charlotte Cracker|": "https://static.wikia.nocookie.net/onepiece/images/8/8b/Bisu_Bisu_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20170730022308",
+  "onepiece|Bomu Bomu no Mi|Bomu Bomu no Mi|Gem|": "https://static.wikia.nocookie.net/onepiece/images/1/1a/Bomu_Bomu_no_Mi_Infobox.png/revision/latest/scale-to-width-down/333?cb=20210204030003",
+  "onepiece|Charlotte Linlin|Big Mom|Charlotte Linlin|Charlotte Linlin": "https://static.wikia.nocookie.net/onepiece/images/d/d8/Charlotte_Linlin_Anime_Infobox.png/revision/latest/scale-to-width-down/480?cb=20180423150804",
+  "onepiece|Chiyu Chiyu no Mi|Chiyu Chiyu no Mi|Mansherry|": "https://static.wikia.nocookie.net/onepiece/images/b/b2/Chiyu_Chiyu_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20151129192854",
+  "onepiece|Choki Choki no Mi|Choki Choki no Mi|Inazuma|": "https://static.wikia.nocookie.net/onepiece/images/0/0f/Choki_Choki_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20250705131414",
+  "onepiece|Doa Doa no Mi|Doa Doa no Mi|Blueno|": "https://static.wikia.nocookie.net/onepiece/images/0/04/Doa_Doa_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20230117020238",
+  "onepiece|Doru Doru no Mi|Doru Doru no Mi|Galdino|": "https://static.wikia.nocookie.net/onepiece/images/5/5f/Doru_Doru_no_Mi_Infobox.png/revision/latest/scale-to-width-down/255?cb=20250826143904",
+  "onepiece|Dressrosa Arc|Dressrosa|Donquixote Doflamingo|Donquixote Doflamingo": "https://static.wikia.nocookie.net/onepiece/images/5/52/Dressrosa_Arc.png/revision/latest/scale-to-width-down/338?cb=20150319033925",
+  "onepiece|Edward Newgate|Barbabianca|Edward Newgate|Edward Newgate": "https://static.wikia.nocookie.net/onepiece/images/b/b7/Edward_Newgate_Anime_Infobox.png/revision/latest/scale-to-width-down/480?cb=20220926165737",
+  "onepiece|Egghead Arc|Egghead|Vegapunk|": "https://static.wikia.nocookie.net/onepiece/images/f/f5/Egghead_Arc.png/revision/latest/scale-to-width-down/339?cb=20241226010617",
+  "onepiece|Enies Lobby Arc|Enies Lobby|Nico Robin|Nico Robin": "https://static.wikia.nocookie.net/onepiece/images/b/b7/Enies_Lobby_Arc.png/revision/latest/scale-to-width-down/345?cb=20230405214929",
+  "onepiece|Fish-Man Island Arc|Isola degli Uomini-pesce|Hody Jones|": "https://static.wikia.nocookie.net/onepiece/images/e/e5/Fish-Man_Island_Arc.png/revision/latest/scale-to-width-down/340?cb=20210116220320",
+  "onepiece|Gasu Gasu no Mi|Gasu Gasu no Mi|Caesar Clown|": "https://static.wikia.nocookie.net/onepiece/images/c/cf/Gasu_Gasu_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20230902035324",
+  "onepiece|Goro Goro no Mi|Goro Goro no Mi|Enel|Enel (One Piece)": "https://static.wikia.nocookie.net/onepiece/images/d/d2/Goro_Goro_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20230907005154",
+  "onepiece|Gura Gura no Mi|Gura Gura no Mi|Edward Newgate|Edward Newgate": "https://static.wikia.nocookie.net/onepiece/images/e/e3/Gura_Gura_no_Mi_Infobox.png/revision/latest/scale-to-width-down/312?cb=20251002184350",
+  "onepiece|Hana Hana no Mi|Hana Hana no Mi|Nico Robin|Nico Robin": "https://static.wikia.nocookie.net/onepiece/images/2/21/Hana_Hana_no_Mi_Infobox.png/revision/latest/scale-to-width-down/377?cb=20191228120242",
+  "onepiece|Hie Hie no Mi|Hie Hie no Mi|Kuzan|": "https://static.wikia.nocookie.net/onepiece/images/5/56/Hie_Hie_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20221101155813",
+  "onepiece|Hito Hito no Mi, Model: Daibutsu|Hito Hito no Mi modello Daibutsu|Sengoku|": "https://static.wikia.nocookie.net/onepiece/images/4/45/Hito_Hito_no_Mi%2C_Model_Daibutsu_Infobox.png/revision/latest/scale-to-width-down/480?cb=20240813213645",
+  "onepiece|Hito Hito no Mi, Model: Nika|Gomu Gomu no Mi|Monkey D. Luffy|Monkey D. Luffy": "https://static.wikia.nocookie.net/onepiece/images/1/12/Gomu_Gomu_no_Mi_Infobox.png/revision/latest/scale-to-width-down/390?cb=20221108072550",
+  "onepiece|Hito Hito no Mi|Hito Hito no Mi|Tony Tony Chopper|Tony Tony Chopper": "https://static.wikia.nocookie.net/onepiece/images/3/38/Hito_Hito_no_Mi_Infobox.png/revision/latest/scale-to-width-down/305?cb=20191228120250",
+  "onepiece|Hobi Hobi no Mi|Hobi Hobi no Mi|Sugar|": "https://static.wikia.nocookie.net/onepiece/images/3/3d/Hobi_Hobi_no_Mi_Infobox.png/revision/latest/scale-to-width-down/320?cb=20241129153900",
+  "onepiece|Horo Horo no Mi|Horo Horo no Mi|Perona|": "https://static.wikia.nocookie.net/onepiece/images/1/14/Horo_Horo_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20250826143910",
+  "onepiece|Horu Horu no Mi|Horu Horu no Mi|Emporio Ivankov|": "https://static.wikia.nocookie.net/onepiece/images/5/53/Horu_Horu_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20231111060110",
+  "onepiece|Impel Down Arc|Impel Down|Magellan|": "https://static.wikia.nocookie.net/onepiece/images/a/a4/Impel_Down_Arc.png/revision/latest/scale-to-width-down/343?cb=20230404150427",
+  "onepiece|Inu Inu no Mi, Model: Okuchi no Makami|Inu Inu no Mi modello Okuchi no Makami|Yamato|Yamato (One Piece)": "https://static.wikia.nocookie.net/onepiece/images/1/1d/Inu_Inu_no_Mi%2C_Model_Okuchi_no_Makami_Infobox.png/revision/latest/scale-to-width-down/401?cb=20221120062131",
+  "onepiece|Ishi Ishi no Mi|Ishi Ishi no Mi|Pica|": "https://static.wikia.nocookie.net/onepiece/images/9/90/Ishi_Ishi_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20180529180105",
+  "onepiece|Ito Ito no Mi|Ito Ito no Mi|Donquixote Doflamingo|Donquixote Doflamingo": "https://static.wikia.nocookie.net/onepiece/images/a/ae/Ito_Ito_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20151220070449",
+  "onepiece|Kage Kage no Mi|Kage Kage no Mi|Gecko Moria|": "https://static.wikia.nocookie.net/onepiece/images/7/7b/Kage_Kage_no_Mi_Infobox.png/revision/latest/scale-to-width-down/461?cb=20240628055643",
+  "onepiece|Kaidou|Kaido|Kaidou|Kaido (One Piece)": "https://static.wikia.nocookie.net/onepiece/images/2/2d/Kaidou_Anime_Infobox.png/revision/latest/scale-to-width-down/464?cb=20231102015517",
+  "onepiece|Kilo Kilo no Mi|Kilo Kilo no Mi|Mikita|": "https://static.wikia.nocookie.net/onepiece/images/8/89/Kiro_Kiro_no_Mi_Infobox.png/revision/latest/scale-to-width-down/313?cb=20210204030042",
+  "onepiece|Kuku Kuku no Mi|Kuku Kuku no Mi|Streusen|": "https://static.wikia.nocookie.net/onepiece/images/4/47/Kuku_Kuku_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20180527032147",
+  "onepiece|Magu Magu no Mi|Magu Magu no Mi|Sakazuki|": "https://static.wikia.nocookie.net/onepiece/images/0/07/Magu_Magu_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20231013044624",
+  "onepiece|Mane Mane no Mi|Mane Mane no Mi|Bentham|": "https://static.wikia.nocookie.net/onepiece/images/1/12/Mane_Mane_no_Mi_Infobox.png/revision/latest/scale-to-width-down/381?cb=20240605221030",
+  "onepiece|Marineford Arc|Marineford|Portgas D. Ace|Portgas D. Ace": "https://static.wikia.nocookie.net/onepiece/images/2/28/Marineford_Arc.png/revision/latest/scale-to-width-down/480?cb=20230122224253",
+  "onepiece|Marshall D. Teach|Barbanera|Marshall D. Teach|Marshall D. Teach": "https://static.wikia.nocookie.net/onepiece/images/f/ff/Marshall_D._Teach_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/422?cb=20240128044952",
+  "onepiece|Mera Mera no Mi|Mera Mera no Mi|Portgas D. Ace|Portgas D. Ace": "https://static.wikia.nocookie.net/onepiece/images/8/8c/Mera_Mera_no_Mi_Infobox.png/revision/latest/scale-to-width-down/435?cb=20240710204632",
+  "onepiece|Mero Mero no Mi|Mero Mero no Mi|Boa Hancock|Boa Hancock": "https://static.wikia.nocookie.net/onepiece/images/9/98/Mero_Mero_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20230306202058",
+  "onepiece|Mira Mira no Mi|Mira Mira no Mi|Charlotte Brulee|": "https://static.wikia.nocookie.net/onepiece/images/c/c3/Mira_Mira_no_Mi_Infobox.png/revision/latest/scale-to-width-down/320?cb=20170709205701",
+  "onepiece|Mochi Mochi no Mi|Mochi Mochi no Mi|Charlotte Katakuri|": "https://static.wikia.nocookie.net/onepiece/images/2/2c/Mochi_Mochi_no_Mi_Infobox.png/revision/latest/scale-to-width-down/345?cb=20250826143835",
+  "onepiece|Mogu Mogu no Mi|Mogu Mogu no Mi|Drophy|": "https://static.wikia.nocookie.net/onepiece/images/9/95/Mogu_Mogu_no_Mi_Infobox.png/revision/latest/scale-to-width-down/406?cb=20230624124000",
+  "onepiece|Moku Moku no Mi|Moku Moku no Mi|Smoker|Smoker (One Piece)": "https://static.wikia.nocookie.net/onepiece/images/8/8d/Moku_Moku_no_Mi_Infobox.png/revision/latest/scale-to-width-down/345?cb=20250826143852",
+  "onepiece|Monkey D. Luffy|Monkey D. Luffy|Monkey D. Luffy|Monkey D. Luffy": "https://static.wikia.nocookie.net/onepiece/images/6/6d/Monkey_D._Luffy_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/229?cb=20260611004637",
+  "onepiece|Mori Mori no Mi|Mori Mori no Mi|Aramaki|": "https://static.wikia.nocookie.net/onepiece/images/2/23/Mori_Mori_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20240915022218",
+  "onepiece|Nagi Nagi no Mi|Nagi Nagi no Mi|Donquixote Rosinante|": "https://static.wikia.nocookie.net/onepiece/images/3/37/Nagi_Nagi_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20150802120152",
+  "onepiece|Neko Neko no Mi, Model: Leopard|Neko Neko no Mi modello Leopardo|Rob Lucci|": "https://static.wikia.nocookie.net/onepiece/images/9/98/Neko_Neko_no_Mi%2C_Model_Leopard_Infobox.png/revision/latest/scale-to-width-down/372?cb=20230306213909",
+  "onepiece|Nikyu Nikyu no Mi|Nikyu Nikyu no Mi|Bartholomew Kuma|Bartholomew Kuma": "https://static.wikia.nocookie.net/onepiece/images/e/e4/Nikyu_Nikyu_no_Mi_Infobox.png/revision/latest/scale-to-width-down/412?cb=20250525161631",
+  "onepiece|Noro Noro no Mi|Noro Noro no Mi|Foxy|": "https://static.wikia.nocookie.net/onepiece/images/7/7a/Noro_Noro_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20230516224102",
+  "onepiece|Nui Nui no Mi|Nui Nui no Mi|Leo|": "https://static.wikia.nocookie.net/onepiece/images/0/00/Nui_Nui_no_Mi_Infobox.png/revision/latest?cb=20241129154842",
+  "onepiece|Numa Numa no Mi|Numa Numa no Mi|Caribou|": "https://static.wikia.nocookie.net/onepiece/images/d/d3/Numa_Numa_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20230715142546",
+  "onepiece|One Piece|Monkey D. Luffy|Monkey D. Luffy|One Piece": "https://static.wikia.nocookie.net/onepiece/images/6/6d/Monkey_D._Luffy_Anime_Post_Timeskip_Infobox.png/revision/latest/scale-to-width-down/229?cb=20260611004637",
+  "onepiece|Ope Ope no Mi|Ope Ope no Mi|Trafalgar Law|Trafalgar Law": "https://static.wikia.nocookie.net/onepiece/images/0/0e/Ope_Ope_no_Mi_Infobox.png/revision/latest/scale-to-width-down/450?cb=20210409181034",
+  "onepiece|Ori Ori no Mi|Ori Ori no Mi|Hina|": "https://static.wikia.nocookie.net/onepiece/images/7/7a/Ori_Ori_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20231125033554",
+  "onepiece|Pamu Pamu no Mi|Pamu Pamu no Mi|Gladius|": "https://static.wikia.nocookie.net/onepiece/images/a/a9/Pamu_Pamu_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20231025225145",
+  "onepiece|Pika Pika no Mi|Pika Pika no Mi|Borsalino|": "https://static.wikia.nocookie.net/onepiece/images/6/66/Pika_Pika_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20250501014523",
+  "onepiece|Punk Hazard Arc|Punk Hazard|Caesar Clown|Trafalgar Law": "https://static.wikia.nocookie.net/onepiece/images/d/df/Punk_Hazard_Arc.png/revision/latest/scale-to-width-down/339?cb=20240418031118",
+  "onepiece|Romance Dawn Arc|Romance Dawn|Monkey D. Luffy|": "https://static.wikia.nocookie.net/onepiece/images/9/90/Romance_Dawn_Arc.png/revision/latest/scale-to-width-down/480?cb=20230527232506",
+  "onepiece|Ryu Ryu no Mi, Model: Allosaurus|Ryu Ryu no Mi modello Allosauro|X Drake|": "https://static.wikia.nocookie.net/onepiece/images/a/a3/Ryu_Ryu_no_Mi%2C_Model_Allosaurus_Beast_Form.png/revision/latest/scale-to-width-down/480?cb=20220301122130",
+  "onepiece|Sabaody Archipelago Arc|Arcipelago Sabaody|Silvers Rayleigh|Silvers Rayleigh": "https://static.wikia.nocookie.net/onepiece/images/2/2b/Sabaody_Archipelago_Arc.png/revision/latest/scale-to-width-down/406?cb=20230403161152",
+  "onepiece|Sabi Sabi no Mi|Sabi Sabi no Mi|Shu|": "https://static.wikia.nocookie.net/onepiece/images/7/7c/Sabi_Sabi_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20160708014101",
+  "onepiece|Shiro Shiro no Mi|Shiro Shiro no Mi|Capone Bege|": "https://static.wikia.nocookie.net/onepiece/images/e/e8/Shiro_Shiro_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20160115065100",
+  "onepiece|Skypiea Arc|Skypiea|Enel|Enel (One Piece)": "https://static.wikia.nocookie.net/onepiece/images/d/d6/Skypiea_Arc.png/revision/latest/scale-to-width-down/405?cb=20210107041826",
+  "onepiece|Soru Soru no Mi|Soru Soru no Mi|Charlotte Linlin|Charlotte Linlin": "https://static.wikia.nocookie.net/onepiece/images/9/9d/Soru_Soru_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20230113122808",
+  "onepiece|Sube Sube no Mi|Sube Sube no Mi|Alvida|": "https://static.wikia.nocookie.net/onepiece/images/e/e9/Sube_Sube_no_Mi_Infobox.png/revision/latest/scale-to-width-down/359?cb=20250826143841",
+  "onepiece|Suna Suna no Mi|Suna Suna no Mi|Crocodile|Crocodile (One Piece)": "https://static.wikia.nocookie.net/onepiece/images/7/7d/Suna_Suna_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20220408131752",
+  "onepiece|Supa Supa no Mi|Supa Supa no Mi|Daz Bones|": "https://static.wikia.nocookie.net/onepiece/images/f/f9/Supa_Supa_no_Mi_Infobox.png/revision/latest?cb=20240605221022",
+  "onepiece|Thriller Bark Arc|Thriller Bark|Gecko Moria|Brook (One Piece)": "https://static.wikia.nocookie.net/onepiece/images/7/7e/Thriller_Bark_Arc.png/revision/latest/scale-to-width-down/344?cb=20160705133246",
+  "onepiece|Toki Toki no Mi|Toki Toki no Mi|Kouzuki Toki|": "https://static.wikia.nocookie.net/onepiece/images/6/6b/Toki_Toki_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20210221040316",
+  "onepiece|Tori Tori no Mi, Model: Falcon|Tori Tori no Mi modello Falco|Pell|": "https://static.wikia.nocookie.net/onepiece/images/e/ea/Tori_Tori_no_Mi%2C_Model_Falcon_Beast_Form.png/revision/latest/scale-to-width-down/480?cb=20230916035747",
+  "onepiece|Tori Tori no Mi, Model: Phoenix|Tori Tori no Mi modello Fenice|Marco|": "https://static.wikia.nocookie.net/onepiece/images/5/51/Tori_Tori_no_Mi%2C_Model_Phoenix_Infobox.png/revision/latest/scale-to-width-down/351?cb=20251002184357",
+  "onepiece|Uo Uo no Mi, Model: Seiryu|Uo Uo no Mi modello Seiryu|Kaidou|Kaido (One Piece)": "https://static.wikia.nocookie.net/onepiece/images/f/f9/Uo_Uo_no_Mi%2C_Model_Seiryu_Infobox.png/revision/latest/scale-to-width-down/282?cb=20211204205430",
+  "onepiece|Ushi Ushi no Mi, Model: Giraffe|Ushi Ushi no Mi modello Giraffa|Kaku|": "https://static.wikia.nocookie.net/onepiece/images/8/8c/Ushi_Ushi_no_Mi%2C_Model_Giraffe_Infobox.png/revision/latest/scale-to-width-down/480?cb=20230120040539",
+  "onepiece|Wano Country Arc|Wano|Kaidou|Kaido (One Piece)": "https://static.wikia.nocookie.net/onepiece/images/a/a3/Wano_Country_Arc.png/revision/latest/scale-to-width-down/480?cb=20211130095510",
+  "onepiece|Wara Wara no Mi|Wara Wara no Mi|Basil Hawkins|": "https://static.wikia.nocookie.net/onepiece/images/b/b4/Wara_Wara_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20180803070246",
+  "onepiece|Water 7 Arc|Water 7|Franky|Usopp": "https://static.wikia.nocookie.net/onepiece/images/c/c4/Water_7_Arc.png/revision/latest/scale-to-width-down/366?cb=20230404175605",
+  "onepiece|Whole Cake Island Arc|Whole Cake Island|Charlotte Katakuri|Sanji (One Piece)": "https://static.wikia.nocookie.net/onepiece/images/6/6b/Whole_Cake_Island_Arc.png/revision/latest/scale-to-width-down/412?cb=20180227003004",
+  "onepiece|Yami Yami no Mi|Yami Yami no Mi|Marshall D. Teach|Marshall D. Teach": "https://static.wikia.nocookie.net/onepiece/images/f/f5/Yami_Yami_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20240627010252",
+  "onepiece|Yomi Yomi no Mi|Yomi Yomi no Mi|Brook|Brook (One Piece)": "https://static.wikia.nocookie.net/onepiece/images/3/3b/Yomi_Yomi_no_Mi_Infobox.png/revision/latest/scale-to-width-down/349?cb=20201116170233",
+  "onepiece|Yuki Yuki no Mi|Yuki Yuki no Mi|Monet|": "https://static.wikia.nocookie.net/onepiece/images/a/a9/Yuki_Yuki_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20240221181209",
+  "onepiece|Zou Arc|Zo|Nekomamushi|": "https://static.wikia.nocookie.net/onepiece/images/e/ec/Zou_Arc.png/revision/latest/scale-to-width-down/375?cb=20240818134937",
+  "onepiece|Zushi Zushi no Mi|Zushi Zushi no Mi|Issho|": "https://static.wikia.nocookie.net/onepiece/images/b/ba/Zushi_Zushi_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20230320032400"
+ },
+ "misses": {
+  "||A Bug's Life – Megaminimondo||A Bug's Life": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Ade||Hades (Disney)": {
+   "categories": [
+    "animation-villains"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Akaza|Akaza|Akaza (Demon Slayer)": {
+   "categories": [
+    "anime-villains"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia"
+   ]
+  },
+  "||Akira||Akira (1988 film)": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Aladdin||Aladdin (1992 Disney film)": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Alice nel Paese delle Meraviglie||Alice in Wonderland (1951 film)": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||All for One|All for One|All for One (My Hero Academia)": {
+   "categories": [
+    "anime-villains"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Alla ricerca di Dory||Finding Dory": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Alla ricerca di Nemo||Finding Nemo": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Armored Core VI: Fires of Rubicon||Armored Core VI: Fires of Rubicon": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Arrietty||Arrietty": {
+   "categories": [
+    "anime-ghibli"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Asta|Asta|Asta (Black Clover)": {
+   "categories": [
+    "anime-protagonists"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Atlantis – L'impero perduto||Atlantis: The Lost Empire": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Baby Boss||The Boss Baby": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Baldur's Gate 3||Baldur's Gate 3": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Bambi||Bambi": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Barbanera|Marshall D. Teach|Marshall D. Teach": {
+   "categories": [
+    "anime-villains"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Berserk||Berserk (manga)": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Biancaneve e i sette nani||Snow White and the Seven Dwarfs (1937 film)": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Big Hero 6||Big Hero 6 (film)": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||BioShock Infinite||BioShock Infinite": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||BioShock||BioShock": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Black Clover||Black Clover": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Black Myth: Wukong||Black Myth: Wukong": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Bleach||Bleach (manga)": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Bloodborne||Bloodborne": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Blue Lock||Blue Lock": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Bocchi the Rock!||Bocchi the Rock!": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Bolt – Un eroe a quattro zampe||Bolt (2008 film)": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Capitan Uncino||Captain Hook": {
+   "categories": [
+    "animation-villains"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Cars – Motori ruggenti||Cars (film)": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Cars 2||Cars 2": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Cars 3||Cars 3": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Cell|Cell|Cell (Dragon Ball)": {
+   "categories": [
+    "anime-villains"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Cenerentola||Cinderella (1950 film)": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Chainsaw Man||Chainsaw Man": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Charles Muntz||Charles Muntz": {
+   "categories": [
+    "animation-villains"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Chrono Trigger||Chrono Trigger": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Clair Obscur: Expedition 33||Clair Obscur: Expedition 33": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Coco||Coco (2017 film)": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Code Geass||Code Geass": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Cowboy Bebop||Cowboy Bebop": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Crudelia De Mon||Cruella de Vil": {
+   "categories": [
+    "animation-villains"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Cyberpunk 2077||Cyberpunk 2077": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Cyberpunk: Edgerunners||Cyberpunk: Edgerunners": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Dandadan||Dandadan": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Dark Souls III||Dark Souls III": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Dark Souls||Dark Souls (video game)": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Death Note||Death Note": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Death Stranding||Death Stranding": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Demon Slayer||Demon Slayer: Kimetsu no Yaiba": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Demon's Souls||Demon's Souls": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Denji|Denji|Denji (Chainsaw Man)": {
+   "categories": [
+    "anime-protagonists"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Destiny 2||Destiny 2": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Detective Pikachu||Detective Pikachu (video game)": {
+   "categories": [
+    "games-pokemon-spinoff"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Deus Ex: Human Revolution||Deus Ex: Human Revolution": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Deus Ex||Deus Ex (video game)": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Diablo II||Diablo II": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Diablo IV||Diablo IV": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Dio Brando|Dio Brando|Dio Brando": {
+   "categories": [
+    "anime-villains"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Divinity: Original Sin II||Divinity: Original Sin II": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Donquixote Doflamingo|Donquixote Doflamingo|Donquixote Doflamingo": {
+   "categories": [
+    "anime-villains"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Doom Eternal||Doom Eternal": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Dottor Facilier||Dr. Facilier": {
+   "categories": [
+    "animation-villains"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Dr. Stone||Dr. Stone": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Dragon Age: Origins||Dragon Age: Origins": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Dragon Ball Z||Dragon Ball Z": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Dragon Quest XI||Dragon Quest XI": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Dragon Trainer – Il mondo nascosto||How to Train Your Dragon: The Hidden World": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Dragon Trainer 2||How to Train Your Dragon 2": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Dragon Trainer||How to Train Your Dragon (2010 film)": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Dragon's Dogma 2||Dragon's Dogma 2": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Dumbo||Dumbo": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Earwig e la strega||Earwig and the Witch (film)": {
+   "categories": [
+    "anime-ghibli"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Edward Elric|Edward Elric|Edward Elric": {
+   "categories": [
+    "anime-protagonists"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Elden Ring||Elden Ring": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Elemental||Elemental (2023 film)": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Elio||Elio (film)": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Encanto||Encanto": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Eren Jaeger|Eren Yeager|Eren Yeager": {
+   "categories": [
+    "anime-protagonists"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Fairy Tail||Fairy Tail": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Fallout 4||Fallout 4": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Fallout: New Vegas||Fallout: New Vegas": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Fantasia||Fantasia (1940 film)": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Fata Madrina||Fairy Godmother (Shrek)": {
+   "categories": [
+    "animation-villains"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Final Fantasy IX||Final Fantasy IX": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Final Fantasy VII Rebirth||Final Fantasy VII Rebirth": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Final Fantasy VII||Final Fantasy VII": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Final Fantasy X||Final Fantasy X": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Final Fantasy XIV||Final Fantasy XIV": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Final Fantasy XVI||Final Fantasy XVI": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Fire Emblem: Three Houses||Fire Emblem: Three Houses": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Freezer|Frieza|Frieza": {
+   "categories": [
+    "anime-villains"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Frieren||Frieren": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Frollo||Claude Frollo": {
+   "categories": [
+    "animation-villains"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Frozen – Il regno di ghiaccio||Frozen (2013 film)": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Frozen II – Il segreto di Arendelle||Frozen 2": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Fullmetal Alchemist: Brotherhood||Fullmetal Alchemist: Brotherhood": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Gaston||Gaston (Beauty and the Beast)": {
+   "categories": [
+    "animation-villains"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Genshin Impact||Genshin Impact": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Ghostrunner||Ghostrunner": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Gintama||Gintama": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Gintoki Sakata|Gintoki Sakata|Gintoki Sakata": {
+   "categories": [
+    "anime-protagonists"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Gli Aristogatti||The Aristocats": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Gli Incredibili 2||Incredibles 2": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Gli Incredibili||The Incredibles": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||God of War Ragnarök||God of War Ragnarök": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||God of War||God of War (2018 video game)": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Goku|Goku|Goku": {
+   "categories": [
+    "anime-protagonists"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Gon Freecss|Gon Freecss|Gon Freecss": {
+   "categories": [
+    "anime-protagonists"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Grimilde||Evil Queen (Disney)": {
+   "categories": [
+    "animation-villains"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Hades II||Hades II": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Hades||Hades (video game)": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Haikyu!!||Haikyu!!": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Half-Life 2||Half-Life 2": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Halo: Combat Evolved||Halo: Combat Evolved": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Hans||Hans (Frozen)": {
+   "categories": [
+    "animation-villains"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Hercules||Hercules (1997 film)": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Hisoka|Hisoka|Hisoka (Hunter × Hunter)": {
+   "categories": [
+    "anime-villains"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia"
+   ]
+  },
+  "||Hogwarts Legacy||Hogwarts Legacy": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Hollow Knight: Silksong||Hollow Knight: Silksong": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Hollow Knight||Hollow Knight": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Home – A casa||Home (2015 film)": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Horizon Zero Dawn||Horizon Zero Dawn": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Hunter × Hunter||Hunter × Hunter": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||I Croods||The Croods": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||I miei vicini Yamada||My Neighbors the Yamadas": {
+   "categories": [
+    "anime-ghibli"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||I racconti di Terramare||Tales from Earthsea (film)": {
+   "categories": [
+    "anime-ghibli"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||I sospiri del mio cuore||Whisper of the Heart": {
+   "categories": [
+    "anime-ghibli"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Ichigo Kurosaki|Ichigo Kurosaki|Ichigo Kurosaki": {
+   "categories": [
+    "anime-protagonists"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Il castello errante di Howl||Howl's Moving Castle (film)": {
+   "categories": [
+    "anime-ghibli"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Il gatto con gli stivali 2 – L'ultimo desiderio||Puss in Boots: The Last Wish": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Il gatto con gli stivali||Puss in Boots (2011 film)": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Il gobbo di Notre Dame||The Hunchback of Notre Dame (1996 film)": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Il libro della giungla||The Jungle Book (1967 film)": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Il mio vicino Totoro||My Neighbor Totoro": {
+   "categories": [
+    "anime-ghibli"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Il pianeta del tesoro||Treasure Planet": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Il piccolo yeti||Abominable (2019 film)": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Il principe d'Egitto||The Prince of Egypt": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Il ragazzo e l'airone||The Boy and the Heron": {
+   "categories": [
+    "anime-ghibli"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Il re leone||The Lion King": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Il robot selvaggio||The Wild Robot": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Il viaggio di Arlo||The Good Dinosaur": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Inside Out 2||Inside Out 2": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Inside Out||Inside Out (2015 film)": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Inuyasha||Inuyasha": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Inuyasha|Inuyasha|Inuyasha (character)": {
+   "categories": [
+    "anime-protagonists"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Izuku Midoriya|Izuku Midoriya|Izuku Midoriya": {
+   "categories": [
+    "anime-protagonists"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Jafar||Jafar": {
+   "categories": [
+    "animation-villains"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Johan Liebert|Johan Liebert|Johan Liebert": {
+   "categories": [
+    "anime-villains"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia"
+   ]
+  },
+  "||Jotaro Kujo|Jotaro Kujo|Jotaro Kujo": {
+   "categories": [
+    "anime-protagonists"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Jujutsu Kaisen||Jujutsu Kaisen": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Kaguya-sama: Love Is War||Kaguya-sama: Love Is War": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Kenshiro|Kenshiro|Kenshiro": {
+   "categories": [
+    "anime-protagonists"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Kiki – Consegne a domicilio||Kiki's Delivery Service": {
+   "categories": [
+    "anime-ghibli"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Killua Zoldyck|Killua Zoldyck|Killua Zoldyck": {
+   "categories": [
+    "anime-protagonists"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Kingdom Hearts II||Kingdom Hearts II": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Koda, fratello orso||Brother Bear": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Kung Fu Panda 4||Kung Fu Panda 4": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Kung Fu Panda||Kung Fu Panda (film)": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||L'attacco dei giganti||Attack on Titan": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||La bella addormentata nel bosco||Sleeping Beauty (1959 film)": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||La bella e la bestia||Beauty and the Beast (1991 film)": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||La carica dei cento e uno||One Hundred and One Dalmatians": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||La città incantata||Spirited Away": {
+   "categories": [
+    "anime-ghibli"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||La collina dei papaveri||From Up on Poppy Hill": {
+   "categories": [
+    "anime-ghibli"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||La gang del bosco||Over the Hedge (film)": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||La Morte||Puss in Boots: The Last Wish": {
+   "categories": [
+    "animation-villains"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||La principessa e il ranocchio||The Princess and the Frog": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||La ricompensa del gatto||The Cat Returns": {
+   "categories": [
+    "anime-ghibli"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||La sirenetta||The Little Mermaid (1989 film)": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||La spada nella roccia||The Sword in the Stone (1963 film)": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||La storia della principessa splendente||The Tale of the Princess Kaguya (film)": {
+   "categories": [
+    "anime-ghibli"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||La strada per El Dorado||The Road to El Dorado": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Laputa – Castello nel cielo||Castle in the Sky": {
+   "categories": [
+    "anime-ghibli"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Le 5 leggende||Rise of the Guardians": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Le avventure di Bianca e Bernie||The Rescuers": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Le avventure di Peter Pan||Peter Pan (1953 film)": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Le bizzarre avventure di JoJo||JoJo's Bizarre Adventure": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Le follie dell'imperatore||The Emperor's New Groove": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Leggende Pokémon: Arceus||Pokémon Legends: Arceus": {
+   "categories": [
+    "games-pokemon-main"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Leggende Pokémon: Z-A||Pokémon Legends: Z-A": {
+   "categories": [
+    "games-pokemon-main"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Lies of P||Lies of P": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Lightyear – La vera storia di Buzz||Lightyear (film)": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Lilli e il vagabondo||Lady and the Tramp": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Lilo & Stitch||Lilo & Stitch": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Lord Farquaad||Lord Farquaad": {
+   "categories": [
+    "animation-villains"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Lotso||Lotso": {
+   "categories": [
+    "animation-villains"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Luca||Luca (2021 film)": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Madagascar 3 – Ricercati in Europa||Madagascar 3: Europe's Most Wanted": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Madagascar||Madagascar (2005 film)": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Madara Uchiha|Madara Uchiha|Madara Uchiha": {
+   "categories": [
+    "anime-villains"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Made in Abyss||Made in Abyss": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Madre Gothel||Mother Gothel": {
+   "categories": [
+    "animation-villains"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Mahito|Mahito|Mahito (Jujutsu Kaisen)": {
+   "categories": [
+    "anime-villains"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia"
+   ]
+  },
+  "||Majin Bu|Majin Buu|Majin Buu": {
+   "categories": [
+    "anime-villains"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Makima|Makima|Makima (Chainsaw Man)": {
+   "categories": [
+    "anime-villains"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Malefica||Maleficent": {
+   "categories": [
+    "animation-villains"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Maleficent||Maleficent": {
+   "categories": [
+    "animation-villains"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Mass Effect 2||Mass Effect 2": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Mass Effect||Mass Effect (video game)": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Megamind||Megamind": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Meruem|Meruem|Meruem": {
+   "categories": [
+    "anime-villains"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia"
+   ]
+  },
+  "||Metaphor: ReFantazio||Metaphor: ReFantazio": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Metroid Dread||Metroid Dread": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Metroid Prime||Metroid Prime": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Mob Psycho 100||Mob Psycho 100": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Monkey D. Luffy|Monkey D. Luffy|Monkey D. Luffy": {
+   "categories": [
+    "anime-protagonists"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Monster Hunter: World||Monster Hunter: World": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Monster||Monster (manga)": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Monsters & Co.||Monsters, Inc.": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Monsters University||Monsters University": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Mostri contro alieni||Monsters vs. Aliens": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Mulan||Mulan (1998 film)": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||My Hero Academia||My Hero Academia": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Naruto Uzumaki|Naruto Uzumaki|Naruto Uzumaki": {
+   "categories": [
+    "anime-protagonists"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Naruto||Naruto": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Natsu Dragneel|Natsu Dragneel|Natsu Dragneel": {
+   "categories": [
+    "anime-protagonists"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Nausicaä della Valle del vento||Nausicaä of the Valley of the Wind (film)": {
+   "categories": [
+    "anime-ghibli"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Neon Genesis Evangelion||Neon Genesis Evangelion": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||New Pokémon Snap||New Pokémon Snap": {
+   "categories": [
+    "games-pokemon-spinoff"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Ni no Kuni: La minaccia della Strega Cinerea||Ni no Kuni: Wrath of the White Witch": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||NieR: Automata||Nier: Automata": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Oceania 2||Moana 2": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Oceania||Moana (2016 film)": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||One Piece||One Piece": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||One-Punch Man||One-Punch Man": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Onward – Oltre la magia||Onward (film)": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Ori and the Will of the Wisps||Ori and the Will of the Wisps": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Orochimaru|Orochimaru|Orochimaru (Naruto)": {
+   "categories": [
+    "anime-villains"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Oshi no Ko||Oshi no Ko": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Outer Wilds||Outer Wilds": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Padre|Father|Father (Fullmetal Alchemist)": {
+   "categories": [
+    "anime-villains"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pain|Pain|Pain (Naruto)": {
+   "categories": [
+    "anime-villains"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pinocchio||Pinocchio (1940 film)": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pioggia di ricordi||Only Yesterday (1991 film)": {
+   "categories": [
+    "anime-ghibli"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pocahontas||Pocahontas (1995 film)": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon Colosseum||Pokémon Colosseum": {
+   "categories": [
+    "games-pokemon-spinoff"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon Conquest||Pokémon Conquest": {
+   "categories": [
+    "games-pokemon-spinoff"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon Diamante Lucente e Perla Splendente||Pokémon Brilliant Diamond and Shining Pearl": {
+   "categories": [
+    "games-pokemon-main"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon Giallo||Pokémon Yellow": {
+   "categories": [
+    "games-pokemon-main"
+   ],
+   "tried": [
+    "wikipedia"
+   ]
+  },
+  "||Pokémon GO||Pokémon Go": {
+   "categories": [
+    "games-pokemon-spinoff"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon Masters EX||Pokémon Masters EX": {
+   "categories": [
+    "games-pokemon-spinoff"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon Mystery Dungeon: Esploratori del Tempo e dell'Oscurità||Pokémon Mystery Dungeon: Explorers of Time and Explorers of Darkness": {
+   "categories": [
+    "games-pokemon-spinoff"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon Mystery Dungeon: Squadra di soccorso DX||Pokémon Mystery Dungeon: Rescue Team DX": {
+   "categories": [
+    "games-pokemon-spinoff"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon Mystery Dungeon: Squadra Rossa e Blu||Pokémon Mystery Dungeon: Red Rescue Team and Blue Rescue Team": {
+   "categories": [
+    "games-pokemon-spinoff"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon Nero 2 e Bianco 2||Pokémon Black 2 and White 2": {
+   "categories": [
+    "games-pokemon-main"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon Nero e Bianco||Pokémon Black and White": {
+   "categories": [
+    "games-pokemon-main"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon Pinball||Pokémon Pinball": {
+   "categories": [
+    "games-pokemon-spinoff"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon Puzzle League||Pokémon Puzzle League": {
+   "categories": [
+    "games-pokemon-spinoff"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon Ranger||Pokémon Ranger": {
+   "categories": [
+    "games-pokemon-spinoff"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon Red and Blue||Pokémon Red and Blue": {
+   "categories": [
+    "games-pokemon-main"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon Rubino Omega e Zaffiro Alpha||Pokémon Omega Ruby and Alpha Sapphire": {
+   "categories": [
+    "games-pokemon-main"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon Scarlatto e Violetto||Pokémon Scarlet and Violet": {
+   "categories": [
+    "games-pokemon-main"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon Snap||Pokémon Snap": {
+   "categories": [
+    "games-pokemon-spinoff"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon Sole e Luna||Pokémon Sun and Moon": {
+   "categories": [
+    "games-pokemon-main"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon Spada e Scudo||Pokémon Sword and Shield": {
+   "categories": [
+    "games-pokemon-main"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon Stadium 2||Pokémon Stadium 2": {
+   "categories": [
+    "games-pokemon-spinoff"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon Stadium||Pokémon Stadium": {
+   "categories": [
+    "games-pokemon-spinoff"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon Trading Card Game Pocket||Pokémon Trading Card Game Pocket": {
+   "categories": [
+    "games-pokemon-spinoff"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon Trading Card Game||Pokémon Trading Card Game (video game)": {
+   "categories": [
+    "games-pokemon-spinoff"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon Ultrasole e Ultraluna||Pokémon Ultra Sun and Ultra Moon": {
+   "categories": [
+    "games-pokemon-main"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon Unite||Pokémon Unite": {
+   "categories": [
+    "games-pokemon-spinoff"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon X e Y||Pokémon X and Y": {
+   "categories": [
+    "games-pokemon-main"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon XD: Tempesta Oscura||Pokémon XD: Gale of Darkness": {
+   "categories": [
+    "games-pokemon-spinoff"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokémon: Let's Go, Pikachu! e Let's Go, Eevee!||Pokémon: Let's Go, Pikachu! and Let's Go, Eevee!": {
+   "categories": [
+    "games-pokemon-main"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pokkén Tournament||Pokkén Tournament": {
+   "categories": [
+    "games-pokemon-spinoff"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Pom Poko||Pom Poko": {
+   "categories": [
+    "anime-ghibli"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Ponyo sulla scogliera||Ponyo": {
+   "categories": [
+    "anime-ghibli"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Porco Rosso||Porco Rosso": {
+   "categories": [
+    "anime-ghibli"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Portal 2||Portal 2": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Principessa Mononoke||Princess Mononoke": {
+   "categories": [
+    "anime-ghibli"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Professor Rattigan||Professor Ratigan": {
+   "categories": [
+    "animation-villains"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Quando c'era Marnie||When Marnie Was There": {
+   "categories": [
+    "anime-ghibli"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Ralph spacca Internet||Ralph Breaks the Internet": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Ralph Spaccatutto||Wreck-It Ralph": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Rapunzel – L'intreccio della torre||Tangled": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Ratatouille||Ratatouille (film)": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Raya e l'ultimo drago||Raya and the Last Dragon": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Re:Zero||Re:Zero": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Red e Toby nemiciamici||The Fox and the Hound": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Red||Turning Red": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Ribelle – The Brave||Brave (2012 film)": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Robin Hood||Robin Hood (1973 film)": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Sailor Moon||Sailor Moon": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Saitama|Saitama|Saitama (One-Punch Man)": {
+   "categories": [
+    "anime-protagonists"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Scar||Scar (The Lion King)": {
+   "categories": [
+    "animation-villains"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Sekiro: Shadows Die Twice||Sekiro: Shadows Die Twice": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Senku Ishigami|Senku Ishigami|Senku Ishigami": {
+   "categories": [
+    "anime-protagonists"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Shadow of the Colossus||Shadow of the Colossus": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Shan Yu||Shan Yu": {
+   "categories": [
+    "animation-villains"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Shark Tale||Shark Tale": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Shere Khan||Shere Khan": {
+   "categories": [
+    "animation-villains"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Shigeo Kageyama|Shigeo Kageyama|Shigeo Kageyama": {
+   "categories": [
+    "anime-protagonists"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Shrek 2||Shrek 2": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Shrek||Shrek": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Si alza il vento||The Wind Rises": {
+   "categories": [
+    "anime-ghibli"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Si sente il mare||Ocean Waves (film)": {
+   "categories": [
+    "anime-ghibli"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Sinbad – La leggenda dei sette mari||Sinbad: Legend of the Seven Seas": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Slam Dunk||Slam Dunk (manga)": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Solo Leveling||Solo Leveling": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Soul||Soul (2020 film)": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Spirit – Cavallo selvaggio||Spirit: Stallion of the Cimarron": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Spirited Away||Spirited Away": {
+   "categories": [
+    "anime-ghibli"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Spy × Family||Spy × Family": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Star Wars: Knights of the Old Republic||Star Wars: Knights of the Old Republic (video game)": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Starfield||Starfield (video game)": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Steins;Gate||Steins;Gate (TV series)": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Stray||Stray (video game)": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Sung Jinwoo|Sung Jinwoo|Sung Jinwoo": {
+   "categories": [
+    "anime-protagonists"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Sword Art Online||Sword Art Online": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Syndrome||Syndrome (The Incredibles)": {
+   "categories": [
+    "animation-villains"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Tai Lung||Tai Lung": {
+   "categories": [
+    "animation-villains"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Tanjiro Kamado|Tanjiro Kamado|Tanjiro Kamado": {
+   "categories": [
+    "anime-protagonists"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Tarzan||Tarzan (1999 film)": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||The Elder Scrolls IV: Oblivion||The Elder Scrolls IV: Oblivion": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||The Elder Scrolls V: Skyrim||The Elder Scrolls V: Skyrim": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||The Lion King||The Lion King": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||The Promised Neverland||The Promised Neverland": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||The Witcher 3: Wild Hunt||The Witcher 3: Wild Hunt": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Thorfinn|Thorfinn|Thorfinn (Vinland Saga)": {
+   "categories": [
+    "anime-protagonists"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Titanfall 2||Titanfall 2": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Tokyo Ghoul||Tokyo Ghoul": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Tomura Shigaraki|Tomura Shigaraki|Tomura Shigaraki": {
+   "categories": [
+    "anime-villains"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Toy Story – Il mondo dei giocattoli||Toy Story": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Toy Story 2||Toy Story 2": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Toy Story 3 – La grande fuga||Toy Story 3": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Toy Story 4||Toy Story 4": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Toy Story||Toy Story": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Trolls||Trolls (film)": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Troppo cattivi||The Bad Guys (film)": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Una tomba per le lucciole||Grave of the Fireflies": {
+   "categories": [
+    "anime-ghibli"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Up||Up (2009 film)": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Ursula||Ursula (The Little Mermaid)": {
+   "categories": [
+    "animation-villains"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Vinland Saga||Vinland Saga": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Violet Evergarden||Violet Evergarden": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||WALL•E||WALL-E": {
+   "categories": [
+    "animation-pixar"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Wish||Wish (2023 film)": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||World of Warcraft||World of Warcraft": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Xenoblade Chronicles 3||Xenoblade Chronicles 3": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Xenoblade Chronicles X||Xenoblade Chronicles X": {
+   "categories": [
+    "games-scifi"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Your Lie in April||Your Lie in April": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Yu Yu Hakusho||YuYu Hakusho": {
+   "categories": [
+    "anime-best"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Yuji Itadori|Yuji Itadori|Yuji Itadori": {
+   "categories": [
+    "anime-protagonists"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Yusuke Urameshi|Yusuke Urameshi|Yusuke Urameshi": {
+   "categories": [
+    "anime-protagonists"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Yzma||Yzma": {
+   "categories": [
+    "animation-villains"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Z la formica||Antz": {
+   "categories": [
+    "animation-dreamworks"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Zamasu|Zamasu|Zamasu": {
+   "categories": [
+    "anime-villains"
+   ],
+   "tried": [
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Zelda: Breath of the Wild||The Legend of Zelda: Breath of the Wild": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Zelda: Majora's Mask||The Legend of Zelda: Majora's Mask": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Zelda: Ocarina of Time||The Legend of Zelda: Ocarina of Time": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Zelda: Tears of the Kingdom||The Legend of Zelda: Tears of the Kingdom": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Zelda: Twilight Princess||The Legend of Zelda: Twilight Princess": {
+   "categories": [
+    "games-fantasy"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Zootropolis 2||Zootopia 2": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "||Zootropolis||Zootopia": {
+   "categories": [
+    "animation-disney"
+   ],
+   "tried": [
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "jujutsu-kaisen||Maki Zen'in|Maki Zen'in|Maki Zen'in": {
+   "categories": [
+    "anime-jujutsu-kaisen"
+   ],
+   "tried": [
+    "fandom:jujutsu-kaisen:lead",
+    "fandom:jujutsu-kaisen:imageserving: jujutsu-kaisen.fandom.com 404",
+    "fandom:jujutsu-kaisen:gallery",
+    "myanimelist: fetch failed",
+    "wikipedia: en.wikipedia.org 429"
+   ]
+  },
+  "naruto|Tenseigan|Tenseigan|Toneri Ootsutsuki|": {
+   "categories": [
+    "anime-naruto-dojutsu"
+   ],
+   "tried": [
+    "fandom:naruto:lead",
+    "fandom:naruto:imageserving: naruto.fandom.com 400",
+    "fandom:naruto:gallery",
+    "myanimelist: fetch failed"
+   ]
+  }
+ },
+ "blocked": {
+  "||Pokémon Diamante e Perla||Pokémon Diamond and Pearl": "429 text/html; charset=utf-8",
+  "||Pokémon Oro HeartGold e Argento SoulSilver||Pokémon HeartGold and SoulSilver": "429 text/html; charset=utf-8",
+  "||Pokémon Platino||Pokémon Platinum": "429 text/html; charset=utf-8",
+  "||Pokémon Rosso Fuoco e Verde Foglia||Pokémon FireRed and LeafGreen": "429 text/html; charset=utf-8",
+  "dragonball||Beerus|Beerus|Beerus": "404 image/jpeg",
+  "dragonball||Broly|Broly|Broly": "404 image/jpeg",
+  "dragonball||Bulma|Bulma|Bulma": "404 image/jpeg",
+  "dragonball||Cell|Cell|Cell (Dragon Ball)": "404 image/jpeg",
+  "dragonball||Cooler|Cooler|Cooler (Dragon Ball)": "404 image/jpeg",
+  "dragonball||Gogeta|Gogeta|Gogeta": "404 image/jpeg",
+  "dragonball||Gohan|Gohan|Gohan": "404 image/jpeg",
+  "dragonball||Goku|Goku|Goku": "404 image/jpeg",
+  "dragonball||Goten|Goten|Goten": "404 image/jpeg",
+  "dragonball||Hit|Hit|Hit (Dragon Ball)": "404 image/jpeg",
+  "dragonball||Jiren|Jiren|Jiren": "404 image/jpeg",
+  "dragonball||Nappa|Nappa|Nappa (Dragon Ball)": "404 image/jpeg",
+  "dragonball||Piccolo|Piccolo|Piccolo (Dragon Ball)": "404 image/jpeg",
+  "dragonball||Shenron|Shenron|Shenron": "404 image/jpeg",
+  "dragonball||Vegeta|Vegeta|Vegeta": "404 image/jpeg",
+  "dragonball||Whis|Whis|Whis": "404 image/jpeg",
+  "dragonball||Yamcha|Yamcha|Yamcha": "404 image/jpeg",
+  "dragonball||Zamasu|Zamasu|Zamasu": "404 image/jpeg",
+  "dragonball|Android 16|C-16|Android 16|Android 16": "404 image/jpeg",
+  "dragonball|Android 17|C-17|Android 17|Android 17": "404 image/jpeg",
+  "dragonball|Android 18|C-18|Android 18|Android 18": "404 image/jpeg",
+  "dragonball|Bardock|Bardack|Bardock|Bardock": "404 image/jpeg",
+  "dragonball|Beast|Gohan Beast|Gohan|Gohan": "404 image/jpeg",
+  "dragonball|Big Bang Attack|Big Bang Attack|Vegeta|Vegeta": "404 image/jpeg",
+  "dragonball|Black Frieza|Black Freezer|Frieza|Frieza": "404 image/jpeg",
+  "dragonball|Chi-Chi|Chichi|Chi-Chi|Chi-Chi": "404 image/jpeg",
+  "dragonball|Death Ball|Death Ball|Frieza|Frieza": "404 image/jpeg",
+  "dragonball|Destructo Disc|Kienzan|Krillin|Krillin": "404 image/jpeg",
+  "dragonball|Final Flash|Final Flash|Vegeta|Vegeta": "404 image/jpeg",
+  "dragonball|Frieza|Freezer|Frieza|Frieza": "404 image/jpeg",
+  "dragonball|Fusion Dance|Danza della fusione|Gotenks|Trunks (Dragon Ball)": "404 image/jpeg",
+  "dragonball|Future Trunks|Trunks|Trunks|Trunks (Dragon Ball)": "404 image/jpeg",
+  "dragonball|Galick Gun|Galick Ho|Vegeta|Vegeta": "404 image/jpeg",
+  "dragonball|Goku|Goku|Goku|Goku": "404 image/jpeg",
+  "dragonball|Golden Frieza|Golden Freezer|Frieza|Frieza": "404 image/jpeg",
+  "dragonball|Great Ape|Oozaru|Vegeta|Vegeta": "404 image/jpeg",
+  "dragonball|Hakai|Hakai|Beerus|Beerus": "404 image/jpeg",
+  "dragonball|Instant Transmission|Teletrasporto|Goku|Goku": "404 image/jpeg",
+  "dragonball|Kaio-ken|Kaiohken|Goku|Goku": "404 image/jpeg",
+  "dragonball|Kamehameha|Kamehameha|Kame-Sennin|Master Roshi": "404 image/jpeg",
+  "dragonball|Krillin|Crilin|Krillin|Krillin": "404 image/jpeg",
+  "dragonball|Legendary Super Saiyan|Super Saiyan leggendario|Broly|Broly": "404 image/jpeg",
+  "dragonball|Majin Buu|Majin Bu|Majin Buu|Majin Buu": "404 image/jpeg",
+  "dragonball|Masenko|Masenko|Gohan|Gohan": "404 image/jpeg",
+  "dragonball|Master Roshi|Muten Roshi|Kame-Sennin|Master Roshi": "404 image/jpeg",
+  "dragonball|Mr. Satan|Mr. Satan|Mr. Satan|Mr. Satan": "404 image/jpeg",
+  "dragonball|Orange Piccolo|Piccolo Arancione|Piccolo|Piccolo (Dragon Ball)": "404 image/jpeg",
+  "dragonball|Potara|Fusione Potara|Vegetto|Vegito": "404 image/jpeg",
+  "dragonball|Raditz|Radish|Raditz|Raditz": "404 image/jpeg",
+  "dragonball|Solar Flare|Taiyoken|Tenshinhan|Tien Shinhan": "404 image/jpeg",
+  "dragonball|Special Beam Cannon|Makankosappo|Piccolo|Piccolo (Dragon Ball)": "404 image/jpeg",
+  "dragonball|Spirit Bomb|Genki Dama|Goku|Goku": "404 image/jpeg",
+  "dragonball|Super Saiyan 2|Super Saiyan 2|Gohan|Gohan": "404 image/jpeg",
+  "dragonball|Super Saiyan 3|Super Saiyan 3|Goku|Goku": "404 image/jpeg",
+  "dragonball|Super Saiyan 4|Super Saiyan 4|Goku|Goku": "404 image/jpeg",
+  "dragonball|Super Saiyan Blue|Super Saiyan Blue|Vegeta|Vegeta": "404 image/jpeg",
+  "dragonball|Super Saiyan God|Super Saiyan God|Goku|Goku": "404 image/jpeg",
+  "dragonball|Super Saiyan Rosé|Super Saiyan Rosé|Zamasu|Zamasu": "404 image/jpeg",
+  "dragonball|Super Saiyan|Super Saiyan|Goku|Goku": "404 image/jpeg",
+  "dragonball|Tien Shinhan|Tenshinhan|Tenshinhan|Tien Shinhan": "404 image/jpeg",
+  "dragonball|Tri-Beam|Kikoho|Tenshinhan|Tien Shinhan": "404 image/jpeg",
+  "dragonball|Ultimate|Gohan Ultimate|Gohan|Gohan": "404 image/jpeg",
+  "dragonball|Ultra Ego|Ultra Ego|Vegeta|Vegeta": "404 image/jpeg",
+  "dragonball|Ultra Instinct|Ultra Istinto|Goku|Goku": "404 image/jpeg",
+  "dragonball|Vegeta|Vegeta|Vegeta|Vegeta": "404 image/jpeg",
+  "dragonball|Vegito|Vegeth|Vegetto|Vegito": "404 image/jpeg",
+  "jujutsu-kaisen||Aoi Todo|Aoi Todo|Aoi Todo": "404 image/jpeg",
+  "jujutsu-kaisen||Authentic Mutual Love|Yuuta Okkotsu|Yuta Okkotsu": "404 image/jpeg",
+  "jujutsu-kaisen||Ceremonial Sea of Light|Hanami|": "404 image/jpeg",
+  "jujutsu-kaisen||Chimera Shadow Garden|Megumi Fushiguro|Megumi Fushiguro": "404 image/jpeg",
+  "jujutsu-kaisen||Choso|Choso|Choso (Jujutsu Kaisen)": "404 image/jpeg",
+  "jujutsu-kaisen||Coffin of the Iron Mountain|Jougo|Jogo (Jujutsu Kaisen)": "404 image/jpeg",
+  "jujutsu-kaisen||Deadly Sentencing|Hiromi Higuruma|Hiromi Higuruma": "404 image/jpeg",
+  "jujutsu-kaisen||Hiromi Higuruma|Hiromi Higuruma|Hiromi Higuruma": "404 image/jpeg",
+  "jujutsu-kaisen||Horizon of the Captivating Skandha|Dagon|": "404 image/jpeg",
+  "jujutsu-kaisen||Idle Death Gamble|Kinji Hakari|Kinji Hakari": "404 image/jpeg",
+  "jujutsu-kaisen||Jogo|Jogo|Jogo (Jujutsu Kaisen)": "404 image/jpeg",
+  "jujutsu-kaisen||Kenjaku|Kenjaku|Kenjaku": "404 image/jpeg",
+  "jujutsu-kaisen||Kento Nanami|Kento Nanami|Kento Nanami": "404 image/jpeg",
+  "jujutsu-kaisen||Kinji Hakari|Kinji Hakari|Kinji Hakari": "404 image/jpeg",
+  "jujutsu-kaisen||Mahito|Mahito|Mahito (Jujutsu Kaisen)": "404 image/jpeg",
+  "jujutsu-kaisen||Megumi Fushiguro|Megumi Fushiguro|Megumi Fushiguro": "404 image/jpeg",
+  "jujutsu-kaisen||Nobara Kugisaki|Nobara Kugisaki|Nobara Kugisaki": "404 image/jpeg",
+  "jujutsu-kaisen||Panda|Panda|Panda (Jujutsu Kaisen)": "404 image/jpeg",
+  "jujutsu-kaisen||Ryomen Sukuna|Ryomen Sukuna|Ryomen Sukuna": "404 image/jpeg",
+  "jujutsu-kaisen||Satoru Gojo|Satoru Gojo|Satoru Gojo": "404 image/jpeg",
+  "jujutsu-kaisen||Self-Embodiment of Perfection|Mahito|Mahito (Jujutsu Kaisen)": "404 image/jpeg",
+  "jujutsu-kaisen||Suguru Geto|Suguru Geto|Suguru Geto": "404 image/jpeg",
+  "jujutsu-kaisen||Time Cell Moon Palace|Naoya Zen'in|": "404 image/jpeg",
+  "jujutsu-kaisen||Toge Inumaki|Toge Inumaki|Toge Inumaki": "404 image/jpeg",
+  "jujutsu-kaisen||Toji Fushiguro|Toji Fushiguro|Toji Fushiguro": "404 image/jpeg",
+  "jujutsu-kaisen||Womb Profusion|Kenjaku|Kenjaku": "404 image/jpeg",
+  "jujutsu-kaisen||Yuji Itadori|Yuji Itadori|Yuji Itadori": "404 image/jpeg",
+  "jujutsu-kaisen||Yuki Tsukumo|Yuki Tsukumo|Yuki Tsukumo": "404 image/jpeg",
+  "jujutsu-kaisen||Yuta Okkotsu|Yuta Okkotsu|Yuta Okkotsu": "404 image/jpeg",
+  "jujutsu-kaisen|Malevolent Shrine|Santuario Malevolo|Ryoumen Sukuna|Ryomen Sukuna": "404 image/jpeg",
+  "jujutsu-kaisen|Satoru Gojo|Satoru Gojou|Satoru Gojou|Satoru Gojo": "404 image/jpeg",
+  "jujutsu-kaisen|Unlimited Void|Vuoto Infinito|Satoru Gojou|Satoru Gojo": "404 image/jpeg",
+  "kimetsu-no-yaiba||Akaza|Akaza|Akaza (Demon Slayer)": "404 image/jpeg",
+  "kimetsu-no-yaiba||Genya Shinazugawa|Genya Shinazugawa|Genya Shinazugawa": "404 image/jpeg",
+  "kimetsu-no-yaiba||Giyu Tomioka|Giyu Tomioka|Giyu Tomioka": "404 image/jpeg",
+  "kimetsu-no-yaiba||Gyomei Himejima|Gyomei Himejima|Gyomei Himejima": "404 image/jpeg",
+  "kimetsu-no-yaiba||Inosuke Hashibira|Inosuke Hashibira|Inosuke Hashibira": "404 image/jpeg",
+  "kimetsu-no-yaiba||Kagaya Ubuyashiki|Kagaya Ubuyashiki|Kagaya Ubuyashiki": "404 image/jpeg",
+  "kimetsu-no-yaiba||Kanao Tsuyuri|Kanao Tsuyuri|Kanao Tsuyuri": "404 image/jpeg",
+  "kimetsu-no-yaiba||Kokushibo|Kokushibo|Kokushibo": "404 image/jpeg",
+  "kimetsu-no-yaiba||Kyojuro Rengoku|Kyojuro Rengoku|Kyojuro Rengoku": "404 image/jpeg",
+  "kimetsu-no-yaiba||Mitsuri Kanroji|Mitsuri Kanroji|Mitsuri Kanroji": "404 image/jpeg",
+  "kimetsu-no-yaiba||Muichiro Tokito|Muichiro Tokito|Muichiro Tokito": "404 image/jpeg",
+  "kimetsu-no-yaiba||Muzan Kibutsuji|Muzan Kibutsuji|Muzan Kibutsuji": "404 image/jpeg",
+  "kimetsu-no-yaiba||Nezuko Kamado|Nezuko Kamado|Nezuko Kamado": "404 image/jpeg",
+  "kimetsu-no-yaiba||Obanai Iguro|Obanai Iguro|Obanai Iguro": "404 image/jpeg",
+  "kimetsu-no-yaiba||Rui|Rui|Rui (Demon Slayer)": "404 image/jpeg",
+  "kimetsu-no-yaiba||Sakonji Urokodaki|Sakonji Urokodaki|Sakonji Urokodaki": "404 image/jpeg",
+  "kimetsu-no-yaiba||Sanemi Shinazugawa|Sanemi Shinazugawa|Sanemi Shinazugawa": "404 image/jpeg",
+  "kimetsu-no-yaiba||Shinobu Kocho|Shinobu Kocho|Shinobu Kocho": "404 image/jpeg",
+  "kimetsu-no-yaiba||Tanjiro Kamado|Tanjiro Kamado|Tanjiro Kamado": "404 image/jpeg",
+  "kimetsu-no-yaiba||Tengen Uzui|Tengen Uzui|Tengen Uzui": "404 image/jpeg",
+  "kimetsu-no-yaiba||Yoriichi Tsugikuni|Yoriichi Tsugikuni|Yoriichi Tsugikuni": "404 image/jpeg",
+  "kimetsu-no-yaiba||Zenitsu Agatsuma|Zenitsu Agatsuma|Zenitsu Agatsuma": "404 image/jpeg",
+  "kimetsu-no-yaiba|Beast Breathing|Respirazione della Bestia|Inosuke Hashibira|Inosuke Hashibira": "404 image/jpeg",
+  "kimetsu-no-yaiba|Daki|Gyutaro e Daki|Daki|Daki and Gyutaro": "404 image/jpeg",
+  "kimetsu-no-yaiba|Doma|Doma|Douma|Doma (Demon Slayer)": "404 image/jpeg",
+  "kimetsu-no-yaiba|Flame Breathing|Respirazione della Fiamma|Kyoujurou Rengoku|Kyojuro Rengoku": "404 image/jpeg",
+  "kimetsu-no-yaiba|Flower Breathing|Respirazione del Fiore|Kanao Tsuyuri|Kanao Tsuyuri": "404 image/jpeg",
+  "kimetsu-no-yaiba|Insect Breathing|Respirazione dell'Insetto|Shinobu Kochou|Shinobu Kocho": "404 image/jpeg",
+  "kimetsu-no-yaiba|Kyojuro Rengoku|Kyoujurou Rengoku|Kyoujurou Rengoku|Kyojuro Rengoku": "404 image/jpeg",
+  "kimetsu-no-yaiba|Love Breathing|Respirazione dell'Amore|Mitsuri Kanroji|Mitsuri Kanroji": "404 image/jpeg",
+  "kimetsu-no-yaiba|Mist Breathing|Respirazione della Nebbia|Muichirou Tokitou|Muichiro Tokito": "404 image/jpeg",
+  "kimetsu-no-yaiba|Moon Breathing|Respirazione della Luna|Kokushibou|Kokushibo": "404 image/jpeg",
+  "kimetsu-no-yaiba|Serpent Breathing|Respirazione del Serpente|Obanai Iguro|Obanai Iguro": "404 image/jpeg",
+  "kimetsu-no-yaiba|Sound Breathing|Respirazione del Suono|Tengen Uzui|Tengen Uzui": "404 image/jpeg",
+  "kimetsu-no-yaiba|Stone Breathing|Respirazione della Pietra|Gyoumei Himejima|Gyomei Himejima": "404 image/jpeg",
+  "kimetsu-no-yaiba|Sun Breathing|Respirazione del Sole|Yoriichi Tsugikuni|Yoriichi Tsugikuni": "404 image/jpeg",
+  "kimetsu-no-yaiba|Tanjiro Kamado|Tanjirou Kamado|Tanjirou Kamado|Tanjiro Kamado": "404 image/jpeg",
+  "kimetsu-no-yaiba|Thunder Breathing|Respirazione del Tuono|Zenitsu Agatsuma|Zenitsu Agatsuma": "404 image/jpeg",
+  "kimetsu-no-yaiba|Water Breathing|Respirazione dell'Acqua|Giyuu Tomioka|Giyu Tomioka": "404 image/jpeg",
+  "kimetsu-no-yaiba|Wind Breathing|Respirazione del Vento|Sanemi Shinazugawa|Sanemi Shinazugawa": "404 image/jpeg",
+  "naruto||Boruto Uzumaki|Boruto Uzumaki|Boruto Uzumaki": "404 image/jpeg",
+  "naruto||Deidara|Deidara|Deidara": "404 image/jpeg",
+  "naruto||Fu|Fu|": "404 image/jpeg",
+  "naruto||Gaara|Gaara|Gaara": "404 image/jpeg",
+  "naruto||Hagoromo Otsutsuki|Hagoromo Otsutsuki|": "404 image/jpeg",
+  "naruto||Haku|Haku|Haku (Naruto)": "404 image/jpeg",
+  "naruto||Han|Han|": "404 image/jpeg",
+  "naruto||Hashirama Senju|Hashirama Senju|Hashirama Senju": "404 image/jpeg",
+  "naruto||Hidan|Hidan|Hidan (Naruto)": "404 image/jpeg",
+  "naruto||Hinata Hyuga|Hinata Hyuga|Hinata Hyuga": "404 image/jpeg",
+  "naruto||Itachi Uchiha|Itachi Uchiha|Itachi Uchiha": "404 image/jpeg",
+  "naruto||Jiraiya|Jiraiya|Jiraiya (Naruto)": "404 image/jpeg",
+  "naruto||Kabuto Yakushi|Kabuto Yakushi|Kabuto Yakushi": "404 image/jpeg",
+  "naruto||Kaguya Ōtsutsuki|Kaguya Ōtsutsuki|Kaguya Ōtsutsuki": "404 image/jpeg",
+  "naruto||Kakashi Hatake|Kakashi Hatake|Kakashi Hatake": "404 image/jpeg",
+  "naruto||Killer Bee|Killer Bee|Killer Bee": "404 image/jpeg",
+  "naruto||Kisame Hoshigaki|Kisame Hoshigaki|Kisame Hoshigaki": "404 image/jpeg",
+  "naruto||Konan|Konan|Konan (Naruto)": "404 image/jpeg",
+  "naruto||Kurama|Kurama|Kurama (Naruto)": "The operation was aborted due to timeout",
+  "naruto||Kushina Uzumaki|Kushina Uzumaki|": "404 image/jpeg",
+  "naruto||Madara Uchiha|Madara Uchiha|Madara Uchiha": "404 image/jpeg",
+  "naruto||Might Guy|Might Guy|Might Guy": "404 image/jpeg",
+  "naruto||Minato Namikaze|Minato Namikaze|Minato Namikaze": "404 image/jpeg",
+  "naruto||Mito Uzumaki|Mito Uzumaki|": "404 image/jpeg",
+  "naruto||Naruto Uzumaki|Naruto Uzumaki|Naruto Uzumaki": "404 image/jpeg",
+  "naruto||Neji Hyuga|Neji Hyuga|Neji Hyuga": "404 image/jpeg",
+  "naruto||Obito Uchiha|Obito Uchiha|Obito Uchiha": "404 image/jpeg",
+  "naruto||Orochimaru|Orochimaru|Orochimaru (Naruto)": "404 image/jpeg",
+  "naruto||Pain|Pain|Pain (Naruto)": "404 image/jpeg",
+  "naruto||Rin Nohara|Rin Nohara|": "404 image/jpeg",
+  "naruto||Rock Lee|Rock Lee|Rock Lee": "404 image/jpeg",
+  "naruto||Roshi|Roshi|": "404 image/jpeg",
+  "naruto||Sakura Haruno|Sakura Haruno|Sakura Haruno": "404 image/jpeg",
+  "naruto||Sasori|Sasori|Sasori (Naruto)": "404 image/jpeg",
+  "naruto||Sasuke Uchiha|Sasuke Uchiha|Sasuke Uchiha": "404 image/jpeg",
+  "naruto||Shikamaru Nara|Shikamaru Nara|Shikamaru Nara": "404 image/jpeg",
+  "naruto||Tobirama Senju|Tobirama Senju|Tobirama Senju": "404 image/jpeg",
+  "naruto||Tsunade|Tsunade|Tsunade (Naruto)": "404 image/jpeg",
+  "naruto||Utakata|Utakata|": "404 image/jpeg",
+  "naruto||Yagura|Yagura|": "404 image/jpeg",
+  "naruto||Yugito Nii|Yugito Nii|": "404 image/jpeg",
+  "naruto||Zabuza Momochi|Zabuza Momochi|Zabuza Momochi": "404 image/jpeg",
+  "naruto|Almighty Push|Shinra Tensei|Pain|Pain (Naruto)": "404 image/jpeg",
+  "naruto|Amaterasu|Amaterasu|Itachi Uchiha|Itachi Uchiha": "404 image/jpeg",
+  "naruto|Byakugan|Byakugan|Neji Hyuuga|Neji Hyuga": "404 image/jpeg",
+  "naruto|Chidori|Chidori|Sasuke Uchiha|Sasuke Uchiha": "404 image/jpeg",
+  "naruto|Eight Gates|Otto Porte Interne|Might Guy|Might Guy": "404 image/jpeg",
+  "naruto|Eternal Mangekyō Sharingan|Mangekyo Sharingan Eterno|Madara Uchiha|Madara Uchiha": "404 image/jpeg",
+  "naruto|Flying Thunder God Technique|Dio del tuono volante|Minato Namikaze|Minato Namikaze": "404 image/jpeg",
+  "naruto|Infinite Tsukuyomi|Tsukuyomi Infinito|Madara Uchiha|Madara Uchiha": "404 image/jpeg",
+  "naruto|Itachi Uchiha|Itachi Uchiha|Itachi Uchiha|Itachi Uchiha": "404 image/jpeg",
+  "naruto|Izanagi|Izanagi|Danzou Shimura|": "404 image/jpeg",
+  "naruto|Izanami|Izanami|Itachi Uchiha|Itachi Uchiha": "404 image/jpeg",
+  "naruto|Jōgan|Jogan|Boruto Uzumaki|Boruto Uzumaki": "404 image/jpeg",
+  "naruto|Kamui|Kamui|Obito Uchiha|Obito Uchiha": "404 image/jpeg",
+  "naruto|Killer Bee|Killer Bee|Killer Bee|Killer Bee": "404 image/jpeg",
+  "naruto|Kirin|Kirin|Sasuke Uchiha|Sasuke Uchiha": "404 image/jpeg",
+  "naruto|Kotoamatsukami|Kotoamatsukami|Shisui Uchiha|": "404 image/jpeg",
+  "naruto|Lightning Cutter|Raikiri|Kakashi Hatake|Kakashi Hatake": "404 image/jpeg",
+  "naruto|Mangekyō Sharingan|Mangekyo Sharingan|Itachi Uchiha|Itachi Uchiha": "404 image/jpeg",
+  "naruto|Naruto Uzumaki|Naruto Uzumaki|Naruto Uzumaki|Naruto Uzumaki": "404 image/jpeg",
+  "naruto|Planetary Devastation|Chibaku Tensei|Nagato|Pain (Naruto)": "404 image/jpeg",
+  "naruto|Rasengan|Rasengan|Minato Namikaze|Naruto Uzumaki": "404 image/jpeg",
+  "naruto|Rinne Sharingan|Rinne Sharingan|Kaguya Ootsutsuki|Kaguya Ōtsutsuki": "404 image/jpeg",
+  "naruto|Rinnegan|Rinnegan|Nagato|Pain (Naruto)": "404 image/jpeg",
+  "naruto|Sage Mode|Modalità Eremitica|Jiraiya|Jiraiya (Naruto)": "404 image/jpeg",
+  "naruto|Sand Waterfall Funeral|Funerale nella sabbia|Gaara|Gaara": "404 image/jpeg",
+  "naruto|Sexy Technique|Sexy Jutsu|Naruto Uzumaki|Naruto Uzumaki": "404 image/jpeg",
+  "naruto|Shadow Clone Technique|Moltiplicazione del corpo|Naruto Uzumaki|Naruto Uzumaki": "404 image/jpeg",
+  "naruto|Shadow Imitation Technique|Possessione dell'ombra|Shikamaru Nara|Shikamaru Nara": "404 image/jpeg",
+  "naruto|Sharingan|Sharingan|Sasuke Uchiha|Sasuke Uchiha": "404 image/jpeg",
+  "naruto|Summoning: Impure World Reincarnation|Edo Tensei|Tobirama Senju|Kabuto Yakushi": "404 image/jpeg",
+  "naruto|Susanoo|Susanoo|Madara Uchiha|Madara Uchiha": "404 image/jpeg",
+  "naruto|Tsukuyomi|Tsukuyomi|Itachi Uchiha|Itachi Uchiha": "404 image/jpeg",
+  "naruto|Wind Release: Rasenshuriken|Rasenshuriken|Naruto Uzumaki|Naruto Uzumaki": "404 image/jpeg",
+  "naruto|Wood Release|Arte del Legno|Hashirama Senju|Hashirama Senju": "404 image/jpeg",
+  "onepiece||Bartholomew Kuma|Bartholomew Kuma|Bartholomew Kuma": "404 image/jpeg",
+  "onepiece||Boa Hancock|Boa Hancock|Boa Hancock": "404 image/jpeg",
+  "onepiece||Brook|Brook|Brook (One Piece)": "404 image/jpeg",
+  "onepiece||Buggy|Buggy|Buggy (One Piece)": "404 image/jpeg",
+  "onepiece||Crocodile|Crocodile|Crocodile (One Piece)": "404 image/jpeg",
+  "onepiece||Donquixote Doflamingo|Donquixote Doflamingo|Donquixote Doflamingo": "404 image/jpeg",
+  "onepiece||Dracule Mihawk|Dracule Mihawk|Dracule Mihawk": "404 image/jpeg",
+  "onepiece||Enel|Enel|Enel (One Piece)": "404 image/jpeg",
+  "onepiece||Eustass Kid|Eustass Kid|Eustass Kid": "404 image/jpeg",
+  "onepiece||Franky|Franky|Franky (One Piece)": "404 image/jpeg",
+  "onepiece||Gol D. Roger|Gol D. Roger|Gol D. Roger": "404 image/jpeg",
+  "onepiece||Jinbe|Jinbe|Jinbe": "404 image/jpeg",
+  "onepiece||Monkey D. Garp|Monkey D. Garp|Monkey D. Garp": "404 image/jpeg",
+  "onepiece||Monkey D. Luffy|Monkey D. Luffy|Monkey D. Luffy": "404 image/jpeg",
+  "onepiece||Nami|Nami|Nami (One Piece)": "404 image/jpeg",
+  "onepiece||Nefertari Vivi|Nefertari Vivi|Nefertari Vivi": "404 image/jpeg",
+  "onepiece||Nico Robin|Nico Robin|Nico Robin": "404 image/jpeg",
+  "onepiece||Portgas D. Ace|Portgas D. Ace|Portgas D. Ace": "404 image/jpeg",
+  "onepiece||Roronoa Zoro|Roronoa Zoro|Roronoa Zoro": "404 image/jpeg",
+  "onepiece||Sabo|Sabo|Sabo (One Piece)": "404 image/jpeg",
+  "onepiece||Sanji|Sanji|Sanji (One Piece)": "404 image/jpeg",
+  "onepiece||Shanks|Shanks|Shanks": "404 image/jpeg",
+  "onepiece||Silvers Rayleigh|Silvers Rayleigh|Silvers Rayleigh": "404 image/jpeg",
+  "onepiece||Smoker|Smoker|Smoker (One Piece)": "404 image/jpeg",
+  "onepiece||Tony Tony Chopper|Tony Tony Chopper|Tony Tony Chopper": "404 image/jpeg",
+  "onepiece||Trafalgar Law|Trafalgar Law|Trafalgar Law": "404 image/jpeg",
+  "onepiece||Usopp|Usopp|Usopp": "404 image/jpeg",
+  "onepiece||Yamato|Yamato|Yamato (One Piece)": "404 image/jpeg",
+  "onepiece|Arabasta Arc|Alabasta|Nefertari Vivi|Nefertari Vivi": "404 image/jpeg",
+  "onepiece|Arlong Park Arc|Arlong Park|Arlong|Nami (One Piece)": "404 image/jpeg",
+  "onepiece|Awa Awa no Mi|Awa Awa no Mi|Kalifa|": "404 image/jpeg",
+  "onepiece|Baku Baku no Mi|Baku Baku no Mi|Wapol|": "404 image/jpeg",
+  "onepiece|Bane Bane no Mi|Bane Bane no Mi|Bellamy|": "404 image/jpeg",
+  "onepiece|Bara Bara no Mi|Bara Bara no Mi|Buggy|Buggy (One Piece)": "404 image/jpeg",
+  "onepiece|Bari Bari no Mi|Bari Bari no Mi|Bartolomeo|": "404 image/jpeg",
+  "onepiece|Bisu Bisu no Mi|Bisu Bisu no Mi|Charlotte Cracker|": "404 image/jpeg",
+  "onepiece|Bomu Bomu no Mi|Bomu Bomu no Mi|Gem|": "404 image/jpeg",
+  "onepiece|Charlotte Linlin|Big Mom|Charlotte Linlin|Charlotte Linlin": "404 image/jpeg",
+  "onepiece|Chiyu Chiyu no Mi|Chiyu Chiyu no Mi|Mansherry|": "404 image/jpeg",
+  "onepiece|Choki Choki no Mi|Choki Choki no Mi|Inazuma|": "404 image/jpeg",
+  "onepiece|Doa Doa no Mi|Doa Doa no Mi|Blueno|": "404 image/jpeg",
+  "onepiece|Doru Doru no Mi|Doru Doru no Mi|Galdino|": "404 image/jpeg",
+  "onepiece|Dressrosa Arc|Dressrosa|Donquixote Doflamingo|Donquixote Doflamingo": "404 image/jpeg",
+  "onepiece|Edward Newgate|Barbabianca|Edward Newgate|Edward Newgate": "404 image/jpeg",
+  "onepiece|Egghead Arc|Egghead|Vegapunk|": "404 image/jpeg",
+  "onepiece|Enies Lobby Arc|Enies Lobby|Nico Robin|Nico Robin": "404 image/jpeg",
+  "onepiece|Fish-Man Island Arc|Isola degli Uomini-pesce|Hody Jones|": "404 image/jpeg",
+  "onepiece|Gasu Gasu no Mi|Gasu Gasu no Mi|Caesar Clown|": "404 image/jpeg",
+  "onepiece|Goro Goro no Mi|Goro Goro no Mi|Enel|Enel (One Piece)": "404 image/jpeg",
+  "onepiece|Gura Gura no Mi|Gura Gura no Mi|Edward Newgate|Edward Newgate": "404 image/jpeg",
+  "onepiece|Hana Hana no Mi|Hana Hana no Mi|Nico Robin|Nico Robin": "404 image/jpeg",
+  "onepiece|Hie Hie no Mi|Hie Hie no Mi|Kuzan|": "404 image/jpeg",
+  "onepiece|Hito Hito no Mi, Model: Daibutsu|Hito Hito no Mi modello Daibutsu|Sengoku|": "404 image/jpeg",
+  "onepiece|Hito Hito no Mi, Model: Nika|Gomu Gomu no Mi|Monkey D. Luffy|Monkey D. Luffy": "404 image/jpeg",
+  "onepiece|Hito Hito no Mi|Hito Hito no Mi|Tony Tony Chopper|Tony Tony Chopper": "404 image/jpeg",
+  "onepiece|Hobi Hobi no Mi|Hobi Hobi no Mi|Sugar|": "404 image/jpeg",
+  "onepiece|Horo Horo no Mi|Horo Horo no Mi|Perona|": "404 image/jpeg",
+  "onepiece|Horu Horu no Mi|Horu Horu no Mi|Emporio Ivankov|": "404 image/jpeg",
+  "onepiece|Impel Down Arc|Impel Down|Magellan|": "404 image/jpeg",
+  "onepiece|Inu Inu no Mi, Model: Okuchi no Makami|Inu Inu no Mi modello Okuchi no Makami|Yamato|Yamato (One Piece)": "404 image/jpeg",
+  "onepiece|Ishi Ishi no Mi|Ishi Ishi no Mi|Pica|": "404 image/jpeg",
+  "onepiece|Ito Ito no Mi|Ito Ito no Mi|Donquixote Doflamingo|Donquixote Doflamingo": "404 image/jpeg",
+  "onepiece|Kage Kage no Mi|Kage Kage no Mi|Gecko Moria|": "404 image/jpeg",
+  "onepiece|Kaidou|Kaido|Kaidou|Kaido (One Piece)": "404 image/jpeg",
+  "onepiece|Kilo Kilo no Mi|Kilo Kilo no Mi|Mikita|": "404 image/jpeg",
+  "onepiece|Kuku Kuku no Mi|Kuku Kuku no Mi|Streusen|": "404 image/jpeg",
+  "onepiece|Magu Magu no Mi|Magu Magu no Mi|Sakazuki|": "404 image/jpeg",
+  "onepiece|Mane Mane no Mi|Mane Mane no Mi|Bentham|": "404 image/jpeg",
+  "onepiece|Marineford Arc|Marineford|Portgas D. Ace|Portgas D. Ace": "404 image/jpeg",
+  "onepiece|Marshall D. Teach|Barbanera|Marshall D. Teach|Marshall D. Teach": "404 image/jpeg",
+  "onepiece|Mera Mera no Mi|Mera Mera no Mi|Portgas D. Ace|Portgas D. Ace": "404 image/jpeg",
+  "onepiece|Mero Mero no Mi|Mero Mero no Mi|Boa Hancock|Boa Hancock": "404 image/jpeg",
+  "onepiece|Mira Mira no Mi|Mira Mira no Mi|Charlotte Brulee|": "404 image/jpeg",
+  "onepiece|Mochi Mochi no Mi|Mochi Mochi no Mi|Charlotte Katakuri|": "404 image/jpeg",
+  "onepiece|Mogu Mogu no Mi|Mogu Mogu no Mi|Drophy|": "404 image/jpeg",
+  "onepiece|Moku Moku no Mi|Moku Moku no Mi|Smoker|Smoker (One Piece)": "404 image/jpeg",
+  "onepiece|Monkey D. Luffy|Monkey D. Luffy|Monkey D. Luffy|Monkey D. Luffy": "404 image/jpeg",
+  "onepiece|Mori Mori no Mi|Mori Mori no Mi|Aramaki|": "404 image/jpeg",
+  "onepiece|Nagi Nagi no Mi|Nagi Nagi no Mi|Donquixote Rosinante|": "404 image/jpeg",
+  "onepiece|Neko Neko no Mi, Model: Leopard|Neko Neko no Mi modello Leopardo|Rob Lucci|": "404 image/jpeg",
+  "onepiece|Nikyu Nikyu no Mi|Nikyu Nikyu no Mi|Bartholomew Kuma|Bartholomew Kuma": "404 image/jpeg",
+  "onepiece|Noro Noro no Mi|Noro Noro no Mi|Foxy|": "404 image/jpeg",
+  "onepiece|Nui Nui no Mi|Nui Nui no Mi|Leo|": "404 image/jpeg",
+  "onepiece|Numa Numa no Mi|Numa Numa no Mi|Caribou|": "404 image/jpeg",
+  "onepiece|One Piece|Monkey D. Luffy|Monkey D. Luffy|One Piece": "404 image/jpeg",
+  "onepiece|Ope Ope no Mi|Ope Ope no Mi|Trafalgar Law|Trafalgar Law": "404 image/jpeg",
+  "onepiece|Ori Ori no Mi|Ori Ori no Mi|Hina|": "404 image/jpeg",
+  "onepiece|Pamu Pamu no Mi|Pamu Pamu no Mi|Gladius|": "404 image/jpeg",
+  "onepiece|Pika Pika no Mi|Pika Pika no Mi|Borsalino|": "404 image/jpeg",
+  "onepiece|Punk Hazard Arc|Punk Hazard|Caesar Clown|Trafalgar Law": "404 image/jpeg",
+  "onepiece|Romance Dawn Arc|Romance Dawn|Monkey D. Luffy|": "404 image/jpeg",
+  "onepiece|Ryu Ryu no Mi, Model: Allosaurus|Ryu Ryu no Mi modello Allosauro|X Drake|": "404 image/jpeg",
+  "onepiece|Sabaody Archipelago Arc|Arcipelago Sabaody|Silvers Rayleigh|Silvers Rayleigh": "404 image/jpeg",
+  "onepiece|Sabi Sabi no Mi|Sabi Sabi no Mi|Shu|": "404 image/jpeg",
+  "onepiece|Shiro Shiro no Mi|Shiro Shiro no Mi|Capone Bege|": "404 image/jpeg",
+  "onepiece|Skypiea Arc|Skypiea|Enel|Enel (One Piece)": "404 image/jpeg",
+  "onepiece|Soru Soru no Mi|Soru Soru no Mi|Charlotte Linlin|Charlotte Linlin": "404 image/jpeg",
+  "onepiece|Sube Sube no Mi|Sube Sube no Mi|Alvida|": "404 image/jpeg",
+  "onepiece|Suna Suna no Mi|Suna Suna no Mi|Crocodile|Crocodile (One Piece)": "404 image/jpeg",
+  "onepiece|Supa Supa no Mi|Supa Supa no Mi|Daz Bones|": "404 image/jpeg",
+  "onepiece|Thriller Bark Arc|Thriller Bark|Gecko Moria|Brook (One Piece)": "404 image/jpeg",
+  "onepiece|Toki Toki no Mi|Toki Toki no Mi|Kouzuki Toki|": "404 image/jpeg",
+  "onepiece|Tori Tori no Mi, Model: Falcon|Tori Tori no Mi modello Falco|Pell|": "404 image/jpeg",
+  "onepiece|Tori Tori no Mi, Model: Phoenix|Tori Tori no Mi modello Fenice|Marco|": "404 image/jpeg",
+  "onepiece|Uo Uo no Mi, Model: Seiryu|Uo Uo no Mi modello Seiryu|Kaidou|Kaido (One Piece)": "404 image/jpeg",
+  "onepiece|Ushi Ushi no Mi, Model: Giraffe|Ushi Ushi no Mi modello Giraffa|Kaku|": "404 image/jpeg",
+  "onepiece|Wano Country Arc|Wano|Kaidou|Kaido (One Piece)": "404 image/jpeg",
+  "onepiece|Wara Wara no Mi|Wara Wara no Mi|Basil Hawkins|": "404 image/jpeg",
+  "onepiece|Water 7 Arc|Water 7|Franky|Usopp": "404 image/jpeg",
+  "onepiece|Whole Cake Island Arc|Whole Cake Island|Charlotte Katakuri|Sanji (One Piece)": "404 image/jpeg",
+  "onepiece|Yami Yami no Mi|Yami Yami no Mi|Marshall D. Teach|Marshall D. Teach": "404 image/jpeg",
+  "onepiece|Yomi Yomi no Mi|Yomi Yomi no Mi|Brook|Brook (One Piece)": "404 image/jpeg",
+  "onepiece|Yuki Yuki no Mi|Yuki Yuki no Mi|Monet|": "404 image/jpeg",
+  "onepiece|Zou Arc|Zo|Nekomamushi|": "404 image/jpeg",
+  "onepiece|Zushi Zushi no Mi|Zushi Zushi no Mi|Issho|": "404 image/jpeg"
+ }
+}
