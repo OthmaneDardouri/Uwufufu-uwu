@@ -7,7 +7,7 @@
     "cover": { "wiki": "Pokémon Red and Blue" },
     "items": [
       { "name": "Pokémon Rosso e Blu", "sub": "1996 · Game Boy", "wiki": "Pokémon Red and Blue" },
-      { "name": "Pokémon Giallo", "sub": "1998 · Game Boy", "wiki": "Pokémon Yellow" },
+      { "name": "Pokémon Giallo", "sub": "1998 · Game Boy", "wiki": "Pokémon Yellow", "fandom": "pokemon", "title": "Pokémon Yellow Version" },
       { "name": "Pokémon Oro e Argento", "sub": "1999 · Game Boy Color", "wiki": "Pokémon Gold and Silver" },
       { "name": "Pokémon Cristallo", "sub": "2000 · Game Boy Color", "wiki": "Pokémon Crystal" },
       { "name": "Pokémon Rubino e Zaffiro", "sub": "2002 · Game Boy Advance", "wiki": "Pokémon Ruby and Sapphire" },

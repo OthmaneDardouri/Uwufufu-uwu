@@ -16,6 +16,8 @@
   "items": [
    {
     "name": "Fullmetal Alchemist: Brotherhood",
+    "fandom": "fma",
+    "title": "Fullmetal Alchemist: Brotherhood",
     "sub": "2009 · Bones",
     "wiki": "Fullmetal Alchemist: Brotherhood"
    },
@@ -41,6 +43,8 @@
    },
    {
     "name": "Dragon Ball Z",
+    "fandom": "dragonball",
+    "title": "Dragon Ball Z",
     "sub": "1989 · Toei Animation",
     "wiki": "Dragon Ball Z"
    },
@@ -116,6 +120,8 @@
    },
    {
     "name": "Vinland Saga",
+    "fandom": "vinlandsaga",
+    "title": "Vinland Saga (anime)",
     "sub": "2019 · Wit / MAPPA",
     "wiki": "Vinland Saga"
    },
@@ -1265,7 +1271,7 @@
    {
     "name": "Johan Liebert",
     "fandom": "monster",
-    "title": "Johan Liebert",
+    "title": "Johan",
     "sub": "Monster",
     "wiki": "Johan Liebert",
     "anime": [
