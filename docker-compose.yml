@@ -1,4 +1,4 @@
-# docker compose up -d                      -> site on http://localhost:8080
+# docker compose up -d                      -> site on http://localhost:8787 (change HOST_PORT in .env if it is taken)
 # docker compose --profile tunnel up -d     -> also public via Cloudflare Tunnel (needs TUNNEL_TOKEN in .env)
 services:
   app:
@@ -6,7 +6,7 @@ services:
     restart: unless-stopped
     env_file: .env
     ports:
-      - "8080:8080"
+      - "${HOST_PORT:-8787}:8080"   # host port : container port (the tunnel talks to app:8080 inside Docker)
     volumes:
       - bracket-data:/data   # admin-published categories and themes live here
 

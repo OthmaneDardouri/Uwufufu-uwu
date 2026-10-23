@@ -27,7 +27,7 @@ Con Docker:
 
 ```bash
 cp .env.example .env
-docker compose up -d                    # http://localhost:8080
+docker compose up -d                    # http://localhost:8787
 docker compose --profile tunnel up -d   # anche pubblico via Cloudflare Tunnel
 ```
 

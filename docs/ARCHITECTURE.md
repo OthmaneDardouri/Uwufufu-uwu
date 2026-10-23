@@ -168,7 +168,7 @@ Aggiungi una voce a `COLLECTIONS` in `server/app.mjs` con la sua funzione `clean
 
 **Sul tuo PC con Docker**
 1. `cp .env.example .env` e compila `ADMIN_TOKEN` (`openssl rand -hex 24`) e, se vuoi l'AI, `ANTHROPIC_API_KEY`.
-2. `docker compose up -d` → http://localhost:8080. I dati pubblicati stanno nel volume `bracket-data`.
+2. `docker compose up -d` → http://localhost:8787 (porta cambiabile con `HOST_PORT` in `.env`). I dati pubblicati stanno nel volume `bracket-data`.
 
 **Renderlo pubblico (Cloudflare Tunnel, gratuito)**
 1. Su dash.cloudflare.com → Zero Trust → Networks → Tunnels → crea un tunnel e copia il token.
