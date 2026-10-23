@@ -1,10 +1,13 @@
 // The duel screen. Click/tap a card, or use ← → (also A/D, 1/2). Z or Backspace undoes.
+// In streamer mode the Twitch chat votes with "1" / "2"; the streamer can always override by clicking.
 import { html, picture, hydratePictures, $ } from "../dom.js";
 import { t, lang } from "../../i18n.js";
 import { localized } from "../../core/catalog.js";
 import { replay, choose, undo, roundKey } from "../../core/bracket.js";
+import { emptyTally, addVote, voteFromText, leader } from "../../core/votes.js";
 import { currentGame, saveGame, clearGame } from "../../game.js";
 import { prefetch } from "../../services/images.js";
+import { connectChat } from "../../services/twitch.js";
 
 const PICK_ANIMATION_MS = 320;
 
@@ -23,6 +26,14 @@ export default function match(root, { catalog, navigate }) {
   root.className = "view-match";
   let busy = false;
 
+  // --- streamer mode state ---------------------------------------------------
+  const tw = game.twitch;
+  let tally = emptyTally();
+  let deadline = 0; // ms timestamp when the vote closes, 0 = no timer running
+  let ticker = null;
+  let chat = null;
+  let status = "connecting";
+
   function draw() {
     const s = replay(game.bracket);
     if (s.champion) return navigate("/result");
@@ -40,24 +51,37 @@ export default function match(root, { catalog, navigate }) {
         ${[a, b].map((e, side) => html`
           ${side === 1 ? html`<div class="vs" aria-hidden="true">VS</div>` : ""}
           <button class="duel-card side-${side}" data-side="${side}" aria-label="${e.name}">
+            ${tw && html`<span class="vote-key">${side + 1}</span>`}
             ${picture(e, "duel-pic")}
             <span class="duel-name">${e.name}</span>
             ${e.sub && html`<span class="duel-sub">${e.sub}</span>`}
           </button>`)}
       </section>
+      ${tw && html`
+        <section class="chat-vote" aria-live="polite">
+          <div class="vote-bar"><i data-bar="0"></i><i data-bar="1"></i></div>
+          <div class="vote-info">
+            <span data-count="0">0</span>
+            <span class="vote-status" data-status></span>
+            <span data-count="1">0</span>
+          </div>
+          <div class="row center"><button class="btn btn-small" data-close-vote>${t("closeVote")}</button></div>
+        </section>`}
       <section class="match-actions">
         <button class="btn btn-ghost" data-undo ${game.bracket.choices.length ? "" : "disabled"}>↶ ${t("undo")}</button>
-        <span class="hint">${t("hint")}</span>
+        <span class="hint">${tw ? t("chatHint", { channel: tw.channel }) : t("hint")}</span>
         <button class="btn btn-ghost" data-quit>${t("quit")}</button>
       </section>`;
     hydratePictures(root);
     // warm up the pictures of the next duel, whichever side wins
     for (const side of [0, 1]) prefetch(replay(choose(game.bracket, side)).match ?? []);
+    if (tw) startVote();
   }
 
   function pick(side) {
     if (busy) return;
     busy = true;
+    stopTimer();
     const cards = root.querySelectorAll(".duel-card");
     cards[side]?.classList.add("is-winner");
     cards[1 - side]?.classList.add("is-loser");
@@ -76,9 +100,71 @@ export default function match(root, { catalog, navigate }) {
     draw();
   }
 
+  // --- chat voting -----------------------------------------------------------
+  function startVote() {
+    tally = emptyTally();
+    stopTimer();
+    deadline = tw.seconds ? Date.now() + tw.seconds * 1000 : 0;
+    if (deadline) ticker = setInterval(tick, 250);
+    renderVotes();
+  }
+
+  function stopTimer() {
+    clearInterval(ticker);
+    ticker = null;
+    deadline = 0;
+  }
+
+  function tick() {
+    if (Date.now() >= deadline) closeVote();
+    else renderVotes();
+  }
+
+  /** Majority wins; on a tie or with no votes the streamer decides by clicking. */
+  function closeVote() {
+    stopTimer();
+    const side = leader(tally);
+    if (side === null) return renderVotes(t("tieDecide"));
+    pick(side);
+  }
+
+  function renderVotes(note) {
+    if (!tw) return;
+    const [a, b] = tally.counts;
+    const total = a + b;
+    const share = (n) => (total ? (100 * n) / total : 50);
+    const bar0 = $("[data-bar='0']", root), bar1 = $("[data-bar='1']", root);
+    if (!bar0) return;
+    bar0.style.width = `${share(a)}%`;
+    bar1.style.width = `${share(b)}%`;
+    $("[data-count='0']", root).textContent = a;
+    $("[data-count='1']", root).textContent = b;
+    const left = deadline ? Math.max(0, Math.ceil((deadline - Date.now()) / 1000)) : null;
+    const statusText = status === "live" ? (left !== null ? t("voteLeft", { s: left }) : t("voteOpen")) : t(`chat_${status}`);
+    $("[data-status]", root).textContent = note ?? statusText;
+  }
+
+  if (tw) {
+    try {
+      chat = connectChat(tw.channel, {
+        onStatus: (st) => { status = st; renderVotes(); },
+        onMessage: (user, text) => {
+          const side = voteFromText(text);
+          if (side === null || busy) return;
+          tally = addVote(tally, user, side);
+          renderVotes();
+        },
+      });
+    } catch {
+      status = "closed";
+    }
+  }
+
+  // --- input -----------------------------------------------------------------
   const onClick = (e) => {
     const card = e.target.closest("[data-side]");
     if (card) return pick(Number(card.dataset.side));
+    if (e.target.closest("[data-close-vote]")) return closeVote();
     if (e.target.closest("[data-undo]")) return back();
     if (e.target.closest("[data-quit]")) navigate("/");
   };
@@ -88,11 +174,16 @@ export default function match(root, { catalog, navigate }) {
     if (["arrowleft", "a", "1"].includes(k)) pick(0);
     else if (["arrowright", "d", "2"].includes(k)) pick(1);
     else if (["z", "backspace"].includes(k)) { e.preventDefault(); back(); }
+    else if (tw && k === "v") closeVote();
   };
 
   root.addEventListener("click", onClick);
   document.addEventListener("keydown", onKey);
   draw();
   $(".duel-card", root)?.focus({ preventScroll: true });
-  return () => document.removeEventListener("keydown", onKey);
+  return () => {
+    document.removeEventListener("keydown", onKey);
+    stopTimer();
+    chat?.close();
+  };
 }

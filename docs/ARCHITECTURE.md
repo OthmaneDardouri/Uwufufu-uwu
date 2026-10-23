@@ -16,12 +16,14 @@ src/
     bracket.js        torneo a eliminazione diretta (replay delle scelte)
     catalog.js        modello categoria: validazione, filtri Pokémon, normalizzazione voci
     stats.js          statistiche del giocatore
+    votes.js          voto della chat Twitch: parsing IRC, un voto per spettatore
     theme.js          modello tema: validazione, variabili CSS
   services/           I/O del browser
     api.js            client del server (tutto "fail soft")
     catalog.js        carica categorie da /categories + server
     themes.js         carica e applica i temi
     images.js         risolve le immagini (PokeAPI, Wikipedia con batch + cache)
+    twitch.js         connessione anonima in sola lettura alla chat Twitch
     storage.js        localStorage JSON, mai eccezioni
   ui/
     dom.js            html`` con escaping automatico, immagini lazy, toast
@@ -88,6 +90,12 @@ Ogni chiamata a Claude costa. Il browser non vede mai la chiave: manda il token 
 
 **Immagini caricate a runtime, non nella repo.**
 Nella repo non c'è nessuna immagine protetta. Gli artwork arrivano da PokeAPI/sprites, le copertine da Wikipedia: richieste a blocchi da 50 titoli, con `pilicense=any` per includere le copertine non libere, e risultati in cache in localStorage. Le immagini dello scontro successivo vengono precaricate. Se un'immagine manca, compare un monogramma nello stile del tema.
+
+**Modalità streamer senza server.**
+La chat di Twitch si legge via WebSocket con il login anonimo `justinfan`, direttamente dal browser dello streamer: niente OAuth, niente costi, niente carico sul tuo PC. Vale un voto per spettatore per scontro (conta l'ultimo); alla scadenza vince la maggioranza, e in caso di pareggio decide lo streamer. Il parsing e il conteggio sono funzioni pure in `core/votes.js`, testate anche con un WebSocket finto.
+
+**Guadagno leggero.**
+Un solo link opzionale a una pagina donazioni (`supportUrl` in `config.json`), mostrato nel footer e sotto il campione. Niente pubblicità né abbonamenti: monetizzare direttamente contenuti Pokémon è esattamente ciò che attira l'attenzione dei detentori dei diritti. Il footer mostra sempre il disclaimer "progetto amatoriale non affiliato".
 
 **PWA.**
 Il service worker usa la rete come prima scelta per i file dell'app, così gli aggiornamenti arrivano subito, e la cache come prima scelta per le immagini, che non cambiano mai. Non mette mai in cache `/api`.
@@ -175,6 +183,7 @@ Il router resta chiuso: è il PC ad aprire la connessione verso Cloudflare. Il s
 - il torneo: potenze di 2 e numeri dispari, annulla, etichette dei turni, campionamento;
 - il catalogo: ogni categoria e tema inclusi sono validi, il conteggio dei filtri Pokémon è corretto, le forme sono escluse di default;
 - le statistiche: calcolo e immutabilità;
+- il voto Twitch: parsing delle righe IRC, un voto per spettatore, login anonimo, PONG, chiusura pulita;
 - il server end-to-end su una porta locale: file privati non raggiungibili, autenticazione, genera → pubblica → elenca → cancella, style transfer, rifiuto di temi con CSS iniettato, CORS.
 
 La CI su GitHub li esegue a ogni push; il deploy su Pages parte solo se passano.

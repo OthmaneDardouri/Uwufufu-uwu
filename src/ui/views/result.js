@@ -7,6 +7,7 @@ import { recordGame } from "../../core/stats.js";
 import { currentGame, saveGame } from "../../game.js";
 import { load, save } from "../../services/storage.js";
 import { renderResultImage, shareOrDownload } from "../share.js";
+import { supportUrl } from "../../services/api.js";
 
 export default function result(root, { catalog, navigate }) {
   const game = currentGame();
@@ -45,6 +46,7 @@ export default function result(root, { catalog, navigate }) {
         <a class="btn btn-ghost" href="#/stats/${category.id}">${t("seeStats")}</a>
         <a class="btn btn-ghost" href="#/">${t("toHome")}</a>
       </div>
+      ${supportUrl() && html`<a class="support" href="${supportUrl()}" target="_blank" rel="noopener">☕ ${t("supportText")}</a>`}
       <details class="ranking panel">
         <summary>${t("fullRanking")} (${s.ranking.length})</summary>
         <ol>${s.ranking.map((e) => html`<li>${e.name}</li>`)}</ol>

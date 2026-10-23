@@ -3,12 +3,21 @@
 import { load, save } from "./storage.js";
 
 let base = "";
+let config = {};
 
 export async function initApi() {
   try {
-    const cfg = await (await fetch("config.json", { cache: "no-cache" })).json();
-    base = (cfg.apiBase ?? "").replace(/\/$/, "");
-  } catch { base = ""; }
+    config = await (await fetch("config.json", { cache: "no-cache" })).json();
+  } catch { config = {}; }
+  base = (config.apiBase ?? "").replace(/\/$/, "");
+}
+
+/** The donation link from config.json, only if it is a plain https URL. */
+export function supportUrl() {
+  try {
+    const u = new URL(config.supportUrl ?? "");
+    return u.protocol === "https:" ? u.href : "";
+  } catch { return ""; }
 }
 
 async function request(path, { method = "GET", body, admin = false, timeout = 8000 } = {}) {

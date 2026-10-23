@@ -4,6 +4,7 @@ Un gioco di tornei "scegli il tuo preferito", in stile uwufufu: due candidati al
 Contiene categorie Pokémon (generazioni, leggendari, mitici, starter e loro evoluzioni, megaevoluzioni, Gigamax, forme regionali, Ultracreature, Paradosso, tipi…), videogiochi Pokémon, fantasy, sci-fi/cyberpunk e tutte le categorie che l'admin aggiunge con Claude.
 
 - **10 temi** selezionabili (Pixel Retrò predefinito) + temi nuovi creati da un'immagine ("style transfer" con Claude)
+- **Modalità streamer**: la chat di Twitch vota scrivendo 1 o 2, con timer e barre live; nessun login né server, il browser legge solo la chat pubblica
 - Torneo da 8 a 128 partecipanti o "tutti", con turno preliminare automatico quando il numero non è una potenza di 2
 - Annulla, scorciatoie da tastiera (← → / A D / 1 2, Z per annullare), partita salvata se chiudi la pagina
 - Classifiche personali: titoli, % vittorie negli scontri, ultime partite
@@ -28,6 +29,16 @@ cp .env.example .env
 docker compose up -d                    # http://localhost:8080
 docker compose --profile tunnel up -d   # anche pubblico via Cloudflare Tunnel
 ```
+
+## Link di supporto (facoltativo)
+
+Metti l'indirizzo della tua pagina donazioni (es. Ko-fi) in `config.json`:
+
+```json
+{ "apiBase": "", "supportUrl": "https://ko-fi.com/tuonome" }
+```
+
+Compare un link discreto nel footer e sotto il campione. Vuoto = nessun link. Niente pubblicità né abbonamenti.
 
 ## Dove gira
 

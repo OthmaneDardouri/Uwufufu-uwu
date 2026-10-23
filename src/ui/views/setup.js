@@ -1,11 +1,14 @@
 // Pre-game screen: pick how many entrants, then start.
-import { html, picture, hydratePictures, $$ } from "../dom.js";
+import { html, picture, hydratePictures, toast, $, $$ } from "../dom.js";
 import { t, lang } from "../../i18n.js";
 import { localized } from "../../core/catalog.js";
 import { sizeOptions } from "../../core/bracket.js";
 import { itemsOf } from "../../services/catalog.js";
 import { startGame } from "../../game.js";
 import { load, save } from "../../services/storage.js";
+import { CHANNEL_RE } from "../../services/twitch.js";
+
+const TIMERS = [0, 15, 30, 60];
 
 export default async function setup(root, { catalog, navigate }, [id]) {
   const category = catalog.byId.get(id);
@@ -15,6 +18,7 @@ export default async function setup(root, { catalog, navigate }, [id]) {
   const remembered = load("lastSize", 16);
   let size = sizes.includes(remembered) ? remembered : sizes.find((s) => s >= 16) ?? sizes.at(-1);
 
+  const twitch = load("twitch", { on: false, channel: "", seconds: 30 });
   const info = () => t("rounds", { n: Math.ceil(Math.log2(size)), m: size - 1 });
 
   root.innerHTML = html`
@@ -30,6 +34,15 @@ export default async function setup(root, { catalog, navigate }, [id]) {
             ${s === items.length && ![8, 16, 32, 64, 128].includes(s) ? t("allN", { n: s }) : s}</button>`)}
         </div>
         <p class="muted small" data-info>${info()}</p>
+        <details class="streamer" ${twitch.on ? "open" : ""}>
+          <summary>${t("streamerMode")}</summary>
+          <p class="muted small">${t("streamerHelp")}</p>
+          <label class="check"><input type="checkbox" name="tw-on" ${twitch.on ? "checked" : ""}> ${t("streamerOn")}</label>
+          <label>${t("twitchChannel")}<input name="tw-channel" value="${twitch.channel}" placeholder="nomecanale" autocomplete="off" spellcheck="false"></label>
+          <label>${t("voteTimer")}
+            <select name="tw-seconds">${TIMERS.map((n) => html`<option value="${n}" ${n === twitch.seconds ? "selected" : ""}>${n ? `${n} s` : t("manual")}</option>`)}</select>
+          </label>
+        </details>
         <button class="btn btn-primary btn-big" data-start>${t("start")}</button>
       </div>
     </section>`;
@@ -43,8 +56,19 @@ export default async function setup(root, { catalog, navigate }, [id]) {
       root.querySelector("[data-info]").textContent = info();
     }
     if (e.target.closest("[data-start]")) {
+      const tw = {
+        on: $("[name=tw-on]", root).checked,
+        channel: $("[name=tw-channel]", root).value.trim().toLowerCase().replace(/^#/, ""),
+        seconds: Number($("[name=tw-seconds]", root).value),
+      };
+      if (tw.on && !CHANNEL_RE.test(tw.channel)) {
+        toast(t("badChannel"), "error");
+        $("[name=tw-channel]", root).focus();
+        return;
+      }
+      save("twitch", tw);
       save("lastSize", size);
-      startGame(category, items, size);
+      startGame(category, items, size, tw.on ? { twitch: { channel: tw.channel, seconds: tw.seconds } } : {});
       navigate("/match");
     }
   });

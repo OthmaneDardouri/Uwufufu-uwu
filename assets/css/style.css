@@ -292,6 +292,31 @@ label { display: block; color: var(--muted); font-size: .9em; margin-bottom: 12p
 .swatches i { width: 16px; height: 16px; border: 1px solid rgb(255 255 255 / .2); }
 .drop input { padding: 18px; border-style: dashed; }
 
+/* ---------- streamer mode ---------- */
+.streamer { border: 1px dashed color-mix(in srgb, var(--line) 45%, transparent); padding: 10px 14px; border-radius: min(var(--radius), 10px); }
+.streamer summary { cursor: pointer; color: var(--accent); font-family: var(--font-display); font-size: .78em; }
+.streamer[open] summary { margin-bottom: 10px; }
+.check { display: flex; align-items: center; gap: 8px; color: var(--text); }
+.check input { width: auto; margin: 0; accent-color: var(--accent); }
+.duel-card { position: relative; }
+.vote-key {
+  position: absolute; top: 8px; left: 8px; z-index: 1; min-width: 34px; padding: 4px 8px;
+  font-family: var(--font-display); background: var(--accent); color: var(--bg); border-radius: min(var(--radius), 8px);
+}
+.chat-vote { max-width: 920px; margin: 0 auto 16px; display: grid; gap: 8px; }
+.vote-bar { display: flex; height: 14px; background: color-mix(in srgb, var(--line) 15%, transparent); overflow: hidden; border-radius: min(var(--radius), 8px); }
+.vote-bar i { display: block; height: 100%; width: 50%; transition: width .3s; }
+.vote-bar [data-bar="0"] { background: var(--accent); }
+.vote-bar [data-bar="1"] { background: var(--accent2); }
+.vote-info { display: flex; justify-content: space-between; align-items: center; font-family: var(--font-display); }
+.vote-status { font-family: var(--font-body); color: var(--muted); font-size: .9em; }
+
+/* ---------- footer ---------- */
+.site-foot { max-width: var(--maxw); margin: 0 auto; padding: 24px var(--gap) max(24px, env(safe-area-inset-bottom)); text-align: center; color: var(--muted); font-size: .75em; }
+.site-foot p { max-width: 60em; margin: 8px auto 0; opacity: .8; }
+.support { display: inline-block; color: var(--accent); text-decoration: none; border-bottom: 1px dashed currentColor; font-size: 1.1em; }
+.view-match ~ .site-foot, body:has(.view-match) .site-foot { display: none; }
+
 /* ---------- toast ---------- */
 .toast {
   position: fixed; left: 50%; bottom: max(18px, env(safe-area-inset-bottom)); transform: translateX(-50%); z-index: 50;

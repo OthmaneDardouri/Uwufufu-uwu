@@ -1,5 +1,5 @@
 // App shell + hash router. Each route maps to a view: (root, ctx, params) => cleanup?
-import { initApi, health, adminToken } from "./services/api.js";
+import { initApi, health, adminToken, supportUrl } from "./services/api.js";
 import { loadCatalog } from "./services/catalog.js";
 import { loadThemes, listThemes, currentThemeId, useTheme, restoreTheme } from "./services/themes.js";
 import { localized } from "./core/catalog.js";
@@ -54,8 +54,16 @@ function shell() {
   $(".lang", top).addEventListener("click", () => {
     setLang(LANGS.find((l) => l !== lang));
     shell();
+    footer();
     route();
   });
+}
+
+function footer() {
+  const url = supportUrl();
+  $("#foot").innerHTML = html`
+    ${url && html`<a class="support" href="${url}" target="_blank" rel="noopener">☕ ${t("supportText")}</a>`}
+    <p>${t("disclaimer")}</p>`;
 }
 
 const currentPath = () => decodeURIComponent(location.hash.slice(1)) || "/";
@@ -93,6 +101,7 @@ async function boot() {
   [ctx.server] = await Promise.all([health(), loadThemes().catch(() => [])]);
   restoreTheme();
   shell();
+  footer();
   $("#view").innerHTML = html`<p class="empty">${t("loading")}</p>`;
   ctx.catalog = await loadCatalog();
   window.addEventListener("hashchange", route);
