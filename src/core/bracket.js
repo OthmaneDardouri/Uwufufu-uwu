@@ -38,6 +38,17 @@ export const choose = (bracket, side) => {
 export const undo = (bracket) => ({ ...bracket, choices: bracket.choices.slice(0, -1) });
 
 const isPow2 = (n) => (n & (n - 1)) === 0;
+
+/**
+ * Seats for the round after the preliminary one. Winners face rested entrants where possible,
+ * and rested-only duels come first, so nobody who just played is called again straight away.
+ */
+function afterPreliminary(winners, byes) {
+  const m = Math.min(winners.length, byes.length);
+  const mixed = winners.slice(0, m).flatMap((w, i) => [w, byes[i]]);
+  return [...byes.slice(m), ...mixed, ...winners.slice(m)];
+}
+
 const prevPow2 = (n) => 2 ** Math.floor(Math.log2(n));
 
 /**
@@ -77,7 +88,7 @@ export function replay({ entrants, choices }) {
     duels.push({ round, a, b, winner: w });
     picks++;
     if (winners.length * 2 === queue.length) {
-      const next = [...winners, ...byes];
+      const next = preliminary ? afterPreliminary(winners, byes) : winners;
       if (next.length === 1) {
         champion = next[0];
       } else {

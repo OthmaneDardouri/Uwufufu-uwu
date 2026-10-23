@@ -1,6 +1,7 @@
 // Minimal rendering helpers. Views return HTML strings built with `html`, which escapes
 // every interpolated value unless it was produced by `html` itself (or wrapped in `raw`).
 import { imageFor } from "../services/images.js";
+import { generatedArt } from "../core/art.js";
 
 class Safe { constructor(s) { this.s = s; } toString() { return this.s; } }
 export const raw = (s) => new Safe(String(s));
@@ -34,15 +35,19 @@ export function hydratePictures(root) {
   for (const el of $$("[data-pic]", root)) {
     const item = registry.get(el.dataset.pic);
     registry.delete(el.dataset.pic);
+    // a generated picture shows at once; the real one replaces it as soon as it has loaded
+    const placeholder = generatedArt(item?.name ?? "?");
+    const img = new Image();
+    img.alt = item?.name ?? "";
+    img.decoding = "async";
+    img.src = placeholder;
+    img.onload = () => el.classList.add("pic-ready");
+    el.append(img);
     imageFor(item).then((url) => {
-      if (!url) return el.classList.add("pic-none");
-      const img = new Image();
-      img.alt = item.name;
-      img.decoding = "async";
-      img.onload = () => el.classList.add("pic-ready");
-      img.onerror = () => { img.remove(); el.classList.add("pic-none"); };
-      img.src = url;
-      el.append(img);
+      if (!url || url === placeholder) return;
+      const real = new Image();
+      real.onload = () => { img.src = url; el.classList.add("pic-real"); };
+      real.src = url; // broken remote picture: we simply keep the generated one
     });
   }
 }

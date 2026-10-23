@@ -112,7 +112,15 @@ def build(t: dict[str, list[dict]]) -> list[dict]:
                 continue  # cosmetic/battle-only forms: skip
             name = pokemon_display.get(pid) or ident.replace("-", " ").title()
         entries.append({"id": pid, "n": name, "g": int(s["generation_id"]),
-                        "t": types_of[pid], "f": tags})
+                        "t": types_of[pid], "f": tags, "_ident": ident})
+    # two forms with the same display name (e.g. Mega Meowstic male/female): make them distinguishable
+    from collections import Counter
+    counts = Counter(e["n"] for e in entries)
+    for e in entries:
+        ident = e.pop("_ident")
+        if counts[e["n"]] > 1 and "form" in e["f"]:
+            suffix = "♀" if "female" in ident or ident.endswith("-f") else "♂" if "male" in ident or ident.endswith("-m") else ident
+            e["n"] = f"{e['n']} ({suffix})"
     return entries
 
 

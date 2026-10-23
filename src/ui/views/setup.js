@@ -4,6 +4,7 @@ import { t, lang } from "../../i18n.js";
 import { localized } from "../../core/catalog.js";
 import { sizeOptions } from "../../core/bracket.js";
 import { itemsOf } from "../../services/catalog.js";
+import { warm } from "../../services/images.js";
 import { startGame } from "../../game.js";
 import { load, save } from "../../services/storage.js";
 import { CHANNEL_RE } from "../../services/twitch.js";
@@ -33,6 +34,9 @@ export default async function setup(root, { catalog, navigate }, [id]) {
           ${sizes.map((s) => html`<button class="chip" data-size="${s}" aria-pressed="${s === size}">
             ${s === items.length && ![8, 16, 32, 64, 128].includes(s) ? t("allN", { n: s }) : s}</button>`)}
         </div>
+        <label class="custom-size">${t("customSize")}
+          <input type="number" inputmode="numeric" min="2" max="${items.length}" placeholder="2–${items.length}" data-custom>
+        </label>
         <p class="muted small" data-info>${info()}</p>
         <details class="streamer" ${twitch.on ? "open" : ""}>
           <summary>${t("streamerMode")}</summary>
@@ -47,11 +51,21 @@ export default async function setup(root, { catalog, navigate }, [id]) {
       </div>
     </section>`;
   hydratePictures(root);
+  warm(items); // look pictures up while the player chooses the size
+
+  root.querySelector("[data-custom]").addEventListener("input", (e) => {
+    const n = Math.round(Number(e.target.value));
+    if (!Number.isFinite(n) || n < 2 || n > items.length) return;
+    size = n;
+    $$("[data-size]", root).forEach((b) => b.setAttribute("aria-pressed", Number(b.dataset.size) === n));
+    root.querySelector("[data-info]").textContent = info();
+  });
 
   root.addEventListener("click", (e) => {
     const chip = e.target.closest("[data-size]");
     if (chip) {
       size = Number(chip.dataset.size);
+      root.querySelector("[data-custom]").value = "";
       $$("[data-size]", root).forEach((b) => b.setAttribute("aria-pressed", b === chip));
       root.querySelector("[data-info]").textContent = info();
     }

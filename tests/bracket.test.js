@@ -74,3 +74,19 @@ test("createBracket samples without duplicates", () => {
   assert.equal(new Set(b.entrants.map((e) => e.key)).size, 16);
   assert.throws(() => createBracket(items(1)));
 });
+
+test("nobody plays two duels in a row, except into the final", () => {
+  for (let n = 3; n <= 140; n++) {
+    let b = createBracket(items(n), n, seeded(n));
+    let prev = null;
+    while (!replay(b).champion) {
+      const s = replay(b);
+      const now = s.match.map((e) => e.key);
+      if (prev && s.fieldSize > 2) {
+        assert.ok(!now.some((k) => prev.includes(k)), `n=${n}: ${now} right after ${prev}`);
+      }
+      prev = now;
+      b = choose(b, (n + b.choices.length) % 2);
+    }
+  }
+});

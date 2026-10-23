@@ -1,8 +1,12 @@
-// Resolves the picture for an item.
+// Resolves the picture for an item, trying sources in order until one answers:
 //   { image }   -> used as is
 //   { pokemon } -> official artwork from the PokeAPI sprites repo
+//   { mal }     -> MyAnimeList character art (services/mal.js), for anime characters
 //   { wiki }    -> lead image of the English Wikipedia article, looked up in batches
-// Wikipedia answers are cached in localStorage so each title is asked only once per browser.
+//   otherwise   -> a generated picture (core/art.js), so a card is never empty
+// Answers are cached in localStorage so each lookup happens once per browser.
+import { generatedArt } from "../core/art.js";
+import { malImage, preloadRosters } from "./mal.js";
 
 const ARTWORK = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/";
 const WIKI_API = "https://en.wikipedia.org/w/api.php";
@@ -43,7 +47,7 @@ export function isGenericPage(title, viaSectionRedirect) {
 async function lookup(titles) {
   const params = new URLSearchParams({
     action: "query", format: "json", origin: "*", redirects: "1",
-    prop: "pageimages", piprop: "thumbnail", pithumbsize: "640", pilicense: "any",
+    prop: "pageimages", piprop: "thumbnail", pithumbsize: "480", pilicense: "any",
     titles: titles.join("|"),
   });
   const res = await fetch(`${WIKI_API}?${params}`);
@@ -75,16 +79,35 @@ function wikiImage(title) {
   });
 }
 
-/** Promise of an image URL, or null when the item has no picture. */
-export function imageFor(item) {
-  if (!item) return Promise.resolve(null);
-  if (item.image) return Promise.resolve(item.image);
-  if (item.pokemon) return Promise.resolve(`${ARTWORK}${item.pokemon}.png`);
-  if (item.wiki) return wikiImage(item.wiki);
-  return Promise.resolve(null);
+/** Promise of an image URL. Always resolves to something: the last resort is a generated picture. */
+export async function imageFor(item) {
+  if (!item) return null;
+  if (item.image) return item.image;
+  if (item.pokemon) return `${ARTWORK}${item.pokemon}.png`;
+  if (item.mal) {
+    const url = await malImage(item.mal);
+    if (url) return url;
+  }
+  if (item.wiki) {
+    const url = await wikiImage(item.wiki);
+    if (url) return url;
+  }
+  return generatedArt(item.name ?? "?");
 }
 
-/** Warm the cache for upcoming matches so pictures appear instantly. */
+/**
+ * Resolve picture URLs ahead of time (no image download): called when a category opens,
+ * so by the first duel every lookup is already answered and cached.
+ */
+export function warm(items, limit = 128) {
+  const some = items.slice(0, limit);
+  // cheap lookups only: whole MyAnimeList rosters (one request per anime) and batched Wikipedia titles.
+  // Per-character searches wait until the card is actually on screen.
+  preloadRosters(some.flatMap((it) => it.mal?.anime ?? []));
+  for (const it of some) if (it.wiki && !it.mal) wikiImage(it.wiki);
+}
+
+/** Download the pictures of the next duel so they appear instantly. */
 export function prefetch(items) {
   for (const it of items) {
     imageFor(it).then((url) => { if (url) new Image().src = url; });

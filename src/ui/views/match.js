@@ -6,7 +6,7 @@ import { localized } from "../../core/catalog.js";
 import { replay, choose, undo, roundKey } from "../../core/bracket.js";
 import { emptyTally, addVote, voteFromText, leader } from "../../core/votes.js";
 import { currentGame, saveGame, clearGame } from "../../game.js";
-import { prefetch } from "../../services/images.js";
+import { prefetch, warm } from "../../services/images.js";
 import { connectChat } from "../../services/twitch.js";
 
 const PICK_ANIMATION_MS = 320;
@@ -180,6 +180,7 @@ export default function match(root, { catalog, navigate }) {
 
   root.addEventListener("click", onClick);
   document.addEventListener("keydown", onKey);
+  warm(game.bracket.entrants);
   draw();
   $(".duel-card", root)?.focus({ preventScroll: true });
   return () => {

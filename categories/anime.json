@@ -268,7 +268,13 @@
    "en": "Straw Hats, Emperors, Marines and more."
   },
   "cover": {
-   "wiki": "Monkey D. Luffy"
+   "wiki": "Monkey D. Luffy",
+   "mal": {
+    "anime": [
+     21
+    ],
+    "char": "Monkey D. Luffy"
+   }
   },
   "items": [
    {
@@ -349,22 +355,26 @@
    {
     "name": "Barbanera",
     "sub": "Marshall D. Teach · Imperatore",
-    "wiki": "Marshall D. Teach"
+    "wiki": "Marshall D. Teach",
+    "char": "Marshall D. Teach"
    },
    {
     "name": "Kaido",
     "sub": "Imperatore · le Cento Bestie",
-    "wiki": "Kaido (One Piece)"
+    "wiki": "Kaido (One Piece)",
+    "char": "Kaidou"
    },
    {
     "name": "Big Mom",
     "sub": "Charlotte Linlin · Imperatrice",
-    "wiki": "Charlotte Linlin"
+    "wiki": "Charlotte Linlin",
+    "char": "Charlotte Linlin"
    },
    {
     "name": "Barbabianca",
     "sub": "Edward Newgate · Imperatore",
-    "wiki": "Edward Newgate"
+    "wiki": "Edward Newgate",
+    "char": "Edward Newgate"
    },
    {
     "name": "Gol D. Roger",
@@ -431,6 +441,9 @@
     "sub": "il Dio di Skypiea",
     "wiki": "Enel (One Piece)"
    }
+  ],
+  "malAnime": [
+   21
   ]
  },
  {
@@ -445,7 +458,13 @@
    "en": "Team 7, Akatsuki, Hokage and Sannin."
   },
   "cover": {
-   "wiki": "Naruto Uzumaki"
+   "wiki": "Naruto Uzumaki",
+   "mal": {
+    "anime": [
+     1735
+    ],
+    "char": "Naruto Uzumaki"
+   }
   },
   "items": [
    {
@@ -608,6 +627,11 @@
     "sub": "figlio di Naruto",
     "wiki": "Boruto Uzumaki"
    }
+  ],
+  "malAnime": [
+   1735,
+   20,
+   34566
   ]
  },
  {
@@ -622,7 +646,13 @@
    "en": "Saiyans, androids, gods and fusions."
   },
   "cover": {
-   "wiki": "Goku"
+   "wiki": "Goku",
+   "mal": {
+    "anime": [
+     813
+    ],
+    "char": "Goku"
+   }
   },
   "items": [
    {
@@ -648,7 +678,8 @@
    {
     "name": "Freezer",
     "sub": "Imperatore galattico",
-    "wiki": "Frieza"
+    "wiki": "Frieza",
+    "char": "Frieza"
    },
    {
     "name": "Cell",
@@ -658,7 +689,8 @@
    {
     "name": "Majin Bu",
     "sub": "il demone rosa",
-    "wiki": "Majin Buu"
+    "wiki": "Majin Buu",
+    "char": "Majin Buu"
    },
    {
     "name": "Trunks",
@@ -673,7 +705,8 @@
    {
     "name": "Crilin",
     "sub": "miglior amico di Goku",
-    "wiki": "Krillin"
+    "wiki": "Krillin",
+    "char": "Krillin"
    },
    {
     "name": "Bulma",
@@ -683,7 +716,8 @@
    {
     "name": "Muten Roshi",
     "sub": "il Genio delle Tartarughe",
-    "wiki": "Master Roshi"
+    "wiki": "Master Roshi",
+    "char": "Kame-Sennin"
    },
    {
     "name": "Tenshinhan",
@@ -698,12 +732,14 @@
    {
     "name": "C-18",
     "sub": "Androide",
-    "wiki": "Android 18"
+    "wiki": "Android 18",
+    "char": "Android 18"
    },
    {
     "name": "C-17",
     "sub": "Androide",
-    "wiki": "Android 17"
+    "wiki": "Android 17",
+    "char": "Android 17"
    },
    {
     "name": "Broly",
@@ -713,12 +749,14 @@
    {
     "name": "Bardack",
     "sub": "padre di Goku",
-    "wiki": "Bardock"
+    "wiki": "Bardock",
+    "char": "Bardock"
    },
    {
     "name": "Radish",
     "sub": "fratello di Goku",
-    "wiki": "Raditz"
+    "wiki": "Raditz",
+    "char": "Raditz"
    },
    {
     "name": "Nappa",
@@ -753,7 +791,8 @@
    {
     "name": "Vegeth",
     "sub": "fusione Potara",
-    "wiki": "Vegito"
+    "wiki": "Vegito",
+    "char": "Vegetto"
    },
    {
     "name": "Mr. Satan",
@@ -763,7 +802,8 @@
    {
     "name": "Chichi",
     "sub": "moglie di Goku",
-    "wiki": "Chi-Chi"
+    "wiki": "Chi-Chi",
+    "char": "Chi-Chi"
    },
    {
     "name": "Shenron",
@@ -783,8 +823,14 @@
    {
     "name": "C-16",
     "sub": "Androide",
-    "wiki": "Android 16"
+    "wiki": "Android 16",
+    "char": "Android 16"
    }
+  ],
+  "malAnime": [
+   813,
+   30694,
+   223
   ]
  },
  {
@@ -799,7 +845,13 @@
    "en": "Demon slayers, Hashira and Twelve Kizuki."
   },
   "cover": {
-   "wiki": "Tanjiro Kamado"
+   "wiki": "Tanjiro Kamado",
+   "mal": {
+    "anime": [
+     38000
+    ],
+    "char": "Tanjirou Kamado"
+   }
   },
   "items": [
    {
@@ -900,7 +952,8 @@
    {
     "name": "Doma",
     "sub": "Luna Superiore 2",
-    "wiki": "Doma (Demon Slayer)"
+    "wiki": "Doma (Demon Slayer)",
+    "char": "Douma"
    },
    {
     "name": "Kokushibo",
@@ -910,7 +963,8 @@
    {
     "name": "Gyutaro e Daki",
     "sub": "Luna Superiore 6",
-    "wiki": "Daki and Gyutaro"
+    "wiki": "Daki and Gyutaro",
+    "char": "Daki"
    },
    {
     "name": "Rui",
@@ -922,6 +976,9 @@
     "sub": "capo dei Cacciatori",
     "wiki": "Kagaya Ubuyashiki"
    }
+  ],
+  "malAnime": [
+   38000
   ]
  },
  {
@@ -936,7 +993,13 @@
    "en": "Sorcerers and curses."
   },
   "cover": {
-   "wiki": "Satoru Gojo"
+   "wiki": "Satoru Gojo",
+   "mal": {
+    "anime": [
+     40748
+    ],
+    "char": "Satoru Gojou"
+   }
   },
   "items": [
    {
@@ -1039,6 +1102,10 @@
     "sub": "Il giudice",
     "wiki": "Hiromi Higuruma"
    }
+  ],
+  "malAnime": [
+   40748,
+   51009
   ]
  },
  {
@@ -1053,128 +1120,213 @@
    "en": "The most iconic foes, from Frieza to Sukuna."
   },
   "cover": {
-   "wiki": "Dio Brando"
+   "wiki": "Dio Brando",
+   "mal": {
+    "anime": [
+     14719
+    ],
+    "char": "Dio Brando"
+   }
   },
   "items": [
    {
     "name": "Freezer",
     "sub": "Dragon Ball",
-    "wiki": "Frieza"
+    "wiki": "Frieza",
+    "char": "Frieza",
+    "anime": [
+     813
+    ]
    },
    {
     "name": "Madara Uchiha",
     "sub": "Naruto",
-    "wiki": "Madara Uchiha"
+    "wiki": "Madara Uchiha",
+    "anime": [
+     1735
+    ]
    },
    {
     "name": "Pain",
     "sub": "Naruto",
-    "wiki": "Pain (Naruto)"
+    "wiki": "Pain (Naruto)",
+    "anime": [
+     1735
+    ]
    },
    {
     "name": "Orochimaru",
     "sub": "Naruto",
-    "wiki": "Orochimaru (Naruto)"
+    "wiki": "Orochimaru (Naruto)",
+    "anime": [
+     20,
+     1735
+    ]
    },
    {
     "name": "Dio Brando",
     "sub": "Le bizzarre avventure di JoJo",
-    "wiki": "Dio Brando"
+    "wiki": "Dio Brando",
+    "anime": [
+     14719
+    ]
    },
    {
     "name": "Ryomen Sukuna",
     "sub": "Jujutsu Kaisen",
-    "wiki": "Ryomen Sukuna"
+    "wiki": "Ryomen Sukuna",
+    "anime": [
+     40748
+    ]
    },
    {
     "name": "Mahito",
     "sub": "Jujutsu Kaisen",
-    "wiki": "Mahito (Jujutsu Kaisen)"
+    "wiki": "Mahito (Jujutsu Kaisen)",
+    "anime": [
+     40748
+    ]
    },
    {
     "name": "Muzan Kibutsuji",
     "sub": "Demon Slayer",
-    "wiki": "Muzan Kibutsuji"
+    "wiki": "Muzan Kibutsuji",
+    "anime": [
+     38000
+    ]
    },
    {
     "name": "Akaza",
     "sub": "Demon Slayer",
-    "wiki": "Akaza (Demon Slayer)"
+    "wiki": "Akaza (Demon Slayer)",
+    "anime": [
+     38000,
+     49926
+    ]
    },
    {
     "name": "Sosuke Aizen",
     "sub": "Bleach",
-    "wiki": "Sōsuke Aizen"
+    "wiki": "Sōsuke Aizen",
+    "char": "Sousuke Aizen",
+    "anime": [
+     269
+    ]
    },
    {
     "name": "Meruem",
     "sub": "Hunter × Hunter",
-    "wiki": "Meruem"
+    "wiki": "Meruem",
+    "anime": [
+     11061
+    ]
    },
    {
     "name": "Hisoka",
     "sub": "Hunter × Hunter",
-    "wiki": "Hisoka (Hunter × Hunter)"
+    "wiki": "Hisoka (Hunter × Hunter)",
+    "anime": [
+     11061
+    ]
    },
    {
     "name": "Johan Liebert",
     "sub": "Monster",
-    "wiki": "Johan Liebert"
+    "wiki": "Johan Liebert",
+    "anime": [
+     19
+    ]
    },
    {
     "name": "Griffith",
     "sub": "Berserk",
-    "wiki": "Griffith (Berserk)"
+    "wiki": "Griffith (Berserk)",
+    "anime": [
+     33
+    ]
    },
    {
     "name": "Light Yagami",
     "sub": "Death Note",
-    "wiki": "Light Yagami"
+    "wiki": "Light Yagami",
+    "anime": [
+     1535
+    ]
    },
    {
     "name": "Makima",
     "sub": "Chainsaw Man",
-    "wiki": "Makima (Chainsaw Man)"
+    "wiki": "Makima (Chainsaw Man)",
+    "anime": [
+     44511
+    ]
    },
    {
     "name": "Tomura Shigaraki",
     "sub": "My Hero Academia",
-    "wiki": "Tomura Shigaraki"
+    "wiki": "Tomura Shigaraki",
+    "anime": [
+     31964
+    ]
    },
    {
     "name": "All for One",
     "sub": "My Hero Academia",
-    "wiki": "All for One (My Hero Academia)"
+    "wiki": "All for One (My Hero Academia)",
+    "anime": [
+     31964
+    ]
    },
    {
     "name": "Padre",
     "sub": "Fullmetal Alchemist",
-    "wiki": "Father (Fullmetal Alchemist)"
+    "wiki": "Father (Fullmetal Alchemist)",
+    "char": "Father",
+    "anime": [
+     5114
+    ]
    },
    {
     "name": "Cell",
     "sub": "Dragon Ball",
-    "wiki": "Cell (Dragon Ball)"
+    "wiki": "Cell (Dragon Ball)",
+    "anime": [
+     813
+    ]
    },
    {
     "name": "Majin Bu",
     "sub": "Dragon Ball",
-    "wiki": "Majin Buu"
+    "wiki": "Majin Buu",
+    "char": "Majin Buu",
+    "anime": [
+     813
+    ]
    },
    {
     "name": "Zamasu",
     "sub": "Dragon Ball Super",
-    "wiki": "Zamasu"
+    "wiki": "Zamasu",
+    "anime": [
+     30694
+    ]
    },
    {
     "name": "Barbanera",
     "sub": "One Piece",
-    "wiki": "Marshall D. Teach"
+    "wiki": "Marshall D. Teach",
+    "char": "Marshall D. Teach",
+    "anime": [
+     21
+    ]
    },
    {
     "name": "Donquixote Doflamingo",
     "sub": "One Piece",
-    "wiki": "Donquixote Doflamingo"
+    "wiki": "Donquixote Doflamingo",
+    "anime": [
+     21
+    ]
    }
   ]
  },
@@ -1190,128 +1342,207 @@
    "en": "The heroes of the biggest action series."
   },
   "cover": {
-   "wiki": "Goku"
+   "wiki": "Goku",
+   "mal": {
+    "anime": [
+     813
+    ],
+    "char": "Goku"
+   }
   },
   "items": [
    {
     "name": "Monkey D. Luffy",
     "sub": "One Piece",
-    "wiki": "Monkey D. Luffy"
+    "wiki": "Monkey D. Luffy",
+    "anime": [
+     21
+    ]
    },
    {
     "name": "Naruto Uzumaki",
     "sub": "Naruto",
-    "wiki": "Naruto Uzumaki"
+    "wiki": "Naruto Uzumaki",
+    "anime": [
+     20
+    ]
    },
    {
     "name": "Goku",
     "sub": "Dragon Ball",
-    "wiki": "Goku"
+    "wiki": "Goku",
+    "anime": [
+     813
+    ]
    },
    {
     "name": "Ichigo Kurosaki",
     "sub": "Bleach",
-    "wiki": "Ichigo Kurosaki"
+    "wiki": "Ichigo Kurosaki",
+    "anime": [
+     269
+    ]
    },
    {
     "name": "Gon Freecss",
     "sub": "Hunter × Hunter",
-    "wiki": "Gon Freecss"
+    "wiki": "Gon Freecss",
+    "anime": [
+     11061
+    ]
    },
    {
     "name": "Tanjiro Kamado",
     "sub": "Demon Slayer",
-    "wiki": "Tanjiro Kamado"
+    "wiki": "Tanjiro Kamado",
+    "anime": [
+     38000
+    ]
    },
    {
     "name": "Yuji Itadori",
     "sub": "Jujutsu Kaisen",
-    "wiki": "Yuji Itadori"
+    "wiki": "Yuji Itadori",
+    "anime": [
+     40748
+    ]
    },
    {
     "name": "Izuku Midoriya",
     "sub": "My Hero Academia",
-    "wiki": "Izuku Midoriya"
+    "wiki": "Izuku Midoriya",
+    "anime": [
+     31964
+    ]
    },
    {
     "name": "Eren Jaeger",
     "sub": "L'attacco dei giganti",
-    "wiki": "Eren Yeager"
+    "wiki": "Eren Yeager",
+    "char": "Eren Yeager",
+    "anime": [
+     16498
+    ]
    },
    {
     "name": "Edward Elric",
     "sub": "Fullmetal Alchemist",
-    "wiki": "Edward Elric"
+    "wiki": "Edward Elric",
+    "anime": [
+     5114
+    ]
    },
    {
     "name": "Saitama",
     "sub": "One-Punch Man",
-    "wiki": "Saitama (One-Punch Man)"
+    "wiki": "Saitama (One-Punch Man)",
+    "anime": [
+     30276
+    ]
    },
    {
     "name": "Denji",
     "sub": "Chainsaw Man",
-    "wiki": "Denji (Chainsaw Man)"
+    "wiki": "Denji (Chainsaw Man)",
+    "anime": [
+     44511
+    ]
    },
    {
     "name": "Asta",
     "sub": "Black Clover",
-    "wiki": "Asta (Black Clover)"
+    "wiki": "Asta (Black Clover)",
+    "anime": [
+     34572
+    ]
    },
    {
     "name": "Natsu Dragneel",
     "sub": "Fairy Tail",
-    "wiki": "Natsu Dragneel"
+    "wiki": "Natsu Dragneel",
+    "anime": [
+     6702
+    ]
    },
    {
     "name": "Jotaro Kujo",
     "sub": "Le bizzarre avventure di JoJo",
-    "wiki": "Jotaro Kujo"
+    "wiki": "Jotaro Kujo",
+    "anime": [
+     20899
+    ]
    },
    {
     "name": "Yusuke Urameshi",
     "sub": "Yu Yu Hakusho",
-    "wiki": "Yusuke Urameshi"
+    "wiki": "Yusuke Urameshi",
+    "anime": [
+     392
+    ]
    },
    {
     "name": "Senku Ishigami",
     "sub": "Dr. Stone",
-    "wiki": "Senku Ishigami"
+    "wiki": "Senku Ishigami",
+    "anime": [
+     38691
+    ]
    },
    {
     "name": "Gintoki Sakata",
     "sub": "Gintama",
-    "wiki": "Gintoki Sakata"
+    "wiki": "Gintoki Sakata",
+    "anime": [
+     918
+    ]
    },
    {
     "name": "Thorfinn",
     "sub": "Vinland Saga",
-    "wiki": "Thorfinn (Vinland Saga)"
+    "wiki": "Thorfinn (Vinland Saga)",
+    "anime": [
+     37521
+    ]
    },
    {
     "name": "Shigeo Kageyama",
     "sub": "Mob Psycho 100",
-    "wiki": "Shigeo Kageyama"
+    "wiki": "Shigeo Kageyama",
+    "anime": [
+     32182
+    ]
    },
    {
     "name": "Kenshiro",
     "sub": "Ken il guerriero",
-    "wiki": "Kenshiro"
+    "wiki": "Kenshiro",
+    "anime": [
+     967
+    ]
    },
    {
     "name": "Inuyasha",
     "sub": "Inuyasha",
-    "wiki": "Inuyasha (character)"
+    "wiki": "Inuyasha (character)",
+    "anime": [
+     249
+    ]
    },
    {
     "name": "Killua Zoldyck",
     "sub": "Hunter × Hunter",
-    "wiki": "Killua Zoldyck"
+    "wiki": "Killua Zoldyck",
+    "anime": [
+     11061
+    ]
    },
    {
     "name": "Sung Jinwoo",
     "sub": "Solo Leveling",
-    "wiki": "Sung Jinwoo"
+    "wiki": "Sung Jinwoo",
+    "anime": [
+     52299
+    ]
    }
   ]
  }

@@ -210,6 +210,7 @@ label { display: block; color: var(--muted); font-size: .9em; margin-bottom: 12p
 /* ---------- setup ---------- */
 .setup { display: grid; grid-template-columns: minmax(0, 340px) 1fr; gap: var(--gap); align-items: center; margin-top: 18px; }
 .setup-body { display: grid; gap: 14px; }
+.custom-size { margin: 0; max-width: 240px; }
 .setup-body h1 { font-size: clamp(18px, 3.4vw, 34px); }
 .back { color: var(--muted); text-decoration: none; }
 @media (max-width: 720px) { .setup { grid-template-columns: 1fr; } .setup-cover { max-width: 240px; margin: 0 auto; width: 100%; } }
