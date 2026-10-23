@@ -1,0 +1,362 @@
+[
+ {
+  "id": "pokemon-type-normal",
+  "group": "pokemon-types",
+  "name": {
+   "it": "Tipo Normale",
+   "en": "Normal type"
+  },
+  "cover": {
+   "pokemon": 143
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "types": [
+     "normal"
+    ]
+   }
+  },
+  "accent": "normal"
+ },
+ {
+  "id": "pokemon-type-fire",
+  "group": "pokemon-types",
+  "name": {
+   "it": "Tipo Fuoco",
+   "en": "Fire type"
+  },
+  "cover": {
+   "pokemon": 6
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "types": [
+     "fire"
+    ]
+   }
+  },
+  "accent": "fire"
+ },
+ {
+  "id": "pokemon-type-water",
+  "group": "pokemon-types",
+  "name": {
+   "it": "Tipo Acqua",
+   "en": "Water type"
+  },
+  "cover": {
+   "pokemon": 130
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "types": [
+     "water"
+    ]
+   }
+  },
+  "accent": "water"
+ },
+ {
+  "id": "pokemon-type-grass",
+  "group": "pokemon-types",
+  "name": {
+   "it": "Tipo Erba",
+   "en": "Grass type"
+  },
+  "cover": {
+   "pokemon": 3
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "types": [
+     "grass"
+    ]
+   }
+  },
+  "accent": "grass"
+ },
+ {
+  "id": "pokemon-type-electric",
+  "group": "pokemon-types",
+  "name": {
+   "it": "Tipo Elettro",
+   "en": "Electric type"
+  },
+  "cover": {
+   "pokemon": 25
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "types": [
+     "electric"
+    ]
+   }
+  },
+  "accent": "electric"
+ },
+ {
+  "id": "pokemon-type-ice",
+  "group": "pokemon-types",
+  "name": {
+   "it": "Tipo Ghiaccio",
+   "en": "Ice type"
+  },
+  "cover": {
+   "pokemon": 144
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "types": [
+     "ice"
+    ]
+   }
+  },
+  "accent": "ice"
+ },
+ {
+  "id": "pokemon-type-fighting",
+  "group": "pokemon-types",
+  "name": {
+   "it": "Tipo Lotta",
+   "en": "Fighting type"
+  },
+  "cover": {
+   "pokemon": 68
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "types": [
+     "fighting"
+    ]
+   }
+  },
+  "accent": "fighting"
+ },
+ {
+  "id": "pokemon-type-poison",
+  "group": "pokemon-types",
+  "name": {
+   "it": "Tipo Veleno",
+   "en": "Poison type"
+  },
+  "cover": {
+   "pokemon": 89
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "types": [
+     "poison"
+    ]
+   }
+  },
+  "accent": "poison"
+ },
+ {
+  "id": "pokemon-type-ground",
+  "group": "pokemon-types",
+  "name": {
+   "it": "Tipo Terra",
+   "en": "Ground type"
+  },
+  "cover": {
+   "pokemon": 383
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "types": [
+     "ground"
+    ]
+   }
+  },
+  "accent": "ground"
+ },
+ {
+  "id": "pokemon-type-flying",
+  "group": "pokemon-types",
+  "name": {
+   "it": "Tipo Volante",
+   "en": "Flying type"
+  },
+  "cover": {
+   "pokemon": 18
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "types": [
+     "flying"
+    ]
+   }
+  },
+  "accent": "flying"
+ },
+ {
+  "id": "pokemon-type-psychic",
+  "group": "pokemon-types",
+  "name": {
+   "it": "Tipo Psico",
+   "en": "Psychic type"
+  },
+  "cover": {
+   "pokemon": 65
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "types": [
+     "psychic"
+    ]
+   }
+  },
+  "accent": "psychic"
+ },
+ {
+  "id": "pokemon-type-bug",
+  "group": "pokemon-types",
+  "name": {
+   "it": "Tipo Coleottero",
+   "en": "Bug type"
+  },
+  "cover": {
+   "pokemon": 212
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "types": [
+     "bug"
+    ]
+   }
+  },
+  "accent": "bug"
+ },
+ {
+  "id": "pokemon-type-rock",
+  "group": "pokemon-types",
+  "name": {
+   "it": "Tipo Roccia",
+   "en": "Rock type"
+  },
+  "cover": {
+   "pokemon": 248
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "types": [
+     "rock"
+    ]
+   }
+  },
+  "accent": "rock"
+ },
+ {
+  "id": "pokemon-type-ghost",
+  "group": "pokemon-types",
+  "name": {
+   "it": "Tipo Spettro",
+   "en": "Ghost type"
+  },
+  "cover": {
+   "pokemon": 94
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "types": [
+     "ghost"
+    ]
+   }
+  },
+  "accent": "ghost"
+ },
+ {
+  "id": "pokemon-type-dragon",
+  "group": "pokemon-types",
+  "name": {
+   "it": "Tipo Drago",
+   "en": "Dragon type"
+  },
+  "cover": {
+   "pokemon": 149
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "types": [
+     "dragon"
+    ]
+   }
+  },
+  "accent": "dragon"
+ },
+ {
+  "id": "pokemon-type-dark",
+  "group": "pokemon-types",
+  "name": {
+   "it": "Tipo Buio",
+   "en": "Dark type"
+  },
+  "cover": {
+   "pokemon": 197
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "types": [
+     "dark"
+    ]
+   }
+  },
+  "accent": "dark"
+ },
+ {
+  "id": "pokemon-type-steel",
+  "group": "pokemon-types",
+  "name": {
+   "it": "Tipo Acciaio",
+   "en": "Steel type"
+  },
+  "cover": {
+   "pokemon": 376
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "types": [
+     "steel"
+    ]
+   }
+  },
+  "accent": "steel"
+ },
+ {
+  "id": "pokemon-type-fairy",
+  "group": "pokemon-types",
+  "name": {
+   "it": "Tipo Folletto",
+   "en": "Fairy type"
+  },
+  "cover": {
+   "pokemon": 700
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "types": [
+     "fairy"
+    ]
+   }
+  },
+  "accent": "fairy"
+ }
+]

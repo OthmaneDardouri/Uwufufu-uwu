@@ -1,0 +1,24 @@
+name: CI
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm test
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build image
+        run: docker build -t neon-bracket .
+      - name: Smoke test
+        run: |
+          docker run -d --name nb -p 8080:8080 neon-bracket
+          for i in $(seq 1 20); do curl -fs localhost:8080/api/health && break; sleep 1; done
+          curl -fs localhost:8080/ | grep -q "Neon Bracket"

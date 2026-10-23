@@ -1,0 +1,24 @@
+# docker compose up -d                      -> site on http://localhost:8080
+# docker compose --profile tunnel up -d     -> also public via Cloudflare Tunnel (needs TUNNEL_TOKEN in .env)
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "8080:8080"
+    volumes:
+      - bracket-data:/data   # admin-published categories and themes live here
+
+  tunnel:
+    image: cloudflare/cloudflared:latest
+    profiles: ["tunnel"]
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run
+    environment:
+      TUNNEL_TOKEN: ${TUNNEL_TOKEN}
+    depends_on:
+      - app
+
+volumes:
+  bracket-data:

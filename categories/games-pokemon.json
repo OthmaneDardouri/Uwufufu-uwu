@@ -1,0 +1,62 @@
+[
+  {
+    "id": "games-pokemon-main",
+    "group": "games",
+    "name": { "it": "Giochi Pokémon · serie principale", "en": "Pokémon games · main series" },
+    "description": { "it": "Da Rosso e Blu fino a Leggende Z-A.", "en": "From Red and Blue to Legends: Z-A." },
+    "cover": { "wiki": "Pokémon Red and Blue" },
+    "items": [
+      { "name": "Pokémon Rosso e Blu", "sub": "1996 · Game Boy", "wiki": "Pokémon Red and Blue" },
+      { "name": "Pokémon Giallo", "sub": "1998 · Game Boy", "wiki": "Pokémon Yellow" },
+      { "name": "Pokémon Oro e Argento", "sub": "1999 · Game Boy Color", "wiki": "Pokémon Gold and Silver" },
+      { "name": "Pokémon Cristallo", "sub": "2000 · Game Boy Color", "wiki": "Pokémon Crystal" },
+      { "name": "Pokémon Rubino e Zaffiro", "sub": "2002 · Game Boy Advance", "wiki": "Pokémon Ruby and Sapphire" },
+      { "name": "Pokémon Smeraldo", "sub": "2004 · Game Boy Advance", "wiki": "Pokémon Emerald" },
+      { "name": "Pokémon Rosso Fuoco e Verde Foglia", "sub": "2004 · Game Boy Advance", "wiki": "Pokémon FireRed and LeafGreen" },
+      { "name": "Pokémon Diamante e Perla", "sub": "2006 · Nintendo DS", "wiki": "Pokémon Diamond and Pearl" },
+      { "name": "Pokémon Platino", "sub": "2008 · Nintendo DS", "wiki": "Pokémon Platinum" },
+      { "name": "Pokémon Oro HeartGold e Argento SoulSilver", "sub": "2009 · Nintendo DS", "wiki": "Pokémon HeartGold and SoulSilver" },
+      { "name": "Pokémon Nero e Bianco", "sub": "2010 · Nintendo DS", "wiki": "Pokémon Black and White" },
+      { "name": "Pokémon Nero 2 e Bianco 2", "sub": "2012 · Nintendo DS", "wiki": "Pokémon Black 2 and White 2" },
+      { "name": "Pokémon X e Y", "sub": "2013 · Nintendo 3DS", "wiki": "Pokémon X and Y" },
+      { "name": "Pokémon Rubino Omega e Zaffiro Alpha", "sub": "2014 · Nintendo 3DS", "wiki": "Pokémon Omega Ruby and Alpha Sapphire" },
+      { "name": "Pokémon Sole e Luna", "sub": "2016 · Nintendo 3DS", "wiki": "Pokémon Sun and Moon" },
+      { "name": "Pokémon Ultrasole e Ultraluna", "sub": "2017 · Nintendo 3DS", "wiki": "Pokémon Ultra Sun and Ultra Moon" },
+      { "name": "Pokémon: Let's Go, Pikachu! e Let's Go, Eevee!", "sub": "2018 · Switch", "wiki": "Pokémon: Let's Go, Pikachu! and Let's Go, Eevee!" },
+      { "name": "Pokémon Spada e Scudo", "sub": "2019 · Switch", "wiki": "Pokémon Sword and Shield" },
+      { "name": "Pokémon Diamante Lucente e Perla Splendente", "sub": "2021 · Switch", "wiki": "Pokémon Brilliant Diamond and Shining Pearl" },
+      { "name": "Leggende Pokémon: Arceus", "sub": "2022 · Switch", "wiki": "Pokémon Legends: Arceus" },
+      { "name": "Pokémon Scarlatto e Violetto", "sub": "2022 · Switch", "wiki": "Pokémon Scarlet and Violet" },
+      { "name": "Leggende Pokémon: Z-A", "sub": "2025 · Switch / Switch 2", "wiki": "Pokémon Legends: Z-A" }
+    ]
+  },
+  {
+    "id": "games-pokemon-spinoff",
+    "group": "games",
+    "name": { "it": "Giochi Pokémon · spin-off", "en": "Pokémon games · spin-offs" },
+    "description": { "it": "Stadium, Snap, Mystery Dungeon, Colosseum e compagnia.", "en": "Stadium, Snap, Mystery Dungeon, Colosseum and friends." },
+    "cover": { "wiki": "Pokémon Snap" },
+    "items": [
+      { "name": "Pokémon Trading Card Game", "sub": "1998 · Game Boy Color", "wiki": "Pokémon Trading Card Game (video game)" },
+      { "name": "Pokémon Pinball", "sub": "1999 · Game Boy Color", "wiki": "Pokémon Pinball" },
+      { "name": "Pokémon Snap", "sub": "1999 · Nintendo 64", "wiki": "Pokémon Snap" },
+      { "name": "Pokémon Stadium", "sub": "1999 · Nintendo 64", "wiki": "Pokémon Stadium" },
+      { "name": "Pokémon Stadium 2", "sub": "2000 · Nintendo 64", "wiki": "Pokémon Stadium 2" },
+      { "name": "Pokémon Puzzle League", "sub": "2000 · Nintendo 64", "wiki": "Pokémon Puzzle League" },
+      { "name": "Pokémon Colosseum", "sub": "2003 · GameCube", "wiki": "Pokémon Colosseum" },
+      { "name": "Pokémon XD: Tempesta Oscura", "sub": "2005 · GameCube", "wiki": "Pokémon XD: Gale of Darkness" },
+      { "name": "Pokémon Mystery Dungeon: Squadra Rossa e Blu", "sub": "2005 · GBA / DS", "wiki": "Pokémon Mystery Dungeon: Red Rescue Team and Blue Rescue Team" },
+      { "name": "Pokémon Mystery Dungeon: Esploratori del Tempo e dell'Oscurità", "sub": "2007 · Nintendo DS", "wiki": "Pokémon Mystery Dungeon: Explorers of Time and Explorers of Darkness" },
+      { "name": "Pokémon Ranger", "sub": "2006 · Nintendo DS", "wiki": "Pokémon Ranger" },
+      { "name": "Pokémon Conquest", "sub": "2012 · Nintendo DS", "wiki": "Pokémon Conquest" },
+      { "name": "Pokkén Tournament", "sub": "2015 · Wii U / Switch", "wiki": "Pokkén Tournament" },
+      { "name": "Pokémon GO", "sub": "2016 · Mobile", "wiki": "Pokémon Go" },
+      { "name": "Detective Pikachu", "sub": "2016 · Nintendo 3DS", "wiki": "Detective Pikachu (video game)" },
+      { "name": "Pokémon Masters EX", "sub": "2019 · Mobile", "wiki": "Pokémon Masters EX" },
+      { "name": "Pokémon Mystery Dungeon: Squadra di soccorso DX", "sub": "2020 · Switch", "wiki": "Pokémon Mystery Dungeon: Rescue Team DX" },
+      { "name": "Pokémon Unite", "sub": "2021 · Switch / Mobile", "wiki": "Pokémon Unite" },
+      { "name": "New Pokémon Snap", "sub": "2021 · Switch", "wiki": "New Pokémon Snap" },
+      { "name": "Pokémon Trading Card Game Pocket", "sub": "2024 · Mobile", "wiki": "Pokémon Trading Card Game Pocket" }
+    ]
+  }
+]

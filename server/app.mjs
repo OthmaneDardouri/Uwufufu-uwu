@@ -1,0 +1,219 @@
+// HTTP handler: static site + JSON API. Built on node:http only, no framework needed.
+//
+// Public:  GET  /api/health, /api/categories, /api/themes
+// Admin:   POST /api/admin/check
+//          POST /api/admin/generate              (Claude: idea -> category draft)
+//          POST /api/admin/theme-from-image      (Claude: image -> theme draft)
+//          PUT|DELETE /api/admin/categories/:id
+//          PUT|DELETE /api/admin/themes/:id
+// Admin routes need "Authorization: Bearer <ADMIN_TOKEN>".
+import { createReadStream } from "node:fs";
+import { stat } from "node:fs/promises";
+import { timingSafeEqual, createHash } from "node:crypto";
+import path from "node:path";
+import { validateCategory } from "../src/core/catalog.js";
+import { sanitizeTheme } from "../src/core/theme.js";
+import * as claude from "./claude.mjs";
+
+const MIME = {
+  ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".mjs": "text/javascript; charset=utf-8",
+  ".css": "text/css; charset=utf-8", ".json": "application/json; charset=utf-8", ".webmanifest": "application/manifest+json",
+  ".svg": "image/svg+xml", ".png": "image/png", ".ico": "image/x-icon", ".woff2": "font/woff2", ".txt": "text/plain; charset=utf-8",
+};
+// Only these top-level paths are served; everything else (server/, .git, storage...) stays private.
+const PUBLIC_ROOTS = new Set(["index.html", "src", "assets", "categories", "themes", "data", "manifest.webmanifest", "sw.js", "config.json"]);
+const MAX_BODY = 256 * 1024;
+const MAX_IMAGE_BODY = 6 * 1024 * 1024;
+const MAX_ITEMS = 256;
+
+class HttpError extends Error {
+  constructor(status, message, details) { super(message); this.status = status; this.details = details; }
+}
+
+const sha = (s) => createHash("sha256").update(String(s)).digest();
+const sameToken = (a, b) => timingSafeEqual(sha(a), sha(b)); // hashing equalises lengths
+
+/** Tiny fixed-window limiter for failed admin logins, per client IP. */
+function failureLimiter({ max = 10, windowMs = 15 * 60_000 } = {}) {
+  const hits = new Map();
+  return {
+    blocked(ip, now = Date.now()) {
+      const h = hits.get(ip);
+      return !!h && now - h.start < windowMs && h.count >= max;
+    },
+    fail(ip, now = Date.now()) {
+      const h = hits.get(ip);
+      if (!h || now - h.start >= windowMs) hits.set(ip, { start: now, count: 1 });
+      else h.count++;
+    },
+  };
+}
+
+async function readJson(req, limit = MAX_BODY) {
+  let size = 0;
+  const chunks = [];
+  for await (const chunk of req) {
+    size += chunk.length;
+    if (size > limit) throw new HttpError(413, "Body too large");
+    chunks.push(chunk);
+  }
+  try {
+    return JSON.parse(Buffer.concat(chunks).toString("utf8") || "{}");
+  } catch {
+    throw new HttpError(400, "Invalid JSON");
+  }
+}
+
+function send(res, status, body, headers = {}) {
+  res.writeHead(status, { "content-type": "application/json; charset=utf-8", "cache-control": "no-store", ...headers });
+  res.end(body === undefined ? "" : JSON.stringify(body));
+}
+
+// What the admin can publish. Each collection validates and whitelists its own fields,
+// so the stores never hold arbitrary client data. Add a collection here to publish something new.
+const COLLECTIONS = {
+  categories: {
+    key: "category",
+    clean(category) {
+      category.group ||= "custom";
+      const errors = validateCategory(category);
+      if (category.items?.length > MAX_ITEMS) errors.push(`at most ${MAX_ITEMS} items`);
+      const { id, group, name, description, cover, source } = category;
+      const items = category.items?.map(({ name, sub, wiki, pokemon, image }) => ({ name, sub, wiki, pokemon, image }));
+      return { errors, value: { id, group, name, description, cover, items, source } };
+    },
+  },
+  themes: {
+    key: "theme",
+    clean(theme) {
+      const { theme: value, errors } = sanitizeTheme(theme);
+      return { errors, value };
+    },
+  },
+};
+
+export function createApp({ stores, config, ai = claude }) {
+  const limiter = failureLimiter();
+  const publicDir = path.resolve(config.publicDir);
+
+  function requireAdmin(req) {
+    const ip = req.socket.remoteAddress ?? "?";
+    if (!config.adminToken) throw new HttpError(503, "Admin features are disabled (ADMIN_TOKEN not set)");
+    if (limiter.blocked(ip)) throw new HttpError(429, "Too many failed attempts, try again later");
+    const header = req.headers.authorization ?? "";
+    const token = header.startsWith("Bearer ") ? header.slice(7) : "";
+    if (!token || !sameToken(token, config.adminToken)) {
+      limiter.fail(ip);
+      throw new HttpError(401, "Invalid admin token");
+    }
+  }
+
+  function requireAi() {
+    if (!config.anthropicKey) throw new HttpError(503, "ANTHROPIC_API_KEY not set on the server");
+  }
+
+  function corsHeaders(req) {
+    const origin = req.headers.origin;
+    if (!origin || !config.allowedOrigins.includes(origin)) return {};
+    return {
+      "access-control-allow-origin": origin,
+      "access-control-allow-headers": "authorization, content-type",
+      "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+      vary: "Origin",
+    };
+  }
+
+  async function api(req, res, url) {
+    const cors = corsHeaders(req);
+    const reply = (status, body, headers) => send(res, status, body, { ...cors, ...headers });
+    if (req.method === "OPTIONS") return reply(204);
+    const route = `${req.method} ${url.pathname}`;
+
+    if (route === "GET /api/health") {
+      return reply(200, { ok: true, admin: !!config.adminToken, ai: !!(config.adminToken && config.anthropicKey) });
+    }
+    const list = url.pathname.match(/^\/api\/(categories|themes)$/);
+    if (list && req.method === "GET") {
+      return reply(200, { [list[1]]: stores[list[1]].list() }, { "cache-control": "no-cache" });
+    }
+
+    // everything below is admin-only
+    if (!url.pathname.startsWith("/api/admin/")) throw new HttpError(404, "Not found");
+    requireAdmin(req);
+
+    if (route === "POST /api/admin/check") return reply(200, { ok: true });
+
+    if (route === "POST /api/admin/generate") {
+      requireAi();
+      const { prompt, count } = await readJson(req);
+      if (typeof prompt !== "string" || prompt.trim().length < 3 || prompt.length > 500) throw new HttpError(400, "prompt must be 3-500 characters");
+      const n = Math.min(Math.max(parseInt(count, 10) || 32, 4), 128);
+      const category = await ai.generateCategory({ apiKey: config.anthropicKey, model: config.model, prompt: prompt.trim(), count: n });
+      return reply(200, { category });
+    }
+
+    if (route === "POST /api/admin/theme-from-image") {
+      requireAi();
+      const { image, hint } = await readJson(req, MAX_IMAGE_BODY);
+      const parsed = claude.parseImage(image);
+      if (!parsed) throw new HttpError(400, "image must be a base64 data URL (png, jpeg, webp or gif)");
+      const draft = await ai.themeFromImage({
+        apiKey: config.anthropicKey, model: config.model, image: parsed, hint: typeof hint === "string" ? hint.slice(0, 300) : "",
+      });
+      const { theme, errors } = sanitizeTheme(draft); // the AI's answer gets the same checks as anything else
+      return reply(200, { theme, warnings: errors });
+    }
+
+    const item = url.pathname.match(/^\/api\/admin\/(categories|themes)\/([a-z0-9-]+)$/);
+    if (item) {
+      const [, name, id] = item;
+      const store = stores[name];
+      const spec = COLLECTIONS[name];
+      if (req.method === "DELETE") return reply((await store.remove(id)) ? 204 : 404);
+      if (req.method === "PUT") {
+        const body = (await readJson(req))[spec.key];
+        if (body?.id !== id) throw new HttpError(400, "id in body must match the URL");
+        const { errors, value } = spec.clean(body);
+        if (errors.length) throw new HttpError(422, `Invalid ${spec.key}`, errors);
+        return reply(200, { [spec.key]: await store.put(value) });
+      }
+    }
+    throw new HttpError(404, "Not found");
+  }
+
+  async function serveStatic(req, res, url) {
+    if (req.method !== "GET" && req.method !== "HEAD") throw new HttpError(405, "Method not allowed");
+    let rel;
+    try { rel = decodeURIComponent(url.pathname).replace(/^\/+/, "") || "index.html"; } catch { throw new HttpError(400, "Bad path"); }
+    const file = path.resolve(publicDir, rel);
+    if (!file.startsWith(publicDir + path.sep) || !PUBLIC_ROOTS.has(rel.split("/")[0])) throw new HttpError(404, "Not found");
+    const info = await stat(file).catch(() => null);
+    if (!info?.isFile()) throw new HttpError(404, "Not found");
+    const ext = path.extname(file);
+    res.writeHead(200, {
+      "content-type": MIME[ext] ?? "application/octet-stream",
+      "content-length": info.size,
+      // fonts never change; everything else revalidates so updates show up immediately
+      "cache-control": ext === ".woff2" ? "public, max-age=31536000, immutable" : "no-cache",
+    });
+    if (req.method === "HEAD") return res.end();
+    createReadStream(file).pipe(res);
+  }
+
+  return async function handler(req, res) {
+    res.setHeader("x-content-type-options", "nosniff");
+    res.setHeader("referrer-policy", "strict-origin-when-cross-origin");
+    res.setHeader("x-frame-options", "DENY");
+    const url = new URL(req.url, "http://localhost");
+    try {
+      if (url.pathname.startsWith("/api/")) await api(req, res, url);
+      else await serveStatic(req, res, url);
+    } catch (err) {
+      const status = err.status ?? 500;
+      if (status >= 500) console.error(err.detail ? `${err.message}: ${err.detail}` : err);
+      const message = err.status ? err.message : "Internal error";
+      if (!res.headersSent) send(res, status, { error: message, ...(err.details && { details: err.details }) }, corsHeaders(req));
+      else res.end();
+    }
+  };
+}

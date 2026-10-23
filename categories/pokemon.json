@@ -1,0 +1,526 @@
+[
+ {
+  "id": "pokemon-all",
+  "group": "pokemon-gen",
+  "name": {
+   "it": "Tutti i Pokémon",
+   "en": "All Pokémon"
+  },
+  "description": {
+   "it": "Ogni specie, dalla 1ª alla 9ª generazione.",
+   "en": "Every species, generations 1 to 9."
+  },
+  "cover": {
+   "pokemon": 150
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {}
+  }
+ },
+ {
+  "id": "pokemon-gen1",
+  "group": "pokemon-gen",
+  "name": {
+   "it": "Generazione I · Kanto",
+   "en": "Generation I · Kanto"
+  },
+  "cover": {
+   "pokemon": 25
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "gens": [
+     1
+    ]
+   }
+  }
+ },
+ {
+  "id": "pokemon-gen2",
+  "group": "pokemon-gen",
+  "name": {
+   "it": "Generazione II · Johto",
+   "en": "Generation II · Johto"
+  },
+  "cover": {
+   "pokemon": 249
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "gens": [
+     2
+    ]
+   }
+  }
+ },
+ {
+  "id": "pokemon-gen3",
+  "group": "pokemon-gen",
+  "name": {
+   "it": "Generazione III · Hoenn",
+   "en": "Generation III · Hoenn"
+  },
+  "cover": {
+   "pokemon": 384
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "gens": [
+     3
+    ]
+   }
+  }
+ },
+ {
+  "id": "pokemon-gen4",
+  "group": "pokemon-gen",
+  "name": {
+   "it": "Generazione IV · Sinnoh",
+   "en": "Generation IV · Sinnoh"
+  },
+  "cover": {
+   "pokemon": 483
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "gens": [
+     4
+    ]
+   }
+  }
+ },
+ {
+  "id": "pokemon-gen5",
+  "group": "pokemon-gen",
+  "name": {
+   "it": "Generazione V · Unova",
+   "en": "Generation V · Unova"
+  },
+  "cover": {
+   "pokemon": 643
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "gens": [
+     5
+    ]
+   }
+  }
+ },
+ {
+  "id": "pokemon-gen6",
+  "group": "pokemon-gen",
+  "name": {
+   "it": "Generazione VI · Kalos",
+   "en": "Generation VI · Kalos"
+  },
+  "cover": {
+   "pokemon": 716
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "gens": [
+     6
+    ]
+   }
+  }
+ },
+ {
+  "id": "pokemon-gen7",
+  "group": "pokemon-gen",
+  "name": {
+   "it": "Generazione VII · Alola",
+   "en": "Generation VII · Alola"
+  },
+  "cover": {
+   "pokemon": 791
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "gens": [
+     7
+    ]
+   }
+  }
+ },
+ {
+  "id": "pokemon-gen8",
+  "group": "pokemon-gen",
+  "name": {
+   "it": "Generazione VIII · Galar",
+   "en": "Generation VIII · Galar"
+  },
+  "cover": {
+   "pokemon": 890
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "gens": [
+     8
+    ]
+   }
+  }
+ },
+ {
+  "id": "pokemon-gen9",
+  "group": "pokemon-gen",
+  "name": {
+   "it": "Generazione IX · Paldea",
+   "en": "Generation IX · Paldea"
+  },
+  "cover": {
+   "pokemon": 1007
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "gens": [
+     9
+    ]
+   }
+  }
+ },
+ {
+  "id": "pokemon-legendary",
+  "group": "pokemon-special",
+  "name": {
+   "it": "Leggendari",
+   "en": "Legendaries"
+  },
+  "cover": {
+   "pokemon": 150
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "tagsAny": [
+     "legendary"
+    ]
+   }
+  }
+ },
+ {
+  "id": "pokemon-mythical",
+  "group": "pokemon-special",
+  "name": {
+   "it": "Mitici",
+   "en": "Mythicals"
+  },
+  "cover": {
+   "pokemon": 151
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "tagsAny": [
+     "mythical"
+    ]
+   }
+  }
+ },
+ {
+  "id": "pokemon-legendary-mythical",
+  "group": "pokemon-special",
+  "name": {
+   "it": "Leggendari + Mitici",
+   "en": "Legendaries + Mythicals"
+  },
+  "cover": {
+   "pokemon": 493
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "tagsAny": [
+     "legendary",
+     "mythical"
+    ]
+   }
+  }
+ },
+ {
+  "id": "pokemon-starters",
+  "group": "pokemon-special",
+  "name": {
+   "it": "Starter",
+   "en": "Starters"
+  },
+  "description": {
+   "it": "Il primo Pokémon di ogni regione.",
+   "en": "Every region's first partner."
+  },
+  "cover": {
+   "pokemon": 4
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "tagsAny": [
+     "starter1"
+    ]
+   }
+  }
+ },
+ {
+  "id": "pokemon-starters-2",
+  "group": "pokemon-special",
+  "name": {
+   "it": "Starter · seconda forma",
+   "en": "Starters · middle stage"
+  },
+  "cover": {
+   "pokemon": 5
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "tagsAny": [
+     "starter2"
+    ]
+   }
+  }
+ },
+ {
+  "id": "pokemon-starters-final",
+  "group": "pokemon-special",
+  "name": {
+   "it": "Starter · evoluzione finale",
+   "en": "Starters · final evolution"
+  },
+  "cover": {
+   "pokemon": 6
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "tagsAny": [
+     "starter3"
+    ]
+   }
+  }
+ },
+ {
+  "id": "pokemon-starters-all",
+  "group": "pokemon-special",
+  "name": {
+   "it": "Starter · tutti gli stadi",
+   "en": "Starters · every stage"
+  },
+  "cover": {
+   "pokemon": 658
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "tagsAny": [
+     "starter1",
+     "starter2",
+     "starter3"
+    ]
+   }
+  }
+ },
+ {
+  "id": "pokemon-pseudo",
+  "group": "pokemon-special",
+  "name": {
+   "it": "Pseudo-leggendari",
+   "en": "Pseudo-legendaries"
+  },
+  "cover": {
+   "pokemon": 445
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "tagsAny": [
+     "pseudo"
+    ]
+   }
+  }
+ },
+ {
+  "id": "pokemon-ultrabeast",
+  "group": "pokemon-special",
+  "name": {
+   "it": "Ultracreature",
+   "en": "Ultra Beasts"
+  },
+  "cover": {
+   "pokemon": 793
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "tagsAny": [
+     "ultrabeast"
+    ]
+   }
+  }
+ },
+ {
+  "id": "pokemon-paradox",
+  "group": "pokemon-special",
+  "name": {
+   "it": "Pokémon Paradosso",
+   "en": "Paradox Pokémon"
+  },
+  "cover": {
+   "pokemon": 1005
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "tagsAny": [
+     "paradox"
+    ]
+   }
+  }
+ },
+ {
+  "id": "pokemon-eeveelution",
+  "group": "pokemon-special",
+  "name": {
+   "it": "Eevee e le sue evoluzioni",
+   "en": "Eeveelutions"
+  },
+  "cover": {
+   "pokemon": 197
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "tagsAny": [
+     "eeveelution"
+    ]
+   }
+  }
+ },
+ {
+  "id": "pokemon-fossil",
+  "group": "pokemon-special",
+  "name": {
+   "it": "Fossili",
+   "en": "Fossils"
+  },
+  "cover": {
+   "pokemon": 142
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "tagsAny": [
+     "fossil"
+    ]
+   }
+  }
+ },
+ {
+  "id": "pokemon-baby",
+  "group": "pokemon-special",
+  "name": {
+   "it": "Baby Pokémon",
+   "en": "Baby Pokémon"
+  },
+  "cover": {
+   "pokemon": 175
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "tagsAny": [
+     "baby"
+    ]
+   }
+  }
+ },
+ {
+  "id": "pokemon-final-nonlegendary",
+  "group": "pokemon-special",
+  "name": {
+   "it": "Evoluzioni finali (no leggendari)",
+   "en": "Final evolutions (no legendaries)"
+  },
+  "cover": {
+   "pokemon": 248
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "tagsAny": [
+     "final"
+    ],
+    "tagsNone": [
+     "legendary",
+     "mythical"
+    ]
+   }
+  }
+ },
+ {
+  "id": "pokemon-mega",
+  "group": "pokemon-forms",
+  "name": {
+   "it": "Megaevoluzioni",
+   "en": "Mega Evolutions"
+  },
+  "cover": {
+   "pokemon": 10034
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "tagsAny": [
+     "mega"
+    ]
+   }
+  }
+ },
+ {
+  "id": "pokemon-gmax",
+  "group": "pokemon-forms",
+  "name": {
+   "it": "Gigamax",
+   "en": "Gigantamax"
+  },
+  "cover": {
+   "pokemon": 10196
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "tagsAny": [
+     "gmax"
+    ]
+   }
+  }
+ },
+ {
+  "id": "pokemon-regional",
+  "group": "pokemon-forms",
+  "name": {
+   "it": "Forme regionali",
+   "en": "Regional forms"
+  },
+  "cover": {
+   "pokemon": 10103
+  },
+  "source": {
+   "type": "pokemon",
+   "filter": {
+    "tagsAny": [
+     "regional"
+    ]
+   }
+  }
+ }
+]

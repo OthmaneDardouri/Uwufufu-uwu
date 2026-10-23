@@ -1,0 +1,345 @@
+{
+ "default": "pixel-retro",
+ "themes": [
+  {
+   "id": "pixel-retro",
+   "name": {
+    "it": "Pixel Retrò",
+    "en": "Retro Pixel"
+   },
+   "colors": {
+    "bg": "#1b1029",
+    "bg2": "#2c1a45",
+    "surface": "#2c1a45",
+    "text": "#ffffff",
+    "muted": "#b39ddb",
+    "accent": "#ffcd38",
+    "accent2": "#ff4f9a",
+    "line": "#ffffff"
+   },
+   "fonts": {
+    "display": "Press Start 2P",
+    "body": "VT323"
+   },
+   "shape": {
+    "corners": "square",
+    "radius": 0,
+    "border": "solid",
+    "borderWidth": 4
+   },
+   "effects": {
+    "background": "checker",
+    "title": "pixel",
+    "shadow": "hard",
+    "case": "none",
+    "tracking": 0
+   }
+  },
+  {
+   "id": "neon-cyberpunk",
+   "name": {
+    "it": "Neon Cyberpunk",
+    "en": "Neon Cyberpunk"
+   },
+   "colors": {
+    "bg": "#07060d",
+    "bg2": "#1a0b2e",
+    "surface": "#110e20",
+    "text": "#f2ecff",
+    "muted": "#9a8fbf",
+    "accent": "#ff2bd6",
+    "accent2": "#22f2ff",
+    "line": "#3a2a55"
+   },
+   "fonts": {
+    "display": "Orbitron",
+    "body": "Rajdhani"
+   },
+   "shape": {
+    "corners": "cut",
+    "radius": 0,
+    "border": "solid",
+    "borderWidth": 1
+   },
+   "effects": {
+    "background": "grid",
+    "title": "chromatic",
+    "shadow": "glow",
+    "case": "none",
+    "tracking": 0.06
+   }
+  },
+  {
+   "id": "steampunk",
+   "name": {
+    "it": "Steampunk Ottone & Viola",
+    "en": "Steampunk Brass & Violet"
+   },
+   "colors": {
+    "bg": "#120c16",
+    "bg2": "#2a1535",
+    "surface": "#1f1426",
+    "text": "#f3e3c3",
+    "muted": "#b49a74",
+    "accent": "#d9a441",
+    "accent2": "#8b5cf6",
+    "line": "#8a6430"
+   },
+   "fonts": {
+    "display": "Cinzel",
+    "body": "Rajdhani"
+   },
+   "shape": {
+    "corners": "rounded",
+    "radius": 6,
+    "border": "double",
+    "borderWidth": 3
+   },
+   "effects": {
+    "background": "gears",
+    "title": "emboss",
+    "shadow": "soft",
+    "case": "none",
+    "tracking": 0.08
+   }
+  },
+  {
+   "id": "synthwave",
+   "name": {
+    "it": "Synthwave Tramonto",
+    "en": "Synthwave Sunset"
+   },
+   "colors": {
+    "bg": "#14002b",
+    "bg2": "#3d0a4f",
+    "surface": "#1a0633",
+    "text": "#fff1fb",
+    "muted": "#d59be8",
+    "accent": "#ff6ec7",
+    "accent2": "#ffb86b",
+    "line": "#ff6ec7"
+   },
+   "fonts": {
+    "display": "Audiowide",
+    "body": "Exo 2"
+   },
+   "shape": {
+    "corners": "rounded",
+    "radius": 14,
+    "border": "solid",
+    "borderWidth": 2
+   },
+   "effects": {
+    "background": "sunset",
+    "title": "gradient",
+    "shadow": "glow",
+    "case": "none",
+    "tracking": 0.02
+   }
+  },
+  {
+   "id": "terminal-glitch",
+   "name": {
+    "it": "Terminale Glitch",
+    "en": "Glitch Terminal"
+   },
+   "colors": {
+    "bg": "#030303",
+    "bg2": "#0a140c",
+    "surface": "#050a06",
+    "text": "#c9ffd6",
+    "muted": "#5f8f6a",
+    "accent": "#39ff6a",
+    "accent2": "#b14dff",
+    "line": "#1f5a2c"
+   },
+   "fonts": {
+    "display": "VT323",
+    "body": "Share Tech Mono"
+   },
+   "shape": {
+    "corners": "square",
+    "radius": 0,
+    "border": "solid",
+    "borderWidth": 1
+   },
+   "effects": {
+    "background": "scanlines",
+    "title": "terminal",
+    "shadow": "none",
+    "case": "none",
+    "tracking": 0.04
+   }
+  },
+  {
+   "id": "holo-glass",
+   "name": {
+    "it": "Vetro Olografico",
+    "en": "Holographic Glass"
+   },
+   "colors": {
+    "bg": "#0b0816",
+    "bg2": "#2a1050",
+    "surface": "#1a1530",
+    "text": "#ffffff",
+    "muted": "#b8b0d8",
+    "accent": "#c084fc",
+    "accent2": "#7dd3fc",
+    "line": "#4a4370"
+   },
+   "fonts": {
+    "display": "Space Grotesk",
+    "body": "Space Grotesk"
+   },
+   "shape": {
+    "corners": "rounded",
+    "radius": 28,
+    "border": "solid",
+    "borderWidth": 1
+   },
+   "effects": {
+    "background": "aurora",
+    "title": "gradient",
+    "shadow": "soft",
+    "case": "none",
+    "tracking": -0.02
+   }
+  },
+  {
+   "id": "arcane-grimoire",
+   "name": {
+    "it": "Grimorio Arcano",
+    "en": "Arcane Grimoire"
+   },
+   "colors": {
+    "bg": "#0c0612",
+    "bg2": "#2b1140",
+    "surface": "#170b22",
+    "text": "#f5e9ff",
+    "muted": "#a78bc4",
+    "accent": "#e8c26b",
+    "accent2": "#6d28d9",
+    "line": "#8a6d3b"
+   },
+   "fonts": {
+    "display": "Cinzel Decorative",
+    "body": "IM Fell English"
+   },
+   "shape": {
+    "corners": "square",
+    "radius": 0,
+    "border": "double",
+    "borderWidth": 3
+   },
+   "effects": {
+    "background": "runes",
+    "title": "glow",
+    "shadow": "glow",
+    "case": "none",
+    "tracking": 0.04
+   }
+  },
+  {
+   "id": "noir-rain",
+   "name": {
+    "it": "Noir Pioggia Neon",
+    "en": "Neon Rain Noir"
+   },
+   "colors": {
+    "bg": "#06090d",
+    "bg2": "#0f2a33",
+    "surface": "#0b1217",
+    "text": "#e6f1f5",
+    "muted": "#6f8a96",
+    "accent": "#ff8a3d",
+    "accent2": "#00c2d1",
+    "line": "#1e313b"
+   },
+   "fonts": {
+    "display": "Exo 2",
+    "body": "Exo 2"
+   },
+   "shape": {
+    "corners": "square",
+    "radius": 0,
+    "border": "accent-top",
+    "borderWidth": 3
+   },
+   "effects": {
+    "background": "rain",
+    "title": "none",
+    "shadow": "soft",
+    "case": "upper",
+    "tracking": 0.18
+   }
+  },
+  {
+   "id": "art-deco",
+   "name": {
+    "it": "Art Déco Velluto",
+    "en": "Velvet Art Deco"
+   },
+   "colors": {
+    "bg": "#0d0a12",
+    "bg2": "#3a1d57",
+    "surface": "#1c1526",
+    "text": "#f6efe2",
+    "muted": "#b9a98c",
+    "accent": "#d4af6a",
+    "accent2": "#a78bfa",
+    "line": "#d4af6a"
+   },
+   "fonts": {
+    "display": "Poiret One",
+    "body": "Josefin Sans"
+   },
+   "shape": {
+    "corners": "square",
+    "radius": 0,
+    "border": "double",
+    "borderWidth": 3
+   },
+   "effects": {
+    "background": "deco",
+    "title": "none",
+    "shadow": "none",
+    "case": "none",
+    "tracking": 0.14
+   }
+  },
+  {
+   "id": "toxic-biopunk",
+   "name": {
+    "it": "Biopunk Tossico",
+    "en": "Toxic Biopunk"
+   },
+   "colors": {
+    "bg": "#0a0710",
+    "bg2": "#2a1450",
+    "surface": "#120d1a",
+    "text": "#efffe0",
+    "muted": "#8fa77a",
+    "accent": "#b6ff3b",
+    "accent2": "#7c3aed",
+    "line": "#4b2a8a"
+   },
+   "fonts": {
+    "display": "Chakra Petch",
+    "body": "Chakra Petch"
+   },
+   "shape": {
+    "corners": "cut",
+    "radius": 0,
+    "border": "solid",
+    "borderWidth": 2
+   },
+   "effects": {
+    "background": "dots",
+    "title": "glow",
+    "shadow": "glow",
+    "case": "upper",
+    "tracking": 0.04
+   }
+  }
+ ]
+}
