@@ -78,3 +78,43 @@ export function themeAttrs(theme) {
     "data-corners": theme.shape.corners, "data-border": theme.shape.border, "data-case": theme.effects.case,
   };
 }
+
+const expandHex = (v) => {
+  if (typeof v !== "string") return null;
+  const h = v.trim().toLowerCase();
+  if (/^#[0-9a-f]{6}$/.test(h)) return h;
+  if (/^#[0-9a-f]{8}$/.test(h)) return h.slice(0, 7); // drop alpha
+  if (/^#[0-9a-f]{3}$/.test(h)) return `#${[...h.slice(1)].map((c) => c + c).join("")}`;
+  if (/^[0-9a-f]{6}$/.test(h)) return `#${h}`;
+  return null;
+};
+
+const toSlug = (s) => String(s ?? "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+  .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 60);
+
+/**
+ * Lenient version of sanitizeTheme for themes pasted or imported by the admin (often written by
+ * an AI in a chat): fixes the usual slips (#fff, name as a string, name_it/name_en, missing id),
+ * fills anything still missing from `fallback`, and returns what it had to fix as warnings.
+ */
+export function repairTheme(raw, fallback, n = 1) {
+  const t = raw?.theme && typeof raw.theme === "object" ? raw.theme : raw ?? {};
+  const name = typeof t.name === "string" ? { it: t.name, en: t.name }
+    : t.name && typeof t.name === "object" ? t.name
+    : t.name_it || t.name_en ? { it: t.name_it ?? t.name_en, en: t.name_en ?? t.name_it }
+    : { it: `Tema ${n}`, en: `Theme ${n}` };
+  let id = toSlug(t.id) || toSlug(name.en || name.it) || `theme-${n}`;
+  if (id.length < 2) id = `theme-${id}`;
+  const colors = {};
+  for (const k of COLOR_KEYS) colors[k] = expandHex(t.colors?.[k]) ?? fallback.colors[k];
+  const candidate = {
+    id, name, colors,
+    fonts: { ...fallback.fonts, ...t.fonts },
+    shape: { ...fallback.shape, ...t.shape },
+    effects: { ...fallback.effects, ...t.effects },
+  };
+  const { theme, errors } = sanitizeTheme(candidate);
+  const missing = COLOR_KEYS.filter((k) => !expandHex(t.colors?.[k]));
+  const warnings = [...errors, ...(missing.length ? [`colours taken from the current theme: ${missing.join(", ")}`] : [])];
+  return { theme, warnings, idea: typeof t.idea === "string" ? t.idea : undefined };
+}

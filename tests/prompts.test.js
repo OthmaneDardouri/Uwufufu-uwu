@@ -30,3 +30,38 @@ test("pasted answers become valid drafts", () => {
     for (const t of themesFromAnswer(answer)) assert.deepEqual(sanitizeTheme(t).errors, []);
   }
 });
+
+import { repairTheme } from "../src/core/theme.js";
+import { categoryFromAnswer } from "../src/core/prompts.js";
+import { readFileSync } from "node:fs";
+const fallback = JSON.parse(readFileSync(new URL("../themes/index.json", import.meta.url))).themes[0];
+
+test("the bug: a {themes:[...]} answer imported as one theme used to be empty", () => {
+  const answer = { themes: [{ id: "a-b", name: { it: "A", en: "A" }, colors: { bg: "#000000" } }, { name: "Solo nome" }] };
+  const found = themesFromAnswer(answer).map((t, i) => repairTheme(t, fallback, i + 1));
+  assert.equal(found.length, 2);
+  for (const f of found) assert.deepEqual(sanitizeTheme(f.theme).errors, [], "repaired theme must be publishable");
+  assert.equal(found[0].theme.colors.bg, "#000000");
+  assert.equal(found[1].theme.id, "solo-nome");
+  assert.ok(found[1].warnings.some((w) => /colours taken/.test(w)));
+});
+
+test("repairTheme fixes common slips", () => {
+  const { theme, warnings } = repairTheme({ name_it: "Notte", name_en: "Night", colors: { bg: "#FFF", text: "abcdef", accent: "#11223344" }, fonts: { display: "Comic Sans" } }, fallback);
+  assert.equal(theme.id, "night");
+  assert.deepEqual(theme.name, { it: "Notte", en: "Night" });
+  assert.equal(theme.colors.bg, "#ffffff");
+  assert.equal(theme.colors.text, "#abcdef");
+  assert.equal(theme.colors.accent, "#112233");
+  assert.ok(warnings.some((w) => /Comic Sans/.test(w)));
+  assert.deepEqual(sanitizeTheme(theme).errors, []);
+});
+
+test("answers with several code blocks, wrappers and arrays", () => {
+  const two = extractJson('Tema 1:\n```json\n{"name":"Uno"}\n```\nTema 2:\n```json\n{"name":"Due"}\n```');
+  assert.equal(themesFromAnswer(two).length, 2);
+  assert.equal(themesFromAnswer({ variants: [{}, {}, {}] }).length, 3);
+  assert.equal(themesFromAnswer({ theme: { name: "x" } }).length, 1);
+  const cat = categoryFromAnswer({ category: { id: "ab", name: "X", entries: [{ name: "a" }, { name: "b" }] } });
+  assert.deepEqual(validateCategory(cat), []);
+});

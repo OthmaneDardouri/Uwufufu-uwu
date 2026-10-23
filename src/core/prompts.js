@@ -50,25 +50,41 @@ Colours: bg = page background, bg2 = second background tone, surface = cards, te
 }
 
 /**
- * Pull the JSON out of whatever was pasted: a bare object, a ```json code block,
- * or text around it. Throws a readable error when nothing parses.
+ * Pull the JSON out of whatever was pasted: a bare object, one or more ```json code blocks,
+ * or text around it. Several code blocks (e.g. one theme each) come back as an array.
+ * Throws a readable error when nothing parses.
  */
 export function extractJson(text) {
-  const src = String(text ?? "").trim();
-  const fenced = /```(?:json)?\s*([\s\S]*?)```/i.exec(src);
-  const candidates = [fenced?.[1], src];
+  const src = String(text ?? "").trim().replace(/^\uFEFF/, "");
+  const tryParse = (c) => { try { return { ok: true, value: JSON.parse(c.trim()) }; } catch { return { ok: false }; } };
+  const whole = tryParse(src);
+  if (whole.ok) return whole.value;
+  const blocks = [...src.matchAll(/```(?:json)?\s*([\s\S]*?)```/gi)].map((m) => tryParse(m[1])).filter((r) => r.ok).map((r) => r.value);
+  if (blocks.length === 1) return blocks[0];
+  if (blocks.length > 1) return blocks.flatMap((b) => (Array.isArray(b) ? b : [b]));
   const first = src.search(/[[{]/);
-  if (first >= 0) candidates.push(src.slice(first, Math.max(src.lastIndexOf("}"), src.lastIndexOf("]")) + 1));
-  for (const c of candidates) {
-    if (!c) continue;
-    try { return JSON.parse(c.trim()); } catch { /* try the next candidate */ }
+  if (first >= 0) {
+    const inner = tryParse(src.slice(first, Math.max(src.lastIndexOf("}"), src.lastIndexOf("]")) + 1));
+    if (inner.ok) return inner.value;
   }
   throw new Error("no valid JSON found in the pasted text");
 }
 
-/** A pasted theme answer may be one theme, an array, or { themes: [...] }. */
+/** A theme answer may be one theme, an array, { themes: [...] }, { variants: [...] } or { theme: {...} }. */
 export function themesFromAnswer(value) {
-  if (Array.isArray(value)) return value;
-  if (Array.isArray(value?.themes)) return value.themes;
-  return [value];
+  if (Array.isArray(value)) return value.flatMap(themesFromAnswer);
+  if (value && typeof value === "object") {
+    for (const key of ["themes", "variants", "options"]) if (Array.isArray(value[key])) return value[key];
+    if (value.theme && typeof value.theme === "object") return [value.theme];
+    return [value];
+  }
+  return [];
+}
+
+/** A category answer may be the category itself or wrapped as { category: {...} } or [ {...} ]. */
+export function categoryFromAnswer(value) {
+  const c = Array.isArray(value) ? value[0] : value?.category && typeof value.category === "object" ? value.category : value;
+  if (!c || typeof c !== "object") throw new Error("the answer is not a category");
+  if (!Array.isArray(c.items) && Array.isArray(c.entries)) c.items = c.entries;
+  return { group: "custom", ...c };
 }

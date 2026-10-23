@@ -3,9 +3,9 @@
 import { html, picture, hydratePictures, toast, $ } from "../dom.js";
 import { t, lang } from "../../i18n.js";
 import { localized, validateCategory } from "../../core/catalog.js";
-import { sanitizeTheme, COLOR_KEYS, FONTS, EFFECTS } from "../../core/theme.js";
+import { sanitizeTheme, repairTheme, COLOR_KEYS, FONTS, EFFECTS } from "../../core/theme.js";
 import * as api from "../../services/api.js";
-import { categoryPrompt, themePrompt, claudeUrl, extractJson, themesFromAnswer } from "../../core/prompts.js";
+import { categoryPrompt, themePrompt, claudeUrl, extractJson, themesFromAnswer, categoryFromAnswer } from "../../core/prompts.js";
 import { applyTheme, restoreTheme, listThemes, currentThemeId } from "../../services/themes.js";
 
 const MAX_IMAGE_SIDE = 1024;
@@ -165,6 +165,34 @@ export default function admin(root, ctx) {
       </form>`;
   }
 
+  const activeTheme = () => listThemes().find((th) => th.id === currentThemeId()) ?? listThemes()[0];
+
+  /** Turn any pasted/imported theme answer into variants (several) or straight into the editor (one). */
+  async function loadThemeAnswer(value) {
+    const found = themesFromAnswer(value).map((raw, i) => repairTheme(raw, activeTheme(), i + 1));
+    if (!found.length) throw new Error("no theme found in the answer");
+    if (found.length === 1) {
+      state.variants = [];
+      state.edit = found[0].theme;
+      applyTheme(found[0].theme);
+      if (found[0].warnings.length) toast(found[0].warnings.join(" · "));
+    } else {
+      state.variants = found.map(({ theme, warnings, idea }) => ({ ...theme, idea, warnings }));
+      state.edit = null;
+      applyTheme(state.variants[0]);
+    }
+    await render();
+    root.querySelector("[data-theme-editor], .variants")?.scrollIntoView({ behavior: "smooth" });
+  }
+
+  function loadCategoryAnswer(value) {
+    const cat = categoryFromAnswer(value);
+    if (!Array.isArray(cat.items)) throw new Error("the answer has no items list");
+    const errors = validateCategory(cat);
+    if (errors.length) throw Object.assign(new Error("Invalid category"), { details: errors });
+    state.draft = { ...cat, items: [...cat.items] };
+  }
+
   /** Open Claude.ai with the prompt pre-filled; also copy it, in case the pre-fill is not supported. */
   async function openClaude(prompt) {
     state.lastPrompt = prompt;
@@ -313,21 +341,14 @@ export default function admin(root, ctx) {
     if (form.matches("[data-paste]")) {
       try {
         const value = extractJson(data.get("answer"));
-        if (state.paste === "category") {
-          const cat = { group: "custom", ...value };
-          if (!Array.isArray(cat.items)) throw new Error("the answer has no items list");
-          const errors = validateCategory(cat);
-          if (errors.length) throw Object.assign(new Error("Invalid category"), { details: errors });
-          state.draft = cat;
-        } else {
-          state.variants = themesFromAnswer(value).map((raw) => {
-            const { theme, errors } = sanitizeTheme(raw);
-            return { ...theme, idea: raw?.idea, warnings: errors };
-          });
-          if (state.variants[0]) applyTheme(state.variants[0]);
-        }
+        const kind = state.paste;
         state.paste = null;
-        await render();
+        if (kind === "category") {
+          loadCategoryAnswer(value);
+          await render();
+        } else {
+          await loadThemeAnswer(value);
+        }
       } catch (err) { fail(err); }
     }
     if (form.matches("[data-theme-editor]")) {
@@ -436,24 +457,16 @@ export default function admin(root, ctx) {
 
   root.addEventListener("change", async (e) => {
     if (e.target.matches("[data-import-theme]")) {
-      try {
-        const { theme, errors } = sanitizeTheme(JSON.parse(await e.target.files[0].text()));
-        if (errors.length) throw Object.assign(new Error("Invalid theme"), { details: errors });
-        state.edit = theme;
-        applyTheme(theme);
-        await render();
-      } catch (err) { fail(err); }
+      try { await loadThemeAnswer(extractJson(await e.target.files[0].text())); } catch (err) { fail(err); }
+      e.target.value = "";
       return;
     }
     if (!e.target.matches("[data-import]")) return;
     try {
-      const parsed = JSON.parse(await e.target.files[0].text());
-      if (!Array.isArray(parsed.items)) throw new Error("only categories with an items list can be imported here");
-      const errors = validateCategory({ group: "custom", ...parsed });
-      if (errors.length) throw Object.assign(new Error("Invalid category"), { details: errors });
-      state.draft = { group: "custom", ...parsed, items: [...parsed.items] };
+      loadCategoryAnswer(extractJson(await e.target.files[0].text()));
       await render();
     } catch (err) { fail(err); }
+    e.target.value = "";
   });
 
   render();
