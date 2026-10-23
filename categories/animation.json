@@ -737,12 +737,16 @@
    },
    {
     "name": "Jafar",
+    "fandom": "disney",
+    "title": "Jafar",
     "sub": "Aladdin",
     "wiki": "Jafar",
     "info": "Il gran visir che vuole la lampada per diventare sultano, e poi genio."
    },
    {
     "name": "Ade",
+    "fandom": "disney",
+    "title": "Hades",
     "sub": "Hercules",
     "wiki": "Hades (Disney)",
     "info": "Il dio degli inferi più ironico di sempre: vuole conquistare l'Olimpo."
@@ -767,6 +771,8 @@
    },
    {
     "name": "Shan Yu",
+    "fandom": "disney",
+    "title": "Shan Yu",
     "sub": "Mulan",
     "wiki": "Shan Yu",
     "info": "Il condottiero unno che invade la Cina."
@@ -791,18 +797,24 @@
    },
    {
     "name": "Dottor Facilier",
+    "fandom": "disney",
+    "title": "Dr. Facilier",
     "sub": "La principessa e il ranocchio",
     "wiki": "Dr. Facilier",
     "info": "Lo stregone voodoo di New Orleans e i suoi \"amici dall'altra parte\"."
    },
    {
     "name": "Yzma",
+    "fandom": "disney",
+    "title": "Yzma",
     "sub": "Le follie dell'imperatore",
     "wiki": "Yzma",
     "info": "Vuole avvelenare l'imperatore Kuzco ma lo trasforma in un lama."
    },
    {
     "name": "Hans",
+    "fandom": "disney",
+    "title": "Hans",
     "sub": "Frozen",
     "wiki": "Hans (Frozen)",
     "info": "Il principe affascinante che si rivela il vero cattivo."
@@ -815,12 +827,16 @@
    },
    {
     "name": "Professor Rattigan",
+    "fandom": "disney",
+    "title": "Professor Ratigan",
     "sub": "Basil l'investigatopo",
     "wiki": "Professor Ratigan",
     "info": "Il genio del crimine, nemico di Basil."
    },
    {
     "name": "Lord Farquaad",
+    "fandom": "shrek",
+    "title": "Lord Farquaad",
     "sub": "Shrek",
     "wiki": "Lord Farquaad",
     "info": "Il piccolo tiranno di Duloc che vuole sposare Fiona per diventare re."
@@ -833,24 +849,32 @@
    },
    {
     "name": "Tai Lung",
+    "fandom": "kungfupanda",
+    "title": "Tai Lung",
     "sub": "Kung Fu Panda",
     "wiki": "Tai Lung",
     "info": "Il leopardo delle nevi, ex allievo del maestro Shifu."
    },
    {
     "name": "Syndrome",
+    "fandom": "pixar",
+    "title": "Syndrome",
     "sub": "Gli Incredibili",
     "wiki": "Syndrome (The Incredibles)",
     "info": "L'ex fan di Mr. Incredibile che dà la caccia ai supereroi."
    },
    {
     "name": "Lotso",
+    "fandom": "pixar",
+    "title": "Lotso",
     "sub": "Toy Story 3",
     "wiki": "Lotso",
     "info": "L'orsacchiotto che profuma di fragola e governa l'asilo Sunnyside."
    },
    {
     "name": "Charles Muntz",
+    "fandom": "pixar",
+    "title": "Charles Muntz",
     "sub": "Up",
     "wiki": "Charles Muntz",
     "info": "L'esploratore idolo di Carl, ossessionato dall'uccello Kevin."

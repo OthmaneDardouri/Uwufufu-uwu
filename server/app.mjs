@@ -82,7 +82,7 @@ const COLLECTIONS = {
       const errors = validateCategory(category);
       if (category.items?.length > MAX_ITEMS) errors.push(`at most ${MAX_ITEMS} items`);
       const { id, group, name, description, cover, source, malAnime, fandom } = category;
-      const items = category.items?.map(({ name, sub, info, wiki, pokemon, image, char, anime, title }) => ({ name, sub, info, wiki, pokemon, image, char, anime, title }));
+      const items = category.items?.map(({ name, sub, info, wiki, pokemon, image, char, anime, title, fandom }) => ({ name, sub, info, wiki, pokemon, image, char, anime, title, fandom }));
       return { errors, value: { id, group, name, description, cover, items, source, malAnime, fandom } };
     },
   },

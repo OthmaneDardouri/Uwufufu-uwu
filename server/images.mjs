@@ -117,6 +117,24 @@ export async function createImageResolver({ dir, fetchImpl = fetch, now = () => 
     return null;
   }
 
+  /**
+   * Wikipedia's lead image by name (page property `page_image`), for pages whose picture
+   * PageImages does not report (often non-free posters and covers).
+   */
+  async function wikipediaFile(title) {
+    const api = "https://en.wikipedia.org/w/api.php";
+    const props = new URLSearchParams({ action: "query", format: "json", redirects: "1", prop: "pageprops", ppprop: "page_image", titles: title });
+    const { query = {} } = await wikipedia(`${api}?${props}`);
+    const page = Object.values(query.pages ?? {})[0];
+    if (!page || query.redirects?.[0]?.tofragment || /^List of /i.test(page.title) || /\(disambiguation\)$/i.test(page.title)) return null;
+    const file = page.pageprops?.page_image;
+    if (!file) return null;
+    const info = new URLSearchParams({ action: "query", format: "json", prop: "imageinfo", iiprop: "url", iiurlwidth: "480", titles: `File:${file}` });
+    const r = await wikipedia(`${api}?${info}`);
+    const ii = Object.values(r.query?.pages ?? {})[0]?.imageinfo?.[0];
+    return ii?.thumburl ?? ii?.url ?? null;
+  }
+
   async function lookup(q, tried) {
     const attempt = async (source, fn) => {
       try {
@@ -146,7 +164,8 @@ export async function createImageResolver({ dir, fetchImpl = fetch, now = () => 
       if (url) return { url, source: "myanimelist" };
     }
     if (q.wiki) {
-      const url = await attempt("wikipedia", () => mediawikiImage("https://en.wikipedia.org/w/api.php", [q.wiki], wikipedia));
+      const url = await attempt("wikipedia", () => mediawikiImage("https://en.wikipedia.org/w/api.php", [q.wiki], wikipedia))
+        ?? await attempt("wikipedia:file", () => wikipediaFile(q.wiki));
       if (url) return { url, source: "wikipedia" };
     }
     return { url: null, source: null };

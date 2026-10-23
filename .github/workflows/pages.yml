@@ -31,6 +31,8 @@ jobs:
         run: |
           mkdir _site
           cp -r index.html manifest.webmanifest sw.js config.json src assets categories themes data _site/
+      - name: Copy pictures that other sites may not show directly
+        run: node scripts/bundle_pictures.mjs _site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -1206,6 +1206,8 @@
    },
    {
     "name": "Mahito",
+    "fandom": "jujutsu-kaisen",
+    "title": "Mahito",
     "sub": "Jujutsu Kaisen",
     "wiki": "Mahito (Jujutsu Kaisen)",
     "anime": [
@@ -1222,6 +1224,8 @@
    },
    {
     "name": "Akaza",
+    "fandom": "kimetsu-no-yaiba",
+    "title": "Akaza",
     "sub": "Demon Slayer",
     "wiki": "Akaza (Demon Slayer)",
     "anime": [
@@ -1240,6 +1244,8 @@
    },
    {
     "name": "Meruem",
+    "fandom": "hunterxhunter",
+    "title": "Meruem",
     "sub": "Hunter × Hunter",
     "wiki": "Meruem",
     "anime": [
@@ -1248,6 +1254,8 @@
    },
    {
     "name": "Hisoka",
+    "fandom": "hunterxhunter",
+    "title": "Hisoka Morow",
     "sub": "Hunter × Hunter",
     "wiki": "Hisoka (Hunter × Hunter)",
     "anime": [
@@ -1256,6 +1264,8 @@
    },
    {
     "name": "Johan Liebert",
+    "fandom": "monster",
+    "title": "Johan Liebert",
     "sub": "Monster",
     "wiki": "Johan Liebert",
     "anime": [
@@ -1280,6 +1290,8 @@
    },
    {
     "name": "Makima",
+    "fandom": "chainsaw-man",
+    "title": "Makima",
     "sub": "Chainsaw Man",
     "wiki": "Makima (Chainsaw Man)",
     "anime": [
@@ -1288,6 +1300,8 @@
    },
    {
     "name": "Tomura Shigaraki",
+    "fandom": "bokunoheroacademia",
+    "title": "Tomura Shigaraki",
     "sub": "My Hero Academia",
     "wiki": "Tomura Shigaraki",
     "anime": [
@@ -1296,6 +1310,8 @@
    },
    {
     "name": "All for One",
+    "fandom": "bokunoheroacademia",
+    "title": "All For One",
     "sub": "My Hero Academia",
     "wiki": "All for One (My Hero Academia)",
     "anime": [
@@ -1304,6 +1320,8 @@
    },
    {
     "name": "Padre",
+    "fandom": "fma",
+    "title": "Father",
     "sub": "Fullmetal Alchemist",
     "wiki": "Father (Fullmetal Alchemist)",
     "char": "Father",
@@ -1338,6 +1356,8 @@
    },
    {
     "name": "Barbanera",
+    "fandom": "onepiece",
+    "title": "Marshall D. Teach",
     "sub": "One Piece",
     "wiki": "Marshall D. Teach",
     "char": "Marshall D. Teach",
@@ -1347,6 +1367,8 @@
    },
    {
     "name": "Donquixote Doflamingo",
+    "fandom": "onepiece",
+    "title": "Donquixote Doflamingo",
     "sub": "One Piece",
     "wiki": "Donquixote Doflamingo",
     "anime": [
@@ -1434,6 +1456,8 @@
    },
    {
     "name": "Izuku Midoriya",
+    "fandom": "bokunoheroacademia",
+    "title": "Izuku Midoriya",
     "sub": "My Hero Academia",
     "wiki": "Izuku Midoriya",
     "anime": [
@@ -1442,6 +1466,8 @@
    },
    {
     "name": "Eren Jaeger",
+    "fandom": "attackontitan",
+    "title": "Eren Yeager",
     "sub": "L'attacco dei giganti",
     "wiki": "Eren Yeager",
     "char": "Eren Yeager",
@@ -1563,6 +1589,8 @@
    },
    {
     "name": "Sung Jinwoo",
+    "fandom": "solo-leveling",
+    "title": "Sung Jinwoo",
     "sub": "Solo Leveling",
     "wiki": "Sung Jinwoo",
     "anime": [

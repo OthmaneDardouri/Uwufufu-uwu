@@ -22,6 +22,7 @@ export const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
 // `picture(item)` renders a placeholder; `hydratePictures(root)` swaps in the real image
 // once its URL is known. Items without a picture keep a styled monogram.
 const registry = new Map();
+const SERVER_ONLY = /^https:\/\/static\.wikia\.nocookie\.net\//;
 let seq = 0;
 
 const monogram = (name) => name.split(/\s+/).filter((w) => /\p{L}|\d/u.test(w[0] ?? "")).slice(0, 2).map((w) => w[0]).join("").toUpperCase();
@@ -47,8 +48,10 @@ export function hydratePictures(root) {
     img.referrerPolicy = "no-referrer"; // some wikis refuse pictures shown on other sites
     imageFor(item).then((url) => {
       if (!url || url === placeholder) return;
-      // try the picture directly, then through our server; if both fail the generated one stays
-      const tries = [url, viaProxy(url)].filter(Boolean);
+      // try the picture directly, then through our server; if both fail the generated one stays.
+      // Fandom refuses its pictures to browsers on other sites, so for it the server goes first.
+      const proxied = viaProxy(url);
+      const tries = (SERVER_ONLY.test(url) ? [proxied, url] : [url, proxied]).filter(Boolean);
       const next = () => {
         const src = tries.shift();
         if (!src) return;
