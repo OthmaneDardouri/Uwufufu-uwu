@@ -11,6 +11,7 @@ import match from "./ui/views/match.js";
 import result from "./ui/views/result.js";
 import stats from "./ui/views/stats.js";
 import admin from "./ui/views/admin.js";
+import adminImages from "./ui/views/admin-images.js";
 
 const ROUTES = [
   [/^\/?$/, home],
@@ -18,6 +19,7 @@ const ROUTES = [
   [/^\/match$/, match],
   [/^\/result$/, result],
   [/^\/stats(?:\/([a-z0-9-]+))?$/, stats],
+  [/^\/admin\/images(?:\/([a-z0-9-]+))?$/, adminImages],
   [/^\/admin$/, admin],
 ];
 

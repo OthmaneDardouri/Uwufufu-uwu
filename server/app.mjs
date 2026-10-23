@@ -86,6 +86,21 @@ const COLLECTIONS = {
       return { errors, value: { id, group, name, description, cover, items, source, malAnime, fandom } };
     },
   },
+  // pictures the admin set by hand for one item (id = imageKey of its lookup)
+  "image-overrides": {
+    key: "override",
+    clean(o) {
+      const errors = [];
+      let url = "";
+      try {
+        const u = new URL(o?.url ?? "");
+        if (u.protocol !== "https:") errors.push("the picture URL must start with https://");
+        url = u.href;
+      } catch { errors.push("invalid picture URL"); }
+      if (!/^[a-f0-9]{40}$/.test(o?.id ?? "")) errors.push("invalid id");
+      return { errors, value: { id: o?.id, url } };
+    },
+  },
   themes: {
     key: "theme",
     clean(theme) {
@@ -159,8 +174,10 @@ export function createApp({ stores, config, ai = claude, images = null, fetchImp
       const debug = url.searchParams.get("debug") === "1";
       if (!lookupAllowed()) throw new HttpError(429, "too many lookups, try again in a minute");
       const found = await images.resolve(q, { fresh: debug });
-      const proxied = found.url ? `/api/img?${new URLSearchParams({ u: found.url })}` : null;
-      return reply(200, { url: found.url, proxied, source: found.source, cached: found.cached, ...(debug && { query: q, tried: found.tried }) },
+      // known hosts go through our proxy; a picture the admin pasted from elsewhere is used as is
+      const viaProxy = found.url && IMAGE_HOSTS.includes(new URL(found.url).hostname);
+      const proxied = found.url ? (viaProxy ? `/api/img?${new URLSearchParams({ u: found.url })}` : found.url) : null;
+      return reply(200, { url: found.url, proxied, source: found.source, cached: found.cached, key: found.key, ...(debug && { query: q, tried: found.tried }) },
         { "cache-control": found.url ? "public, max-age=3600" : "no-cache" });
     }
     if (route === "GET /api/img") {
@@ -213,7 +230,7 @@ export function createApp({ stores, config, ai = claude, images = null, fetchImp
       return reply(200, { themes });
     }
 
-    const item = url.pathname.match(/^\/api\/admin\/(categories|themes)\/([a-z0-9-]+)$/);
+    const item = url.pathname.match(/^\/api\/admin\/(categories|themes|image-overrides)\/([a-z0-9-]+)$/);
     if (item) {
       const [, name, id] = item;
       const store = stores[name];

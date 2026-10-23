@@ -50,9 +50,18 @@ export async function serverImage(query) {
   const params = new URLSearchParams(Object.entries(query).filter(([, v]) => v));
   try {
     const r = await request(`/api/image?${params}`, { timeout: 30_000 });
-    return r?.proxied ? `${base}${r.proxied}` : null;
+    if (!r?.proxied) return null;
+    return r.proxied.startsWith("/") ? `${base}${r.proxied}` : r.proxied; // a manual picture is a full URL
   } catch { return null; }
 }
+
+export const hasImageServer = () => !!serverInfo?.images;
+/** Full answer of the server's picture lookup; `debug` forces a fresh search and lists every source tried. */
+export const imageLookup = (query, debug = false) =>
+  request(`/api/image?${new URLSearchParams({ ...Object.fromEntries(Object.entries(query).filter(([, v]) => v)), ...(debug && { debug: "1" }) })}`, { timeout: 60_000 });
+export const saveImageOverride = (id, url) =>
+  request(`/api/admin/image-overrides/${id}`, { method: "PUT", admin: true, body: { override: { id, url } } });
+export const deleteImageOverride = (id) => request(`/api/admin/image-overrides/${id}`, { method: "DELETE", admin: true });
 
 export async function serverCategories() {
   try { return (await request("/api/categories")).categories ?? []; } catch { return []; }

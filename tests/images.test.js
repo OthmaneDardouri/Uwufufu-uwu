@@ -102,3 +102,33 @@ test("HTTP: /api/image and the picture proxy only for allowed hosts", async () =
   await images.flush();
   await rm(dir, { recursive: true, force: true });
 });
+
+test("manual pictures win over every source and only the admin can set them", async (t) => {
+  const dir = await tmp();
+  const net = fakeNet();
+  const overrides = await createStore(dir, "image-overrides");
+  const images = await createImageResolver({ dir, fetchImpl: net.fetchImpl, overrides });
+  const stores = { categories: await createStore(dir, "categories"), themes: await createStore(dir, "themes"), "image-overrides": overrides };
+  const config = { publicDir: path.resolve(path.dirname(fileURLToPath(import.meta.url)), ".."), adminToken: "a-very-long-admin-token", anthropicKey: "", allowedOrigins: [] };
+  const server = http.createServer(createApp({ stores, config, images }));
+  await new Promise((r) => server.listen(0, "127.0.0.1", r));
+  t.after(async () => { server.close(); await images.flush(); await rm(dir, { recursive: true, force: true }); });
+  const base = `http://127.0.0.1:${server.address().port}`;
+  const query = "fandom=onepiece&title=Gomu%20Gomu%20no%20Mi&name=Gomu%20Gomu%20no%20Mi";
+
+  const miss = await (await fetch(`${base}/api/image?${query}`)).json();
+  assert.equal(miss.url, null);
+  assert.match(miss.key, /^[a-f0-9]{40}$/);
+
+  const body = (url) => JSON.stringify({ override: { id: miss.key, url } });
+  const put = (url, token) => fetch(`${base}/api/admin/image-overrides/${miss.key}`, {
+    method: "PUT", body: body(url), headers: { "content-type": "application/json", ...(token && { authorization: `Bearer ${token}` }) },
+  });
+  assert.equal((await put("https://example.org/gomu.png")).status, 401);
+  assert.equal((await put("javascript:alert(1)", config.adminToken)).status, 422);
+  assert.equal((await put("https://example.org/gomu.png", config.adminToken)).status, 200);
+
+  const hit = await (await fetch(`${base}/api/image?${query}`)).json();
+  assert.equal(hit.source, "manual");
+  assert.equal(hit.proxied, "https://example.org/gomu.png", "manual pictures are not proxied");
+});

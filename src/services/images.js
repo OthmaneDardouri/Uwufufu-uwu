@@ -6,7 +6,7 @@
 //   otherwise   -> a generated picture (core/art.js), so a card is never empty
 // Answers are cached in localStorage so each lookup happens once per browser.
 import { generatedArt } from "../core/art.js";
-import { malImage, preloadRosters } from "./mal.js";
+import { malImage } from "./mal.js";
 import { serverImage } from "./api.js";
 
 const ARTWORK = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/";
@@ -80,6 +80,11 @@ function wikiImage(title) {
   });
 }
 
+/** What the server needs to look a picture up (also used by the admin's picture tool). */
+export const imageQuery = (item) => ({
+  name: item.name, char: item.mal?.char, title: item.fandom?.title, fandom: item.fandom?.wiki, wiki: item.wiki,
+});
+
 /** Promise of an image URL. Always resolves to something: the last resort is a generated picture. */
 export async function imageFor(item) {
   if (!item) return null;
@@ -87,9 +92,7 @@ export async function imageFor(item) {
   if (item.pokemon) return `${ARTWORK}${item.pokemon}.png`;
   // With our own server: it searches Fandom, MyAnimeList and Wikipedia, caches, and serves the picture.
   if (item.fandom || item.mal || item.wiki) {
-    const url = await serverImage({
-      name: item.name, char: item.mal?.char, title: item.fandom?.title, fandom: item.fandom?.wiki, wiki: item.wiki,
-    });
+    const url = await serverImage(imageQuery(item));
     if (url) return url;
   }
   // Without a server (e.g. GitHub Pages) the browser asks the public APIs itself.
@@ -111,15 +114,13 @@ export async function imageFor(item) {
 export function warm(items, limit = 128) {
   const some = items.slice(0, limit);
   // with a server, resolve a few at a time in the background so the server cache fills up
-  if (some.some((it) => it.fandom)) {
+  if (some.some((it) => it.fandom || it.mal)) {
     let i = 0;
     const next = () => { if (i < some.length) imageFor(some[i++]).finally(next); };
     for (let k = 0; k < 3; k++) next();
     return;
   }
-  // cheap lookups only: whole MyAnimeList rosters (one request per anime) and batched Wikipedia titles.
-  // Per-character searches wait until the card is actually on screen.
-  preloadRosters(some.flatMap((it) => it.mal?.anime ?? []));
+  // without a server: only batched Wikipedia titles; per-character searches wait for the card to be on screen
   for (const it of some) if (it.wiki && !it.mal) wikiImage(it.wiki);
 }
 

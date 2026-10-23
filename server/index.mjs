@@ -30,8 +30,9 @@ if (config.adminToken && config.adminToken.length < 16) {
 const stores = {
   categories: await createStore(config.dataDir, "categories"),
   themes: await createStore(config.dataDir, "themes"),
+  "image-overrides": await createStore(config.dataDir, "image-overrides"),
 };
-const images = await createImageResolver({ dir: config.dataDir });
+const images = await createImageResolver({ dir: config.dataDir, overrides: stores["image-overrides"] });
 const server = http.createServer(createApp({ stores, config, images }));
 server.listen(config.port, config.host, () => {
   console.log(`Neon Bracket on http://localhost:${config.port}`);

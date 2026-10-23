@@ -52,7 +52,8 @@ export default function admin(root, ctx) {
       <section class="admin">
         <div class="row between">
           <h1>${t("adminTitle")}</h1>
-          <button class="btn btn-ghost" data-logout>${t("logout")}</button>
+          <span class="row"><a class="btn" href="#/admin/images">🖼 ${t("imagesTitle")}</a>
+          <button class="btn btn-ghost" data-logout>${t("logout")}</button></span>
         </div>
         ${!ctx.server.ai && html`<p class="notice">${t("noAi")}</p>`}
 

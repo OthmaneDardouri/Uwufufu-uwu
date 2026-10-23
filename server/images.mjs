@@ -7,6 +7,7 @@
 //   2. MyAnimeList through Jikan: character search, most popular first
 //   3. English Wikipedia: page image
 import { readFile, writeFile, rename, mkdir } from "node:fs/promises";
+import { createHash } from "node:crypto";
 import path from "node:path";
 import { sameName } from "../src/core/art.js";
 
@@ -22,7 +23,11 @@ export function parseImageQuery(params) {
   return q;
 }
 
-export async function createImageResolver({ dir, fetchImpl = fetch, now = () => Date.now() }) {
+/** Stable id for a lookup, used for the cache and for the admin's manual pictures. */
+export const imageKey = (q) => createHash("sha1").update(JSON.stringify([q.fandom, q.title, q.name, q.char, q.wiki])).digest("hex");
+
+/** overrides: optional store of { id: imageKey, url } chosen by the admin; they win over every source. */
+export async function createImageResolver({ dir, fetchImpl = fetch, now = () => Date.now(), overrides = null }) {
   await mkdir(dir, { recursive: true });
   const file = path.join(dir, "images.json");
   let cache = {};
@@ -135,9 +140,12 @@ export async function createImageResolver({ dir, fetchImpl = fetch, now = () => 
 
   /** { url, source, cached, tried? } — `tried` lists every source and what it answered (for debugging). */
   async function resolve(q, { fresh = false } = {}) {
+    const id = imageKey(q);
+    const manual = overrides?.get(id);
+    if (manual?.url) return { url: manual.url, source: "manual", cached: true, key: id };
     const key = JSON.stringify([q.fandom, q.title, q.name, q.char, q.wiki]);
     const hit = cache[key];
-    if (!fresh && hit && (hit.url || now() - hit.at < MISS_TTL)) return { url: hit.url, source: hit.source, cached: true };
+    if (!fresh && hit && (hit.url || now() - hit.at < MISS_TTL)) return { url: hit.url, source: hit.source, cached: true, key: id };
     if (!inflight.has(key)) {
       inflight.set(key, (async () => {
         const tried = [];
@@ -147,7 +155,7 @@ export async function createImageResolver({ dir, fetchImpl = fetch, now = () => 
           cache[key] = { url: found.url, source: found.source, at: now() };
           save();
         }
-        return { ...found, cached: false, tried };
+        return { ...found, cached: false, tried, key: id };
       })().finally(() => inflight.delete(key)));
     }
     return inflight.get(key);

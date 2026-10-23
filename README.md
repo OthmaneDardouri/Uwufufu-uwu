@@ -54,6 +54,7 @@ Il pannello è su `#/admin`. Il link compare solo sui dispositivi dove hai fatto
 Tutto ciò che è admin passa dal server, che verifica il token: chi non lo ha non può creare né cancellare nulla, e la chiave di Claude non lascia mai il server.
 
 - **Nuova categoria con Claude**: descrivi l'idea, scegli quante voci, controlla la bozza, togli quello che non ti piace, pubblica.
+- **Immagini**: Admin → 🖼 Immagini controlla una categoria, mostra quale fonte fallisce e permette di incollare l'URL di un'immagine per qualsiasi voce.
 - **Nuovo tema da un'immagine**: carichi un'immagine, Claude ne ricava palette, font ed effetti, il sito si colora in anteprima, pubblichi.
 - **Usa Claude.ai (senza chiave API)**: il pannello scrive il prompt, apre Claude.ai già compilato, tu invii con il tuo abbonamento e incolli la risposta. Funziona per categorie e temi.
 - **Importa/esporta JSON** di categorie e temi.
