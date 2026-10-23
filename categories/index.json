@@ -48,6 +48,13 @@
         "it": "Anime · per intenditori",
         "en": "Anime · deep cuts"
       }
+    },
+    {
+      "id": "animation",
+      "name": {
+        "it": "Film d'animazione",
+        "en": "Animated films"
+      }
     }
   ],
   "files": [
@@ -56,6 +63,7 @@
     "games-pokemon.json",
     "games-other.json",
     "anime.json",
-    "anime-deep.json"
+    "anime-deep.json",
+    "animation.json"
   ]
 }

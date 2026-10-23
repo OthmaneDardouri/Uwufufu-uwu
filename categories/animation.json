@@ -1,0 +1,866 @@
+[
+ {
+  "id": "animation-disney",
+  "group": "animation",
+  "name": {
+   "it": "Classici Disney",
+   "en": "Disney classics"
+  },
+  "description": {
+   "it": "Da Biancaneve a Zootropolis 2.",
+   "en": "From Snow White to Zootopia 2."
+  },
+  "cover": {
+   "wiki": "The Lion King"
+  },
+  "items": [
+   {
+    "name": "Biancaneve e i sette nani",
+    "sub": "1937",
+    "wiki": "Snow White and the Seven Dwarfs (1937 film)"
+   },
+   {
+    "name": "Pinocchio",
+    "sub": "1940",
+    "wiki": "Pinocchio (1940 film)"
+   },
+   {
+    "name": "Fantasia",
+    "sub": "1940",
+    "wiki": "Fantasia (1940 film)"
+   },
+   {
+    "name": "Dumbo",
+    "sub": "1941",
+    "wiki": "Dumbo"
+   },
+   {
+    "name": "Bambi",
+    "sub": "1942",
+    "wiki": "Bambi"
+   },
+   {
+    "name": "Cenerentola",
+    "sub": "1950",
+    "wiki": "Cinderella (1950 film)"
+   },
+   {
+    "name": "Alice nel Paese delle Meraviglie",
+    "sub": "1951",
+    "wiki": "Alice in Wonderland (1951 film)"
+   },
+   {
+    "name": "Le avventure di Peter Pan",
+    "sub": "1953",
+    "wiki": "Peter Pan (1953 film)"
+   },
+   {
+    "name": "Lilli e il vagabondo",
+    "sub": "1955",
+    "wiki": "Lady and the Tramp"
+   },
+   {
+    "name": "La bella addormentata nel bosco",
+    "sub": "1959",
+    "wiki": "Sleeping Beauty (1959 film)"
+   },
+   {
+    "name": "La carica dei cento e uno",
+    "sub": "1961",
+    "wiki": "One Hundred and One Dalmatians"
+   },
+   {
+    "name": "La spada nella roccia",
+    "sub": "1963",
+    "wiki": "The Sword in the Stone (1963 film)"
+   },
+   {
+    "name": "Il libro della giungla",
+    "sub": "1967",
+    "wiki": "The Jungle Book (1967 film)"
+   },
+   {
+    "name": "Gli Aristogatti",
+    "sub": "1970",
+    "wiki": "The Aristocats"
+   },
+   {
+    "name": "Robin Hood",
+    "sub": "1973",
+    "wiki": "Robin Hood (1973 film)"
+   },
+   {
+    "name": "Le avventure di Bianca e Bernie",
+    "sub": "1977",
+    "wiki": "The Rescuers"
+   },
+   {
+    "name": "Red e Toby nemiciamici",
+    "sub": "1981",
+    "wiki": "The Fox and the Hound"
+   },
+   {
+    "name": "La sirenetta",
+    "sub": "1989",
+    "wiki": "The Little Mermaid (1989 film)"
+   },
+   {
+    "name": "La bella e la bestia",
+    "sub": "1991",
+    "wiki": "Beauty and the Beast (1991 film)"
+   },
+   {
+    "name": "Aladdin",
+    "sub": "1992",
+    "wiki": "Aladdin (1992 Disney film)"
+   },
+   {
+    "name": "Il re leone",
+    "sub": "1994",
+    "wiki": "The Lion King"
+   },
+   {
+    "name": "Pocahontas",
+    "sub": "1995",
+    "wiki": "Pocahontas (1995 film)"
+   },
+   {
+    "name": "Il gobbo di Notre Dame",
+    "sub": "1996",
+    "wiki": "The Hunchback of Notre Dame (1996 film)"
+   },
+   {
+    "name": "Hercules",
+    "sub": "1997",
+    "wiki": "Hercules (1997 film)"
+   },
+   {
+    "name": "Mulan",
+    "sub": "1998",
+    "wiki": "Mulan (1998 film)"
+   },
+   {
+    "name": "Tarzan",
+    "sub": "1999",
+    "wiki": "Tarzan (1999 film)"
+   },
+   {
+    "name": "Le follie dell'imperatore",
+    "sub": "2000",
+    "wiki": "The Emperor's New Groove"
+   },
+   {
+    "name": "Atlantis – L'impero perduto",
+    "sub": "2001",
+    "wiki": "Atlantis: The Lost Empire"
+   },
+   {
+    "name": "Lilo & Stitch",
+    "sub": "2002",
+    "wiki": "Lilo & Stitch"
+   },
+   {
+    "name": "Il pianeta del tesoro",
+    "sub": "2002",
+    "wiki": "Treasure Planet"
+   },
+   {
+    "name": "Koda, fratello orso",
+    "sub": "2003",
+    "wiki": "Brother Bear"
+   },
+   {
+    "name": "Bolt – Un eroe a quattro zampe",
+    "sub": "2008",
+    "wiki": "Bolt (2008 film)"
+   },
+   {
+    "name": "La principessa e il ranocchio",
+    "sub": "2009",
+    "wiki": "The Princess and the Frog"
+   },
+   {
+    "name": "Rapunzel – L'intreccio della torre",
+    "sub": "2010",
+    "wiki": "Tangled"
+   },
+   {
+    "name": "Ralph Spaccatutto",
+    "sub": "2012",
+    "wiki": "Wreck-It Ralph"
+   },
+   {
+    "name": "Frozen – Il regno di ghiaccio",
+    "sub": "2013",
+    "wiki": "Frozen (2013 film)"
+   },
+   {
+    "name": "Big Hero 6",
+    "sub": "2014",
+    "wiki": "Big Hero 6 (film)"
+   },
+   {
+    "name": "Zootropolis",
+    "sub": "2016",
+    "wiki": "Zootopia"
+   },
+   {
+    "name": "Oceania",
+    "sub": "2016",
+    "wiki": "Moana (2016 film)"
+   },
+   {
+    "name": "Ralph spacca Internet",
+    "sub": "2018",
+    "wiki": "Ralph Breaks the Internet"
+   },
+   {
+    "name": "Frozen II – Il segreto di Arendelle",
+    "sub": "2019",
+    "wiki": "Frozen 2"
+   },
+   {
+    "name": "Raya e l'ultimo drago",
+    "sub": "2021",
+    "wiki": "Raya and the Last Dragon"
+   },
+   {
+    "name": "Encanto",
+    "sub": "2021",
+    "wiki": "Encanto"
+   },
+   {
+    "name": "Wish",
+    "sub": "2023",
+    "wiki": "Wish (2023 film)"
+   },
+   {
+    "name": "Oceania 2",
+    "sub": "2024",
+    "wiki": "Moana 2"
+   },
+   {
+    "name": "Zootropolis 2",
+    "sub": "2025",
+    "wiki": "Zootopia 2"
+   }
+  ]
+ },
+ {
+  "id": "animation-pixar",
+  "group": "animation",
+  "name": {
+   "it": "Film Pixar",
+   "en": "Pixar films"
+  },
+  "description": {
+   "it": "Tutti i lungometraggi, da Toy Story a Elio.",
+   "en": "Every feature, from Toy Story to Elio."
+  },
+  "cover": {
+   "wiki": "Toy Story"
+  },
+  "items": [
+   {
+    "name": "Toy Story – Il mondo dei giocattoli",
+    "sub": "1995",
+    "wiki": "Toy Story"
+   },
+   {
+    "name": "A Bug's Life – Megaminimondo",
+    "sub": "1998",
+    "wiki": "A Bug's Life"
+   },
+   {
+    "name": "Toy Story 2",
+    "sub": "1999",
+    "wiki": "Toy Story 2"
+   },
+   {
+    "name": "Monsters & Co.",
+    "sub": "2001",
+    "wiki": "Monsters, Inc."
+   },
+   {
+    "name": "Alla ricerca di Nemo",
+    "sub": "2003",
+    "wiki": "Finding Nemo"
+   },
+   {
+    "name": "Gli Incredibili",
+    "sub": "2004",
+    "wiki": "The Incredibles"
+   },
+   {
+    "name": "Cars – Motori ruggenti",
+    "sub": "2006",
+    "wiki": "Cars (film)"
+   },
+   {
+    "name": "Ratatouille",
+    "sub": "2007",
+    "wiki": "Ratatouille (film)"
+   },
+   {
+    "name": "WALL•E",
+    "sub": "2008",
+    "wiki": "WALL-E"
+   },
+   {
+    "name": "Up",
+    "sub": "2009",
+    "wiki": "Up (2009 film)"
+   },
+   {
+    "name": "Toy Story 3 – La grande fuga",
+    "sub": "2010",
+    "wiki": "Toy Story 3"
+   },
+   {
+    "name": "Cars 2",
+    "sub": "2011",
+    "wiki": "Cars 2"
+   },
+   {
+    "name": "Ribelle – The Brave",
+    "sub": "2012",
+    "wiki": "Brave (2012 film)"
+   },
+   {
+    "name": "Monsters University",
+    "sub": "2013",
+    "wiki": "Monsters University"
+   },
+   {
+    "name": "Inside Out",
+    "sub": "2015",
+    "wiki": "Inside Out (2015 film)"
+   },
+   {
+    "name": "Il viaggio di Arlo",
+    "sub": "2015",
+    "wiki": "The Good Dinosaur"
+   },
+   {
+    "name": "Alla ricerca di Dory",
+    "sub": "2016",
+    "wiki": "Finding Dory"
+   },
+   {
+    "name": "Cars 3",
+    "sub": "2017",
+    "wiki": "Cars 3"
+   },
+   {
+    "name": "Coco",
+    "sub": "2017",
+    "wiki": "Coco (2017 film)"
+   },
+   {
+    "name": "Gli Incredibili 2",
+    "sub": "2018",
+    "wiki": "Incredibles 2"
+   },
+   {
+    "name": "Toy Story 4",
+    "sub": "2019",
+    "wiki": "Toy Story 4"
+   },
+   {
+    "name": "Onward – Oltre la magia",
+    "sub": "2020",
+    "wiki": "Onward (film)"
+   },
+   {
+    "name": "Soul",
+    "sub": "2020",
+    "wiki": "Soul (2020 film)"
+   },
+   {
+    "name": "Luca",
+    "sub": "2021",
+    "wiki": "Luca (2021 film)"
+   },
+   {
+    "name": "Red",
+    "sub": "2022",
+    "wiki": "Turning Red"
+   },
+   {
+    "name": "Lightyear – La vera storia di Buzz",
+    "sub": "2022",
+    "wiki": "Lightyear (film)"
+   },
+   {
+    "name": "Elemental",
+    "sub": "2023",
+    "wiki": "Elemental (2023 film)"
+   },
+   {
+    "name": "Inside Out 2",
+    "sub": "2024",
+    "wiki": "Inside Out 2"
+   },
+   {
+    "name": "Elio",
+    "sub": "2025",
+    "wiki": "Elio (film)"
+   }
+  ]
+ },
+ {
+  "id": "animation-dreamworks",
+  "group": "animation",
+  "name": {
+   "it": "Film DreamWorks",
+   "en": "DreamWorks films"
+  },
+  "description": {
+   "it": "Shrek, Dragon Trainer, Kung Fu Panda e gli altri.",
+   "en": "Shrek, How to Train Your Dragon, Kung Fu Panda and more."
+  },
+  "cover": {
+   "wiki": "Shrek"
+  },
+  "items": [
+   {
+    "name": "Z la formica",
+    "sub": "1998",
+    "wiki": "Antz"
+   },
+   {
+    "name": "Il principe d'Egitto",
+    "sub": "1998",
+    "wiki": "The Prince of Egypt"
+   },
+   {
+    "name": "La strada per El Dorado",
+    "sub": "2000",
+    "wiki": "The Road to El Dorado"
+   },
+   {
+    "name": "Shrek",
+    "sub": "2001",
+    "wiki": "Shrek"
+   },
+   {
+    "name": "Spirit – Cavallo selvaggio",
+    "sub": "2002",
+    "wiki": "Spirit: Stallion of the Cimarron"
+   },
+   {
+    "name": "Sinbad – La leggenda dei sette mari",
+    "sub": "2003",
+    "wiki": "Sinbad: Legend of the Seven Seas"
+   },
+   {
+    "name": "Shrek 2",
+    "sub": "2004",
+    "wiki": "Shrek 2"
+   },
+   {
+    "name": "Shark Tale",
+    "sub": "2004",
+    "wiki": "Shark Tale"
+   },
+   {
+    "name": "Madagascar",
+    "sub": "2005",
+    "wiki": "Madagascar (2005 film)"
+   },
+   {
+    "name": "La gang del bosco",
+    "sub": "2006",
+    "wiki": "Over the Hedge (film)"
+   },
+   {
+    "name": "Kung Fu Panda",
+    "sub": "2008",
+    "wiki": "Kung Fu Panda (film)"
+   },
+   {
+    "name": "Mostri contro alieni",
+    "sub": "2009",
+    "wiki": "Monsters vs. Aliens"
+   },
+   {
+    "name": "Dragon Trainer",
+    "sub": "2010",
+    "wiki": "How to Train Your Dragon (2010 film)"
+   },
+   {
+    "name": "Megamind",
+    "sub": "2010",
+    "wiki": "Megamind"
+   },
+   {
+    "name": "Il gatto con gli stivali",
+    "sub": "2011",
+    "wiki": "Puss in Boots (2011 film)"
+   },
+   {
+    "name": "Madagascar 3 – Ricercati in Europa",
+    "sub": "2012",
+    "wiki": "Madagascar 3: Europe's Most Wanted"
+   },
+   {
+    "name": "Le 5 leggende",
+    "sub": "2012",
+    "wiki": "Rise of the Guardians"
+   },
+   {
+    "name": "I Croods",
+    "sub": "2013",
+    "wiki": "The Croods"
+   },
+   {
+    "name": "Dragon Trainer 2",
+    "sub": "2014",
+    "wiki": "How to Train Your Dragon 2"
+   },
+   {
+    "name": "Home – A casa",
+    "sub": "2015",
+    "wiki": "Home (2015 film)"
+   },
+   {
+    "name": "Trolls",
+    "sub": "2016",
+    "wiki": "Trolls (film)"
+   },
+   {
+    "name": "Baby Boss",
+    "sub": "2017",
+    "wiki": "The Boss Baby"
+   },
+   {
+    "name": "Dragon Trainer – Il mondo nascosto",
+    "sub": "2019",
+    "wiki": "How to Train Your Dragon: The Hidden World"
+   },
+   {
+    "name": "Il piccolo yeti",
+    "sub": "2019",
+    "wiki": "Abominable (2019 film)"
+   },
+   {
+    "name": "Troppo cattivi",
+    "sub": "2022",
+    "wiki": "The Bad Guys (film)"
+   },
+   {
+    "name": "Il gatto con gli stivali 2 – L'ultimo desiderio",
+    "sub": "2022",
+    "wiki": "Puss in Boots: The Last Wish"
+   },
+   {
+    "name": "Kung Fu Panda 4",
+    "sub": "2024",
+    "wiki": "Kung Fu Panda 4"
+   },
+   {
+    "name": "Il robot selvaggio",
+    "sub": "2024",
+    "wiki": "The Wild Robot"
+   }
+  ]
+ },
+ {
+  "id": "anime-ghibli",
+  "group": "animation",
+  "name": {
+   "it": "Film dello Studio Ghibli",
+   "en": "Studio Ghibli films"
+  },
+  "description": {
+   "it": "Miyazaki, Takahata e gli altri.",
+   "en": "Miyazaki, Takahata and friends."
+  },
+  "cover": {
+   "wiki": "Spirited Away"
+  },
+  "items": [
+   {
+    "name": "La città incantata",
+    "sub": "2001 · Miyazaki",
+    "wiki": "Spirited Away"
+   },
+   {
+    "name": "Il mio vicino Totoro",
+    "sub": "1988 · Miyazaki",
+    "wiki": "My Neighbor Totoro"
+   },
+   {
+    "name": "Principessa Mononoke",
+    "sub": "1997 · Miyazaki",
+    "wiki": "Princess Mononoke"
+   },
+   {
+    "name": "Il castello errante di Howl",
+    "sub": "2004 · Miyazaki",
+    "wiki": "Howl's Moving Castle (film)"
+   },
+   {
+    "name": "Kiki – Consegne a domicilio",
+    "sub": "1989 · Miyazaki",
+    "wiki": "Kiki's Delivery Service"
+   },
+   {
+    "name": "Laputa – Castello nel cielo",
+    "sub": "1986 · Miyazaki",
+    "wiki": "Castle in the Sky"
+   },
+   {
+    "name": "Nausicaä della Valle del vento",
+    "sub": "1984 · Miyazaki",
+    "wiki": "Nausicaä of the Valley of the Wind (film)"
+   },
+   {
+    "name": "Porco Rosso",
+    "sub": "1992 · Miyazaki",
+    "wiki": "Porco Rosso"
+   },
+   {
+    "name": "Una tomba per le lucciole",
+    "sub": "1988 · Takahata",
+    "wiki": "Grave of the Fireflies"
+   },
+   {
+    "name": "Ponyo sulla scogliera",
+    "sub": "2008 · Miyazaki",
+    "wiki": "Ponyo"
+   },
+   {
+    "name": "Si alza il vento",
+    "sub": "2013 · Miyazaki",
+    "wiki": "The Wind Rises"
+   },
+   {
+    "name": "I sospiri del mio cuore",
+    "sub": "1995 · Kondō",
+    "wiki": "Whisper of the Heart"
+   },
+   {
+    "name": "La ricompensa del gatto",
+    "sub": "2002 · Morita",
+    "wiki": "The Cat Returns"
+   },
+   {
+    "name": "Arrietty",
+    "sub": "2010 · Yonebayashi",
+    "wiki": "Arrietty"
+   },
+   {
+    "name": "La collina dei papaveri",
+    "sub": "2011 · G. Miyazaki",
+    "wiki": "From Up on Poppy Hill"
+   },
+   {
+    "name": "La storia della principessa splendente",
+    "sub": "2013 · Takahata",
+    "wiki": "The Tale of the Princess Kaguya (film)"
+   },
+   {
+    "name": "Quando c'era Marnie",
+    "sub": "2014 · Yonebayashi",
+    "wiki": "When Marnie Was There"
+   },
+   {
+    "name": "Il ragazzo e l'airone",
+    "sub": "2023 · Miyazaki",
+    "wiki": "The Boy and the Heron"
+   },
+   {
+    "name": "Pioggia di ricordi",
+    "sub": "1991 · Takahata",
+    "wiki": "Only Yesterday (1991 film)"
+   },
+   {
+    "name": "Pom Poko",
+    "sub": "1994 · Takahata",
+    "wiki": "Pom Poko"
+   },
+   {
+    "name": "I miei vicini Yamada",
+    "sub": "1999 · Takahata",
+    "wiki": "My Neighbors the Yamadas"
+   },
+   {
+    "name": "I racconti di Terramare",
+    "sub": "2006 · G. Miyazaki",
+    "wiki": "Tales from Earthsea (film)"
+   },
+   {
+    "name": "Si sente il mare",
+    "sub": "1993 · Mochizuki",
+    "wiki": "Ocean Waves (film)"
+   },
+   {
+    "name": "Earwig e la strega",
+    "sub": "2020 · G. Miyazaki",
+    "wiki": "Earwig and the Witch (film)"
+   }
+  ]
+ },
+ {
+  "id": "animation-villains",
+  "group": "animation",
+  "name": {
+   "it": "Cattivi dei cartoni",
+   "en": "Cartoon villains"
+  },
+  "description": {
+   "it": "Disney, Pixar e DreamWorks: chi è il cattivo migliore?",
+   "en": "Disney, Pixar and DreamWorks: who is the best villain?"
+  },
+  "cover": {
+   "wiki": "Maleficent"
+  },
+  "items": [
+   {
+    "name": "Scar",
+    "sub": "Il re leone",
+    "wiki": "Scar (The Lion King)",
+    "info": "Uccide il fratello Mufasa per prendersi il trono delle Terre del Branco."
+   },
+   {
+    "name": "Malefica",
+    "sub": "La bella addormentata nel bosco",
+    "wiki": "Maleficent",
+    "info": "La fata oscura che maledice Aurora perché non è stata invitata al battesimo."
+   },
+   {
+    "name": "Ursula",
+    "sub": "La sirenetta",
+    "wiki": "Ursula (The Little Mermaid)",
+    "info": "La strega del mare che compra la voce di Ariel in cambio di due gambe."
+   },
+   {
+    "name": "Jafar",
+    "sub": "Aladdin",
+    "wiki": "Jafar",
+    "info": "Il gran visir che vuole la lampada per diventare sultano, e poi genio."
+   },
+   {
+    "name": "Ade",
+    "sub": "Hercules",
+    "wiki": "Hades (Disney)",
+    "info": "Il dio degli inferi più ironico di sempre: vuole conquistare l'Olimpo."
+   },
+   {
+    "name": "Crudelia De Mon",
+    "sub": "La carica dei cento e uno",
+    "wiki": "Cruella de Vil",
+    "info": "Vuole una pelliccia fatta con i cuccioli dalmata."
+   },
+   {
+    "name": "Gaston",
+    "sub": "La bella e la bestia",
+    "wiki": "Gaston (Beauty and the Beast)",
+    "info": "Il cacciatore vanitoso che guida il villaggio contro la Bestia."
+   },
+   {
+    "name": "Frollo",
+    "sub": "Il gobbo di Notre Dame",
+    "wiki": "Claude Frollo",
+    "info": "Il giudice ossessionato da Esmeralda: forse il cattivo Disney più cupo."
+   },
+   {
+    "name": "Shan Yu",
+    "sub": "Mulan",
+    "wiki": "Shan Yu",
+    "info": "Il condottiero unno che invade la Cina."
+   },
+   {
+    "name": "Capitan Uncino",
+    "sub": "Le avventure di Peter Pan",
+    "wiki": "Captain Hook",
+    "info": "Il pirata che odia Peter Pan e teme il coccodrillo con la sveglia."
+   },
+   {
+    "name": "Grimilde",
+    "sub": "Biancaneve e i sette nani",
+    "wiki": "Evil Queen (Disney)",
+    "info": "La regina gelosa dello specchio magico, che diventa una strega con la mela avvelenata."
+   },
+   {
+    "name": "Madre Gothel",
+    "sub": "Rapunzel",
+    "wiki": "Mother Gothel",
+    "info": "Rapisce Rapunzel per sfruttare il potere dei suoi capelli e restare giovane."
+   },
+   {
+    "name": "Dottor Facilier",
+    "sub": "La principessa e il ranocchio",
+    "wiki": "Dr. Facilier",
+    "info": "Lo stregone voodoo di New Orleans e i suoi \"amici dall'altra parte\"."
+   },
+   {
+    "name": "Yzma",
+    "sub": "Le follie dell'imperatore",
+    "wiki": "Yzma",
+    "info": "Vuole avvelenare l'imperatore Kuzco ma lo trasforma in un lama."
+   },
+   {
+    "name": "Hans",
+    "sub": "Frozen",
+    "wiki": "Hans (Frozen)",
+    "info": "Il principe affascinante che si rivela il vero cattivo."
+   },
+   {
+    "name": "Shere Khan",
+    "sub": "Il libro della giungla",
+    "wiki": "Shere Khan",
+    "info": "La tigre che dà la caccia a Mowgli."
+   },
+   {
+    "name": "Professor Rattigan",
+    "sub": "Basil l'investigatopo",
+    "wiki": "Professor Ratigan",
+    "info": "Il genio del crimine, nemico di Basil."
+   },
+   {
+    "name": "Lord Farquaad",
+    "sub": "Shrek",
+    "wiki": "Lord Farquaad",
+    "info": "Il piccolo tiranno di Duloc che vuole sposare Fiona per diventare re."
+   },
+   {
+    "name": "Fata Madrina",
+    "sub": "Shrek 2",
+    "wiki": "Fairy Godmother (Shrek)",
+    "info": "La fata che complotta per far sposare Fiona al figlio Azzurro."
+   },
+   {
+    "name": "Tai Lung",
+    "sub": "Kung Fu Panda",
+    "wiki": "Tai Lung",
+    "info": "Il leopardo delle nevi, ex allievo del maestro Shifu."
+   },
+   {
+    "name": "Syndrome",
+    "sub": "Gli Incredibili",
+    "wiki": "Syndrome (The Incredibles)",
+    "info": "L'ex fan di Mr. Incredibile che dà la caccia ai supereroi."
+   },
+   {
+    "name": "Lotso",
+    "sub": "Toy Story 3",
+    "wiki": "Lotso",
+    "info": "L'orsacchiotto che profuma di fragola e governa l'asilo Sunnyside."
+   },
+   {
+    "name": "Charles Muntz",
+    "sub": "Up",
+    "wiki": "Charles Muntz",
+    "info": "L'esploratore idolo di Carl, ossessionato dall'uccello Kevin."
+   },
+   {
+    "name": "La Morte",
+    "sub": "Il gatto con gli stivali 2",
+    "wiki": "Puss in Boots: The Last Wish",
+    "info": "Il lupo cacciatore di taglie che viene a riscuotere l'ultima vita del Gatto."
+   }
+  ]
+ }
+]
