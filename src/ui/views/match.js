@@ -55,6 +55,7 @@ export default function match(root, { catalog, navigate }) {
             ${picture(e, "duel-pic")}
             <span class="duel-name">${e.name}</span>
             ${e.sub && html`<span class="duel-sub">${e.sub}</span>`}
+            ${e.info && html`<span class="duel-info">${localized(e.info, lang)}</span>`}
           </button>`)}
       </section>
       ${tw && html`

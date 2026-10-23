@@ -41,6 +41,13 @@
         "it": "Anime",
         "en": "Anime"
       }
+    },
+    {
+      "id": "anime-deep",
+      "name": {
+        "it": "Anime · per intenditori",
+        "en": "Anime · deep cuts"
+      }
     }
   ],
   "files": [
@@ -48,6 +55,7 @@
     "pokemon-types.json",
     "games-pokemon.json",
     "games-other.json",
-    "anime.json"
+    "anime.json",
+    "anime-deep.json"
   ]
 }

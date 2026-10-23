@@ -47,7 +47,8 @@ const CATEGORY_TOOL = {
           type: "object",
           properties: {
             name: { type: "string", description: "Display name" },
-            sub: { type: "string", description: "Short second line: year, franchise, platform..." },
+            sub: { type: "string", description: "Short second line: year, franchise, platform, who uses it..." },
+            info: { type: "string", description: "One short sentence in Italian explaining what it is or does, for items a fan might not remember (abilities, techniques, events). Omit for self-explanatory items." },
             wiki: { type: "string", description: "Exact title of the English Wikipedia article about this item (used to fetch its picture)" },
             pokemon: { type: "integer", description: "Only for Pokémon: PokeAPI pokemon id (national dex number for base forms)" },
           },
@@ -64,16 +65,18 @@ Rules:
 - Return exactly the requested number of entrants, all distinct, real and recognisable.
 - Prefer variety and fan favourites; no filler.
 - For every item that is a Pokémon set "pokemon" to its PokeAPI id. Otherwise set "wiki" to the exact English Wikipedia article title, so a picture can be fetched.
-- Keep "sub" under 40 characters.
+- Keep "sub" under 40 characters and "info" under 140.
+- Specific, fan-level categories are welcome (e.g. Devil Fruits, jutsu, transformations): then fill "info" and set "wiki" to the character most associated with the item.
 Always answer by calling the publish_category tool.`;
 
 export const categoryRequestText = (prompt, count) => `Category idea: ${prompt}\nNumber of entrants: ${count}`;
 
 /** Convert the tool call into our category format (still a draft: the admin reviews it). */
 export function toCategory(input) {
-  const items = (input.items ?? []).map(({ name, sub, wiki, pokemon }) => ({
+  const items = (input.items ?? []).map(({ name, sub, info, wiki, pokemon }) => ({
     name: String(name).trim(),
     ...(sub && { sub: String(sub).trim() }),
+    ...(info && { info: String(info).trim().slice(0, 300) }),
     ...(Number.isInteger(pokemon) && pokemon > 0 ? { pokemon } : wiki ? { wiki: String(wiki).trim() } : {}),
   }));
   const first = items[0];

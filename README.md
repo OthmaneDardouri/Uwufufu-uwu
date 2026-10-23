@@ -1,9 +1,10 @@
 # Neon Bracket
 
 Un gioco di tornei "scegli il tuo preferito", in stile uwufufu: due candidati alla volta, clicchi quello che preferisci, finché ne resta uno solo.
-Contiene categorie Pokémon (generazioni, leggendari, mitici, starter e loro evoluzioni, megaevoluzioni, Gigamax, forme regionali, Ultracreature, Paradosso, tipi…), videogiochi Pokémon, fantasy, sci-fi/cyberpunk, anime (serie più amate, personaggi di One Piece, Naruto, Dragon Ball, Demon Slayer, Jujutsu Kaisen, cattivi, protagonisti shōnen, film Ghibli) e tutte le categorie che l'admin aggiunge con Claude.
+Contiene categorie Pokémon (generazioni, leggendari, mitici, starter e loro evoluzioni, megaevoluzioni, Gigamax, forme regionali, Ultracreature, Paradosso, tipi…), videogiochi Pokémon, fantasy, sci-fi/cyberpunk, anime (serie più amate, personaggi di One Piece, Naruto, Dragon Ball, Demon Slayer, Jujutsu Kaisen, cattivi, protagonisti shōnen, film Ghibli), anime per intenditori (Frutti del Diavolo, archi di One Piece, tecniche e jinchūriki di Naruto, trasformazioni e tecniche di Dragon Ball, respirazioni, espansioni del dominio) e tutte le categorie che l'admin aggiunge con Claude.
 
 - **10 temi** selezionabili (Pixel Retrò predefinito) + temi nuovi creati da un'immagine ("style transfer" con Claude)
+- **Info sulle voci**: passando il cursore su una carta vedi cosa fa (un Frutto del Diavolo, una tecnica…); su telefono l'info è sempre visibile
 - **Modalità streamer**: la chat di Twitch vota scrivendo 1 o 2, con timer e barre live; nessun login né server, il browser legge solo la chat pubblica
 - Torneo da 8 a 128 partecipanti o "tutti", con turno preliminare automatico quando il numero non è una potenza di 2
 - Annulla, scorciatoie da tastiera (← → / A D / 1 2, Z per annullare), partita salvata se chiudi la pagina

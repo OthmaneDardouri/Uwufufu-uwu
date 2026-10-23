@@ -79,7 +79,7 @@ const COLLECTIONS = {
       const errors = validateCategory(category);
       if (category.items?.length > MAX_ITEMS) errors.push(`at most ${MAX_ITEMS} items`);
       const { id, group, name, description, cover, source } = category;
-      const items = category.items?.map(({ name, sub, wiki, pokemon, image }) => ({ name, sub, wiki, pokemon, image }));
+      const items = category.items?.map(({ name, sub, info, wiki, pokemon, image }) => ({ name, sub, info, wiki, pokemon, image }));
       return { errors, value: { id, group, name, description, cover, items, source } };
     },
   },

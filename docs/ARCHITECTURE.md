@@ -128,7 +128,8 @@ Crea `categories/mia-categoria.json` e aggiungilo a `files` in `categories/index
     "items": [
       { "name": "Artorias", "sub": "Dark Souls", "wiki": "Dark Souls (video game)" },
       { "name": "Malenia", "sub": "Elden Ring", "image": "https://…/malenia.png" },
-      { "name": "Pikachu", "pokemon": 25 }
+      { "name": "Pikachu", "pokemon": 25 },
+      { "name": "Gura Gura no Mi", "sub": "Barbabianca", "info": "Crea terremoti.", "wiki": "Edward Newgate" }
     ]
   }
 ]
@@ -143,6 +144,8 @@ Una categoria Pokémon è solo un filtro:
 ```
 
 Il filtro accetta `gens`, `types`, `tagsAny` e `tagsNone`. Le forme alternative (mega, gmax, regionali) compaiono solo se un filtro le chiede esplicitamente.
+
+`info` (facoltativo) è la frase che compare passando il cursore sulla carta. Per oggetti, poteri e tecniche conviene mettere in `wiki` il personaggio più legato alla voce, così la carta mostra lui.
 
 Oppure dal pannello admin: con Claude, oppure importando il JSON.
 

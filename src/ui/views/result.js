@@ -31,6 +31,7 @@ export default function result(root, { catalog, navigate }) {
         ${picture(champ, "champion-pic")}
         <h2>${champ.name}</h2>
         ${champ.sub && html`<p class="muted">${champ.sub}</p>`}
+        ${champ.info && html`<p class="champion-info">${localized(champ.info, lang)}</p>`}
       </div>
       <div class="podium">
         ${rest.slice(0, 3).map((e, i) => html`

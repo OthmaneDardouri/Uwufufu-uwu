@@ -1,0 +1,1044 @@
+[
+ {
+  "id": "anime-op-devil-fruits",
+  "group": "anime-deep",
+  "name": {
+   "it": "One Piece · Frutti del Diavolo",
+   "en": "One Piece · Devil Fruits"
+  },
+  "description": {
+   "it": "Quale potere vorresti? Passa sopra la carta per sapere cosa fa.",
+   "en": "Which power would you take? Hover a card to see what it does."
+  },
+  "cover": {
+   "wiki": "Monkey D. Luffy"
+  },
+  "items": [
+   {
+    "name": "Gomu Gomu no Mi",
+    "sub": "Monkey D. Luffy",
+    "info": "Corpo di gomma. Il risveglio rivela il vero nome, Hito Hito modello Nika, e libera il Gear 5.",
+    "wiki": "Monkey D. Luffy"
+   },
+   {
+    "name": "Mera Mera no Mi",
+    "sub": "Ace, poi Sabo",
+    "info": "Logia del fuoco: genera fiamme e diventa fuoco.",
+    "wiki": "Portgas D. Ace"
+   },
+   {
+    "name": "Hie Hie no Mi",
+    "sub": "Aokiji",
+    "info": "Logia del ghiaccio: congela persone e perfino il mare."
+   },
+   {
+    "name": "Pika Pika no Mi",
+    "sub": "Kizaru",
+    "info": "Logia della luce: si muove alla velocità della luce e spara laser."
+   },
+   {
+    "name": "Magu Magu no Mi",
+    "sub": "Akainu",
+    "info": "Logia del magma, il più offensivo tra gli elementali: ha ucciso Ace."
+   },
+   {
+    "name": "Gura Gura no Mi",
+    "sub": "Barbabianca, poi Barbanera",
+    "info": "Crea terremoti incrinando aria e terra: \"il frutto che può distruggere il mondo\".",
+    "wiki": "Edward Newgate"
+   },
+   {
+    "name": "Yami Yami no Mi",
+    "sub": "Barbanera",
+    "info": "Oscurità che risucchia tutto e annulla i poteri dei frutti al contatto.",
+    "wiki": "Marshall D. Teach"
+   },
+   {
+    "name": "Ope Ope no Mi",
+    "sub": "Trafalgar Law",
+    "info": "Crea una \"Room\" dove taglia, sposta e opera tutto; può donare la vita eterna al costo della propria.",
+    "wiki": "Trafalgar Law"
+   },
+   {
+    "name": "Ito Ito no Mi",
+    "sub": "Donquixote Doflamingo",
+    "info": "Fili sottilissimi per tagliare, volare e controllare le persone come marionette.",
+    "wiki": "Donquixote Doflamingo"
+   },
+   {
+    "name": "Hana Hana no Mi",
+    "sub": "Nico Robin",
+    "info": "Fa sbocciare copie delle sue braccia, gambe e occhi su qualsiasi superficie.",
+    "wiki": "Nico Robin"
+   },
+   {
+    "name": "Bara Bara no Mi",
+    "sub": "Buggy",
+    "info": "Divide il corpo in pezzi che fluttuano: immune ai colpi di spada.",
+    "wiki": "Buggy (One Piece)"
+   },
+   {
+    "name": "Suna Suna no Mi",
+    "sub": "Crocodile",
+    "info": "Logia della sabbia: prosciuga l'acqua da tutto ciò che tocca.",
+    "wiki": "Crocodile (One Piece)"
+   },
+   {
+    "name": "Goro Goro no Mi",
+    "sub": "Enel",
+    "info": "Logia del fulmine: scarica fulmini e si muove alla velocità del lampo.",
+    "wiki": "Enel (One Piece)"
+   },
+   {
+    "name": "Mochi Mochi no Mi",
+    "sub": "Charlotte Katakuri",
+    "info": "Paramisha speciale: crea e diventa mochi, elastico e appiccicoso."
+   },
+   {
+    "name": "Soru Soru no Mi",
+    "sub": "Big Mom",
+    "info": "Estrae anni di vita dalle persone e dà un'anima agli oggetti (gli homies).",
+    "wiki": "Charlotte Linlin"
+   },
+   {
+    "name": "Uo Uo no Mi modello Seiryu",
+    "sub": "Kaido",
+    "info": "Zoan mitologico: diventa un enorme drago azzurro che sputa fuoco.",
+    "wiki": "Kaido (One Piece)"
+   },
+   {
+    "name": "Nikyu Nikyu no Mi",
+    "sub": "Bartholomew Kuma",
+    "info": "Cuscinetti sulle mani che respingono tutto, anche dolore e stanchezza, e spediscono le persone lontano.",
+    "wiki": "Bartholomew Kuma"
+   },
+   {
+    "name": "Yomi Yomi no Mi",
+    "sub": "Brook",
+    "info": "Fa tornare in vita una volta dopo la morte; l'anima può lasciare il corpo.",
+    "wiki": "Brook (One Piece)"
+   },
+   {
+    "name": "Hito Hito no Mi",
+    "sub": "Tony Tony Chopper",
+    "info": "Una renna che diventa umana; con la Rumble Ball sblocca altre forme.",
+    "wiki": "Tony Tony Chopper"
+   },
+   {
+    "name": "Mero Mero no Mi",
+    "sub": "Boa Hancock",
+    "info": "Pietrifica chiunque provi attrazione per lei.",
+    "wiki": "Boa Hancock"
+   },
+   {
+    "name": "Moku Moku no Mi",
+    "sub": "Smoker",
+    "info": "Logia del fumo: cattura e immobilizza i nemici.",
+    "wiki": "Smoker (One Piece)"
+   },
+   {
+    "name": "Tori Tori no Mi modello Fenice",
+    "sub": "Marco",
+    "info": "Zoan mitologico: fenice dalle fiamme azzurre che rigenerano le ferite."
+   },
+   {
+    "name": "Inu Inu no Mi modello Okuchi no Makami",
+    "sub": "Yamato",
+    "info": "Zoan mitologico: lupo divino guardiano, con poteri di ghiaccio.",
+    "wiki": "Yamato (One Piece)"
+   },
+   {
+    "name": "Bari Bari no Mi",
+    "sub": "Bartolomeo",
+    "info": "Crea barriere invisibili praticamente indistruttibili."
+   },
+   {
+    "name": "Hobi Hobi no Mi",
+    "sub": "Sugar",
+    "info": "Trasforma le persone in giocattoli e cancella il ricordo di loro da tutti."
+   },
+   {
+    "name": "Kage Kage no Mi",
+    "sub": "Gecko Moria",
+    "info": "Ruba le ombre e le mette nei cadaveri per creare zombi."
+   },
+   {
+    "name": "Horo Horo no Mi",
+    "sub": "Perona",
+    "info": "Fantasmi che, attraversando qualcuno, lo rendono depresso all'istante."
+   },
+   {
+    "name": "Mane Mane no Mi",
+    "sub": "Bon Clay",
+    "info": "Copia l'aspetto di chiunque abbia toccato con la mano destra."
+   },
+   {
+    "name": "Doru Doru no Mi",
+    "sub": "Mr. 3",
+    "info": "Cera dura come l'acciaio per costruire armi e trappole."
+   },
+   {
+    "name": "Toki Toki no Mi",
+    "sub": "Kozuki Toki",
+    "info": "Manda sé stessa o altri nel futuro, ma mai nel passato."
+   },
+   {
+    "name": "Zushi Zushi no Mi",
+    "sub": "Fujitora",
+    "info": "Controlla la gravità: può far precipitare meteoriti."
+   },
+   {
+    "name": "Gasu Gasu no Mi",
+    "sub": "Caesar Clown",
+    "info": "Logia del gas: toglie l'ossigeno dall'aria e crea gas letali."
+   }
+  ]
+ },
+ {
+  "id": "anime-op-arcs",
+  "group": "anime-deep",
+  "name": {
+   "it": "One Piece · Archi narrativi",
+   "en": "One Piece · Story arcs"
+  },
+  "description": {
+   "it": "Il miglior arco, da Romance Dawn a Egghead.",
+   "en": "The best arc, from Romance Dawn to Egghead."
+  },
+  "cover": {
+   "wiki": "One Piece"
+  },
+  "items": [
+   {
+    "name": "Romance Dawn",
+    "sub": "East Blue",
+    "info": "Luffy parte, incontra Coby e Zoro e sconfigge il capitano Morgan."
+   },
+   {
+    "name": "Arlong Park",
+    "sub": "East Blue",
+    "info": "La ciurma libera il villaggio di Nami dagli uomini-pesce di Arlong.",
+    "wiki": "Nami (One Piece)"
+   },
+   {
+    "name": "Alabasta",
+    "sub": "Paradise",
+    "info": "Guerra civile nel regno di Vivi e scontro con Crocodile.",
+    "wiki": "Nefertari Vivi"
+   },
+   {
+    "name": "Skypiea",
+    "sub": "Paradise",
+    "info": "Un'isola nel cielo, la città d'oro e Enel che si crede un dio.",
+    "wiki": "Enel (One Piece)"
+   },
+   {
+    "name": "Water 7",
+    "sub": "Paradise",
+    "info": "La Going Merry è a pezzi, Usopp lascia la ciurma e Robin sparisce.",
+    "wiki": "Usopp"
+   },
+   {
+    "name": "Enies Lobby",
+    "sub": "Paradise",
+    "info": "Guerra al Governo Mondiale per salvare Robin: \"Voglio vivere!\".",
+    "wiki": "Nico Robin"
+   },
+   {
+    "name": "Thriller Bark",
+    "sub": "Paradise",
+    "info": "Una nave fantasma, zombi, Gecko Moria e l'arrivo di Brook.",
+    "wiki": "Brook (One Piece)"
+   },
+   {
+    "name": "Arcipelago Sabaody",
+    "sub": "Paradise",
+    "info": "Supernove, Draghi Celesti e la separazione della ciurma.",
+    "wiki": "Silvers Rayleigh"
+   },
+   {
+    "name": "Impel Down",
+    "sub": "Paradise",
+    "info": "Luffy evade dalla prigione più sicura del mondo per salvare Ace."
+   },
+   {
+    "name": "Marineford",
+    "sub": "Paradise",
+    "info": "La guerra al vertice: la caduta di Barbabianca e la morte di Ace.",
+    "wiki": "Portgas D. Ace"
+   },
+   {
+    "name": "Isola degli Uomini-pesce",
+    "sub": "Nuovo Mondo",
+    "info": "La ciurma si ritrova dopo due anni e scende a 10.000 metri sotto il mare."
+   },
+   {
+    "name": "Punk Hazard",
+    "sub": "Nuovo Mondo",
+    "info": "Isola metà fuoco e metà ghiaccio; nasce l'alleanza con Law.",
+    "wiki": "Trafalgar Law"
+   },
+   {
+    "name": "Dressrosa",
+    "sub": "Nuovo Mondo",
+    "info": "Il torneo del Colosseo e la caduta di Doflamingo.",
+    "wiki": "Donquixote Doflamingo"
+   },
+   {
+    "name": "Zo",
+    "sub": "Nuovo Mondo",
+    "info": "Un'isola sul dorso di un elefante gigante: i Visoni e il primo Road Poneglyph."
+   },
+   {
+    "name": "Whole Cake Island",
+    "sub": "Nuovo Mondo",
+    "info": "Il matrimonio di Sanji e la fuga dal territorio di Big Mom.",
+    "wiki": "Sanji (One Piece)"
+   },
+   {
+    "name": "Wano",
+    "sub": "Nuovo Mondo",
+    "info": "Samurai, la battaglia di Onigashima contro Kaido e il Gear 5.",
+    "wiki": "Kaido (One Piece)"
+   },
+   {
+    "name": "Egghead",
+    "sub": "Nuovo Mondo",
+    "info": "L'isola del futuro del dottor Vegapunk e la verità sul mondo."
+   }
+  ]
+ },
+ {
+  "id": "anime-naruto-jutsu",
+  "group": "anime-deep",
+  "name": {
+   "it": "Naruto · Tecniche migliori",
+   "en": "Naruto · Best jutsu"
+  },
+  "description": {
+   "it": "Rasengan, Amaterasu, Shinra Tensei e le altre.",
+   "en": "Rasengan, Amaterasu, Shinra Tensei and more."
+  },
+  "cover": {
+   "wiki": "Naruto Uzumaki"
+  },
+  "items": [
+   {
+    "name": "Rasengan",
+    "sub": "Minato, Naruto",
+    "info": "Sfera di chakra rotante, senza sigilli: inventata da Minato.",
+    "wiki": "Naruto Uzumaki"
+   },
+   {
+    "name": "Rasenshuriken",
+    "sub": "Naruto",
+    "info": "Rasengan con natura vento: ferisce a livello cellulare.",
+    "wiki": "Naruto Uzumaki"
+   },
+   {
+    "name": "Moltiplicazione del corpo",
+    "sub": "Naruto",
+    "info": "Copie solide; quello che imparano torna all'originale.",
+    "wiki": "Naruto Uzumaki"
+   },
+   {
+    "name": "Sexy Jutsu",
+    "sub": "Naruto",
+    "info": "La trasformazione comica che stende Hiruzen e Jiraiya.",
+    "wiki": "Naruto Uzumaki"
+   },
+   {
+    "name": "Chidori",
+    "sub": "Kakashi, Sasuke",
+    "info": "Fulmine concentrato nella mano, con il canto di mille uccelli.",
+    "wiki": "Sasuke Uchiha"
+   },
+   {
+    "name": "Raikiri",
+    "sub": "Kakashi",
+    "info": "Il Chidori perfezionato dallo Sharingan: \"il taglialampo\".",
+    "wiki": "Kakashi Hatake"
+   },
+   {
+    "name": "Kirin",
+    "sub": "Sasuke",
+    "info": "Guida il fulmine di una tempesta vera: impossibile da schivare.",
+    "wiki": "Sasuke Uchiha"
+   },
+   {
+    "name": "Amaterasu",
+    "sub": "Itachi, Sasuke",
+    "info": "Fiamme nere che bruciano tutto e non si spengono.",
+    "wiki": "Itachi Uchiha"
+   },
+   {
+    "name": "Tsukuyomi",
+    "sub": "Itachi",
+    "info": "Illusione in cui Itachi controlla il tempo: giorni di tortura in un istante.",
+    "wiki": "Itachi Uchiha"
+   },
+   {
+    "name": "Susanoo",
+    "sub": "Itachi, Sasuke, Madara",
+    "info": "Un guerriero gigante di chakra che protegge l'utente.",
+    "wiki": "Madara Uchiha"
+   },
+   {
+    "name": "Izanagi",
+    "sub": "Danzo, Obito",
+    "info": "Trasforma la realtà in illusione per qualche istante, al costo di un occhio."
+   },
+   {
+    "name": "Izanami",
+    "sub": "Itachi",
+    "info": "Intrappola in un ciclo che si spezza solo accettando sé stessi.",
+    "wiki": "Itachi Uchiha"
+   },
+   {
+    "name": "Kotoamatsukami",
+    "sub": "Shisui",
+    "info": "Manipola la volontà della vittima senza che se ne accorga."
+   },
+   {
+    "name": "Kamui",
+    "sub": "Obito, Kakashi",
+    "info": "Teletrasporto in un'altra dimensione e corpo intangibile.",
+    "wiki": "Obito Uchiha"
+   },
+   {
+    "name": "Shinra Tensei",
+    "sub": "Pain",
+    "info": "Onda repulsiva che ha raso al suolo il Villaggio della Foglia.",
+    "wiki": "Pain (Naruto)"
+   },
+   {
+    "name": "Chibaku Tensei",
+    "sub": "Pain, Madara",
+    "info": "Crea un satellite di roccia che imprigiona il bersaglio.",
+    "wiki": "Pain (Naruto)"
+   },
+   {
+    "name": "Edo Tensei",
+    "sub": "Tobirama, Orochimaru, Kabuto",
+    "info": "Riporta in vita i morti come corpi immortali da controllare.",
+    "wiki": "Kabuto Yakushi"
+   },
+   {
+    "name": "Dio del tuono volante",
+    "sub": "Minato, Tobirama",
+    "info": "Teletrasporto istantaneo verso un sigillo: il \"Lampo Giallo\".",
+    "wiki": "Minato Namikaze"
+   },
+   {
+    "name": "Otto Porte Interne",
+    "sub": "Might Guy",
+    "info": "Toglie i limiti del corpo; l'ottava porta porta alla morte (Guy contro Madara).",
+    "wiki": "Might Guy"
+   },
+   {
+    "name": "Tsukuyomi Infinito",
+    "sub": "Madara, Obito",
+    "info": "Illusione proiettata sulla luna che intrappola il mondo intero in un sogno.",
+    "wiki": "Madara Uchiha"
+   },
+   {
+    "name": "Arte del Legno",
+    "sub": "Hashirama",
+    "info": "Crea foreste intere e sottomette i cercoteri.",
+    "wiki": "Hashirama Senju"
+   },
+   {
+    "name": "Possessione dell'ombra",
+    "sub": "Shikamaru",
+    "info": "Lega la sua ombra a quella dell'avversario e lo controlla.",
+    "wiki": "Shikamaru Nara"
+   },
+   {
+    "name": "Funerale nella sabbia",
+    "sub": "Gaara",
+    "info": "Avvolge il nemico nella sabbia e lo schiaccia.",
+    "wiki": "Gaara"
+   },
+   {
+    "name": "Modalità Eremitica",
+    "sub": "Jiraiya, Naruto",
+    "info": "Assorbe l'energia naturale per potenziare il corpo e i sensi.",
+    "wiki": "Jiraiya (Naruto)"
+   }
+  ]
+ },
+ {
+  "id": "anime-naruto-jinchuriki",
+  "group": "anime-deep",
+  "name": {
+   "it": "Naruto · Jinchūriki",
+   "en": "Naruto · Jinchūriki"
+  },
+  "description": {
+   "it": "I portatori delle bestie con la coda, dall'Una Coda al Dieci Code.",
+   "en": "The hosts of the tailed beasts, from One- to Ten-Tails."
+  },
+  "cover": {
+   "wiki": "Killer Bee"
+  },
+  "items": [
+   {
+    "name": "Gaara",
+    "sub": "Shukaku · una coda",
+    "info": "Il Kazekage della Sabbia, insonne da bambino per colpa di Shukaku.",
+    "wiki": "Gaara"
+   },
+   {
+    "name": "Yugito Nii",
+    "sub": "Matatabi · due code",
+    "info": "Kunoichi della Nuvola, si trasforma in un gatto di fiamme blu."
+   },
+   {
+    "name": "Yagura",
+    "sub": "Isobu · tre code",
+    "info": "Il Quarto Mizukage, controllato da Obito durante gli anni sanguinosi della Nebbia."
+   },
+   {
+    "name": "Roshi",
+    "sub": "Son Goku · quattro code",
+    "info": "Veterano della Roccia che usa l'Arte della lava."
+   },
+   {
+    "name": "Han",
+    "sub": "Kokuo · cinque code",
+    "info": "Ninja della Roccia corazzato che usa l'Arte del vapore."
+   },
+   {
+    "name": "Utakata",
+    "sub": "Saiken · sei code",
+    "info": "Ninja disertore della Nebbia che combatte con le bolle."
+   },
+   {
+    "name": "Fu",
+    "sub": "Chomei · sette code",
+    "info": "Kunoichi della Cascata, vola con le ali dello scarabeo."
+   },
+   {
+    "name": "Killer Bee",
+    "sub": "Gyuki · otto code",
+    "info": "Il rapper della Nuvola, in perfetta armonia con la sua bestia.",
+    "wiki": "Killer Bee"
+   },
+   {
+    "name": "Naruto Uzumaki",
+    "sub": "Kurama · nove code",
+    "info": "Da emarginato a eroe: diventa amico di Kurama.",
+    "wiki": "Naruto Uzumaki"
+   },
+   {
+    "name": "Kushina Uzumaki",
+    "sub": "Kurama · nove code",
+    "info": "La madre di Naruto, seconda jinchūriki della Volpe."
+   },
+   {
+    "name": "Mito Uzumaki",
+    "sub": "Kurama · nove code",
+    "info": "Moglie di Hashirama e prima jinchūriki della Volpe."
+   },
+   {
+    "name": "Rin Nohara",
+    "sub": "Isobu · tre code",
+    "info": "Compagna di Kakashi e Obito: la sua morte cambia la storia."
+   },
+   {
+    "name": "Obito Uchiha",
+    "sub": "Jubi · dieci code",
+    "info": "Diventa jinchūriki del Dieci Code durante la Quarta Guerra.",
+    "wiki": "Obito Uchiha"
+   },
+   {
+    "name": "Madara Uchiha",
+    "sub": "Jubi · dieci code",
+    "info": "Assorbe il Dieci Code e diventa quasi un dio.",
+    "wiki": "Madara Uchiha"
+   },
+   {
+    "name": "Hagoromo Otsutsuki",
+    "sub": "Jubi · dieci code",
+    "info": "L'Eremita delle Sei Vie, il primo jinchūriki della storia."
+   }
+  ]
+ },
+ {
+  "id": "anime-naruto-dojutsu",
+  "group": "anime-deep",
+  "name": {
+   "it": "Naruto · Dōjutsu",
+   "en": "Naruto · Dōjutsu"
+  },
+  "description": {
+   "it": "Gli occhi più potenti dello shinobi: un torneo lampo.",
+   "en": "The strongest eyes in the shinobi world: a quick bracket."
+  },
+  "cover": {
+   "wiki": "Itachi Uchiha"
+  },
+  "items": [
+   {
+    "name": "Sharingan",
+    "sub": "Clan Uchiha",
+    "info": "Legge e copia le tecniche, prevede i movimenti, crea illusioni.",
+    "wiki": "Sasuke Uchiha"
+   },
+   {
+    "name": "Mangekyo Sharingan",
+    "sub": "Itachi, Sasuke, Obito",
+    "info": "Si risveglia con un grande dolore: dà Amaterasu, Tsukuyomi, Kamui.",
+    "wiki": "Itachi Uchiha"
+   },
+   {
+    "name": "Mangekyo Sharingan Eterno",
+    "sub": "Madara, Sasuke",
+    "info": "Si ottiene con gli occhi di un fratello: niente più cecità.",
+    "wiki": "Madara Uchiha"
+   },
+   {
+    "name": "Rinnegan",
+    "sub": "Nagato, Madara, Sasuke",
+    "info": "Gli occhi dell'Eremita: le Sei Vie di Pain e tutti gli elementi.",
+    "wiki": "Pain (Naruto)"
+   },
+   {
+    "name": "Rinne Sharingan",
+    "sub": "Kaguya, Madara",
+    "info": "L'occhio del Dieci Code: proietta lo Tsukuyomi Infinito.",
+    "wiki": "Kaguya Ōtsutsuki"
+   },
+   {
+    "name": "Byakugan",
+    "sub": "Clan Hyuga",
+    "info": "Visione a quasi 360° attraverso i corpi e i punti del chakra.",
+    "wiki": "Neji Hyuga"
+   },
+   {
+    "name": "Tenseigan",
+    "sub": "Toneri Otsutsuki",
+    "info": "Nato dall'unione di Byakugan e chakra Otsutsuki (film The Last)."
+   },
+   {
+    "name": "Jogan",
+    "sub": "Boruto",
+    "info": "Vede le altre dimensioni e i flussi del chakra.",
+    "wiki": "Boruto Uzumaki"
+   }
+  ]
+ },
+ {
+  "id": "anime-db-transformations",
+  "group": "anime-deep",
+  "name": {
+   "it": "Dragon Ball · Trasformazioni",
+   "en": "Dragon Ball · Transformations"
+  },
+  "description": {
+   "it": "Dal Super Saiyan all'Ultra Istinto.",
+   "en": "From Super Saiyan to Ultra Instinct."
+  },
+  "cover": {
+   "wiki": "Goku"
+  },
+  "items": [
+   {
+    "name": "Super Saiyan",
+    "sub": "Goku su Namecc",
+    "info": "Capelli dorati: nasce dalla rabbia per la morte di Crilin.",
+    "wiki": "Goku"
+   },
+   {
+    "name": "Super Saiyan 2",
+    "sub": "Gohan contro Cell",
+    "info": "Aura con scintille: Gohan lo scatena contro i Cell Jr.",
+    "wiki": "Gohan"
+   },
+   {
+    "name": "Super Saiyan 3",
+    "sub": "Goku contro Majin Bu",
+    "info": "Capelli lunghissimi e niente sopracciglia: potentissimo ma consuma troppa energia.",
+    "wiki": "Goku"
+   },
+   {
+    "name": "Super Saiyan 4",
+    "sub": "Goku in GT",
+    "info": "Pelliccia rossa e forza dello scimmione, con controllo totale.",
+    "wiki": "Goku"
+   },
+   {
+    "name": "Super Saiyan God",
+    "sub": "Goku contro Beerus",
+    "info": "Capelli rossi e potere divino, frutto del rituale di sei Saiyan.",
+    "wiki": "Goku"
+   },
+   {
+    "name": "Super Saiyan Blue",
+    "sub": "Goku e Vegeta",
+    "info": "Ki divino con la forma del Super Saiyan.",
+    "wiki": "Vegeta"
+   },
+   {
+    "name": "Ultra Istinto",
+    "sub": "Goku",
+    "info": "Il corpo si muove da solo, senza pensare: la tecnica degli angeli.",
+    "wiki": "Goku"
+   },
+   {
+    "name": "Ultra Ego",
+    "sub": "Vegeta",
+    "info": "La via degli dei della distruzione: più colpi incassa, più diventa forte.",
+    "wiki": "Vegeta"
+   },
+   {
+    "name": "Super Saiyan Rosé",
+    "sub": "Goku Black",
+    "info": "Il Super Saiyan divino di Zamasu nel corpo di Goku.",
+    "wiki": "Zamasu"
+   },
+   {
+    "name": "Super Saiyan leggendario",
+    "sub": "Broly",
+    "info": "Potenza sconfinata e fuori controllo.",
+    "wiki": "Broly"
+   },
+   {
+    "name": "Gohan Beast",
+    "sub": "Gohan in Super Hero",
+    "info": "Si risveglia vedendo Piccolo a terra: capelli bianchi e potere enorme.",
+    "wiki": "Gohan"
+   },
+   {
+    "name": "Gohan Ultimate",
+    "sub": "Gohan contro Majin Bu",
+    "info": "Il potenziale nascosto liberato dal Vecchio Kaiohshin.",
+    "wiki": "Gohan"
+   },
+   {
+    "name": "Piccolo Arancione",
+    "sub": "Piccolo in Super Hero",
+    "info": "Il potenziamento di Shenron rende Piccolo un gigante arancione.",
+    "wiki": "Piccolo (Dragon Ball)"
+   },
+   {
+    "name": "Golden Freezer",
+    "sub": "Freezer",
+    "info": "Freezer si allena per la prima volta: forma dorata.",
+    "wiki": "Frieza"
+   },
+   {
+    "name": "Black Freezer",
+    "sub": "Freezer",
+    "info": "Dieci anni di allenamento nella Stanza dello Spirito e del Tempo: atterra Goku e Vegeta.",
+    "wiki": "Frieza"
+   },
+   {
+    "name": "Oozaru",
+    "sub": "Saiyan con la coda",
+    "info": "Lo scimmione gigante sotto la luna piena.",
+    "wiki": "Vegeta"
+   }
+  ]
+ },
+ {
+  "id": "anime-db-techniques",
+  "group": "anime-deep",
+  "name": {
+   "it": "Dragon Ball · Tecniche",
+   "en": "Dragon Ball · Techniques"
+  },
+  "description": {
+   "it": "Kamehameha, Final Flash, Genki Dama…",
+   "en": "Kamehameha, Final Flash, Spirit Bomb…"
+  },
+  "cover": {
+   "wiki": "Vegeta"
+  },
+  "items": [
+   {
+    "name": "Kamehameha",
+    "sub": "Muten Roshi, Goku",
+    "info": "L'onda energetica più famosa: 50 anni di studio per Roshi, una prova per Goku.",
+    "wiki": "Master Roshi"
+   },
+   {
+    "name": "Genki Dama",
+    "sub": "Goku",
+    "info": "Una sfera fatta dell'energia donata da tutti gli esseri viventi.",
+    "wiki": "Goku"
+   },
+   {
+    "name": "Final Flash",
+    "sub": "Vegeta",
+    "info": "Un raggio devastante sparato con le mani unite, contro Cell perfetto.",
+    "wiki": "Vegeta"
+   },
+   {
+    "name": "Galick Ho",
+    "sub": "Vegeta",
+    "info": "L'onda viola che sfida il Kamehameha di Goku.",
+    "wiki": "Vegeta"
+   },
+   {
+    "name": "Big Bang Attack",
+    "sub": "Vegeta",
+    "info": "Una sfera di energia sparata da una mano aperta.",
+    "wiki": "Vegeta"
+   },
+   {
+    "name": "Makankosappo",
+    "sub": "Piccolo",
+    "info": "Un raggio a spirale che perfora tutto: uccide Radish.",
+    "wiki": "Piccolo (Dragon Ball)"
+   },
+   {
+    "name": "Masenko",
+    "sub": "Gohan",
+    "info": "Onda energetica sparata con le mani sopra la testa, insegnata da Piccolo.",
+    "wiki": "Gohan"
+   },
+   {
+    "name": "Kienzan",
+    "sub": "Crilin",
+    "info": "Un disco di energia tagliente che affetta quasi tutto.",
+    "wiki": "Krillin"
+   },
+   {
+    "name": "Taiyoken",
+    "sub": "Tenshinhan, Crilin",
+    "info": "Un lampo accecante: la fuga perfetta.",
+    "wiki": "Tien Shinhan"
+   },
+   {
+    "name": "Kikoho",
+    "sub": "Tenshinhan",
+    "info": "Raffica di energia a forma di triangolo che consuma la vita.",
+    "wiki": "Tien Shinhan"
+   },
+   {
+    "name": "Kaiohken",
+    "sub": "Goku",
+    "info": "Moltiplica la forza per qualche istante, a costo di distruggere il corpo.",
+    "wiki": "Goku"
+   },
+   {
+    "name": "Teletrasporto",
+    "sub": "Goku",
+    "info": "Si teletrasporta da chiunque di cui senta l'aura.",
+    "wiki": "Goku"
+   },
+   {
+    "name": "Death Ball",
+    "sub": "Freezer",
+    "info": "Una sfera capace di distruggere un intero pianeta.",
+    "wiki": "Frieza"
+   },
+   {
+    "name": "Danza della fusione",
+    "sub": "Goten e Trunks",
+    "info": "Due guerrieri di forza simile si fondono per 30 minuti: nasce Gotenks.",
+    "wiki": "Trunks (Dragon Ball)"
+   },
+   {
+    "name": "Fusione Potara",
+    "sub": "Goku e Vegeta",
+    "info": "Orecchini divini che fondono due persone: nasce Vegeth.",
+    "wiki": "Vegito"
+   },
+   {
+    "name": "Hakai",
+    "sub": "Beerus",
+    "info": "La distruzione degli dei: cancella chiunque dall'esistenza.",
+    "wiki": "Beerus"
+   }
+  ]
+ },
+ {
+  "id": "anime-ds-breathing",
+  "group": "anime-deep",
+  "name": {
+   "it": "Demon Slayer · Respirazioni",
+   "en": "Demon Slayer · Breathing styles"
+  },
+  "description": {
+   "it": "Lo stile di combattimento più bello.",
+   "en": "The coolest fighting style."
+  },
+  "cover": {
+   "wiki": "Kyojuro Rengoku"
+  },
+  "items": [
+   {
+    "name": "Respirazione del Sole",
+    "sub": "Yoriichi, Tanjiro",
+    "info": "La prima respirazione, da cui derivano tutte le altre: Tanjiro la conosce come Hinokami Kagura.",
+    "wiki": "Yoriichi Tsugikuni"
+   },
+   {
+    "name": "Respirazione dell'Acqua",
+    "sub": "Giyu, Tanjiro",
+    "info": "Movimenti fluidi e adattabili: l'undicesima forma, Bonaccia, è di Giyu.",
+    "wiki": "Giyu Tomioka"
+   },
+   {
+    "name": "Respirazione della Fiamma",
+    "sub": "Rengoku",
+    "info": "Colpi potenti e diretti: \"Purgatorio\", la nona forma.",
+    "wiki": "Kyojuro Rengoku"
+   },
+   {
+    "name": "Respirazione del Tuono",
+    "sub": "Zenitsu",
+    "info": "Velocità estrema: Zenitsu ne sa una sola forma e la porta alla perfezione.",
+    "wiki": "Zenitsu Agatsuma"
+   },
+   {
+    "name": "Respirazione del Vento",
+    "sub": "Sanemi",
+    "info": "Tagli violenti come raffiche.",
+    "wiki": "Sanemi Shinazugawa"
+   },
+   {
+    "name": "Respirazione della Pietra",
+    "sub": "Gyomei",
+    "info": "Usa un'ascia e una palla chiodata legate da una catena: la più forte tra i Pilastri.",
+    "wiki": "Gyomei Himejima"
+   },
+   {
+    "name": "Respirazione della Nebbia",
+    "sub": "Muichiro",
+    "info": "Movimenti che confondono e spariscono come nebbia.",
+    "wiki": "Muichiro Tokito"
+   },
+   {
+    "name": "Respirazione dell'Amore",
+    "sub": "Mitsuri",
+    "info": "Spada sottile e flessibile come una frusta.",
+    "wiki": "Mitsuri Kanroji"
+   },
+   {
+    "name": "Respirazione dell'Insetto",
+    "sub": "Shinobu",
+    "info": "Colpi di punta che iniettano veleno di glicine.",
+    "wiki": "Shinobu Kocho"
+   },
+   {
+    "name": "Respirazione del Serpente",
+    "sub": "Obanai",
+    "info": "Lama ondulata che segue traiettorie imprevedibili.",
+    "wiki": "Obanai Iguro"
+   },
+   {
+    "name": "Respirazione del Suono",
+    "sub": "Tengen",
+    "info": "Esplosivi e il \"punteggio\" musicale per leggere l'avversario.",
+    "wiki": "Tengen Uzui"
+   },
+   {
+    "name": "Respirazione del Fiore",
+    "sub": "Kanao",
+    "info": "Movimenti eleganti; l'ultima forma potenzia la vista a costo di perderla.",
+    "wiki": "Kanao Tsuyuri"
+   },
+   {
+    "name": "Respirazione della Bestia",
+    "sub": "Inosuke",
+    "info": "Inventata da Inosuke: due lame seghettate e istinto puro.",
+    "wiki": "Inosuke Hashibira"
+   },
+   {
+    "name": "Respirazione della Luna",
+    "sub": "Kokushibo",
+    "info": "Lune crescenti che si moltiplicano attorno a ogni fendente.",
+    "wiki": "Kokushibo"
+   }
+  ]
+ },
+ {
+  "id": "anime-jjk-domains",
+  "group": "anime-deep",
+  "name": {
+   "it": "Jujutsu Kaisen · Espansioni del dominio",
+   "en": "Jujutsu Kaisen · Domain expansions"
+  },
+  "description": {
+   "it": "Il dominio più forte, da Gojo a Sukuna.",
+   "en": "The strongest domain, from Gojo to Sukuna."
+  },
+  "cover": {
+   "wiki": "Satoru Gojo"
+  },
+  "items": [
+   {
+    "name": "Vuoto Infinito",
+    "sub": "Satoru Gojo",
+    "info": "Sommerge la vittima di informazioni infinite: resta paralizzata.",
+    "wiki": "Satoru Gojo"
+   },
+   {
+    "name": "Santuario Malevolo",
+    "sub": "Ryomen Sukuna",
+    "info": "Nessuna barriera: tagli incessanti su tutto ciò che c'è nel raggio d'azione.",
+    "wiki": "Ryomen Sukuna"
+   },
+   {
+    "name": "Self-Embodiment of Perfection",
+    "sub": "Mahito",
+    "info": "Dentro il dominio Mahito tocca l'anima di chiunque e la rimodella.",
+    "wiki": "Mahito (Jujutsu Kaisen)"
+   },
+   {
+    "name": "Coffin of the Iron Mountain",
+    "sub": "Jogo",
+    "info": "L'interno di un vulcano: un calore che incenerisce all'istante.",
+    "wiki": "Jogo (Jujutsu Kaisen)"
+   },
+   {
+    "name": "Horizon of the Captivating Skandha",
+    "sub": "Dagon",
+    "info": "Una spiaggia da cui escono shikigami-pesci all'infinito."
+   },
+   {
+    "name": "Chimera Shadow Garden",
+    "sub": "Megumi Fushiguro",
+    "info": "Un dominio incompleto di ombre liquide pieno di shikigami.",
+    "wiki": "Megumi Fushiguro"
+   },
+   {
+    "name": "Idle Death Gamble",
+    "sub": "Kinji Hakari",
+    "info": "Un pachinko: se esce il jackpot, Hakari è immortale per 4 minuti e 11 secondi.",
+    "wiki": "Kinji Hakari"
+   },
+   {
+    "name": "Deadly Sentencing",
+    "sub": "Hiromi Higuruma",
+    "info": "Un processo: se l'accusato è colpevole perde la sua tecnica, o subisce la condanna a morte.",
+    "wiki": "Hiromi Higuruma"
+   },
+   {
+    "name": "Authentic Mutual Love",
+    "sub": "Yuta Okkotsu",
+    "info": "Spade infinite che contengono le tecniche che Yuta ha copiato.",
+    "wiki": "Yuta Okkotsu"
+   },
+   {
+    "name": "Womb Profusion",
+    "sub": "Kenjaku",
+    "info": "Il dominio dello stregone millenario.",
+    "wiki": "Kenjaku"
+   },
+   {
+    "name": "Time Cell Moon Palace",
+    "sub": "Naoya Zen'in",
+    "info": "Ogni movimento del bersaglio deve seguire le regole dei 24 fotogrammi di Naoya."
+   },
+   {
+    "name": "Ceremonial Sea of Light",
+    "sub": "Hanami",
+    "info": "Il dominio della maledizione della foresta, nato dall'odio per gli umani."
+   }
+  ]
+ }
+]

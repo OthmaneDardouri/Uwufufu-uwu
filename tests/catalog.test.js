@@ -82,3 +82,12 @@ test("wikipedia list pages and section redirects never become pictures", async (
   assert.equal(isGenericPage("Mercury (disambiguation)", false), true);
   assert.equal(isGenericPage("Monkey D. Luffy", false), false);
 });
+
+test("fan-level anime categories explain every item", () => {
+  const deep = categories.filter((x) => x.group === "anime-deep");
+  assert.ok(deep.length >= 8);
+  for (const c of deep) {
+    for (const i of c.items) assert.ok(typeof i.info === "string" && i.info.length > 10 && i.info.length <= 160, `${c.id}: ${i.name}`);
+    assert.ok(resolveItems(c).every((i) => i.info), `${c.id}: info lost in resolveItems`);
+  }
+});

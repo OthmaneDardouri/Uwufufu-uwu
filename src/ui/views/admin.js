@@ -117,7 +117,7 @@ export default function admin(root, ctx) {
         </div>
         <ul class="draft-items">
           ${d.items.map((it, i) => html`
-            <li>${picture(it, "draft-pic")}<span><b>${it.name}</b><small>${it.sub ?? ""}</small></span>
+            <li>${picture(it, "draft-pic")}<span><b>${it.name}</b><small>${it.sub ?? ""}</small>${it.info && html`<small class="draft-info">${localized(it.info, lang)}</small>`}</span>
               <button type="button" class="btn btn-small btn-ghost" data-remove="${i}" aria-label="${t("remove")}">✕</button></li>`)}
         </ul>
         ${errors.length ? html`<p class="notice">${errors.join(" · ")}</p>` : ""}
