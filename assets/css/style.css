@@ -314,6 +314,7 @@ label { display: block; color: var(--muted); font-size: .9em; margin-bottom: 12p
 .theme-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 0 14px; }
 .theme-grid .color input { height: 40px; padding: 2px; cursor: pointer; }
 h3.label { margin: 14px 0 8px; }
+.steps { margin: 0 0 10px; padding-left: 1.4em; color: var(--muted); display: grid; gap: 4px; }
 
 /* ---------- streamer mode ---------- */
 .streamer { border: 1px dashed color-mix(in srgb, var(--line) 45%, transparent); padding: 10px 14px; border-radius: min(var(--radius), 10px); }

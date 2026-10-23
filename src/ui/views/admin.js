@@ -5,6 +5,7 @@ import { t, lang } from "../../i18n.js";
 import { localized, validateCategory } from "../../core/catalog.js";
 import { sanitizeTheme, COLOR_KEYS, FONTS, EFFECTS } from "../../core/theme.js";
 import * as api from "../../services/api.js";
+import { categoryPrompt, themePrompt, claudeUrl, extractJson, themesFromAnswer } from "../../core/prompts.js";
 import { applyTheme, restoreTheme, listThemes, currentThemeId } from "../../services/themes.js";
 
 const MAX_IMAGE_SIDE = 1024;
@@ -36,7 +37,7 @@ function download(obj, filename) {
 }
 
 export default function admin(root, ctx) {
-  const state = { draft: null, variants: [], edit: null, busy: "" };
+  const state = { draft: null, variants: [], edit: null, busy: "", paste: null }; // paste: "category" | "theme" | null
 
   async function render() {
     if (!ctx.server?.admin) {
@@ -58,12 +59,13 @@ export default function admin(root, ctx) {
         <div class="admin-grid">
           <form class="panel" data-generate>
             <h2 class="label">${t("newCategory")}</h2>
-            <label>${t("idea")}<textarea name="prompt" rows="3" required minlength="3" maxlength="500" placeholder="${t("ideaPh")}" ${ctx.server.ai ? "" : "disabled"}></textarea></label>
+            <label>${t("idea")}<textarea name="prompt" rows="3" maxlength="500" placeholder="${t("ideaPh")}"></textarea></label>
             <label>${t("count")}
               <select name="count">${[16, 32, 64, 128].map((n) => html`<option ${n === 32 ? "selected" : ""}>${n}</option>`)}</select>
             </label>
             <div class="row">
-              <button class="btn btn-primary" ${ctx.server.ai && !state.busy ? "" : "disabled"}>${state.busy === "cat" ? t("generating") : t("generate")}</button>
+              <button class="btn btn-primary" ${ctx.server.ai && !state.busy ? "" : "disabled"} title="${t("viaApi")}">${state.busy === "cat" ? t("generating") : t("generate")}</button>
+              <button type="button" class="btn" data-claude-cat title="${t("viaClaudeHelp")}">${t("viaClaude")}</button>
               <label class="btn btn-ghost file">${t("importJson")}<input type="file" accept="application/json,.json" data-import hidden></label>
             </div>
           </form>
@@ -84,13 +86,15 @@ export default function admin(root, ctx) {
               </label>
             </div>
             <div class="row wrap">
-              <button class="btn btn-primary" ${ctx.server.ai && !state.busy ? "" : "disabled"}>${state.busy === "theme" ? t("generating") : t("createVariants")}</button>
+              <button class="btn btn-primary" ${ctx.server.ai && !state.busy ? "" : "disabled"} title="${t("viaApi")}">${state.busy === "theme" ? t("generating") : t("createVariants")}</button>
+              <button type="button" class="btn" data-claude-theme title="${t("viaClaudeHelp")}">${t("viaClaude")}</button>
               <button type="button" class="btn btn-ghost" data-edit-base>${t("editByHand")}</button>
               <label class="btn btn-ghost file">${t("importJson")}<input type="file" accept="application/json,.json" data-import-theme hidden></label>
             </div>
           </form>
         </div>
 
+        ${state.paste && pastePanel()}
         ${state.draft && draftEditor(state.draft)}
         ${state.variants.length ? variantsPanel() : ""}
         ${state.edit && themeEditor(state.edit)}
@@ -140,6 +144,32 @@ export default function admin(root, ctx) {
           <button type="button" class="btn btn-ghost" data-cancel-draft>${t("cancel")}</button>
         </div>
       </form>`;
+  }
+
+  function pastePanel() {
+    return html`
+      <form class="panel draft" data-paste>
+        <h2 class="label">${t("pasteTitle")}</h2>
+        <ol class="steps small">
+          <li>${t("pasteStep1")}</li>
+          ${state.paste === "theme" && state.pasteWithImage ? html`<li>${t("pasteStepImage")}</li>` : ""}
+          <li>${t("pasteStep2")}</li>
+          <li>${t("pasteStep3")}</li>
+        </ol>
+        <textarea name="answer" rows="8" placeholder="${t("pastePh")}" required></textarea>
+        <div class="row wrap">
+          <button class="btn btn-primary">${t("pasteLoad")}</button>
+          <button type="button" class="btn btn-ghost" data-reopen-claude>${t("reopenClaude")}</button>
+          <button type="button" class="btn btn-ghost" data-cancel-paste>${t("cancel")}</button>
+        </div>
+      </form>`;
+  }
+
+  /** Open Claude.ai with the prompt pre-filled; also copy it, in case the pre-fill is not supported. */
+  async function openClaude(prompt) {
+    state.lastPrompt = prompt;
+    try { await navigator.clipboard.writeText(prompt); toast(t("promptCopied")); } catch { /* clipboard blocked: the pre-filled link still works */ }
+    window.open(claudeUrl(prompt), "_blank", "noopener");
   }
 
   function variantsPanel() {
@@ -264,6 +294,7 @@ export default function admin(root, ctx) {
       }
     }
     if (form.matches("[data-generate]")) {
+      if (String(data.get("prompt") ?? "").trim().length < 3) return toast(t("ideaNeeded"), "error");
       run("cat", async () => { state.draft = await api.generateCategory(data.get("prompt"), Number(data.get("count"))); });
     }
     if (form.matches("[data-theme-form]")) {
@@ -278,6 +309,26 @@ export default function admin(root, ctx) {
         state.edit = null;
         if (state.variants[0]) applyTheme(state.variants[0]); // preview the first one right away
       });
+    }
+    if (form.matches("[data-paste]")) {
+      try {
+        const value = extractJson(data.get("answer"));
+        if (state.paste === "category") {
+          const cat = { group: "custom", ...value };
+          if (!Array.isArray(cat.items)) throw new Error("the answer has no items list");
+          const errors = validateCategory(cat);
+          if (errors.length) throw Object.assign(new Error("Invalid category"), { details: errors });
+          state.draft = cat;
+        } else {
+          state.variants = themesFromAnswer(value).map((raw) => {
+            const { theme, errors } = sanitizeTheme(raw);
+            return { ...theme, idea: raw?.idea, warnings: errors };
+          });
+          if (state.variants[0]) applyTheme(state.variants[0]);
+        }
+        state.paste = null;
+        await render();
+      } catch (err) { fail(err); }
     }
     if (form.matches("[data-theme-editor]")) {
       const { theme, errors } = themeFromForm(form);
@@ -322,6 +373,30 @@ export default function admin(root, ctx) {
       if (!confirm(t("confirmDelete", { name: localized(c.name, lang) }))) return;
       try { await api.deleteCategory(c.id); await ctx.reloadCatalog(); await render(); } catch (err) { fail(err); }
     }
+    if (el.matches("[data-claude-cat]")) {
+      const form = root.querySelector("[data-generate]");
+      const idea = form.querySelector("[name=prompt]").value.trim();
+      if (idea.length < 3) return toast(t("ideaNeeded"), "error");
+      await openClaude(categoryPrompt(idea, Number(form.querySelector("[name=count]").value)));
+      state.paste = "category";
+      await render();
+      return root.querySelector("[data-paste]")?.scrollIntoView({ behavior: "smooth" });
+    }
+    if (el.matches("[data-claude-theme]")) {
+      const form = root.querySelector("[data-theme-form]");
+      const description = form.querySelector("[name=prompt]").value.trim();
+      const baseTheme = listThemes().find((th) => th.id === form.querySelector("[name=base]").value);
+      const withImage = !!form.querySelector("[name=image]").files?.length;
+      if (!description && !baseTheme && !withImage) return toast(t("themeNeedsInput"), "error");
+      const base = baseTheme && { name: baseTheme.name, colors: baseTheme.colors, fonts: baseTheme.fonts, shape: baseTheme.shape, effects: baseTheme.effects };
+      await openClaude(themePrompt({ description, base, withImage, count: Number(form.querySelector("[name=count]").value) }));
+      state.paste = "theme";
+      state.pasteWithImage = withImage;
+      await render();
+      return root.querySelector("[data-paste]")?.scrollIntoView({ behavior: "smooth" });
+    }
+    if (el.matches("[data-reopen-claude]")) return state.lastPrompt && openClaude(state.lastPrompt);
+    if (el.matches("[data-cancel-paste]")) { state.paste = null; return render(); }
     if (el.matches("[data-preview]")) return applyTheme(state.variants[Number(el.dataset.preview)]);
     if (el.matches("[data-choose]")) {
       state.edit = copyTheme(state.variants[Number(el.dataset.choose)], "v");
