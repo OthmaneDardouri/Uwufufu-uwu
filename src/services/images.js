@@ -7,6 +7,7 @@
 // Answers are cached in localStorage so each lookup happens once per browser.
 import { generatedArt } from "../core/art.js";
 import { malImage, preloadRosters } from "./mal.js";
+import { serverImage } from "./api.js";
 
 const ARTWORK = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/";
 const WIKI_API = "https://en.wikipedia.org/w/api.php";
@@ -84,6 +85,14 @@ export async function imageFor(item) {
   if (!item) return null;
   if (item.image) return item.image;
   if (item.pokemon) return `${ARTWORK}${item.pokemon}.png`;
+  // With our own server: it searches Fandom, MyAnimeList and Wikipedia, caches, and serves the picture.
+  if (item.fandom || item.mal || item.wiki) {
+    const url = await serverImage({
+      name: item.name, char: item.mal?.char, title: item.fandom?.title, fandom: item.fandom?.wiki, wiki: item.wiki,
+    });
+    if (url) return url;
+  }
+  // Without a server (e.g. GitHub Pages) the browser asks the public APIs itself.
   if (item.mal) {
     const url = await malImage(item.mal);
     if (url) return url;
@@ -101,6 +110,13 @@ export async function imageFor(item) {
  */
 export function warm(items, limit = 128) {
   const some = items.slice(0, limit);
+  // with a server, resolve a few at a time in the background so the server cache fills up
+  if (some.some((it) => it.fandom)) {
+    let i = 0;
+    const next = () => { if (i < some.length) imageFor(some[i++]).finally(next); };
+    for (let k = 0; k < 3; k++) next();
+    return;
+  }
   // cheap lookups only: whole MyAnimeList rosters (one request per anime) and batched Wikipedia titles.
   // Per-character searches wait until the card is actually on screen.
   preloadRosters(some.flatMap((it) => it.mal?.anime ?? []));

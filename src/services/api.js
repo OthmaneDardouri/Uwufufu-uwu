@@ -36,9 +36,22 @@ async function request(path, { method = "GET", body, admin = false, timeout = 80
   }
 }
 
-/** { ok, admin, ai } or null when no server is reachable (e.g. static hosting). */
+let serverInfo = null;
+
+/** { ok, admin, ai, images } or null when no server is reachable (e.g. static hosting). */
 export async function health() {
-  try { return await request("/api/health", { timeout: 3000 }); } catch { return null; }
+  try { serverInfo = await request("/api/health", { timeout: 3000 }); } catch { serverInfo = null; }
+  return serverInfo;
+}
+
+/** Ask the server to find a picture. Resolves to a same-origin (proxied) URL, or null. */
+export async function serverImage(query) {
+  if (!serverInfo?.images) return null;
+  const params = new URLSearchParams(Object.entries(query).filter(([, v]) => v));
+  try {
+    const r = await request(`/api/image?${params}`, { timeout: 30_000 });
+    return r?.proxied ? `${base}${r.proxied}` : null;
+  } catch { return null; }
 }
 
 export async function serverCategories() {

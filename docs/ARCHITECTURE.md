@@ -97,6 +97,9 @@ La chat di Twitch si legge via WebSocket con il login anonimo `justinfan`, diret
 **Guadagno leggero.**
 Un solo link opzionale a una pagina donazioni (`supportUrl` in `config.json`), mostrato nel footer e sotto il campione. Niente pubblicità né abbonamenti: monetizzare direttamente contenuti Pokémon è esattamente ciò che attira l'attenzione dei detentori dei diritti. Il footer mostra sempre il disclaimer "progetto amatoriale non affiliato".
 
+**Immagini cercate dal server.**
+Per le voci senza immagine fissa (Frutti del Diavolo, tecniche, personaggi) il browser chiede a `/api/image`. Il server prova in ordine la wiki Fandom della serie (titolo inglese della pagina, poi il personaggio), MyAnimeList via Jikan e Wikipedia. Salva le risposte in `storage/images.json` e serve l'immagine tramite `/api/img`, un proxy limitato a tre host noti, così il browser non dipende da CORS o da limiti sui link diretti. Senza server (GitHub Pages) il browser fa da solo una versione ridotta della stessa ricerca. Se tutte le fonti falliscono compare un'immagine generata, quindi una carta non resta mai vuota. Per capire perché un'immagine manca si apre `/api/image?...&debug=1`, che mostra cosa ha risposto ogni fonte.
+
 **PWA.**
 Il service worker usa la rete come prima scelta per i file dell'app, così gli aggiornamenti arrivano subito, e la cache come prima scelta per le immagini, che non cambiano mai. Non mette mai in cache `/api`.
 

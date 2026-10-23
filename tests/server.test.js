@@ -52,7 +52,7 @@ test("serves the site but never private files", async () => {
 
 test("health reports features without secrets", async () => {
   const body = await (await fetch(`${base}/api/health`)).json();
-  assert.deepEqual(body, { ok: true, admin: true, ai: true });
+  assert.deepEqual(body, { ok: true, admin: true, ai: true, images: false });
 });
 
 test("admin routes reject missing or wrong tokens", async () => {

@@ -1,6 +1,8 @@
 // HTTP handler: static site + JSON API. Built on node:http only, no framework needed.
 //
 // Public:  GET  /api/health, /api/categories, /api/themes
+//          GET  /api/image?name=&char=&title=&fandom=&wiki=[&debug=1]   (find a picture, cached)
+//          GET  /api/img?u=<picture url>                                (same-origin proxy for found pictures)
 // Admin:   POST /api/admin/check
 //          POST /api/admin/generate              (Claude: idea -> category draft)
 //          POST /api/admin/generate-themes       (Claude: image / description / base theme -> theme variants)
@@ -14,6 +16,7 @@ import path from "node:path";
 import { validateCategory } from "../src/core/catalog.js";
 import { sanitizeTheme } from "../src/core/theme.js";
 import * as claude from "./claude.mjs";
+import { parseImageQuery } from "./images.mjs";
 
 const MIME = {
   ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".mjs": "text/javascript; charset=utf-8",
@@ -78,9 +81,9 @@ const COLLECTIONS = {
       category.group ||= "custom";
       const errors = validateCategory(category);
       if (category.items?.length > MAX_ITEMS) errors.push(`at most ${MAX_ITEMS} items`);
-      const { id, group, name, description, cover, source, malAnime } = category;
-      const items = category.items?.map(({ name, sub, info, wiki, pokemon, image, char, anime }) => ({ name, sub, info, wiki, pokemon, image, char, anime }));
-      return { errors, value: { id, group, name, description, cover, items, source, malAnime } };
+      const { id, group, name, description, cover, source, malAnime, fandom } = category;
+      const items = category.items?.map(({ name, sub, info, wiki, pokemon, image, char, anime, title }) => ({ name, sub, info, wiki, pokemon, image, char, anime, title }));
+      return { errors, value: { id, group, name, description, cover, items, source, malAnime, fandom } };
     },
   },
   themes: {
@@ -92,7 +95,24 @@ const COLLECTIONS = {
   },
 };
 
-export function createApp({ stores, config, ai = claude }) {
+// Picture hosts the proxy may fetch from (nothing else: no open proxy, no SSRF).
+const IMAGE_HOSTS = ["static.wikia.nocookie.net", "cdn.myanimelist.net", "upload.wikimedia.org"];
+const MAX_IMAGE_BYTES = 6 * 1024 * 1024;
+
+/** Simple sliding-window limiter for the public lookup endpoint (fresh lookups only). */
+function windowLimiter(max, windowMs) {
+  let hits = [];
+  return () => {
+    const now = Date.now();
+    hits = hits.filter((t) => now - t < windowMs);
+    if (hits.length >= max) return false;
+    hits.push(now);
+    return true;
+  };
+}
+
+export function createApp({ stores, config, ai = claude, images = null, fetchImpl = fetch }) {
+  const lookupAllowed = windowLimiter(240, 60_000);
   const limiter = failureLimiter();
   const publicDir = path.resolve(config.publicDir);
 
@@ -130,7 +150,30 @@ export function createApp({ stores, config, ai = claude }) {
     const route = `${req.method} ${url.pathname}`;
 
     if (route === "GET /api/health") {
-      return reply(200, { ok: true, admin: !!config.adminToken, ai: !!(config.adminToken && config.anthropicKey) });
+      return reply(200, { ok: true, admin: !!config.adminToken, ai: !!(config.adminToken && config.anthropicKey), images: !!images });
+    }
+    if (route === "GET /api/image") {
+      if (!images) throw new HttpError(503, "image lookup disabled");
+      const q = parseImageQuery(url.searchParams);
+      if (!q) throw new HttpError(400, "give at least name, char, title or wiki");
+      const debug = url.searchParams.get("debug") === "1";
+      if (!lookupAllowed()) throw new HttpError(429, "too many lookups, try again in a minute");
+      const found = await images.resolve(q, { fresh: debug });
+      const proxied = found.url ? `/api/img?${new URLSearchParams({ u: found.url })}` : null;
+      return reply(200, { url: found.url, proxied, source: found.source, cached: found.cached, ...(debug && { query: q, tried: found.tried }) },
+        { "cache-control": found.url ? "public, max-age=3600" : "no-cache" });
+    }
+    if (route === "GET /api/img") {
+      let target;
+      try { target = new URL(url.searchParams.get("u") ?? ""); } catch { throw new HttpError(400, "bad url"); }
+      if (target.protocol !== "https:" || !IMAGE_HOSTS.includes(target.hostname)) throw new HttpError(400, "host not allowed");
+      const upstream = await fetchImpl(target, { headers: { "user-agent": "NeonBracket/1.0" }, signal: AbortSignal.timeout(15_000) }).catch(() => null);
+      const type = upstream?.headers.get("content-type") ?? "";
+      if (!upstream?.ok || !type.startsWith("image/")) throw new HttpError(502, "picture unavailable");
+      const body = Buffer.from(await upstream.arrayBuffer());
+      if (body.length > MAX_IMAGE_BYTES) throw new HttpError(502, "picture too large");
+      res.writeHead(200, { "content-type": type, "content-length": body.length, "cache-control": "public, max-age=604800, immutable", ...cors });
+      return res.end(body);
     }
     const list = url.pathname.match(/^\/api\/(categories|themes)$/);
     if (list && req.method === "GET") {

@@ -5,6 +5,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createApp } from "./app.mjs";
 import { createStore } from "./store.mjs";
+import { createImageResolver } from "./images.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const env = process.env;
@@ -30,10 +31,11 @@ const stores = {
   categories: await createStore(config.dataDir, "categories"),
   themes: await createStore(config.dataDir, "themes"),
 };
-const server = http.createServer(createApp({ stores, config }));
+const images = await createImageResolver({ dir: config.dataDir });
+const server = http.createServer(createApp({ stores, config, images }));
 server.listen(config.port, config.host, () => {
   console.log(`Neon Bracket on http://localhost:${config.port}`);
   console.log(`admin: ${config.adminToken ? "on" : "off (set ADMIN_TOKEN)"} · AI: ${config.anthropicKey ? config.model : "off (set ANTHROPIC_API_KEY)"}`);
 });
 
-for (const sig of ["SIGINT", "SIGTERM"]) process.on(sig, () => server.close(() => process.exit(0)));
+for (const sig of ["SIGINT", "SIGTERM"]) process.on(sig, () => server.close(async () => { await images.flush(); process.exit(0); }));

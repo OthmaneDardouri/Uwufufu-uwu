@@ -356,25 +356,29 @@
     "name": "Barbanera",
     "sub": "Marshall D. Teach · Imperatore",
     "wiki": "Marshall D. Teach",
-    "char": "Marshall D. Teach"
+    "char": "Marshall D. Teach",
+    "title": "Marshall D. Teach"
    },
    {
     "name": "Kaido",
     "sub": "Imperatore · le Cento Bestie",
     "wiki": "Kaido (One Piece)",
-    "char": "Kaidou"
+    "char": "Kaidou",
+    "title": "Kaidou"
    },
    {
     "name": "Big Mom",
     "sub": "Charlotte Linlin · Imperatrice",
     "wiki": "Charlotte Linlin",
-    "char": "Charlotte Linlin"
+    "char": "Charlotte Linlin",
+    "title": "Charlotte Linlin"
    },
    {
     "name": "Barbabianca",
     "sub": "Edward Newgate · Imperatore",
     "wiki": "Edward Newgate",
-    "char": "Edward Newgate"
+    "char": "Edward Newgate",
+    "title": "Edward Newgate"
    },
    {
     "name": "Gol D. Roger",
@@ -444,7 +448,8 @@
   ],
   "malAnime": [
    21
-  ]
+  ],
+  "fandom": "onepiece"
  },
  {
   "id": "anime-naruto",
@@ -632,7 +637,8 @@
    1735,
    20,
    34566
-  ]
+  ],
+  "fandom": "naruto"
  },
  {
   "id": "anime-dragon-ball",
@@ -679,7 +685,8 @@
     "name": "Freezer",
     "sub": "Imperatore galattico",
     "wiki": "Frieza",
-    "char": "Frieza"
+    "char": "Frieza",
+    "title": "Frieza"
    },
    {
     "name": "Cell",
@@ -690,12 +697,14 @@
     "name": "Majin Bu",
     "sub": "il demone rosa",
     "wiki": "Majin Buu",
-    "char": "Majin Buu"
+    "char": "Majin Buu",
+    "title": "Majin Buu"
    },
    {
     "name": "Trunks",
     "sub": "dal futuro",
-    "wiki": "Trunks (Dragon Ball)"
+    "wiki": "Trunks (Dragon Ball)",
+    "title": "Future Trunks"
    },
    {
     "name": "Goten",
@@ -706,7 +715,8 @@
     "name": "Crilin",
     "sub": "miglior amico di Goku",
     "wiki": "Krillin",
-    "char": "Krillin"
+    "char": "Krillin",
+    "title": "Krillin"
    },
    {
     "name": "Bulma",
@@ -717,12 +727,14 @@
     "name": "Muten Roshi",
     "sub": "il Genio delle Tartarughe",
     "wiki": "Master Roshi",
-    "char": "Kame-Sennin"
+    "char": "Kame-Sennin",
+    "title": "Master Roshi"
    },
    {
     "name": "Tenshinhan",
     "sub": "il terzo occhio",
-    "wiki": "Tien Shinhan"
+    "wiki": "Tien Shinhan",
+    "title": "Tien Shinhan"
    },
    {
     "name": "Yamcha",
@@ -733,13 +745,15 @@
     "name": "C-18",
     "sub": "Androide",
     "wiki": "Android 18",
-    "char": "Android 18"
+    "char": "Android 18",
+    "title": "Android 18"
    },
    {
     "name": "C-17",
     "sub": "Androide",
     "wiki": "Android 17",
-    "char": "Android 17"
+    "char": "Android 17",
+    "title": "Android 17"
    },
    {
     "name": "Broly",
@@ -750,13 +764,15 @@
     "name": "Bardack",
     "sub": "padre di Goku",
     "wiki": "Bardock",
-    "char": "Bardock"
+    "char": "Bardock",
+    "title": "Bardock"
    },
    {
     "name": "Radish",
     "sub": "fratello di Goku",
     "wiki": "Raditz",
-    "char": "Raditz"
+    "char": "Raditz",
+    "title": "Raditz"
    },
    {
     "name": "Nappa",
@@ -792,18 +808,21 @@
     "name": "Vegeth",
     "sub": "fusione Potara",
     "wiki": "Vegito",
-    "char": "Vegetto"
+    "char": "Vegetto",
+    "title": "Vegito"
    },
    {
     "name": "Mr. Satan",
     "sub": "campione del mondo",
-    "wiki": "Mr. Satan"
+    "wiki": "Mr. Satan",
+    "title": "Mr. Satan"
    },
    {
     "name": "Chichi",
     "sub": "moglie di Goku",
     "wiki": "Chi-Chi",
-    "char": "Chi-Chi"
+    "char": "Chi-Chi",
+    "title": "Chi-Chi"
    },
    {
     "name": "Shenron",
@@ -824,14 +843,16 @@
     "name": "C-16",
     "sub": "Androide",
     "wiki": "Android 16",
-    "char": "Android 16"
+    "char": "Android 16",
+    "title": "Android 16"
    }
   ],
   "malAnime": [
    813,
    30694,
    223
-  ]
+  ],
+  "fandom": "dragonball"
  },
  {
   "id": "anime-demon-slayer",
@@ -953,7 +974,8 @@
     "name": "Doma",
     "sub": "Luna Superiore 2",
     "wiki": "Doma (Demon Slayer)",
-    "char": "Douma"
+    "char": "Douma",
+    "title": "Doma"
    },
    {
     "name": "Kokushibo",
@@ -964,7 +986,8 @@
     "name": "Gyutaro e Daki",
     "sub": "Luna Superiore 6",
     "wiki": "Daki and Gyutaro",
-    "char": "Daki"
+    "char": "Daki",
+    "title": "Daki"
    },
    {
     "name": "Rui",
@@ -979,7 +1002,8 @@
   ],
   "malAnime": [
    38000
-  ]
+  ],
+  "fandom": "kimetsu-no-yaiba"
  },
  {
   "id": "anime-jujutsu-kaisen",
@@ -1106,7 +1130,8 @@
   "malAnime": [
    40748,
    51009
-  ]
+  ],
+  "fandom": "jujutsu-kaisen"
  },
  {
   "id": "anime-villains",

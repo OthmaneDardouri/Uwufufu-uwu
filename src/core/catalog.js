@@ -6,6 +6,8 @@
 // `info` is a short explanation shown on hover (e.g. what a Devil Fruit does).
 // Anime pictures: category `malAnime: [MyAnimeList anime ids]` + item `char` (character to show,
 // defaults to the item name) and optional item `anime` (ids, overrides the category's).
+// Category `fandom: "onepiece"` + item `title` (English page title on that Fandom wiki) give the server
+// a precise picture source for techniques, fruits, arcs…
 // `name` / `description` may be a plain string or { it, en }.
 
 export const MIN_ITEMS = 2;
@@ -70,7 +72,8 @@ export function resolveItems(category, pokemon = []) {
     seen.add(key);
     const anime = it.anime ?? category.malAnime;
     const mal = anime?.length || it.char ? { anime: anime ?? [], char: it.char ?? it.name } : undefined;
-    return [{ key, name: it.name, sub: it.sub, info: it.info, image: it.image, wiki: it.wiki, pokemon: it.pokemon, mal }];
+    const fandom = category.fandom ? { wiki: category.fandom, title: it.title } : undefined;
+    return [{ key, name: it.name, sub: it.sub, info: it.info, image: it.image, wiki: it.wiki, pokemon: it.pokemon, mal, fandom }];
   });
 }
 
