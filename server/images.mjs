@@ -11,7 +11,8 @@ import { createHash } from "node:crypto";
 import path from "node:path";
 import { sameName } from "../src/core/art.js";
 
-const UA = "NeonBracket/1.0 (personal fan project; image lookup)";
+// Wikimedia asks bots to say who they are and how to reach them, or it answers 429/403
+export const UA = "NeonBracket/1.0 (https://github.com/OthmaneDardouri/Uwufufu-uwu; fan project picture lookup)";
 const MISS_TTL = 24 * 3600_000; // retry misses after a day
 const WIKI_RE = /^[a-z0-9-]{2,40}$/;
 
@@ -49,26 +50,43 @@ export async function createImageResolver({ dir, fetchImpl = fetch, now = () => 
     saveTimer = setTimeout(writeNow, 500);
   };
 
+  const pause = (ms) => new Promise((r) => setTimeout(r, ms));
+
+  /** GET JSON; on 429 or a dropped connection wait a little and try again (3 tries). */
   async function getJson(url) {
-    const res = await fetchImpl(url, { headers: { "user-agent": UA, accept: "application/json" }, signal: AbortSignal.timeout(10_000) });
-    if (!res.ok) throw new Error(`${new URL(url).host} ${res.status}`);
-    return res.json();
+    for (let attempt = 1; ; attempt++) {
+      let res;
+      try {
+        res = await fetchImpl(url, { headers: { "user-agent": UA, accept: "application/json" }, signal: AbortSignal.timeout(15_000) });
+      } catch (err) {
+        if (attempt >= 3) throw err;
+        await pause(1500 * attempt);
+        continue;
+      }
+      if (res.status === 429 && attempt < 3) { await pause(3000 * attempt); continue; }
+      if (!res.ok) throw new Error(`${new URL(url).host} ${res.status}`);
+      return res.json();
+    }
   }
 
-  // Jikan allows ~3 requests/second: keep them in a line
-  let jikanLine = Promise.resolve();
-  const jikan = (url) => {
-    const p = jikanLine.then(() => getJson(url));
-    jikanLine = p.catch(() => {}).then(() => new Promise((r) => setTimeout(r, 400)));
-    return p;
+  // Jikan allows ~3 requests/second and Wikipedia dislikes bursts: one request at a time each
+  const queue = (gap) => {
+    let line = Promise.resolve();
+    return (url) => {
+      const p = line.then(() => getJson(url));
+      line = p.catch(() => {}).then(() => pause(gap));
+      return p;
+    };
   };
+  const jikan = queue(400);
+  const wikipedia = queue(150);
 
-  async function mediawikiImage(base, titles) {
+  async function mediawikiImage(base, titles, get = getJson) {
     const params = new URLSearchParams({
       action: "query", format: "json", redirects: "1", prop: "pageimages", piprop: "thumbnail",
       pithumbsize: "480", pilicense: "any", titles: titles.join("|"),
     });
-    const { query = {} } = await getJson(`${base}?${params}`);
+    const { query = {} } = await get(`${base}?${params}`);
     const hop = new Map([...(query.normalized ?? []), ...(query.redirects ?? [])].map((r) => [r.from, r]));
     const pages = new Map(Object.values(query.pages ?? {}).map((p) => [p.title, p.thumbnail?.source ?? null]));
     for (const t of titles) { // keep the caller's order of preference
@@ -81,19 +99,8 @@ export async function createImageResolver({ dir, fetchImpl = fetch, now = () => 
     return null;
   }
 
-  // Fandom wikis, three ways, best first: the page's lead image (PageImages), Fandom's own
-  // "main image" service (ImageServing), then the first big picture used on the page.
+  // Fandom wikis, two ways: the page's lead image (PageImages), else the first big picture used on the page.
   const fandomApi = (wiki) => `https://${wiki}.fandom.com/api.php`;
-
-  async function fandomServing(wiki, titles) {
-    for (const title of titles) {
-      const params = new URLSearchParams({ action: "imageserving", format: "json", wisTitle: title });
-      const data = await getJson(`${fandomApi(wiki)}?${params}`);
-      const url = data?.image?.imageserving;
-      if (url && !/logo|icon|wiki-wordmark|site-logo/i.test(url)) return url;
-    }
-    return null;
-  }
 
   async function fandomGallery(wiki, titles) {
     for (const title of titles) {
@@ -123,7 +130,7 @@ export async function createImageResolver({ dir, fetchImpl = fetch, now = () => 
     };
     if (q.fandom) {
       const titles = [...new Set([q.title, q.name, q.char].filter(Boolean))];
-      for (const [step, fn] of [["lead", mediawikiImage], ["imageserving", fandomServing], ["gallery", fandomGallery]]) {
+      for (const [step, fn] of [["lead", mediawikiImage], ["gallery", fandomGallery]]) {
         const url = await attempt(`fandom:${q.fandom}:${step}`, () => (step === "lead" ? fn(fandomApi(q.fandom), titles) : fn(q.fandom, titles)));
         if (url) return { url, source: "fandom" };
       }
@@ -139,7 +146,7 @@ export async function createImageResolver({ dir, fetchImpl = fetch, now = () => 
       if (url) return { url, source: "myanimelist" };
     }
     if (q.wiki) {
-      const url = await attempt("wikipedia", () => mediawikiImage("https://en.wikipedia.org/w/api.php", [q.wiki]));
+      const url = await attempt("wikipedia", () => mediawikiImage("https://en.wikipedia.org/w/api.php", [q.wiki], wikipedia));
       if (url) return { url, source: "wikipedia" };
     }
     return { url: null, source: null };

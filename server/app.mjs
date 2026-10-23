@@ -16,7 +16,7 @@ import path from "node:path";
 import { validateCategory } from "../src/core/catalog.js";
 import { sanitizeTheme } from "../src/core/theme.js";
 import * as claude from "./claude.mjs";
-import { parseImageQuery } from "./images.mjs";
+import { parseImageQuery, UA } from "./images.mjs";
 
 const MIME = {
   ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".mjs": "text/javascript; charset=utf-8",
@@ -184,7 +184,7 @@ export function createApp({ stores, config, ai = claude, images = null, fetchImp
       let target;
       try { target = new URL(url.searchParams.get("u") ?? ""); } catch { throw new HttpError(400, "bad url"); }
       if (target.protocol !== "https:" || !IMAGE_HOSTS.includes(target.hostname)) throw new HttpError(400, "host not allowed");
-      const upstream = await fetchImpl(target, { headers: { "user-agent": "NeonBracket/1.0" }, signal: AbortSignal.timeout(15_000) }).catch(() => null);
+      const upstream = await fetchImpl(target, { headers: { "user-agent": UA }, signal: AbortSignal.timeout(15_000) }).catch(() => null);
       const type = upstream?.headers.get("content-type") ?? "";
       if (!upstream?.ok || !type.startsWith("image/")) throw new HttpError(502, "picture unavailable");
       const body = Buffer.from(await upstream.arrayBuffer());

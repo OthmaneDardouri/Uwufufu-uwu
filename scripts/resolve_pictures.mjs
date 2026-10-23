@@ -14,7 +14,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { resolveItems, coverItem } from "../src/core/catalog.js";
 import { imageQuery, pictureKey, needsSearch } from "../src/core/pictures.js";
-import { createImageResolver } from "../server/images.mjs";
+import { createImageResolver, UA } from "../server/images.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.join(root, "data/pictures.json");
@@ -41,23 +41,44 @@ for (const file of index.files) {
   }
 }
 
-/** Can a browser on another site show this picture? (some hosts refuse hot-linking) */
-async function probe(url) {
+/**
+ * How a picture host reacts to the three ways the site loads pictures: a browser on another
+ * site (sends a Referer), the same browser with referrerPolicy="no-referrer", and our server's proxy.
+ */
+const WAYS = {
+  "browser+referer": { "user-agent": BROWSER_UA, referer: "https://example.github.io/" },
+  "browser,no-referer": { "user-agent": BROWSER_UA },
+  proxy: { "user-agent": UA },
+};
+async function probe(url, headers) {
   try {
-    const res = await fetch(url, { headers: { "user-agent": BROWSER_UA, referer: "https://example.github.io/" }, signal: AbortSignal.timeout(15_000) });
+    const res = await fetch(url, { headers, signal: AbortSignal.timeout(15_000) });
     const type = res.headers.get("content-type") ?? "";
     await res.body?.cancel();
-    return res.ok && type.startsWith("image/") ? null : `${res.status} ${type}`;
+    return res.ok && type.startsWith("image/") ? "ok" : `${res.status} ${type}`;
   } catch (err) {
     return err.message;
   }
+}
+async function checkHosts(urls, perHost = 3) {
+  const byHost = {};
+  for (const u of urls) (byHost[new URL(u).host] ??= []).length < perHost && byHost[new URL(u).host].push(u);
+  const out = {};
+  for (const [host, sample] of Object.entries(byHost)) {
+    out[host] = {};
+    for (const [way, headers] of Object.entries(WAYS)) {
+      const answers = [];
+      for (const u of sample) { answers.push(await probe(u, headers)); await new Promise((r) => setTimeout(r, 300)); }
+      out[host][way] = [...new Set(answers)].join(" / ");
+    }
+  }
+  return out;
 }
 
 const dir = await mkdtemp(path.join(os.tmpdir(), "pictures-"));
 const resolver = await createImageResolver({ dir });
 const pictures = {};
 const misses = {};
-const blocked = {};
 const todo = [...searches.entries()];
 let done = 0;
 
@@ -71,8 +92,6 @@ async function worker() {
       const r = await resolver.resolve(q, { fresh: true }).catch((err) => ({ url: null, tried: [{ source: "script", error: err.message }] }));
       if (r.url) {
         pictures[key] = r.url;
-        const problem = await probe(r.url);
-        if (problem) blocked[key] = problem;
       } else {
         misses[key] = { categories: [...categories], tried: r.tried.map((t) => (t.error ? `${t.source}: ${t.error}` : t.source)) };
       }
@@ -85,9 +104,11 @@ await resolver.flush();
 await rm(dir, { recursive: true, force: true });
 
 const sorted = (o) => Object.fromEntries(Object.entries(o).sort(([a], [b]) => a.localeCompare(b)));
-const body = { found: Object.keys(pictures).length, missing: Object.keys(misses).length, pictures: sorted(pictures), misses: sorted(misses), blocked: sorted(blocked) };
+const hosts = await checkHosts(Object.values(pictures));
+const body = { found: Object.keys(pictures).length, missing: Object.keys(misses).length, hosts, pictures: sorted(pictures), misses: sorted(misses) };
 const same = JSON.stringify({ ...previous, updated: undefined }) === JSON.stringify(body);
 if (!same) await writeFile(OUT, `${JSON.stringify({ updated: new Date().toISOString(), ...body }, null, 1)}\n`);
 
-console.log(`found ${body.found} of ${searches.size}, missing ${body.missing}, blocked for other sites ${Object.keys(blocked).length}${same ? " (no change)" : ""}`);
+console.log(`found ${body.found} of ${searches.size}, missing ${body.missing}${same ? " (no change)" : ""}`);
+console.log(JSON.stringify(hosts, null, 1));
 for (const [key, m] of Object.entries(body.misses).slice(0, 40)) console.log(`  miss ${key}  ← ${m.tried.join(" · ")}`);
