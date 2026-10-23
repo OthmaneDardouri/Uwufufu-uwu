@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-23T15:25:02.267Z",
- "found": 691,
- "missing": 8,
+ "updated": "2026-10-23T15:26:46.349Z",
+ "found": 698,
+ "missing": 2,
  "hosts": {
   "thumb.wikimedia.org": {
    "browser+referer": "ok",
@@ -397,6 +397,7 @@
   "dragonball|Chi-Chi|Chichi|Chi-Chi|Chi-Chi": "https://static.wikia.nocookie.net/dragonball/images/e/e2/Chi-Chi_DBZ_Ep_04_001.png/revision/latest/scale-to-width-down/382?cb=20201226004235",
   "dragonball|Death Ball|Death Ball|Frieza|Frieza": "https://static.wikia.nocookie.net/dragonball/images/7/7d/Death_Ball.png/revision/latest/scale-to-width-down/480?cb=20180419061054",
   "dragonball|Destructo Disc|Kienzan|Krillin|Krillin": "https://static.wikia.nocookie.net/dragonball/images/1/1a/Destructo_Disc_2.png/revision/latest/scale-to-width-down/480?cb=20260515044717",
+  "dragonball|Dragon Ball Z|Dragon Ball Z||Dragon Ball Z": "https://static.wikia.nocookie.net/dragonball/images/9/9b/Dragon_Ball_Z_Logo.png/revision/latest/scale-to-width-down/480?cb=20130629032530",
   "dragonball|Final Flash|Final Flash|Vegeta|Vegeta": "https://static.wikia.nocookie.net/dragonball/images/8/8c/SSJ_Vegeta_fires_Final_Flash_at_Cell_Jr.png/revision/latest/scale-to-width-down/480?cb=20260524224021",
   "dragonball|Frieza|Freezer|Frieza|Frieza": "https://static.wikia.nocookie.net/dragonball/images/e/ee/DBS_Broly_Frieza_Render.png/revision/latest/scale-to-width-down/401?cb=20221019232854",
   "dragonball|Fusion Dance|Danza della fusione|Gotenks|Trunks (Dragon Ball)": "https://static.wikia.nocookie.net/dragonball/images/7/71/Bio-Broly_textless_poster_3_by_Tadayoshi_Yamamuro.png/revision/latest/scale-to-width-down/330?cb=20250219040928",
@@ -436,6 +437,9 @@
   "dragonball|Vegeta|Vegeta|Vegeta|Vegeta": "https://static.wikia.nocookie.net/dragonball/images/9/94/Vegeta_anime_profile.png/revision/latest/scale-to-width-down/296?cb=20250723190507",
   "dragonball|Vegito|Vegeth|Vegetto|Vegito": "https://static.wikia.nocookie.net/dragonball/images/5/53/Vegito.jpg/revision/latest/scale-to-width-down/307?cb=20250317214139",
   "fma|Father|Padre|Father|Father (Fullmetal Alchemist)": "https://static.wikia.nocookie.net/fma/images/8/82/Fullmetal_Alchemist_-_44_-_Large_29.jpg/revision/latest/scale-to-width-down/480?cb=20110826195601",
+  "fma|Fullmetal Alchemist: Brotherhood|Fullmetal Alchemist: Brotherhood||Fullmetal Alchemist: Brotherhood": "https://static.wikia.nocookie.net/fma/images/e/e9/Fmab-poster.png/revision/latest/scale-to-width-down/343?cb=20131124145205",
+  "ghibli|Earwig and the Witch|Earwig e la strega||Earwig and the Witch (film)": "https://static.wikia.nocookie.net/studio-ghibli/images/a/ac/Earwig_and_the_Witch.jpg/revision/latest/scale-to-width-down/320?cb=20220409222655",
+  "ghibli|When Marnie Was There|Quando c'era Marnie||When Marnie Was There": "https://static.wikia.nocookie.net/studio-ghibli/images/7/7c/When_Marnie_Was_There_-_English.jpg/revision/latest/scale-to-width-down/320?cb=20220409223902",
   "hunterxhunter|Hisoka Morow|Hisoka|Hisoka|Hisoka (Hunter × Hunter)": "https://static.wikia.nocookie.net/hunterxhunter/images/2/29/Hisoka_Morow_YC_Portrait.png/revision/latest/scale-to-width-down/480?cb=20190123172039",
   "hunterxhunter|Meruem|Meruem|Meruem|Meruem": "https://static.wikia.nocookie.net/hunterxhunter/images/5/58/Meruem_CA_Portrait.png/revision/latest/scale-to-width-down/480?cb=20190419124312",
   "jujutsu-kaisen||Aoi Todo|Aoi Todo|Aoi Todo": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/7/79/Aoi_Todo_%28Anime%29.png/revision/latest/scale-to-width-down/210?cb=20240621022047",
@@ -587,6 +591,7 @@
   "naruto|Sharingan|Sharingan|Sasuke Uchiha|Sasuke Uchiha": "https://static.wikia.nocookie.net/naruto/images/9/93/Sharingan_Stages.png/revision/latest/scale-to-width-down/480?cb=20170809154134",
   "naruto|Summoning: Impure World Reincarnation|Edo Tensei|Tobirama Senju|Kabuto Yakushi": "https://static.wikia.nocookie.net/naruto/images/0/03/Hokage_reincarnated.png/revision/latest/scale-to-width-down/480?cb=20140612141309",
   "naruto|Susanoo|Susanoo|Madara Uchiha|Madara Uchiha": "https://static.wikia.nocookie.net/naruto/images/2/2b/Susanoo.png/revision/latest/scale-to-width-down/480?cb=20150207103348",
+  "naruto|Toneri Ōtsutsuki|Tenseigan|Toneri Ootsutsuki|": "https://static.wikia.nocookie.net/naruto/images/9/92/Toneri_-_The_Last.png/revision/latest/scale-to-width-down/172?cb=20160306081116",
   "naruto|Tsukuyomi|Tsukuyomi|Itachi Uchiha|Itachi Uchiha": "https://static.wikia.nocookie.net/naruto/images/1/14/Tsukuyomi.png/revision/latest/scale-to-width-down/480?cb=20260701122915",
   "naruto|Wind Release: Rasenshuriken|Rasenshuriken|Naruto Uzumaki|Naruto Uzumaki": "https://static.wikia.nocookie.net/naruto/images/5/52/F%C5%ABton_Rasenshuriken.png/revision/latest/scale-to-width-down/480?cb=20220118210921",
   "naruto|Wood Release|Arte del Legno|Hashirama Senju|Hashirama Senju": "https://static.wikia.nocookie.net/naruto/images/5/5e/Mokuton_no_Tenzo.png/revision/latest/scale-to-width-down/480?cb=20170120065930",
@@ -709,28 +714,12 @@
   "pixar|Charles Muntz|Charles Muntz||Charles Muntz": "https://static.wikia.nocookie.net/pixar/images/5/57/Charlesmuntz.png/revision/latest/scale-to-width-down/319?cb=20150215194450",
   "pixar|Lotso|Lotso||Lotso": "https://static.wikia.nocookie.net/pixar/images/1/15/Lotso_Profile.png/revision/latest/scale-to-width-down/480?cb=20260819093428",
   "pixar|Syndrome|Syndrome||Syndrome (The Incredibles)": "https://static.wikia.nocookie.net/pixar/images/b/b3/Syndrome.png/revision/latest/scale-to-width-down/221?cb=20150215211805",
+  "pokemon|Pokémon Yellow Version|Pokémon Giallo||Pokémon Yellow": "https://static.wikia.nocookie.net/pokemon/images/9/92/Pok%C3%A9mon_Yellow_Version.jpg/revision/latest/scale-to-width-down/479?cb=20231203172648",
   "shrek|Lord Farquaad|Lord Farquaad||Lord Farquaad": "https://static.wikia.nocookie.net/shrek/images/2/2d/Farquaad_portrait.png/revision/latest/scale-to-width-down/181?cb=20260904102001",
-  "solo-leveling|Sung Jinwoo|Sung Jinwoo|Sung Jinwoo|Sung Jinwoo": "https://static.wikia.nocookie.net/solo-leveling/images/8/8b/Jinwoo4.jpg/revision/latest/scale-to-width-down/378?cb=20250411080707"
+  "solo-leveling|Sung Jinwoo|Sung Jinwoo|Sung Jinwoo|Sung Jinwoo": "https://static.wikia.nocookie.net/solo-leveling/images/8/8b/Jinwoo4.jpg/revision/latest/scale-to-width-down/378?cb=20250411080707",
+  "vinlandsaga|Vinland Saga (anime)|Vinland Saga||Vinland Saga": "https://static.wikia.nocookie.net/vinlandsaga/images/2/2b/Key_Visual_3.1.png/revision/latest/scale-to-width-down/340?cb=20190627131600"
  },
  "misses": {
-  "||Dragon Ball Z||Dragon Ball Z": {
-   "categories": [
-    "anime-best"
-   ],
-   "tried": [
-    "wikipedia",
-    "wikipedia:file"
-   ]
-  },
-  "||Earwig e la strega||Earwig and the Witch (film)": {
-   "categories": [
-    "anime-ghibli"
-   ],
-   "tried": [
-    "wikipedia",
-    "wikipedia:file"
-   ]
-  },
   "||Fullmetal Alchemist: Brotherhood||Fullmetal Alchemist: Brotherhood": {
    "categories": [
     "anime-best"
@@ -740,34 +729,7 @@
     "wikipedia:file"
    ]
   },
-  "||Pokémon Giallo||Pokémon Yellow": {
-   "categories": [
-    "games-pokemon-main"
-   ],
-   "tried": [
-    "wikipedia",
-    "wikipedia:file"
-   ]
-  },
-  "||Quando c'era Marnie||When Marnie Was There": {
-   "categories": [
-    "anime-ghibli"
-   ],
-   "tried": [
-    "wikipedia",
-    "wikipedia:file"
-   ]
-  },
-  "||Vinland Saga||Vinland Saga": {
-   "categories": [
-    "anime-best"
-   ],
-   "tried": [
-    "wikipedia",
-    "wikipedia:file"
-   ]
-  },
-  "monster|Johan Liebert|Johan Liebert|Johan Liebert|Johan Liebert": {
+  "monster|Johan|Johan Liebert|Johan Liebert|Johan Liebert": {
    "categories": [
     "anime-villains"
    ],
@@ -777,16 +739,6 @@
     "myanimelist: fetch failed",
     "wikipedia",
     "wikipedia:file"
-   ]
-  },
-  "naruto|Tenseigan|Tenseigan|Toneri Ootsutsuki|": {
-   "categories": [
-    "anime-naruto-dojutsu"
-   ],
-   "tried": [
-    "fandom:naruto:lead",
-    "fandom:naruto:gallery",
-    "myanimelist: fetch failed"
    ]
   }
  }
