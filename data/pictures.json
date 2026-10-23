@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-23T15:20:58.708Z",
- "found": 667,
- "missing": 33,
+ "updated": "2026-10-23T15:25:02.267Z",
+ "found": 691,
+ "missing": 8,
  "hosts": {
   "thumb.wikimedia.org": {
    "browser+referer": "ok",
@@ -357,6 +357,18 @@
   "||Zelda: Twilight Princess||The Legend of Zelda: Twilight Princess": "https://upload.wikimedia.org/wikipedia/en/0/0e/The_Legend_of_Zelda_Twilight_Princess_Game_Cover.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
   "||Zootropolis 2||Zootopia 2": "https://upload.wikimedia.org/wikipedia/en/6/6a/Zootopia_2_%282025_film%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
   "||Zootropolis||Zootopia": "https://upload.wikimedia.org/wikipedia/en/9/96/Zootopia_%28movie_poster%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "attackontitan|Eren Yeager|Eren Jaeger|Eren Yeager|Eren Yeager": "https://static.wikia.nocookie.net/shingekinokyojin/images/6/69/Eren_Yeager_character_image.png/revision/latest/scale-to-width-down/480?cb=20200910221354",
+  "bokunoheroacademia|All For One|All for One|All for One|All for One (My Hero Academia)": "https://static.wikia.nocookie.net/bokunoheroacademia/images/a/ae/Post-War_All_For_One_Action.png/revision/latest/scale-to-width-down/300?cb=20240615225342",
+  "bokunoheroacademia|Izuku Midoriya|Izuku Midoriya|Izuku Midoriya|Izuku Midoriya": "https://static.wikia.nocookie.net/bokunoheroacademia/images/2/2b/Izuku_Midoriya_Costume_Databook.png/revision/latest/scale-to-width-down/305?cb=20250409215213",
+  "bokunoheroacademia|Tomura Shigaraki|Tomura Shigaraki|Tomura Shigaraki|Tomura Shigaraki": "https://static.wikia.nocookie.net/bokunoheroacademia/images/2/25/Final_War_Tomura_Shigaraki.png/revision/latest/scale-to-width-down/338?cb=20251225225936",
+  "chainsaw-man|Makima|Makima|Makima|Makima (Chainsaw Man)": "https://static.wikia.nocookie.net/chainsaw-man/images/5/54/Makima_Reze_Arc_anime_design.png/revision/latest/scale-to-width-down/288?cb=20250323073730",
+  "disney|Dr. Facilier|Dottor Facilier||Dr. Facilier": "https://static.wikia.nocookie.net/disney/images/3/3f/Profile_-_Dr._Facilier.jpeg/revision/latest/scale-to-width-down/347?cb=20190312024000",
+  "disney|Hades|Ade||Hades (Disney)": "https://static.wikia.nocookie.net/disney/images/2/2c/Profile_-_Hades.jpeg/revision/latest/scale-to-width-down/480?cb=20190312030411",
+  "disney|Hans|Hans||Hans (Frozen)": "https://static.wikia.nocookie.net/disney/images/e/ee/Profile_-_Hans.jpeg/revision/latest/scale-to-width-down/371?cb=20190423110943",
+  "disney|Jafar|Jafar||Jafar": "https://static.wikia.nocookie.net/disney/images/6/60/Profile_-_Jafar.jpeg/revision/latest/scale-to-width-down/480?cb=20190312023726",
+  "disney|Professor Ratigan|Professor Rattigan||Professor Ratigan": "https://static.wikia.nocookie.net/disney/images/e/ec/Professor_Ratigan.png/revision/latest/scale-to-width-down/480?cb=20160709093623",
+  "disney|Shan Yu|Shan Yu||Shan Yu": "https://static.wikia.nocookie.net/disney/images/d/da/Profile_-_Shan_Yu.jpeg/revision/latest/scale-to-width-down/480?cb=20190312141624",
+  "disney|Yzma|Yzma||Yzma": "https://static.wikia.nocookie.net/disney/images/f/f2/Profile_-_Yzma.jpeg/revision/latest/scale-to-width-down/337?cb=20250118090109",
   "dragonball||Beerus|Beerus|Beerus": "https://static.wikia.nocookie.net/dragonball/images/7/7d/BeerusWikia_%283%29.jpg/revision/latest/scale-to-width-down/269?cb=20240224003806",
   "dragonball||Broly|Broly|Broly": "https://static.wikia.nocookie.net/dragonball/images/c/cd/Broly_Infobox_image.png/revision/latest/scale-to-width-down/357?cb=20170525181624",
   "dragonball||Bulma|Bulma|Bulma": "https://static.wikia.nocookie.net/dragonball/images/a/a6/Bulma_anime_profile.png/revision/latest/scale-to-width-down/164?cb=20250617190824",
@@ -423,6 +435,9 @@
   "dragonball|Ultra Instinct|Ultra Istinto|Goku|Goku": "https://static.wikia.nocookie.net/dragonball/images/0/0f/Whis_Trains_Saiyans.png/revision/latest/scale-to-width-down/480?cb=20190831040747",
   "dragonball|Vegeta|Vegeta|Vegeta|Vegeta": "https://static.wikia.nocookie.net/dragonball/images/9/94/Vegeta_anime_profile.png/revision/latest/scale-to-width-down/296?cb=20250723190507",
   "dragonball|Vegito|Vegeth|Vegetto|Vegito": "https://static.wikia.nocookie.net/dragonball/images/5/53/Vegito.jpg/revision/latest/scale-to-width-down/307?cb=20250317214139",
+  "fma|Father|Padre|Father|Father (Fullmetal Alchemist)": "https://static.wikia.nocookie.net/fma/images/8/82/Fullmetal_Alchemist_-_44_-_Large_29.jpg/revision/latest/scale-to-width-down/480?cb=20110826195601",
+  "hunterxhunter|Hisoka Morow|Hisoka|Hisoka|Hisoka (Hunter × Hunter)": "https://static.wikia.nocookie.net/hunterxhunter/images/2/29/Hisoka_Morow_YC_Portrait.png/revision/latest/scale-to-width-down/480?cb=20190123172039",
+  "hunterxhunter|Meruem|Meruem|Meruem|Meruem": "https://static.wikia.nocookie.net/hunterxhunter/images/5/58/Meruem_CA_Portrait.png/revision/latest/scale-to-width-down/480?cb=20190419124312",
   "jujutsu-kaisen||Aoi Todo|Aoi Todo|Aoi Todo": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/7/79/Aoi_Todo_%28Anime%29.png/revision/latest/scale-to-width-down/210?cb=20240621022047",
   "jujutsu-kaisen||Authentic Mutual Love|Yuuta Okkotsu|Yuta Okkotsu": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/7/7a/Authentic_Mutual_Love.png/revision/latest/scale-to-width-down/480?cb=20240204164013",
   "jujutsu-kaisen||Ceremonial Sea of Light|Hanami|": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/7/76/Hanami_%28Anime%29.png/revision/latest/scale-to-width-down/348?cb=20210318193331",
@@ -453,6 +468,7 @@
   "jujutsu-kaisen||Yuji Itadori|Yuji Itadori|Yuji Itadori": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/3/35/Yuji_Itadori_%28Anime_4%29.png/revision/latest/scale-to-width-down/175?cb=20251230155050",
   "jujutsu-kaisen||Yuki Tsukumo|Yuki Tsukumo|Yuki Tsukumo": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/2/22/Yuki_Tsukumo_%28Anime_3%29.png/revision/latest/scale-to-width-down/198?cb=20251230190559",
   "jujutsu-kaisen||Yuta Okkotsu|Yuta Okkotsu|Yuta Okkotsu": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/e/e6/Yuta_Okkotsu_%28Anime_2%29.png/revision/latest/scale-to-width-down/156?cb=20251230155621",
+  "jujutsu-kaisen|Mahito|Mahito|Mahito|Mahito (Jujutsu Kaisen)": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/4/4e/Mahito_%28Anime%29.png/revision/latest/scale-to-width-down/200?cb=20240618013419",
   "jujutsu-kaisen|Malevolent Shrine|Santuario Malevolo|Ryoumen Sukuna|Ryomen Sukuna": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/c/c5/Malevolent_Shrine.gif/revision/latest?cb=20201025025147",
   "jujutsu-kaisen|Satoru Gojo|Satoru Gojou|Satoru Gojou|Satoru Gojo": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/e/ef/Satoru_Gojo_%28Anime_2%29.png/revision/latest/scale-to-width-down/146?cb=20250726003655",
   "jujutsu-kaisen|Unlimited Void|Vuoto Infinito|Satoru Gojou|Satoru Gojo": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/4/46/Unlimited_Void.gif/revision/latest?cb=20201114063332",
@@ -478,6 +494,7 @@
   "kimetsu-no-yaiba||Tengen Uzui|Tengen Uzui|Tengen Uzui": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/07/Tengen_anime.png/revision/latest/scale-to-width-down/336?cb=20191024210335",
   "kimetsu-no-yaiba||Yoriichi Tsugikuni|Yoriichi Tsugikuni|Yoriichi Tsugikuni": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/08/Yoriichi_Tsugikuni_%28Anime%29.png/revision/latest/scale-to-width-down/480?cb=20230411022113",
   "kimetsu-no-yaiba||Zenitsu Agatsuma|Zenitsu Agatsuma|Zenitsu Agatsuma": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/4f/Zenitsu_anime_right_face.png/revision/latest/scale-to-width-down/286?cb=20241228000445",
+  "kimetsu-no-yaiba|Akaza|Akaza|Akaza|Akaza (Demon Slayer)": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/0a/Akaza_HIROMA.png/revision/latest/scale-to-width-down/468?cb=20261019034825",
   "kimetsu-no-yaiba|Beast Breathing|Respirazione della Bestia|Inosuke Hashibira|Inosuke Hashibira": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/48/Beast_Breathing_%28Zenshuchuten%29.png/revision/latest/scale-to-width-down/339?cb=20240529101743",
   "kimetsu-no-yaiba|Daki|Gyutaro e Daki|Daki|Daki and Gyutaro": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/e/e7/Daki_Anime_%28Awakened%29.png/revision/latest/scale-to-width-down/361?cb=20240704040250",
   "kimetsu-no-yaiba|Doma|Doma|Douma|Doma (Demon Slayer)": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/2/24/Anime_Doma%27s_cult_wear.png/revision/latest/scale-to-width-down/480?cb=20260812005249",
@@ -496,6 +513,7 @@
   "kimetsu-no-yaiba|Thunder Breathing|Respirazione del Tuono|Zenitsu Agatsuma|Zenitsu Agatsuma": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/00/Thunder_Breathing_%28Zenshuchuten%29.png/revision/latest/scale-to-width-down/339?cb=20240529105731",
   "kimetsu-no-yaiba|Water Breathing|Respirazione dell'Acqua|Giyuu Tomioka|Giyu Tomioka": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/32/Water_Breathing_%28Zenshuchuten%29.png/revision/latest/scale-to-width-down/339?cb=20240529110051",
   "kimetsu-no-yaiba|Wind Breathing|Respirazione del Vento|Sanemi Shinazugawa|Sanemi Shinazugawa": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/d/d4/Wind_Breathing_%28Zenshuchuten%29.png/revision/latest/scale-to-width-down/359?cb=20240525054020",
+  "kungfupanda|Tai Lung|Tai Lung||Tai Lung": "https://static.wikia.nocookie.net/kungfupanda/images/c/ca/Spirit_Tai_Lung.jpg/revision/latest/scale-to-width-down/297?cb=20240314201219",
   "naruto||Boruto Uzumaki|Boruto Uzumaki|Boruto Uzumaki": "https://static.wikia.nocookie.net/naruto/images/d/de/Boruto_Infobox.png/revision/latest/scale-to-width-down/480?cb=20220130144217",
   "naruto||Deidara|Deidara|Deidara": "https://static.wikia.nocookie.net/naruto/images/f/f5/NUNSRDeidara.png/revision/latest/scale-to-width-down/188?cb=20160623115341",
   "naruto||Fu|Fu|": "https://static.wikia.nocookie.net/naruto/images/f/f6/Fu.png/revision/latest/scale-to-width-down/480?cb=20220205122040",
@@ -613,6 +631,7 @@
   "onepiece|Chiyu Chiyu no Mi|Chiyu Chiyu no Mi|Mansherry|": "https://static.wikia.nocookie.net/onepiece/images/b/b2/Chiyu_Chiyu_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20151129192854",
   "onepiece|Choki Choki no Mi|Choki Choki no Mi|Inazuma|": "https://static.wikia.nocookie.net/onepiece/images/0/0f/Choki_Choki_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20250705131414",
   "onepiece|Doa Doa no Mi|Doa Doa no Mi|Blueno|": "https://static.wikia.nocookie.net/onepiece/images/0/04/Doa_Doa_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20230117020238",
+  "onepiece|Donquixote Doflamingo|Donquixote Doflamingo|Donquixote Doflamingo|Donquixote Doflamingo": "https://static.wikia.nocookie.net/onepiece/images/7/7e/Donquixote_Doflamingo_Anime_Infobox.png/revision/latest/scale-to-width-down/413?cb=20231017082245",
   "onepiece|Doru Doru no Mi|Doru Doru no Mi|Galdino|": "https://static.wikia.nocookie.net/onepiece/images/5/5f/Doru_Doru_no_Mi_Infobox.png/revision/latest/scale-to-width-down/255?cb=20250826143904",
   "onepiece|Dressrosa Arc|Dressrosa|Donquixote Doflamingo|Donquixote Doflamingo": "https://static.wikia.nocookie.net/onepiece/images/5/52/Dressrosa_Arc.png/revision/latest/scale-to-width-down/338?cb=20150319033925",
   "onepiece|Edward Newgate|Barbabianca|Edward Newgate|Edward Newgate": "https://static.wikia.nocookie.net/onepiece/images/b/b7/Edward_Newgate_Anime_Infobox.png/revision/latest/scale-to-width-down/480?cb=20220926165737",
@@ -686,75 +705,21 @@
   "onepiece|Yomi Yomi no Mi|Yomi Yomi no Mi|Brook|Brook (One Piece)": "https://static.wikia.nocookie.net/onepiece/images/3/3b/Yomi_Yomi_no_Mi_Infobox.png/revision/latest/scale-to-width-down/349?cb=20201116170233",
   "onepiece|Yuki Yuki no Mi|Yuki Yuki no Mi|Monet|": "https://static.wikia.nocookie.net/onepiece/images/a/a9/Yuki_Yuki_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20240221181209",
   "onepiece|Zou Arc|Zo|Nekomamushi|": "https://static.wikia.nocookie.net/onepiece/images/e/ec/Zou_Arc.png/revision/latest/scale-to-width-down/375?cb=20240818134937",
-  "onepiece|Zushi Zushi no Mi|Zushi Zushi no Mi|Issho|": "https://static.wikia.nocookie.net/onepiece/images/b/ba/Zushi_Zushi_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20230320032400"
+  "onepiece|Zushi Zushi no Mi|Zushi Zushi no Mi|Issho|": "https://static.wikia.nocookie.net/onepiece/images/b/ba/Zushi_Zushi_no_Mi_Infobox.png/revision/latest/scale-to-width-down/480?cb=20230320032400",
+  "pixar|Charles Muntz|Charles Muntz||Charles Muntz": "https://static.wikia.nocookie.net/pixar/images/5/57/Charlesmuntz.png/revision/latest/scale-to-width-down/319?cb=20150215194450",
+  "pixar|Lotso|Lotso||Lotso": "https://static.wikia.nocookie.net/pixar/images/1/15/Lotso_Profile.png/revision/latest/scale-to-width-down/480?cb=20260819093428",
+  "pixar|Syndrome|Syndrome||Syndrome (The Incredibles)": "https://static.wikia.nocookie.net/pixar/images/b/b3/Syndrome.png/revision/latest/scale-to-width-down/221?cb=20150215211805",
+  "shrek|Lord Farquaad|Lord Farquaad||Lord Farquaad": "https://static.wikia.nocookie.net/shrek/images/2/2d/Farquaad_portrait.png/revision/latest/scale-to-width-down/181?cb=20260904102001",
+  "solo-leveling|Sung Jinwoo|Sung Jinwoo|Sung Jinwoo|Sung Jinwoo": "https://static.wikia.nocookie.net/solo-leveling/images/8/8b/Jinwoo4.jpg/revision/latest/scale-to-width-down/378?cb=20250411080707"
  },
  "misses": {
-  "||Ade||Hades (Disney)": {
-   "categories": [
-    "animation-villains"
-   ],
-   "tried": [
-    "wikipedia"
-   ]
-  },
-  "||Akaza|Akaza|Akaza (Demon Slayer)": {
-   "categories": [
-    "anime-villains"
-   ],
-   "tried": [
-    "myanimelist: fetch failed",
-    "wikipedia"
-   ]
-  },
-  "||All for One|All for One|All for One (My Hero Academia)": {
-   "categories": [
-    "anime-villains"
-   ],
-   "tried": [
-    "myanimelist: fetch failed",
-    "wikipedia"
-   ]
-  },
-  "||Barbanera|Marshall D. Teach|Marshall D. Teach": {
-   "categories": [
-    "anime-villains"
-   ],
-   "tried": [
-    "myanimelist: fetch failed",
-    "wikipedia"
-   ]
-  },
-  "||Charles Muntz||Charles Muntz": {
-   "categories": [
-    "animation-villains"
-   ],
-   "tried": [
-    "wikipedia"
-   ]
-  },
-  "||Donquixote Doflamingo|Donquixote Doflamingo|Donquixote Doflamingo": {
-   "categories": [
-    "anime-villains"
-   ],
-   "tried": [
-    "myanimelist: fetch failed",
-    "wikipedia"
-   ]
-  },
-  "||Dottor Facilier||Dr. Facilier": {
-   "categories": [
-    "animation-villains"
-   ],
-   "tried": [
-    "wikipedia"
-   ]
-  },
   "||Dragon Ball Z||Dragon Ball Z": {
    "categories": [
     "anime-best"
    ],
    "tried": [
-    "wikipedia"
+    "wikipedia",
+    "wikipedia:file"
    ]
   },
   "||Earwig e la strega||Earwig and the Witch (film)": {
@@ -762,16 +727,8 @@
     "anime-ghibli"
    ],
    "tried": [
-    "wikipedia"
-   ]
-  },
-  "||Eren Jaeger|Eren Yeager|Eren Yeager": {
-   "categories": [
-    "anime-protagonists"
-   ],
-   "tried": [
-    "myanimelist: fetch failed",
-    "wikipedia"
+    "wikipedia",
+    "wikipedia:file"
    ]
   },
   "||Fullmetal Alchemist: Brotherhood||Fullmetal Alchemist: Brotherhood": {
@@ -779,102 +736,8 @@
     "anime-best"
    ],
    "tried": [
-    "wikipedia"
-   ]
-  },
-  "||Hans||Hans (Frozen)": {
-   "categories": [
-    "animation-villains"
-   ],
-   "tried": [
-    "wikipedia"
-   ]
-  },
-  "||Hisoka|Hisoka|Hisoka (Hunter × Hunter)": {
-   "categories": [
-    "anime-villains"
-   ],
-   "tried": [
-    "myanimelist: fetch failed",
-    "wikipedia"
-   ]
-  },
-  "||Izuku Midoriya|Izuku Midoriya|Izuku Midoriya": {
-   "categories": [
-    "anime-protagonists"
-   ],
-   "tried": [
-    "myanimelist: fetch failed",
-    "wikipedia"
-   ]
-  },
-  "||Jafar||Jafar": {
-   "categories": [
-    "animation-villains"
-   ],
-   "tried": [
-    "wikipedia"
-   ]
-  },
-  "||Johan Liebert|Johan Liebert|Johan Liebert": {
-   "categories": [
-    "anime-villains"
-   ],
-   "tried": [
-    "myanimelist: fetch failed",
-    "wikipedia"
-   ]
-  },
-  "||Lord Farquaad||Lord Farquaad": {
-   "categories": [
-    "animation-villains"
-   ],
-   "tried": [
-    "wikipedia"
-   ]
-  },
-  "||Lotso||Lotso": {
-   "categories": [
-    "animation-villains"
-   ],
-   "tried": [
-    "wikipedia"
-   ]
-  },
-  "||Mahito|Mahito|Mahito (Jujutsu Kaisen)": {
-   "categories": [
-    "anime-villains"
-   ],
-   "tried": [
-    "myanimelist: fetch failed",
-    "wikipedia"
-   ]
-  },
-  "||Makima|Makima|Makima (Chainsaw Man)": {
-   "categories": [
-    "anime-villains"
-   ],
-   "tried": [
-    "myanimelist: fetch failed",
-    "wikipedia"
-   ]
-  },
-  "||Meruem|Meruem|Meruem": {
-   "categories": [
-    "anime-villains"
-   ],
-   "tried": [
-    "myanimelist: fetch failed",
-    "wikipedia"
-   ]
-  },
-  "||Padre|Father|Father (Fullmetal Alchemist)": {
-   "categories": [
-    "anime-villains"
-   ],
-   "tried": [
-    "myanimelist: fetch failed",
-    "wikipedia"
+    "wikipedia",
+    "wikipedia:file"
    ]
   },
   "||Pokémon Giallo||Pokémon Yellow": {
@@ -882,15 +745,8 @@
     "games-pokemon-main"
    ],
    "tried": [
-    "wikipedia"
-   ]
-  },
-  "||Professor Rattigan||Professor Ratigan": {
-   "categories": [
-    "animation-villains"
-   ],
-   "tried": [
-    "wikipedia"
+    "wikipedia",
+    "wikipedia:file"
    ]
   },
   "||Quando c'era Marnie||When Marnie Was There": {
@@ -898,49 +754,8 @@
     "anime-ghibli"
    ],
    "tried": [
-    "wikipedia"
-   ]
-  },
-  "||Shan Yu||Shan Yu": {
-   "categories": [
-    "animation-villains"
-   ],
-   "tried": [
-    "wikipedia"
-   ]
-  },
-  "||Sung Jinwoo|Sung Jinwoo|Sung Jinwoo": {
-   "categories": [
-    "anime-protagonists"
-   ],
-   "tried": [
-    "myanimelist: fetch failed",
-    "wikipedia"
-   ]
-  },
-  "||Syndrome||Syndrome (The Incredibles)": {
-   "categories": [
-    "animation-villains"
-   ],
-   "tried": [
-    "wikipedia"
-   ]
-  },
-  "||Tai Lung||Tai Lung": {
-   "categories": [
-    "animation-villains"
-   ],
-   "tried": [
-    "wikipedia"
-   ]
-  },
-  "||Tomura Shigaraki|Tomura Shigaraki|Tomura Shigaraki": {
-   "categories": [
-    "anime-villains"
-   ],
-   "tried": [
-    "myanimelist: fetch failed",
-    "wikipedia"
+    "wikipedia",
+    "wikipedia:file"
    ]
   },
   "||Vinland Saga||Vinland Saga": {
@@ -948,15 +763,20 @@
     "anime-best"
    ],
    "tried": [
-    "wikipedia"
+    "wikipedia",
+    "wikipedia:file"
    ]
   },
-  "||Yzma||Yzma": {
+  "monster|Johan Liebert|Johan Liebert|Johan Liebert|Johan Liebert": {
    "categories": [
-    "animation-villains"
+    "anime-villains"
    ],
    "tried": [
-    "wikipedia"
+    "fandom:monster:lead",
+    "fandom:monster:gallery",
+    "myanimelist: fetch failed",
+    "wikipedia",
+    "wikipedia:file"
    ]
   },
   "naruto|Tenseigan|Tenseigan|Toneri Ootsutsuki|": {
