@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T15:26:46.349Z",
+ "updated": "2026-10-26T10:04:19.456Z",
  "found": 698,
  "missing": 2,
  "hosts": {
@@ -8,14 +8,14 @@
    "browser,no-referer": "ok",
    "proxy": "ok"
   },
-  "upload.wikimedia.org": {
-   "browser+referer": "ok",
-   "browser,no-referer": "ok / 429 text/html; charset=utf-8",
-   "proxy": "ok"
-  },
   "static.wikia.nocookie.net": {
    "browser+referer": "404 image/jpeg",
    "browser,no-referer": "403 text/html; charset=utf-8",
+   "proxy": "503 text/plain / ok"
+  },
+  "upload.wikimedia.org": {
+   "browser+referer": "ok",
+   "browser,no-referer": "ok / 429 text/html; charset=utf-8",
    "proxy": "ok"
   }
  },
